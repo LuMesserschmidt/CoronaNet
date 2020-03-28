@@ -1,2 +1,2 @@
 # Corona Net
-R Intro for PhD Students at the HfP - November 2019
+CoronaNet Data Project: Tracking government responses towards COVID-19
