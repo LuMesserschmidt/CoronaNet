@@ -1,0 +1,10 @@
+---
+title: "Media"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+***
+
+Any media and press related questions can be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).

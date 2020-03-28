@@ -1,2 +1,2 @@
-# CoronaNet
-This website captures results of the CoronaNet data project about governmental policies in times of COVID-19 
+# Corona Net
+R Intro for PhD Students at the HfP - November 2019

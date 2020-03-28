@@ -1,0 +1,37 @@
+digraph {
+
+  rankdir=LR
+
+  # a 'graph' statement
+  node[shape = note margin=0.25]
+  graph [overlap = true, fontsize = 10]
+
+   formula [label = "Model Formula"]
+
+  node[shape = hexagon]
+    lm [label = "Fit Model \n lm()"]
+  
+  node [shape = cylinder]
+    data [label = "Data"]
+    
+    out [label = "lm - Output"]
+    
+  node [shape = box]
+  
+    inspect [label = "Inspect & Plot"]
+    evaluate [label = "Evaluate"]
+    export [label = "Display & Export"]
+
+  data -> lm
+  formula -> lm
+  
+  lm -> out
+  
+  out -> evaluate
+  out -> inspect
+  out -> export
+
+
+  # several 'edge' statements
+
+}
