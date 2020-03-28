@@ -1,6 +1,6 @@
 ---
 title: "CoronaNet Data Project: Tracking government responses towards COVID-19"
-author: "Cindy Cheng, Joan Barceló, Robert Kubinec, Luca Messerschmidt"
+author: "Cindy Cheng, Robert Kubinec, Luca Messerschmidt,Joan Barceló"
 date: "March 2020"
 ---
 

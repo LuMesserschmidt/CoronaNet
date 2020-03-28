@@ -264,6 +264,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -344,78 +350,33 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">R Course PhD</a>
+      <a class="navbar-brand" href="index.html">Corona Net Tracking governmental COVID-19 policies</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">Introduction</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="methodology.html">Methodology</a>
+    </li>
+    <li>
+      <a href="download.html">Download</a>
+    </li>
+  </ul>
+</li>
 <li>
-  <a href="objectsndata.html">Objects and Data</a>
+  <a href="visuals.html">Data Visualization</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Data Management
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="datamanagement.html">Data Management Introduction</a>
-    </li>
-    <li>
-      <a href="datamanagement_eurostat.html">Eurostat Example</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Descriptives and Bivariate
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="descriptives.html">Descriptive Stats</a>
-    </li>
-    <li>
-      <a href="bivariate.html">Bivariate Stats</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Regression
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="other_regressions.html">Regression</a>
-    </li>
-    <li>
-      <a href="other_outlier.html">Outlier Analysis</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Data Viz
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="dataviz.html">Data Viz Introduction</a>
-    </li>
-    <li>
-      <a href="dataviz_eurostat.html">Eurostat Example</a>
-    </li>
-    <li>
-      <a href="dataviz_map.html">Map Example</a>
-    </li>
-  </ul>
+<li>
+  <a href="working_papers.html">Working Papers</a>
 </li>
 <li>
   <a href="about.html">About</a>
@@ -436,9 +397,9 @@ div.tocify {
 </div>
 
 
-<div id="r-intro-tum" class="section level1">
-<h1><span class="header-section-number">1</span> R Intro TUM</h1>
-<p>R Intro for PhD Students at the HfP - November 2019</p>
+<div id="corona-net" class="section level1">
+<h1><span class="header-section-number">1</span> Corona Net</h1>
+<p>CoronaNet Data Project: Tracking government responses towards COVID-19</p>
 </div>
 
 
