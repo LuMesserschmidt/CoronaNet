@@ -1,5 +1,5 @@
 ---
-title: "Methodology"
+title: "Abstract"
 ---
 
 ```{r setup, include=FALSE}
@@ -7,9 +7,6 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
 
 ***
-
-# Abstract {-}
-
 
 The CoronaNet Database provides fine-grained, dyadic data on policy actions taken by governments across the world since the Chinese government reported the COVID-19 outbreak on December 31, 2019. The dataset presented here covers all policy actions for X number of countries up until XX XX, 2020, for a total of YY number of events.
 Our data collection efforts are still ongoing. For the most current, up to date version of the dataset, please visit http://website_name.com].  
