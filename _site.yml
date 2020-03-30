@@ -30,7 +30,13 @@ navbar:
     href: visuals.html
   - text: Working Papers
     href: working_papers.html
-  - text: About
+  - text: About CoronaNet
     href: about.html
-
+    menu:
+      - text: "People"
+        href: about.html
+      - text: "Media"
+        href: media.html
+      - text: "Contact"
+        href: contact.html
 

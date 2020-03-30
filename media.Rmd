@@ -1,0 +1,29 @@
+---
+title: "Media"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+***
+# Press Release {-}
+The Press releases can be found here
+
++ [20200401_english](https://sites.google.com/view/joanbarcelo/home?authuser=1)
+
++ [20200401_german](http://www.robertkubinec.com/#about)
+
++ [20200401_arabic](http://cindyyawencheng.com/)
+
++ [20200401_spanish](https://lumesserschmidt.github.io/aboutme/)
+
+
+***
+# Press Contact {-}
+When using the data for press and media releases, or for interviews, please contact:
+
+Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de | +49 157 36905422
+
+Any media and press related questions can also be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Media"
+title: "CoronaNet Research Group"
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -16,19 +16,6 @@ The project group is organized and led by
 + [Cindy Cheng](http://cindyyawencheng.com/)
 
 + [Luca Messerschmidt ](https://lumesserschmidt.github.io/aboutme/)
-
-
-***
-# Press Contact {-}
-When using the data for press and media releases, or for interviews, please contact:
-
-Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de | +49 157 36905422
-
-Any media and press related questions can also be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
-
-
-***
-
 
 # CoronaNet Research Group {-}
 
