@@ -11,18 +11,22 @@ output:
     self_contained: no
 output_dir: docs
 navbar:
-  title: Corona Net Tracking governmental COVID-19 policies
+  title: CoronaNet Database Tracking COVID-19 Policies
   left:
   - text: Introduction
     href: index.html
   - text: Data
     href: Methodology.html
     menu:
+      - text: "Abstract"
+        href: abstract.html
       - text: "Methodology"
         href: methodology.html
       - text: "Download"
         href: download.html
-  - text: Data Visualization
+  - text: Analysis
+    href: analysis.html
+  - text: Vizualization
     href: visuals.html
   - text: Working Papers
     href: working_papers.html

@@ -1,5 +1,6 @@
 ---
-title: "Visualization"
+title: "Analysis"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}

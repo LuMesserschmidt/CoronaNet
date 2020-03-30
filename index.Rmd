@@ -1,5 +1,5 @@
 ---
-title: "CoronaNet Data Project: Tracking government responses towards COVID-19"
+title: "CoronaNet Database: Tracking government responses towards COVID-19"
 author: "Joan Barceló,Cindy Cheng, Robert Kubinec, Luca Messerschmidt"
 date: "March 2020"
 ---
@@ -8,7 +8,9 @@ date: "March 2020"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ***
-# About the project
+
+
+# About CoronaNet {-}
 
 Together with colleagues from the NYU Abu Dhabi and the Technical University of Munich, we are compiling a data set on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. We aim to make the data publicly available as soon as possible to help move forward social science research on COVID-19.
 We are collaborating with over 70 Research Assistants all over the world who are helping all of us make government reactions and policies visible.
@@ -16,27 +18,33 @@ We are collaborating with over 70 Research Assistants all over the world who are
 
 ***
 
-# Fine-grained and Dyadic Data
+# Fine-grained and dyadic data {-}
 
 The data will yield fine-grained information on 
-+The level of government responding to the corona virus crisis (e.g. national, regional/state, local/municipal) 
-+ Specific actions taken (e.g. travel bans, investments in the public health sector, etc.)
-+ Geographical areas targeted by these measures 
-+ Who or what they are targeting (e.g. foreigners, ventilators)
-+ Compliance mechanisms (e.g., mandatory or voluntary) 
-+ Timing of policy responses.
+
+* The level of government responding to the corona virus crisis (e.g. national, regional/state, local/municipal) 
+
+* Specific actions taken (e.g. travel bans, investments in the public health sector, etc.)
+
+* Geographical areas targeted by these measures 
+
+* Who or what they are targeting (e.g. foreigners, ventilators)
+
+* Compliance mechanisms (e.g., mandatory or voluntary) 
+
+* Timing of policy responses.
 
 
 
 ***
 
-##  Feedback
+##  Feedback {-}
 
 CoronaNet is an ongoing research project. If you have any questions regarding the data or you find any inaccuracies, please contact us  [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
 ***
 
-##  Cite
+##  Citation {-}
 
 Please cite the project as:
  Barceló, Joan, Cheng, Cheng, Kubinec, Robert., & Messerschmidt, Luca. (2020, March 27). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
@@ -46,8 +54,8 @@ https://github.com/LuMesserschmidt/CoronaNet
 
 
 *****
-# Contributors
+# Contributors {-}
 ***
-We are grateful for the help of our Research Assistants, who are constantly working on making the data base more complete and up to date!
+We are grateful for the help of our Research Assistants, who are constantly working on making the data base more complete and up to date! For more information, click [here](https://lumesserschmidt.github.io/CoronaNet/about.html).
 
 Adriana Poppe, Angad Johar, Barbora Bromová, Julia Smakman, Khoa Tran, Matthew Cottrell, Miriam Witte, Museera Moghis, Oliver Weber, Sana Moghis, Sau Kan Chan, Tom Seiler, Ursela Barteczko, Vellah Kedogo Kigwiru, Nicolas Göller
