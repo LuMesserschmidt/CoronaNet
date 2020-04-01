@@ -1,17 +1,23 @@
 ---
-title: 'Download'
+title: 'Download CoronaNet Dataset'
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
 
-Download the script [here]()
+We have prepared the data in different formats: 
+
+* Long format (day by day since 01.01.2020): [csv]() ; [rds]()
+
+* Wide format (by country): [csv]() ; [rds]()
+
+* Categorical value for each policy: [csv]() ; [rds]()
+
+* Dyadic Dataset (country x country): [csv]() ; [rds]()
 
 
-Download the Codebook [here]()
-
-
+Download the Codebook [here]().
 
 
 

@@ -18,12 +18,10 @@ navbar:
   - text: Data
     href: Methodology.html
     menu:
-      - text: "Abstract"
-        href: abstract.html
-      - text: "Methodology"
-        href: methodology.html
       - text: "Download"
         href: download.html
+      - text: "Methodology"
+        href: methodology.html
   - text: Analysis
     href: analysis.html
   - text: Vizualization

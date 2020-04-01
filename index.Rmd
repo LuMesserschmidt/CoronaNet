@@ -76,7 +76,7 @@ You can download the dataset, codebook and working paper [here](https://forms.gl
 ##  Citation {-}
 
 Please cite the project as:
-Cheng, Cheng, Kubinec, Robert, & Messerschmidt, Luca,Barceló, Joan. (2020, April 02). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
+Cheng, Cindy, Kubinec, Robert, & Messerschmidt, Luca, Barceló, Joan. (2020, April 02). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
 https://coronanet-project.org
 
 
