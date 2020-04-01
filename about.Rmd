@@ -1,9 +1,5 @@
----
-title: "CoronaNet Research Group"
-output:
-  html_document:
-    df_print: paged
----
+![](header.png)
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -12,24 +8,25 @@ knitr::opts_chunk$set(echo = TRUE)
 # About the CoronaNet Project {-}
 The project group is organized and led by 
 
-+ [Joan Barcelo](https://sites.google.com/view/joanbarcelo/home?authuser=1)
-
-+ [Robert Kubinec](http://www.robertkubinec.com/#about)
 
 + [Cindy Cheng](http://cindyyawencheng.com/)
 
++ [Robert Kubinec](http://www.robertkubinec.com/#about)
+
 + [Luca Messerschmidt ](https://lumesserschmidt.github.io/aboutme/)
+
++ [Joan Barcelo](https://sites.google.com/view/joanbarcelo/home?authuser=1)
 
 # CoronaNet Research Group {-}
 
-We are thankful for the amazing network of 120 scholars from social and political sciences, from all continents and over 50 different languages.
+We are thankful for the amazing network of 120 scholars from social and political sciences, coming from all continents and speaking more than 30 different languages.
 
 ```{r echo= FALSE, results='asis'}
 library(knitr)
 library(readxl)
 contribution <- read_excel("data/contribution.xlsx")
 DT::datatable(contribution,
-          caption = 'Table of contributing researchers and responsible countries',
+          caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
           filter = 'top',
           fillContainer = FALSE, 
@@ -42,3 +39,4 @@ DT::datatable(contribution,
 ```
 ```
 
+![](header.png)

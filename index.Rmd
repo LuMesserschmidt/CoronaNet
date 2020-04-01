@@ -1,6 +1,6 @@
 ---
-title: "CoronaNet Database: Tracking government responses towards COVID-19"
-author: "Joan Barceló,Cindy Cheng, Robert Kubinec, Luca Messerschmidt"
+title: "CoronaNet Research Project: Tracking government responses towards COVID-19"
+author: "Cindy Cheng, Robert Kubinec, Luca Messerschmidt, Joan Barceló"
 date: "March 2020"
 output: 
   html_document:
@@ -13,27 +13,39 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-```{js logo-js, echo=FALSE}
+<!-- ```{js logo-js, echo=FALSE} -->
 
-$(document).ready(function() {
-  $('#header').parent().prepend('<div id=\"logo\"><img src=\"logo_height.png"\" style=\"position:absolute; top:0; right:0; padding:20px; height:280px\"></div>');
-  $('#header').css('margin-right', '270px')
-});
-```
+<!-- $(document).ready(function() { -->
+<!--   $('#header').parent().prepend('<div id=\"logo\"><img src=\"logo_height.png"\" style=\"position:absolute; top:0; right:0; padding:20px; height:280px\"></div>'); -->
+<!--   $('#header').css('margin-right', '270px') -->
+<!-- }); -->
+<!-- ``` -->
+
+
+
+![](header.png)
+
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+
 ***
 
 
 # About CoronaNet {-}
 
-Together with colleagues from the NYU Abu Dhabi and the Technical University of Munich, we are compiling a data set on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. We aim to make the data publicly available as soon as possible to help move forward social science research on COVID-19.
-We are collaborating with over 70 Research Assistants all over the world who are helping all of us make government reactions and policies visible.
+The CoronaNet Research Project compiles a database on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. We aim to make the data publicly available to help move forward social science research on COVID-19.
+
+Together with 140 political and social science scholars from all over the world, we try to make government reactions and policies visible since the January 1st 2020.
+
  
 
 ***
 
-# Fine-grained and dyadic data {-}
+# Detailed, multilevel, and dyadic data {-}
 
-The data will yield fine-grained information on 
+The data will yield detailed information on 
 
 * The level of government responding to the corona virus crisis (e.g. national, regional/state, local/municipal) 
 
@@ -48,27 +60,36 @@ The data will yield fine-grained information on
 * Timing of policy responses.
 
 
+***
+##  Feedback {-}
+
+CoronaNet is an ongoing research project and we aim to publish new data versions on a daily basis. The project is supervised by senior political scientists from NYU Abu Dhabi, TU Munich and Yale, and underlies high-standard validity and reliability checks. If you have any questions regarding the data or you find any inaccuracies, please contact us [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
 ***
 
-##  Feedback {-}
+##  Data {-}
 
-CoronaNet is an ongoing research project. If you have any questions regarding the data or you find any inaccuracies, please contact us  [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+You can download the dataset, codebook and working paper [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
 ***
 
 ##  Citation {-}
 
 Please cite the project as:
- Barceló, Joan, Cheng, Cheng, Kubinec, Robert., & Messerschmidt, Luca. (2020, March 27). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
-https://github.com/LuMesserschmidt/CoronaNet
+Cheng, Cheng, Kubinec, Robert, & Messerschmidt, Luca,Barceló, Joan. (2020, April 02). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
+https://coronanet-project.org
 
 
 
 
-*****
-# Contributors {-}
 ***
-We are grateful for the help of our Research Assistants, who are constantly working on making the data base more complete and up to date! For more information, click [here](https://lumesserschmidt.github.io/CoronaNet/about.html).
+## Contributors {-}
+
+We are grateful for the help of our Research Assistants, who are constantly working on making the database more complete and up to date! For more information, click [here](https://lumesserschmidt.github.io/CoronaNet/about.html).
 
 Aarthi Ratnam, Abhyudaya Tyagi, Adriana Poppe, Adyan Hasan, Alia ElKattan, Anabella McElroy, Andres Lopez Schrader, Angad Johar, Anna Pustovoit, Anna Sophia Körner, Antonia Pérez, Arianna Schouten, Aysina Maria, Barbora Bromová, Beatrice Di Giulio, Brian Chesney Quartey, Caress Schenk, Carl Philip Dybwad, Charlotte Vorbauer, Cheng-Hao Shen, Cornelia Marie Dybwad, Dan Downes, Dan Wu, Deborah Agboola, Dick Paul Ouko, Donia Kamel, Dorian Quelle, Elisa Seith, Emma Hutchinson, Eva Thorshaug, Eyza Hamdani, Farah Sadek, Felix Willuweit, Francis Yoon, Frank Yuxuan Sun, Frederic Denker, Gabriela Franco Prieto, Georgie Joy, Hafsa Ahmed, Helene Paul, Helwan Felappi, Helwan Felappi, Heman Asibuo, Henry Okwatch, Irene Kwon, Jack Kubinec, Jakob Berg, Jane Murutu, Janne Luise Piper, Joana Lencastre Morais, Jule Scholten, Julia Nassl, Julia Smakman, Karina Lisboa Båsund, Katharina Klaunig, Khoa Tran, Lea Clara Frömchen-Zwick, Lisa Köhler, Lya Cuéllar, Maheen Zahra, Mamle Akosua Kwao, Mara Förster, Marius Deierl, Marlies Hofmann, Mascha Hotopp, Mats Jensen, Matthew Cottrell, Matthew Hargreaves, Maximilian Dirks, Mehdi Bhouri, Melia Summers, Milan Chen, Miranda Tessore Janowski, Miriam Witte, Mirjam Muller, Moritz Wiegand, Muhannad Alramlawi, Museera Moghis, Naomi Weiler, Nicolas Göller, Nida Hasan, Niklas Illenseer, Nikolina Klatt, Noelle Kubinec, Oliver Weber, Ongun Durhan, Pablo Robles, Priyanshu Mishra, Raquel Karl, Rebecca Beigel, Sabrina Kirschner, Salma Soliman, Samantha Reinard, Sana Moghis, Sau Kan Chan, Sheila mukoa, Sobha Gadi, Sophia Tomany, Stella Dold, Tanja Matheis, Tess de Rooij, Tom Seiler, Tristan Brömsen, Ursela Barteczko, Vellah Kedogo Kigwiru, Veronika Bartáková, Victor Abuor, Vida Han, Winrose Njuguna, Yifei Zhu 
+
+
+<img width="30%" src="TUM.png"/>
+<img width="30%" src="NYU.png"/>
+

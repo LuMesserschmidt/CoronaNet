@@ -11,7 +11,7 @@ output:
     self_contained: no
 output_dir: docs
 navbar:
-  title: CoronaNet Database Tracking COVID-19 Policies
+  title: CoronaNet Research Project
   left:
   - text: Introduction
     href: index.html
