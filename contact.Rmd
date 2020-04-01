@@ -5,8 +5,23 @@ title: "Contact"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+For English and German inquiries:
 
 Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de | +49 157 36905422 | Richard-Wagner-Street 1 | 80333 Munich, Germany
+
+Chinese:
+
+Cindy Cheng | Hochschule für Politik at the TU Munich | cindy.cheng @ hfp.tum.de | Richard-Wagner-Street 1 | 80333 Munich, Germany
+
+Spanish:
+
+Joan Barceló | Social Science Division, New York University – Abu Dhabi | joan.barcelo @ nyu.edu | +971 55 214 6067
+
+
+Arabic: 
+
+Robert Kubinec | Social Science Division, New York University – Abu Dhabi | rmk7 @ nyu.edu| +971 55 214 6067
+
 
 Any media and press related questions can also be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
