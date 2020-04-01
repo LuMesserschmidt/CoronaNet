@@ -2,10 +2,23 @@
 title: "CoronaNet Database: Tracking government responses towards COVID-19"
 author: "Joan Barceló,Cindy Cheng, Robert Kubinec, Luca Messerschmidt"
 date: "March 2020"
+output: 
+  html_document:
+    includes:
+      after_body: footer.html
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{js logo-js, echo=FALSE}
+
+$(document).ready(function() {
+  $('#header').parent().prepend('<div id=\"logo\"><img src=\"logo_height.png"\" style=\"position:absolute; top:0; right:0; padding:20px; height:280px\"></div>');
+  $('#header').css('margin-right', '270px')
+});
 ```
 ***
 

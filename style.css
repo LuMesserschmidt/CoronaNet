@@ -18,3 +18,12 @@
 pre.plot {
   background-color: white !important;
 }
+
+body {
+ background-image: url("8.png");
+ background-color: white;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 84px;
+}
