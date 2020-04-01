@@ -1,5 +1,8 @@
 ---
 title: "CoronaNet Research Group"
+output:
+  html_document:
+    df_print: paged
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -21,120 +24,21 @@ The project group is organized and led by
 
 We are thankful for the amazing network of 120 scholars from social and political sciences, from all continents and over 50 different languages.
 
-
-
-\begin{array}{   }
- 
-	Tanja\,Matheis\,&\,University\,of\,Kassel \\  
-	Sobha\,Gadi\,&\,NYU\,Abu\,Dhabi \\  
-	Khoa\,Tran\,&\,NYU\,Abu\,Dhabi \\  
-	Museera\,Moghis\,&\,NYU\,Abu\,Dhabi \\  
-	Angad\,Johar\,&\,NYU\,Abu\,Dhabi \\  
-	Brian\,Chesney\,Quartey\,&\,NYU\,Abu\,Dhabi \\  
-	Muhannad\,Alramlawi\,&\,NYU\,Abu\,Dhabi \\  
-	Salma\,Soliman\,&\,NYU\,Abu\,Dhabi \\  
-	Farah\,Sadek\,&\,NYU\,Abu\,Dhabi \\  
-	Maheen\,Zahra\,&\,NYU\,Abu\,Dhabi \\  
-	Katharina\,Klaunig\,&\,NYU\,Abu\,Dhabi \\  
-	Milan\,Chen\,&\,HfP\,(Munich)\,\\  
-	Helwan\,Felappi\,&\,Sciences\,Po\,Paris \\  
-	Maximilian\,Dirks\,&\,University\,of\,Bochum, Germany \\  
-	Miriam\,Witte\,&\,University\,of\,Regensburg,\,Germany \\  
-	Elisa\,Seith\,&\,Officer,\,NATO \\  
-	Priyanshu\,Mishra\,&\,NYU\,Abu\,Dhabi \\  
-	Karina\,Lisboa\,Båsund\,&\,NYU\,Abu\,Dhabi \\  
-	Adriana\,Poppe\,&\,University\,of\,Cologne \\  
-	Helene Paul & TU Darmstadt / Policylead \\  
-	Niklas\,Illenseer\,&\,SciencesPo\,Paris/FU\,Berlin \\  
-	Frederic\,Denker\,&\,Zeppelin\,University \\  
-	Sabrina\,Kirschner\,&\,UniBW \\  
-	Anna\,Sophia\,Körner\,&\,SciencesPo\,Paris/FU\,Berlin \\  
-	Oliver\,Weber\,&\,University\,of\,Regensburg,\,Germany \\  
-	Adyan\,Hasan\,&\,NYU\,Abu\,Dhabi \\  
-	Nicolas\,Göller\,&\,Zeppelin\,University \\  
-	Raquel\,Karl\,&\,Zeppelin\,University \\  
-	Alia\,ElKattan\,&\,NYU\,Abu\,Dhabi \\  
-	Hafsa\,Ahmed\,&\,NYU\,Abu\,Dhabi \\  
-	Matthew\,Cottrell\,&\,University\,of\,Cologne \\  
-	Julia\,Nassl\,&\,University\,of\,Munich \\  
-	Vellah\,Kedogo\,Kigwiru\,&\,Technical\,University\,of\,Munich \\  
-	Emma\,Hutchinson\,&\,Sciences\,Po\,Paris \\  
-	Sophia\,Tomany\,&\,Willy\,Brandt\,School\,of\,Public\,Policy \\  
-	Eyza\,Hamdani\,&\,NYU\,Abu\,Dhabi \\  
-	Arianna\,Schouten\,&\,Research\,Assistant \\  
-	Tess\,de\,Rooij\,&\,Research\,assistant \\  
-	Ongun\,Durhan\,&\,University\,of\,Amsterdam \\  
-	Mirjam\,Muller\,&\,European\,Parliament \\  
-	Sau\,Kan\,Chan\,&\,HfP\,(Munich) \\  
-	Jack\,Kubinec\,&\,Cornell\,University \\  
-	Deborah\,Agboola\,&\,New\,York\,University\,Abu\,Dhabi \\  
-	Mamle\,Akosua\,Kwao\,&\,New\,York\,University\,Abu\,Dhabi \\  
-	Julia\,Smakman\,&\,University\,of\,Amsterdam \\  
-	Yifei\,Zhu\,&\,FU\,Berlin \\  
-	Francis\,Yoon\,&\,FU\,Berlin \\  
-	Ursela\,Barteczko\,&\,Fernuniversität\,Hagen \\  
-	Tom\,Seiler\,&\,University\,of\,Bremen \\  
-	Sana\,Moghis\,&\,Shifa\,College\,of\,Medicine \\  
-	Miranda\,Tessore\,Janowski\,&\,University\,of\,Amsterdam \\  
-	Barbora\,Bromová\,&\,University\,of\,Amsterdam \\  
-	Lya\,Cuéllar\,&\,FU\,Berlin \\  
-	Janne\,Luise\,Piper\,&\,Zeppelin\,University \\  
-	Donia\,Kamel\,&\,Paris\,School\,of\,Economics \\  
-	Noelle\,Kubinec\,&\,English\,teacher \\  
-	Moritz\,Wiegand\,&\,European-University\,Frankfurt\,Oder \\  
-	Matthew\,Hargreaves\,&\,University\,of\,Amsterdam \\  
-	Antonia\,Pérez\,&\,Dual\,BA\,Program\,Sciences\,Po\,Paris/\,Columbia\,University \\  
-	Samantha\,Reinard\,&\,San\,Francisco\,State\,University \\  
-	DICK\,PAUL\,OUKO\,&\,SciencesPo\,Paris \\  
-	Marlies\,Hofmann\,&\,University\,of\,Amsterdam \\  
-	Anabella\,McElroy\,&\,Dual\,BA\,Sciences\,Po\,Paris/University\,of\,British\,Columbia \\  
-	Naomi\,Weiler\,&\,London\,School\,of\,Economics\,and\,Political\,Science \\  
-	Dan\,Wu\,&\,Sciences\,Po\,Paris \\  
-	Cheng-Hao\,Shen\,&\,Sciences\,Po\,Paris  \\  
-	Jane\,Murutu\,&\,Project\,Management\,Consultant \\  
-	Henry\,Okwatch\,&\,Advocate\,of\,the\,High\,Court\,of\,Kenya \\  
-	Jule\,Scholten\,&\,Ruhr-Universität\,Bochum \\  
-	Carl\,Philip\,Dybwad\,&\,Sciences\,Po\,Paris \\  
-	Winrose\,Njuguna\,&\,Practising\,Advocate,\,Commercial\,\&\,Corporate\,Law \\  
-	Mascha\,Hotopp\,&\,Sciences\,Po\,Paris \\  
-	Helwan\,Felappi\,&\,Sciences\,Po\,Paris \\  
-	Cornelia\,Marie\,Dybwad\,&\,ESPOL\,Lille \\  
-	Andres\,Lopez\,Schrader\,&\,NYU\,Abu\,Dhabi \\  
-	Dorian\,Quelle\,&\,Zeppelin\,University \\  
-	Heman\,Asibuo\,&\,Cornell\,University \\  
-	Pablo\,Robles\,&\,Hochschule\,Fresenius \\  
-	Veronika\,Bartáková\,&\,London\,School\,of\,Economics\,and\,Political\,Science \\  
-	Melia\,Summers\,&\,new\,York\,University\,Abu\,Dhabi \\  
-	Tristan\,Brömsen\,&\,Zeppelin\,University \\  
-	Gabriela\,Franco\,Prieto\,&\,Sciences\,Po\,Paris \\  
-	Abhyudaya\,Tyagi\,&\,NYU\,Abu\,Dhabi \\  
-	Irene\,Kwon\,&\,Northwestern\,University \\  
-	Mats\,Jensen\,&\,Sciences\,Po\,Paris \\  
-	Eva\,Thorshaug\,&\,Sciences\,Po\,Paris \\  
-	Nida\,Hasan\,&\,Dual\,BA\,Sciences\,Po\,Paris/Columbia\,Universiity \\  
-	Anna\,Pustovoit\,&\,NYU\,Abu\,Dhabi \\  
-	Sheila\,mukoa\,&\,An\,Advocate\,of\,the\,High\,Court\,of\,Kenya \\  
-	Marius\,Deierl\,&\,LMU\,Munich \\  
-	Caress\,Schenk\,&\,Nazarbayev\,University \\  
-	Dan\,Downes\,&\,TUM\,Munich \\  
-	Charlotte\,Vorbauer\,&\,TUM\,Munich \\  
-	Felix\,Willuweit\,&\,London\,School\,of\,Economics\,and\,Political\,Science \\  
-	Mara\,Förster\,&\,Sciences\,Po\,Paris \\  
-	Victor\,Abuor\,&\,Kenyatta\,University \\  
-	Stella\,Dold\,&\,Fernuniversität\,Hagen \\  
-	Frank\,Yuxuan\,Sun\,&\,Technische\,Universität\,München \\  
-	Lisa\,Köhler\,&\,Lund\,University \\  
-	Joana\,Lencastre\,Morais\,&\,Technische\,Universität\,München \\  
-	Rebecca\,Beigel\,&\,Stiftung\,Neue\,Verantwortung \\  
-	Aarthi\,Ratnam\,&\,London\,School\,of\,Economics \\  
-	Aysina\,Maria\,&\,Technische\,Universität\,München \\  
-	Mehdi\,Bhouri\,&\,Technische\,Universität\,München \\  
-	Nikolina\,Klatt\,&\,Fernuniversität\,Hagen \\  
-	Beatrice\,Di\,Giulio\,&\,Technical\,University\,of\,Munich \\  
-	Lea\,Clara\,Frömchen-Zwick\,&\,Christian-Albrechts\,Universität\,zu\,Kiel \\  
-	Vida\,Han\,&\,Dual\,BA\,SciencesPo\,Paris\,/\,Columbia\,University \\  
-	Jakob\,Berg\,&\,Universität\,Regensburg \\  
-	Georgie\,Joy\,&\,TU\,München \\  
-\end{array}
-
+```{r echo= FALSE, results='asis'}
+library(knitr)
+library(readxl)
+contribution <- read_excel("data/contribution.xlsx")
+DT::datatable(contribution,
+          caption = 'Table of contributing researchers and responsible countries',
+          class = 'cell-border stripe', 
+          filter = 'top',
+          fillContainer = FALSE, 
+          options = list(pageLength = 50, 
+                         autoWidth = TRUE,
+                         dom = 'Bfrtip',
+                         scrollX = TRUE, 
+            selection="multiple"
+          ))
+```
+```
 
