@@ -1,7 +1,6 @@
 ---
 title: "CoronaNet Research Project: Tracking government responses towards COVID-19"
 author: "Cindy Cheng, Robert Kubinec, Luca Messerschmidt, Joan Barceló"
-date: "March 2020"
 output: 
   html_document:
     includes:
