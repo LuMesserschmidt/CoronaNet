@@ -5,30 +5,36 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ***
-# About the CoronaNet Project {-}
+# CoronaNet Research Group {-}
+
+
 The project group is organized and led by 
 
 
 + [Cindy Cheng](http://cindyyawencheng.com/)
 
++ [Joan Barcelo](https://sites.google.com/view/joanbarcelo/home?authuser=1)
+
++ [Allison Hartnett](http://www.allisonhartnett.io/)
+
 + [Robert Kubinec](http://www.robertkubinec.com/#about)
 
 + [Luca Messerschmidt ](https://lumesserschmidt.github.io/aboutme/)
 
-+ [Joan Barcelo](https://sites.google.com/view/joanbarcelo/home?authuser=1)
 
-# CoronaNet Research Group {-}
+***
 
 We are thankful for the amazing network of 120 scholars from social and political sciences, coming from all continents and speaking more than 30 different languages.
 
 ```{r echo= FALSE, results='asis'}
 library(knitr)
 library(readxl)
-contribution <- read_excel("data/contribution.xlsx")
+contribution <- readRDS("data/contribution.rds")
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
           filter = 'top',
+          escape= c(1,2,4,3),
           fillContainer = FALSE, 
           options = list(pageLength = 50, 
                          autoWidth = TRUE,

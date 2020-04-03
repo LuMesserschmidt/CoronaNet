@@ -88,7 +88,15 @@ We are grateful for the help of our Research Assistants, who are constantly work
 
 Aarthi Ratnam, Abhyudaya Tyagi, Adriana Poppe, Adyan Hasan, Alia ElKattan, Anabella McElroy, Andres Lopez Schrader, Angad Johar, Anna Pustovoit, Anna Sophia Körner, Antonia Pérez, Arianna Schouten, Aysina Maria, Barbora Bromová, Beatrice Di Giulio, Brian Chesney Quartey, Caress Schenk, Carl Philip Dybwad, Charlotte Vorbauer, Cheng-Hao Shen, Cornelia Marie Dybwad, Dan Downes, Dan Wu, Deborah Agboola, Dick Paul Ouko, Donia Kamel, Dorian Quelle, Elisa Seith, Emma Hutchinson, Eva Thorshaug, Eyza Hamdani, Farah Sadek, Felix Willuweit, Francis Yoon, Frank Yuxuan Sun, Frederic Denker, Gabriela Franco Prieto, Georgie Joy, Hafsa Ahmed, Helene Paul, Helwan Felappi, Helwan Felappi, Heman Asibuo, Henry Okwatch, Irene Kwon, Jack Kubinec, Jakob Berg, Jane Murutu, Janne Luise Piper, Joana Lencastre Morais, Jule Scholten, Julia Nassl, Julia Smakman, Karina Lisboa Båsund, Katharina Klaunig, Khoa Tran, Lea Clara Frömchen-Zwick, Lisa Köhler, Lya Cuéllar, Maheen Zahra, Mamle Akosua Kwao, Mara Förster, Marius Deierl, Marlies Hofmann, Mascha Hotopp, Mats Jensen, Matthew Cottrell, Matthew Hargreaves, Maximilian Dirks, Mehdi Bhouri, Melia Summers, Milan Chen, Miranda Tessore Janowski, Miriam Witte, Mirjam Muller, Moritz Wiegand, Muhannad Alramlawi, Museera Moghis, Naomi Weiler, Nicolas Göller, Nida Hasan, Niklas Illenseer, Nikolina Klatt, Noelle Kubinec, Oliver Weber, Ongun Durhan, Pablo Robles, Priyanshu Mishra, Raquel Karl, Rebecca Beigel, Sabrina Kirschner, Salma Soliman, Samantha Reinard, Sana Moghis, Sau Kan Chan, Sheila mukoa, Sobha Gadi, Sophia Tomany, Stella Dold, Tanja Matheis, Tess de Rooij, Tom Seiler, Tristan Brömsen, Ursela Barteczko, Vellah Kedogo Kigwiru, Veronika Bartáková, Victor Abuor, Vida Han, Winrose Njuguna, Yifei Zhu 
 
+***
+### Partner Universities {-}
 
-<img width="30%" src="TUM.png"/>
-<img width="30%" src="NYU.png"/>
+<img width="35%" src="img/TUM.jpg"/>
+<img width="30%" src="img/NYU.png"/>
+<img width="30%" src="img/yale.png"/>
 
+***
+### Partner Institutions {-}
+<div style="width:200px; height:150px">
+[![Starsift](img/starsift.png)](https://starsift.com/)
+</div>
