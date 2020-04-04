@@ -17,7 +17,7 @@ We have prepared the data in different formats:
 * Dyadic Dataset (country x country): [csv]() ; [rds]()
 
 
-Download the Codebook [here]().
+Download the Codebook [here](data/codebook/CoronaNet_Codebook.pdf).
 
 
 

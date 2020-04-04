@@ -29,7 +29,7 @@ We are thankful for the amazing network of 180 scholars from social and politica
 ```{r echo= FALSE, results='asis'}
 library(knitr)
 library(readxl)
-contribution <- readRDS("data/contribution.rds")
+contribution <- readRDS("data/people/contribution.rds")
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 

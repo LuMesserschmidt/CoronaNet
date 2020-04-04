@@ -62,7 +62,7 @@ The data will yield detailed information on
 ***
 ##  Feedback {-}
 
-CoronaNet is an ongoing research project and we aim to publish new data versions on a daily basis. The project is supervised by senior political scientists from NYU Abu Dhabi, TU Munich and Yale, and underlies high-standard validity and reliability checks. If you have any questions regarding the data or you find any inaccuracies, please contact us [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+CoronaNet is an ongoing research project and we aim to publish new data versions on a daily basis. The project is supervised by senior political scientists from NYU Abu Dhabi, TU Munich and Yale University, and underlies high-standard validity and reliability checks. If you have any questions regarding the data or you find any inaccuracies, please contact us [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
 ***
 
