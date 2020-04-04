@@ -1,4 +1,4 @@
-![](header.png)
+![](img/header.png)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -45,4 +45,4 @@ DT::datatable(contribution,
 ```
 ```
 
-![](header.png)
+![](img/header.png)

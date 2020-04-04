@@ -15,14 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 <!-- ```{js logo-js, echo=FALSE} -->
 
 <!-- $(document).ready(function() { -->
-<!--   $('#header').parent().prepend('<div id=\"logo\"><img src=\"logo_height.png"\" style=\"position:absolute; top:0; right:0; padding:20px; height:280px\"></div>'); -->
+<!--   $('#header').parent().prepend('<div id=\"logo\"><img src=\"img/logo_height.png"\" style=\"position:absolute; top:0; right:0; padding:20px; height:280px\"></div>'); -->
 <!--   $('#header').css('margin-right', '270px') -->
 <!-- }); -->
 <!-- ``` -->
 
 
 
-![](header.png)
+![](img/header.png)
 
 \renewcommand{\topfraction}{.85}
 \renewcommand{\bottomfraction}{.7}
@@ -77,10 +77,12 @@ You can download the dataset, codebook and working paper [here](https://forms.gl
 Please cite the project and dataset as:
 
 APA:
-Cheng, C., Barcelo, J., Hartnett, A., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. Version 1.0. https://www.coronanet-project.org
+
+Cheng, C., Barcelo, J., Hartnett, A. S., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. Version 1.0. https://www.coronanet-project.org
 
 Chicago: 
-Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, Version 1.0. https://www.coronanet-project.org.
+
+Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, Version 1.0. https://www.coronanet-project.org.
 
 
 

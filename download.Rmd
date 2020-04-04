@@ -21,4 +21,4 @@ Download the Codebook [here](data/codebook/CoronaNet_Codebook.pdf).
 
 
 
-![](header.png)
+![](img/header.png)
