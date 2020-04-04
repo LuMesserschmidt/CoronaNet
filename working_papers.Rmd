@@ -29,8 +29,7 @@ More specifically, the CoronaNet database collects data on government policy act
 In what follows, we describe in greater detail the methodology we employed to collect this data, a description of the data, and an application of the data [....] For more information on the exact variables collected, please reference the codebook [here].
 
 Citation: 
-Cheng, Cindy, Kubinec, Robert, & Messerschmidt, Luca, Barceló, Joan. (2020, April 02). CoronaNet - Tracking governments COVID-19 responses. Retrieved from 
-https://coronanet-project.org
+Cheng, C., Barcelo, J., Hartnett, A., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet — Tracking governments COVID-19 responses. https://www.coronanet-project.org
 
 Download working paper [here] (https://lumesserschmidt.github.io/CoronaNet/about.html).
 

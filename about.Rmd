@@ -24,7 +24,7 @@ The project group is organized and led by
 
 ***
 
-We are thankful for the amazing network of 120 scholars from social and political sciences, coming from all continents and speaking more than 30 different languages.
+We are thankful for the amazing network of 180 scholars from social and political sciences, coming from all continents and speaking more than 30 different languages.
 
 ```{r echo= FALSE, results='asis'}
 library(knitr)
