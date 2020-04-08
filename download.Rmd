@@ -6,15 +6,18 @@ title: 'Download CoronaNet Dataset'
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
 
+Please note that - given the exceptional times - we decided to release a ***BETA version*** of the dataset that has not undergone extensive validation and reliability checks. We aim to validate and improve the data day by day but can not assure full accuracy among the policies. 
+
+
 We have prepared the data in different formats: 
 
 * Long format (day by day since 01.01.2020): [csv]() ; [rds]()
 
 * Wide format (by country): [csv]() ; [rds]()
 
-* Categorical value for each policy: [csv]() ; [rds]()
+<!-- * Categorical value for each policy: [csv]() ; [rds]() -->
 
-* Dyadic Dataset (country x country): [csv]() ; [rds]()
+<!-- * Dyadic Dataset (country x country): [csv]() ; [rds]() -->
 
 
 Download the Codebook [here](data/codebook/CoronaNet_Codebook.pdf).

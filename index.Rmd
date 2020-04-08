@@ -36,7 +36,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The CoronaNet Research Project compiles a database on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. We aim to make the data publicly available to help move forward social science research on COVID-19.
 
-Together with 150 political and social science scholars from all over the world, we try to make government reactions and policies visible since the January 1st 2020.
+Together with 180 political, social amd public health science scholars from all over the world, we present an initial release of a large hand-coded dataset of more than 5,000 separate policy announcements from governments around the world visible since the January 1st 2020.
 
  
 
@@ -44,7 +44,7 @@ Together with 150 political and social science scholars from all over the world,
 
 # Detailed, multilevel, and dyadic data {-}
 
-The data will yield detailed information on 
+The data yields detailed information on 
 
 * The level of government responding to the corona virus crisis (e.g. national, regional/state, local/municipal) 
 
@@ -59,16 +59,13 @@ The data will yield detailed information on
 * Timing of policy responses.
 
 
-***
-##  Feedback {-}
 
-CoronaNet is an ongoing research project and we aim to publish new data versions on a daily basis. The project is supervised by senior political scientists from NYU Abu Dhabi, TU Munich and Yale University, and underlies high-standard validity and reliability checks. If you have any questions regarding the data or you find any inaccuracies, please contact us [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
-
-***
 
 ##  Data {-}
 
-You can download the dataset, codebook and working paper [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+Please note that - given the exceptional times - we decided to release a ***BETA version*** of the dataset that has not undergone extensive validation and reliability checks. We aim to validate and improve the data day by day but can not assure full accuracy among the policies. 
+
+You can download the BETA dataset, codebook [here](https://coronanet-project.org/download) and the working paper [here](https://coronanet-project.org/working_papers).
 
 ***
 
@@ -78,32 +75,46 @@ Please cite the project and dataset as:
 
 APA:
 
-Cheng, C., Barcelo, J., Hartnett, A. S., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. Version 1.0. https://www.coronanet-project.org
+Cheng, C., Barcelo, J., Hartnett, A. S., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. BETAVersion 1.0. https://www.coronanet-project.org
 
 Chicago: 
 
-Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, Version 1.0. https://www.coronanet-project.org.
+Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, BETAVersion 1.0. https://www.coronanet-project.org.
 
 
+***
+##  Feedback {-}
 
+CoronaNet is an ongoing research project and we aim to publish new data versions on a daily basis. The project is supervised by senior political scientists from NYU Abu Dhabi, TU Munich and Yale University, and underlies high-standard validity and reliability checks.
+If you have any questions regarding the data, you find any inaccuracies, or you want to become part of our network, please contact us [here](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+
+***
 
 
 ***
 ## Contributors {-}
 
-We are grateful for the help of our Research Assistants, who are constantly working on making the database more complete and up to date! For more information, click [here](https://lumesserschmidt.github.io/CoronaNet/about.html).
+We are grateful for the help of our Research Assistants, who are constantly working on making the database more complete and up to date! For more information, click [here](https://coronanet-project.org/about).
 
-Aarthi Ratnam, Abhyudaya Tyagi, Adriana Poppe, Adyan Hasan, Alia ElKattan, Anabella McElroy, Andres Lopez Schrader, Angad Johar, Anna Pustovoit, Anna Sophia Körner, Antonia Pérez, Arianna Schouten, Aysina Maria, Barbora Bromová, Beatrice Di Giulio, Brian Chesney Quartey, Caress Schenk, Carl Philip Dybwad, Charlotte Vorbauer, Cheng-Hao Shen, Cornelia Marie Dybwad, Dan Downes, Dan Wu, Deborah Agboola, Dick Paul Ouko, Donia Kamel, Dorian Quelle, Elisa Seith, Emma Hutchinson, Eva Thorshaug, Eyza Hamdani, Farah Sadek, Felix Willuweit, Francis Yoon, Frank Yuxuan Sun, Frederic Denker, Gabriela Franco Prieto, Georgie Joy, Hafsa Ahmed, Helene Paul, Helwan Felappi, Helwan Felappi, Heman Asibuo, Henry Okwatch, Irene Kwon, Jack Kubinec, Jakob Berg, Jane Murutu, Janne Luise Piper, Joana Lencastre Morais, Jule Scholten, Julia Nassl, Julia Smakman, Karina Lisboa Båsund, Katharina Klaunig, Khoa Tran, Lea Clara Frömchen-Zwick, Lisa Köhler, Lya Cuéllar, Maheen Zahra, Mamle Akosua Kwao, Mara Förster, Marius Deierl, Marlies Hofmann, Mascha Hotopp, Mats Jensen, Matthew Cottrell, Matthew Hargreaves, Maximilian Dirks, Mehdi Bhouri, Melia Summers, Milan Chen, Miranda Tessore Janowski, Miriam Witte, Mirjam Muller, Moritz Wiegand, Muhannad Alramlawi, Museera Moghis, Naomi Weiler, Nicolas Göller, Nida Hasan, Niklas Illenseer, Nikolina Klatt, Noelle Kubinec, Oliver Weber, Ongun Durhan, Pablo Robles, Priyanshu Mishra, Raquel Karl, Rebecca Beigel, Sabrina Kirschner, Salma Soliman, Samantha Reinard, Sana Moghis, Sau Kan Chan, Sheila mukoa, Sobha Gadi, Sophia Tomany, Stella Dold, Tanja Matheis, Tess de Rooij, Tom Seiler, Tristan Brömsen, Ursela Barteczko, Vellah Kedogo Kigwiru, Veronika Bartáková, Victor Abuor, Vida Han, Winrose Njuguna, Yifei Zhu 
+
+```{r echo= FALSE, results='asis'}
+library(knitr)
+library(readxl)
+contribution <- readRDS("data/people/contribution.rds")
+string = paste(contribution$Name, collapse = ", ")
+cat(string[1], "\n")
+
+```
+
 
 ***
 ### Partner Universities {-}
 
 <img width="35%" src="img/TUM.jpg"/>
 <img width="30%" src="img/NYU.png"/>
-<img width="30%" src="img/yale.png"/>
 
 ***
 ### Partner Institutions {-}
 <div style="width:200px; height:150px">
-[![Starsift](img/starsift.png)](https://starsift.com/)
+[![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
