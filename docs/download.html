@@ -376,7 +376,7 @@ div.tocify {
   <a href="analysis.html">Analysis</a>
 </li>
 <li>
-  <a href="visuals.html">Vizualization</a>
+  <a href="visuals.html">Visualization</a>
 </li>
 <li>
   <a href="working_papers.html">Working Papers</a>
@@ -416,16 +416,98 @@ div.tocify {
 </div>
 
 
-<p>Please note that - given the exceptional times - we decided to release a <strong><em>BETA version</em></strong> of the dataset that has not undergone extensive validation and reliability checks. We aim to validate and improve the data day by day but can not assure full accuracy among the policies.</p>
-<p>We have prepared the data in different formats:</p>
+<p>This <a href="https://github.com/saudiwin/corona_tscs">repository</a> contains data from the <a href="http://coronanet-project.org">CoronaNet data collection project</a> and also data and code to fit the model described in “A Retrospective Bayesian Model for Measuring Covariate Effects on Observed COVID-19 Test and Case Counts”, <a href="https://osf.io/preprints/socarxiv/jp4wk">link here</a>.</p>
+<p><strong>Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this Github page or fill out this <a href="https://forms.gle/2Zc5Rrdq9J43b7NR9">form</a>.</strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>CoronaNet Database BETA Version 1.0 (core)</strong></li>
+</ol>
+<p>This <a href="https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv">file</a> contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 140 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our <a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME">codebook here</a>.</p>
+<p>Download the BETA Version of the Core Dataset <a href="data/coronanet_release.csv">HERE</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>CoronaNet Database BETA Version 1.0 (extended)</strong></li>
+</ol>
+<p>This <a href="https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release_allvars.csv">file</a> contains the government response information from the core data along with the following datasets:</p>
 <ul>
-<li><p>Long format (day by day since 01.01.2020): <a href="">csv</a> ; <a href="">rds</a></p></li>
-<li><p>Wide format (by country): <a href="">csv</a> ; <a href="">rds</a></p></li>
+<li>Tests from the CoronaNet testing database (see <a href="http://coronanet-project.org" class="uri">http://coronanet-project.org</a> for more info);</li>
+<li>Cases/deaths/recovered from the JHU data repository (<a href="https://github.com/CSSEGISandData/COVID-19" class="uri">https://github.com/CSSEGISandData/COVID-19</a>);</li>
+<li>Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (<a href="https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse" class="uri">https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse</a>)</li>
 </ul>
-<!-- * Categorical value for each policy: [csv]() ; [rds]() -->
-<!-- * Dyadic Dataset (country x country): [csv]() ; [rds]() -->
-<p>Download the Codebook <a href="data/codebook/CoronaNet_Codebook.pdf">here</a>.</p>
+<p>Download the BETA Version of the Extended Dataset <a href="data/coronanet_release_allvars.csv">HERE</a></p>
+<hr />
+<div id="coronanet_release.csv-dictionary" class="section level3 unnumbered">
+<h3><code>coronanet_release.csv</code> Dictionary</h3>
+<ol style="list-style-type: decimal">
+<li><code>record_id</code> Unique identifier for each policy record</li>
+<li><code>entry_type</code> Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</li>
+<li><code>event_description</code> A short description of the policy change</li>
+<li><code>type</code> The category of the policy</li>
+<li><code>country</code> The country initiating the policy</li>
+<li><code>init_country_level</code> Whether the policy came from the national level or a sub-national unit</li>
+<li><code>index_prov</code> The ID of the sub-national unit</li>
+<li><code>target_country</code> Which foreign country a policy is targeted at (i.e. travel policies)</li>
+<li><code>target_geog_level</code> Whether the target of the policy is a country as a whole or a sub-national unit of that country</li>
+<li><code>target_who_what</code> Who the policy is targeted at</li>
+<li><code>recorded_date</code> When the record was entered into our data</li>
+<li><code>target_direction</code> Whether a travel-related policy affects people coming in (Inbound) or leaving (Outbound)</li>
+<li><code>travel_mechanism</code> If a travel policy, what kind of transportation it affects</li>
+<li><code>compliance</code> Whether the policy is voluntary or mandatory</li>
+<li><code>enforcer</code> What unit in the country is responsible for enforcement</li>
+<li><code>date_announced</code> When the policy goes into effect</li>
+<li><code>link</code> A link to at least one source for the policy</li>
+<li><code>ISO_A3</code> 3-digit ISO country codes</li>
+<li><code>ISO_A2</code> 2-digit ISO country codes</li>
+<li><code>severity_index_5perc</code> 5% posterior low estimate (i.e. lower bound of uncertainty interval) for severity index</li>
+<li><code>severity_index_median</code> posterior median estimate (point estimate) for severity index, which comes from a Bayesian latent variable model aggregating across policy types to measure country-level policy severity (see paper on our website)</li>
+<li><code>severity_index_5perc</code> 95% posterior high estimate (i.e. upper bound of uncertainty interval) for severity index</li>
+</ol>
+<hr />
+</div>
+<div id="coronanet_release_allvars.csv-dictionary" class="section level3 unnumbered">
+<h3><code>coronanet_release_allvars.csv</code> Dictionary</h3>
+<ol style="list-style-type: decimal">
+<li>All of the fields listed above, plus</li>
+<li><code>tests_daily_or_total</code> Whether a country reports the daily count of tests a cumulative total</li>
+<li><code>tests_raw</code> The number of reported tests collected from host country websites or media reports</li>
+<li><code>deaths</code> The number of COVID-19 deaths, aggregated to the country-day level (JHU CSSE data)</li>
+<li><code>confirmed_cases</code> The number of confirmed cases of COVID-19, aggregated to the country-day level (JHU CSSE data)</li>
+<li><code>recovered</code> The number of recoveries from COVID-19, aggregated to the country-day level (JHU CSSE data)</li>
+<li><code>ccode</code> The Correlates of War country code</li>
+<li><p><code>ifs</code> IMF IFS country code</p></li>
+<li><code>Rank_FP</code> (most recent year available from Niehaus dataset) Reporters without Borders Press Freedom Annual Ranking</li>
+<li><code>Score_FP</code> (most recent year available from Niehaus dataset) Reporters with Borders Press Freedom Score</li>
+<li><code>state_IDC</code> (most recent year available from Niehaus dataset) State/Provincial Governments Locally Elected</li>
+<li><code>muni_IDC</code> (most recent year available from Niehaus dataset) Municipal Governments Locally Elected</li>
+<li><code>dispersive_IDC</code> (most recent year available from Niehaus dataset) Dispersive Powersharing</li>
+<li><code>constraining_IDC</code> (most recent year available from Niehaus dataset) Constraining Powersharing</li>
+<li><code>inclusive_IDC</code> (most recent year available from Niehaus dataset) Inclusive powersharing</li>
+<li><code>sfi_SFI</code> (most recent year available from Niehaus dataset) State fragility index</li>
+<li><code>ti_cpi_TI</code> (most recent year available from Niehaus dataset) Corruption perceptions index</li>
+<li><code>pop_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank population</li>
+<li><code>gdp_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP (total)</li>
+<li><code>gdppc_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP per capita</li>
+<li><code>growth_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP growth percent</li>
+<li><code>lnpop_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank population</li>
+<li><code>lngdp_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank GDP</li>
+<li><code>lngdppc_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank GDP per capita</li>
+<li><code>disap_FA</code> (most recent year available from Niehaus dataset) 3 category, ordered variable for disappearances index</li>
+<li><code>polpris_FA</code> (most recent year available from Niehaus dataset) 3 category, ordered variable for political imprisonment index</li>
+<li><code>latentmean_FA</code> (most recent year available from Niehaus dataset) the posterior mean of the latent variable index for human rights protection)</li>
+<li><code>transparencyindex_HR</code> (most recent year available from Niehaus dataset) Transparency Index</li>
+<li><code>EmigrantStock_EMS</code> (most recent year available from Niehaus dataset) Total emmigrant stock from</li>
+<li><code>v2x_polyarchy_VDEM</code> (most recent year available from Niehaus dataset) Electoral democracy index</li>
+<li><p><code>news_WB</code> (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)</p></li>
+</ol>
+<p>Files to reproduce the paper “A Retrospective Bayesian Model for Measuring Covariate Effects” Data and Code {-}:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>corona_tscs_betab.stan</strong>: This Stan model contains a partially-identified model of COVID-19 that permits relative distinctions to be made between areas/countries/states’ infection rates. The parameter <code>num_infected_high</code> indexes the infection rate by time point and country. As the latent process is on the logit scale, it must be converted via the inverse-logit function to a proportion. However, the resulting estimate should not be interpreted as the total infected in a country, but rather a relative ranking of which countries/areas are the most infected up to the current time point.</p></li>
+<li><p><strong>corona_tscs_betab_scale.stan</strong>: This Stan model extends the partially-identified model with the 10% lower threshold for tests to infections ratio described in the paper. This model will produce an estimate for <code>num_infected_high</code> that when converted with the inverse-logit function will represent the proportion infected in a country conditional on the model’s prior concerning the tests to infections ratio.</p></li>
+<li><p><strong>kubinec_model_preprint.Rmd</strong>: A copy of the paper draft with embedded R code. You can access fitted Stan model objects to compile the paper here: <a href="https://drive.google.com/open?id=1cTCQTAjH8I-11jp3CEdIJZ0NaGRAn8dT" class="uri">https://drive.google.com/open?id=1cTCQTAjH8I-11jp3CEdIJZ0NaGRAn8dT</a>. Otherwise all Stan models must be re-fit to compile the paper. The process will take approximately 2 hours.</p></li>
+<li><p><strong>kubinec_model_SI.Rmd</strong>: This file contains an Rmarkdown file with embedded R code showing how to simulate the model. It is the supplementary information for the paper. See the compiled .pdf version as well.</p></li>
+<li><p><strong>data</strong>: The data folder contains CSVs of tests and cases for US states and other data that were used to fit the models in the paper.</p></li>
+<li><p><strong>BibTexDatabase.bib</strong>: This file contains the Bibtex bibliography for the paper.</p></li>
+</ol>
 <p><img src="img/header.png" /></p>
+</div>
 
 
 
