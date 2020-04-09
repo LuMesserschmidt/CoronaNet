@@ -111,6 +111,7 @@ cat(string[1], "\n")
 ### Partner Universities {-}
 
 <img width="35%" src="img/TUM.jpg"/>
+<img width="30%" src="img/TUM.png"/>
 <img width="30%" src="img/NYU.png"/>
 
 ***

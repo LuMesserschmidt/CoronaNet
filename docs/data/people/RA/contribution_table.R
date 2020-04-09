@@ -56,7 +56,7 @@ contribution<-  data[!duplicated(data$Name), ]
 
 
 
-library(xlsx)
+
 
 saveRDS(contribution,file="~/Documents/github/CoronaNet/data/people/contribution.rds")
 write_csv(contribution,"~/Documents/github/CoronaNet/data/people/contribution.csv")
@@ -69,7 +69,7 @@ house <- house %>%
   rename(Mail=1,
          House = 2)
 
-qualtrics <- readRDS("~/Documents/github/corona_tscs/data/coranaNetData_clean.rds")
+qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
 
 qualtrics <- qualtrics %>%
   select(18,12)%>%
