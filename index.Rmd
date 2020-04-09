@@ -36,7 +36,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The CoronaNet Research Project compiles a database on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. We aim to make the data publicly available to help move forward social science research on COVID-19.
 
-Together with 180 political, social amd public health science scholars from all over the world, we present an initial release of a large hand-coded dataset of more than 5,000 separate policy announcements from governments around the world visible since the January 1st 2020.
+Together with 180 political, social and public health science scholars from all over the world, we present an initial release of a large hand-coded dataset of more than 5,000 separate policy announcements from governments around the world visible since January 1st 2020.
 
  
 
@@ -54,7 +54,7 @@ The data yields detailed information on
 
 * Who or what they are targeting (e.g. foreigners, ventilators)
 
-* Compliance mechanisms (e.g., mandatory or voluntary) 
+* Compliance mechanisms (e.g. mandatory or voluntary) 
 
 * Timing of policy responses.
 
