@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -236,6 +235,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -373,12 +373,6 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="analysis.html">Analysis</a>
-</li>
-<li>
-  <a href="visuals.html">Vizualization</a>
-</li>
-<li>
   <a href="working_papers.html">Working Papers</a>
 </li>
 <li class="dropdown">
@@ -417,14 +411,16 @@ div.tocify {
 
 
 <hr />
-<p>The collection of the dataset was crowdsourced by X research assistants (RAs)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> from March 28, 2020 to XX XX, 2020, without whom this dataset would not exist, and who are still making ongoing efforts to collecting real-time data on government COVID-19 policy actions. Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>To collect the data, we recruited 188 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 5400 records as of the date of this article. Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>We have also partnered with the machine learning company Jataware to automate the collection of more than 200,000 news articles from around the world related to COVID-19.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Jataware employes a natural language processing (NLP) classifier using Bidirectional Encoder Representations from Transformers (BERT) to detect whether a given article is indicative of a governmental policy intervention related to COVID-19. They then apply a secondary NLP classifier to categorize the type of policy intervention (e.g. “state of emergency”, “shelter-in-place”, “quarantine”, “travel restrictions”, etc). Next, Jataware extracts the geospatial and temporal extent of the policy intervention (e.g. “Washington DC” and “March 15, 2020”) whenever possible. The resulting list of news sources is then provided to our RAs for manual coding and further data validation.</p>
 <p>As researchers learn more about the various health, economic, and social effects of the corona-virus pandemic, it is crucial that they have access to both reliable, valid, and timely data. We have adopted the following data collection methodology to ensure the availability of such data as rapidly as possible while still maintaining high standards of quality at every stage of the data collection process.</p>
 <div id="data-collection-software-instrument" class="section level2 unnumbered">
 <h2>Data Collection Software Instrument</h2>
 <p>To streamline the CoronaNet data collection effort, we designed a Qualtrics survey with survey questions about different aspects of a government policy action. With this tool, RAs can easily and efficiently document different policy actions by answering the relevant questions posed in the survey. For example, instead of entering the country that initiated a policy action into a spreadsheet, RAs answer the following question in the survey: “From what country does this policy originate from?” and choose from the available options given in the survey.</p>
-<p>By using a survey instrument to collect data, we are able to systemetize the collection of very fine-grained data. The value of this approach of course, depends on the comprehensiveness of the questions posed in the survey, especially in terms of the universe of policy actions that countries have implemented against COVID-19. For example, if the survey only allowed RAs to select ‘qurantines’ as a government policy, it would not capture any data on external border restrictions, which would seriously reduce the value of the resulting data.</p>
-<p>As such, to ensure the comprehensiveness of the data, before designing the survey, one of the PIs collected in depth, over-time data on policy actions taken by one country, Taiwan, since the beginning of the outbreak as well as cross-national data on travel bans implemented by most countries for a total of more than 450 events.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> We chose to focus on Taiwan on because of its relative success, as of March 28, 2020, in limiting the negative health consequences of the coronavirus within its borders.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> As such, it seems likely that other countries may choose to emulate some of the policy measures that Taiwan had implemented, which helps increase the comprehensiveness of the questions we ask in our survey. Meanwhile, by also investigating variation in how different countries around the world have implemented travel restrictions, we have also helped ensure that our survey is able to comprehensively document variation in how an important and commonly used policy tool is applied, e.g. restrictions of different methods of travel (e.g. flights, cruises), restrictions across borders and within borders, restrictions targeted toward people of different status (e.g. citizens, travelers). As a last step, the team also consulted the ACAPS COVID-19: Government Measures Dataset<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> to validate the comprehensiveness of the policy measures considered in the survey instrument.</p>
-<p>To further address concerns about the comprehensiveness of our data, the survey instrument also allows for a degree of flexibility in learning about new policies that we might not have considered when designing the survey with the use of text entry fields that allows RAs to choose ‘Other’ categories that. To date, X% of the the data has been coded as ‘Other’ suggesting that [….]. Please see the descriptive statistics in the Data section for more information.</p>
+<p>By using a survey instrument to collect data, we are able to systemetize the collection of very fine-grained data while avoiding coding errors common to tools like shared spreadsheets. The value of this approach of course, depends on the comprehensiveness of the questions posed in the survey, especially in terms of the universe of policy actions that countries have implemented against COVID-19. For example, if the survey only allowed RAs to select ‘quarantines’ as a government policy, it would not capture any data on external border restrictions, which would seriously reduce the value of the resulting data.</p>
+<p>As such, to ensure the comprehensiveness of the data, before designing the survey, one of the authors collected in depth, over-time data on policy actions taken by one country, Taiwan, since the beginning of the outbreak as well as cross-national data on travel bans implemented by most countries for a total of 245 events.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> We chose to focus on Taiwan on because of its relative success, as of March 28, 2020, in limiting the negative health consequences of the coronavirus within its borders.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> As such, it seems likely that other countries may choose to emulate some of the policy measures that Taiwan had implemented, which helps increase the comprehensiveness of the questions we ask in our survey. Meanwhile, by also investigating variation in how different countries around the world have implemented travel restrictions, we have also helped ensure that our survey is able to comprehensively document variation in how an important and commonly used policy tool is applied, e.g. restrictions of different methods of travel (e.g. flights, cruises), restrictions across borders and within borders, restrictions targeted toward people of different status (e.g. citizens, travelers).</p>
+<!-- As a last step, the team also consulted the ACAPS COVID-19: Government Measures Dataset^[https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset] to validate the comprehensiveness of the policy measures considered in the survey instrument.  -->
+<!-- To further address concerns about the comprehensiveness of our data, the survey instrument also allows for a degree of flexibility in learning about new policies that we might not have considered when designing the survey with the use of text entry fields that allows RAs to choose 'Other' categories that. To date, X% of the the data has been coded as 'Other' suggesting that [....]. Please see the descriptive statistics in the Data section for more information.  -->
 <p>There are many additional benefits of using a survey instrument for data collection, especially in terms of ensuring the reliability and validity of the resulting the data:</p>
 <ol style="list-style-type: decimal">
 <li><p>First, we reduce the likelihood of unforced measurement error. Because RAs can only document one policy action at a time in a given iteration of a survey and do not have access to the full spreadsheet when they are entering in the data, they are prevented from entering data into incorrect fields or unknowingly overwriting existing data, as would be possible with manual data entry into a spreadsheet.</p></li>
@@ -453,32 +449,28 @@ div.tocify {
 </div>
 <div id="real-time-communication-and-feedback" class="section level2 unnumbered">
 <h2>Real-Time Communication and Feedback</h2>
-<p>Once an RA joins the project, they can pose their questions on the CoronaNet Slack #ra-chat channel, which they must join in order to participate in the project. The channel allows any RA to pose a question or issue they may have in using the survey instrument to any of the PIs and allows all other RAs to learn from the exchange at the same time. As such, RAs are able to receive feedback and learn from each other’s questions in a timely and centralized manner.</p>
+<p>Once an RA joins the project, they can pose their questions on a CoronaNet Slack channel, which they must join in order to participate in the project. The channel allows any RA to pose a question or issue they may have in using the survey instrument to any of the PIs and allows all other RAs to learn from the exchange at the same time. As such, RAs are able to receive feedback and learn from each other’s questions in a timely and centralized manner.</p>
+<p>Since the data collection effort was launched on March 28, 2020 until April 6, 2020, both RAs and PIs have actively used Slack to communicate with on another. In particular, on the Slack channel devoted to asking questions about the Qualtrics survey, there were 1,091 messages posted by 108 project members. To provide a better sense of the level of activity on Slack, Figure @ref(fig:members) plots the number of project members who had logged into the Slack per day as well as the number of project members who posted at least one message per day and shows that participation and activity Slack has steadily grown over time and <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>.</p>
 </div>
 <div id="post-data-collection-validation-checks" class="section level2 unnumbered">
 <h2>Post-Data Collection Validation Checks</h2>
 <p>Lastly, we take the following steps in order to validate the quality of the resulting data collected:</p>
-<p>First, the PIs and other trained RAs validate the initial 10 entries for each new RA to ensure that RAs were entering the data in a consistent manner and when necessary, to provide feedback to RAs. Note, we require RAs (using the forced response option in Qualtrics) to upload a .pdf of the source(s) they used to code a particular policy which increases the efficiency of the validation process.</p>
-<p>Second, 10% of newly coded data by RAs who have already had at least 10 entries validated (see above) is sampled every day to check the validity of the data. Given the amount of data generated, we validate every survey response for 5% (that is half of the overall 10%) data. Meanwhile for the second 5% of the data, we check whether the following dimensions are correctly documented:</p>
-<ul>
-<li>The raw, qualitative description of the event</li>
-<li>The policy initiator</li>
-<li>The policy type</li>
-<li>The geographic policy target, if applicable</li>
-<li>The date the policy was implemented</li>
-</ul>
-<p>If an RA was found to have made a mistake, then we sample 5 entries which correspond to the type of mistake made (e.g. if the RA incorrectly codes an ‘External Border Restriction’ as a ‘Quarantine’, we sample 5 entries where the RA has coded a policy as being about a ‘Quarantine’) and randomly sample 5 more entries, to ascertain whether the mistake was systematic in nature or not.</p>
-<p>Our validation checks reveal that […]</p>
+<ol style="list-style-type: decimal">
+<li><p>First, we sample 10% of the dataset, using the source of the data (e.g. newspaper article, government press release) as our unit of randomization, to validate. We use the source as our unit of randomization because one source may detail many different policy types.</p></li>
+<li><p>Then we then provide these sources to RAs and ask them to code for the government policy based on these sources in a separate, but virtually identical survey instrument. If the source is in a language the RA cannot read, then a new source is drawn.</p></li>
+<li><p>We then check for discrepancies between the originally coded data and the second coding of the data in terms of both the number of policies coded and the content of what is coded. If there are no discrepancies, then we consider the data valid. If an RA was found to have made a mistake, then we sample X entries which correspond to the type of mistake made (e.g. if the RA incorrectly codes an ‘External Border Restriction’ as a ‘Quarantine’, we sample 5 entries where the RA has coded a policy as being about a ‘Quarantine’) and randomly sample X more entries, to ascertain whether the mistake was systematic in nature or not.</p></li>
+</ol>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://website_name.com" class="uri">http://website_name.com</a> <a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States. For a comprehensive list of which RAs were assigned to which country, please see the Appendix.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>The specific data source the PI cross referenced for this effort was the March 20, 2020 version of the following New York Times article Salcedo, Andrea and Gina Cherelus, “Coronavirus Travel Restrictions, Across the Globe” <em>New York Times</em>, 20 March 2020, <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html" class="uri">https://www.nytimes.com/article/coronavirus-travel-restrictions.html</a><a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>Beech, Hannah. “Tracking the Coronavirus: How Crowded Asian Cities Tackled an Epidemic.” <em>New York Times</em> 18 March 2020 <a href="https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html" class="uri">https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p><a href="https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset" class="uri">https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset</a><a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://coronanet-project.org/people" class="uri">http://coronanet-project.org/people</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country, please see the Appendix.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>We thank Brandon Rose and Jataware for making the news database available to this project.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>The specific data source the PI cross referenced for this effort was the March 20, 2020 version of the following New York Times article Salcedo, Andrea and Gina Cherelus, “Coronavirus Travel Restrictions, Across the Globe” <em>New York Times</em>, 20 March 2020, <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html" class="uri">https://www.nytimes.com/article/coronavirus-travel-restrictions.html</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Beech, Hannah. “Tracking the Coronavirus: How Crowded Asian Cities Tackled an Epidemic.” <em>New York Times</em> 18 March 2020 <a href="https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html" class="uri">https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html</a><a href="#fnref5" class="footnote-back">↩</a></p></li>
 <li id="fn6"><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeybAW0DC0UE1x2EqLiTifVFuSUxqJLGFB8VI4wVCG61tVYKg/viewform" class="uri">https://docs.google.com/forms/d/e/1FAIpQLSeybAW0DC0UE1x2EqLiTifVFuSUxqJLGFB8VI4wVCG61tVYKg/viewform</a><a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>Note, the dip in the overall trend corresponds to weekend days.<a href="#fnref7" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

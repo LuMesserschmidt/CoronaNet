@@ -94,18 +94,28 @@ If you have any questions regarding the data, you find any inaccuracies, or you 
 ***
 ## Contributors {-}
 
-We are grateful for the help of our Research Assistants, who are constantly working on making the database more complete and up to date! For more information, click [here](https://coronanet-project.org/about).
+We are grateful for the help of our Research Assistants, who are constantly working on making the database more complete and up to date!
 
 
 ```{r echo= FALSE, results='asis'}
 library(knitr)
 library(readxl)
 contribution <- readRDS("data/people/contribution.rds")
-string = paste(contribution$Name, collapse = ", ")
-cat(string[1], "\n")
-
+contribution <- dplyr::rename(contribution, Country = country)
+DT::datatable(contribution,
+          caption = 'Table of contributing researchers and their responsible countries',
+          class = 'cell-border stripe', 
+          filter = 'top',
+          escape= c(1,2,4,3),
+          fillContainer = FALSE, 
+          options = list(pageLength = 190, 
+                         autoWidth = TRUE,
+                         dom = 'Bfrtip',
+                         scrollX = TRUE, 
+            selection="multiple"
+          ))
 ```
-
+```
 
 ***
 ### Partner Universities {-}

@@ -22,10 +22,6 @@ navbar:
         href: download.html
       - text: "Methodology"
         href: methodology.html
-  - text: Analysis
-    href: analysis.html
-  - text: Visualization
-    href: visuals.html
   - text: Working Papers
     href: working_papers.html
   - text: About CoronaNet
