@@ -24,7 +24,7 @@ navbar:
         href: methodology.html
   - text: Analysis
     href: analysis.html
-  - text: Vizualization
+  - text: Visualization
     href: visuals.html
   - text: Working Papers
     href: working_papers.html
