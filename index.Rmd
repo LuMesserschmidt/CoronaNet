@@ -119,10 +119,12 @@ CoronaNet International Data Gathering Initiative on COVID-19 Testing is organiz
 
 We are thankful for the amazing network of 200 scholars from social, political, public health, and medical sciences, coming from all continents and speaking more than 30 different languages.
 
-```{r echo= FALSE, results='asis'}
+
+```{r echo= FALSE, results='asis', message=FALSE}
+library(readr)
+contribution <- read_csv("data/people/contribution.csv")
 library(knitr)
 library(readxl)
-contribution <- readRDS("data/people/contribution.rds")
 contribution <- dplyr::rename(contribution, Country = country)
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
