@@ -1,4 +1,4 @@
-
+<div style="text-align: justify"> 
 
 ## About This Repository
 
@@ -95,3 +95,6 @@ Files to reproduce the paper:
  4. **data**: The data folder contains CSVs of tests and cases for US states and other data that were used to fit the models in the paper. 
  
  5. **BibTexDatabase.bib**: This file contains the Bibtex bibliography for the paper.
+ 
+ 
+ </div>

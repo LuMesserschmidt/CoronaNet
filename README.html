@@ -373,12 +373,6 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="analysis.html">Analysis</a>
-</li>
-<li>
-  <a href="visuals.html">Visualization</a>
-</li>
-<li>
   <a href="working_papers.html">Working Papers</a>
 </li>
 <li class="dropdown">
@@ -388,9 +382,6 @@ div.tocify {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="about.html">People</a>
-    </li>
     <li>
       <a href="media.html">Media</a>
     </li>
@@ -415,12 +406,10 @@ div.tocify {
 </div>
 
 
-<div id="about-this-repository" class="section level2">
-<h2><span class="header-section-number">0.1</span> About This Repository</h2>
+<div style="text-align: justify">
+<h2 id="about-this-repository">About This Repository</h2>
 <p>This repository contains data from the <a href="http://coronanet-project.org">CoronaNet data collection project</a> and also data and code to fit the model described in “A Retrospective Bayesian Model for Measuring Covariate Effects on Observed COVID-19 Test and Case Counts”, <a href="https://osf.io/preprints/socarxiv/jp4wk">link here</a>. Following is first a list of data for the CoronaNet project, with data dictionary, and subsequently a list of files relevant to “A Retrospective Bayesian Model for Measuring Covariate Effects on Observed COVID-19 Test and Case Counts”.</p>
-</div>
-<div id="coronanet-data" class="section level1">
-<h1><span class="header-section-number">1</span> CoronaNet Data</h1>
+<h1 id="coronanet-data">CoronaNet Data</h1>
 <p>First, CoronaNet data releases:</p>
 <p><strong>Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this Github page.</strong></p>
 <ol style="list-style-type: decimal">
@@ -432,8 +421,7 @@ div.tocify {
 <li>Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (<a href="https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse" class="uri">https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse</a>)</li>
 </ol></li>
 </ol>
-<div id="coronanet_release.csv-field-dictionary" class="section level2">
-<h2><span class="header-section-number">1.1</span> <code>coronanet_release.csv</code> Field Dictionary</h2>
+<h2 id="coronanet_release.csv-field-dictionary"><code>coronanet_release.csv</code> Field Dictionary</h2>
 <ol style="list-style-type: decimal">
 <li><code>record_id</code> Unique identifier for each policy record</li>
 <li><code>entry_type</code> Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</li>
@@ -458,9 +446,7 @@ div.tocify {
 <li><code>severity_index_median</code> posterior median estimate (point estimate) for severity index, which comes from a Bayesian latent variable model aggregating across policy types to measure country-level policy severity (see paper on our website)</li>
 <li><code>severity_index_5perc</code> 95% posterior high estimate (i.e. upper bound of uncertainty interval) for severity index</li>
 </ol>
-</div>
-<div id="coronanet_release_allvars.csv-field-dictionary" class="section level2">
-<h2><span class="header-section-number">1.2</span> <code>coronanet_release_allvars.csv</code> Field Dictionary</h2>
+<h2 id="coronanet_release_allvars.csv-field-dictionary"><code>coronanet_release_allvars.csv</code> Field Dictionary</h2>
 <ol style="list-style-type: decimal">
 <li>All of the fields listed above, plus</li>
 <li><code>tests_daily_or_total</code> Whether a country reports the daily count of tests a cumulative total</li>
@@ -494,10 +480,7 @@ div.tocify {
 <li><code>v2x_polyarchy_VDEM</code> (most recent year available from Niehaus dataset) Electoral democracy index</li>
 <li><p><code>news_WB</code> (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)</p></li>
 </ol>
-</div>
-</div>
-<div id="a-retrospective-bayesian-model-for-measuring-covariate-effects-data-and-code" class="section level1">
-<h1><span class="header-section-number">2</span> A Retrospective Bayesian Model for Measuring Covariate Effects Data and Code</h1>
+<h1 id="a-retrospective-bayesian-model-for-measuring-covariate-effects-data-and-code">A Retrospective Bayesian Model for Measuring Covariate Effects Data and Code</h1>
 <p>Files to reproduce the paper:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>corona_tscs_betab.stan</strong>: This Stan model contains a partially-identified model of COVID-19 that permits relative distinctions to be made between areas/countries/states’ infection rates. The parameter <code>num_infected_high</code> indexes the infection rate by time point and country. As the latent process is on the logit scale, it must be converted via the inverse-logit function to a proportion. However, the resulting estimate should not be interpreted as the total infected in a country, but rather a relative ranking of which countries/areas are the most infected up to the current time point.</p></li>
