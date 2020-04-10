@@ -5,10 +5,12 @@ title: "Visualization"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 
 ***
 
 
-
-</div>

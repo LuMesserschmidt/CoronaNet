@@ -4,7 +4,11 @@ title: "Media"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 ***
 # Press Release {-}
 The Press releases can be found here
@@ -32,4 +36,3 @@ Any media and press related questions can also be asked via this [form](https://
 
 
 
-</div>

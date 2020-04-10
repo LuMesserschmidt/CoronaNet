@@ -407,7 +407,10 @@ div.tocify {
 </div>
 
 
-<div style="text-align: justify">
+<style>
+body {
+text-align: justify}
+</style>
 <p><br></p>
 <p><strong>Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this <a href="https://github.com/saudiwin/corona_tscs/issues">Github page</a> or fill out this <a href="https://forms.gle/2Zc5Rrdq9J43b7NR9">form</a>.</strong></p>
 <ol style="list-style-type: decimal">
@@ -426,7 +429,8 @@ div.tocify {
 </ul>
 <p>Download the BETA Version of the Extended Dataset <a href="data/coronanet_release_allvars.csv">HERE</a></p>
 <hr />
-<h3 id="coronanet_release.csv-dictionary" class="unnumbered"><code>coronanet_release.csv</code> Dictionary</h3>
+<div id="coronanet_release.csv-dictionary" class="section level3 unnumbered">
+<h3><code>coronanet_release.csv</code> Dictionary</h3>
 <ol style="list-style-type: decimal">
 <li><code>record_id</code> Unique identifier for each policy record</li>
 <li><code>entry_type</code> Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</li>
@@ -452,7 +456,9 @@ div.tocify {
 <li><code>severity_index_5perc</code> 95% posterior high estimate (i.e. upper bound of uncertainty interval) for severity index</li>
 </ol>
 <hr />
-<h3 id="coronanet_release_allvars.csv-dictionary" class="unnumbered"><code>coronanet_release_allvars.csv</code> Dictionary</h3>
+</div>
+<div id="coronanet_release_allvars.csv-dictionary" class="section level3 unnumbered">
+<h3><code>coronanet_release_allvars.csv</code> Dictionary</h3>
 <ol style="list-style-type: decimal">
 <li>All of the fields listed above, plus</li>
 <li><code>tests_daily_or_total</code> Whether a country reports the daily count of tests a cumulative total</li>

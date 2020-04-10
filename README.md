@@ -1,4 +1,7 @@
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
 
 ## About This Repository
 
@@ -97,4 +100,4 @@ Files to reproduce the paper:
  5. **BibTexDatabase.bib**: This file contains the Bibtex bibliography for the paper.
  
  
- </div>
+ 

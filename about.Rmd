@@ -3,7 +3,11 @@
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 ***
 # CoronaNet Research Group {-}
 
@@ -47,5 +51,3 @@ DT::datatable(contribution,
 ```
 
 ![](img/header.png)
-
-</div>

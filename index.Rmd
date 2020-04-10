@@ -30,7 +30,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ![](img/header_wide.png)
 
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 ***
 # Tracking government responses towards COVID-19 {-}
 #### by Joan Barceló, Cindy Cheng, Allison Hartnett, Robert Kubinec, Luca Messerschmidt {-}
@@ -146,5 +150,3 @@ DT::datatable(contribution,
 [![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
 
-
-</div>

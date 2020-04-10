@@ -5,7 +5,11 @@ title: 'Download CoronaNet Dataset'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 <br>
 
 **Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this [Github page](https://github.com/saudiwin/corona_tscs/issues) or fill out this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).**
@@ -96,4 +100,3 @@ Download the BETA Version of the Extended Dataset [HERE](data/coronanet_release_
 
 <br>
 ![](img/header.png)
-</div>

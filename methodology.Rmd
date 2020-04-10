@@ -6,7 +6,11 @@ title: "Methodology"
 knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 ```
 
-<div style="text-align: justify"> 
+<style>
+body {
+text-align: justify}
+</style>
+
 ***
 
 To collect the data, we recruited 188 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.^[For more information on the individual RAs, please visit http://coronanet-project.org/people]  Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 5400 records as of the date of this article. Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.^[Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country, please see the Appendix.]
@@ -75,4 +79,3 @@ Lastly, we take the following steps in order to validate the quality of the resu
 
 3. We then check for discrepancies between the originally coded data and the second coding of the data in terms of both the number of policies coded and the content of what is coded. If there are no discrepancies, then we consider the data valid. If an RA was found to have made a mistake, then we  sample X entries which correspond to the type of mistake made (e.g. if the RA incorrectly codes an 'External Border Restriction' as a 'Quarantine', we sample 5 entries where the RA has coded a policy as being about a 'Quarantine') and randomly sample X more entries, to ascertain whether the mistake was systematic in nature or not. 
 
-</div>
