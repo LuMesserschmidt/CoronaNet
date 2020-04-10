@@ -37,8 +37,17 @@ text-align: justify}
 
 ***
 # Tracking government responses towards COVID-19 {-}
-#### by Joan Barceló, Cindy Cheng, Allison Hartnett, Robert Kubinec, Luca Messerschmidt {-}
 ***
+
+<br>
+
+Please note that - given the exceptional times - we decided to release a ***BETA version*** of the dataset that has not undergone extensive validation and reliability checks. We aim to validate and improve the data day by day but can not assure full accuracy among the policies. 
+
+You can **download the BETA dataset** and codebook [here](https://coronanet-project.org/download).
+
+For further information on the methodology and analyses please download our **working paper** [here](https://coronanet-project.org/working_papers).
+
+*** 
 
 The **CoronaNet Research Project** compiles a database on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it.
 
@@ -58,15 +67,8 @@ The data yields detailed information on
 
 * Timing of policy responses.
 
-<br><br>
+<br>
 
-##  Data Download {-}
-
-Please note that - given the exceptional times - we decided to release a ***BETA version*** of the dataset that has not undergone extensive validation and reliability checks. We aim to validate and improve the data day by day but can not assure full accuracy among the policies. 
-
-You can **download the BETA dataset** and codebook [here](https://coronanet-project.org/download).
-
-For further information on the methodology and analyses please download our **working paper** [here](https://coronanet-project.org/working_papers).
 
 ***
 
@@ -86,7 +88,7 @@ If you have any questions regarding the data, you find any inaccuracies, or you 
 
 
 ***
-# CoronaNet Research Group {-}
+## CoronaNet Research Group {-}
 
 
 The project is organized and led by:
