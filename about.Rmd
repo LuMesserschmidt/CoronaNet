@@ -3,6 +3,10 @@
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<style>
+body {
+text-align: justify}
+</style>
 
 ***
 # CoronaNet Research Group {-}

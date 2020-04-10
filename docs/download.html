@@ -373,12 +373,6 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="analysis.html">Analysis</a>
-</li>
-<li>
-  <a href="visuals.html">Visualization</a>
-</li>
-<li>
   <a href="working_papers.html">Working Papers</a>
 </li>
 <li class="dropdown">
@@ -388,9 +382,6 @@ div.tocify {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="about.html">People</a>
-    </li>
     <li>
       <a href="media.html">Media</a>
     </li>
@@ -416,8 +407,12 @@ div.tocify {
 </div>
 
 
-<p>This <a href="https://github.com/saudiwin/corona_tscs">repository</a> contains data from the <a href="http://coronanet-project.org">CoronaNet data collection project</a> and also data and code to fit the model described in “A Retrospective Bayesian Model for Measuring Covariate Effects on Observed COVID-19 Test and Case Counts”, <a href="https://osf.io/preprints/socarxiv/jp4wk">link here</a>.</p>
-<p><strong>Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this Github page or fill out this <a href="https://forms.gle/2Zc5Rrdq9J43b7NR9">form</a>.</strong></p>
+<style>
+body {
+text-align: justify}
+</style>
+<p><br></p>
+<p><strong>Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this <a href="https://github.com/saudiwin/corona_tscs/issues">Github page</a> or fill out this <a href="https://forms.gle/2Zc5Rrdq9J43b7NR9">form</a>.</strong></p>
 <ol style="list-style-type: decimal">
 <li><strong>CoronaNet Database BETA Version 1.0 (core)</strong></li>
 </ol>
@@ -497,16 +492,7 @@ div.tocify {
 <li><code>v2x_polyarchy_VDEM</code> (most recent year available from Niehaus dataset) Electoral democracy index</li>
 <li><p><code>news_WB</code> (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)</p></li>
 </ol>
-<p>Files to reproduce the paper “A Retrospective Bayesian Model for Measuring Covariate Effects” Data and Code {-}:</p>
-<ol style="list-style-type: decimal">
-<li><p><strong>corona_tscs_betab.stan</strong>: This Stan model contains a partially-identified model of COVID-19 that permits relative distinctions to be made between areas/countries/states’ infection rates. The parameter <code>num_infected_high</code> indexes the infection rate by time point and country. As the latent process is on the logit scale, it must be converted via the inverse-logit function to a proportion. However, the resulting estimate should not be interpreted as the total infected in a country, but rather a relative ranking of which countries/areas are the most infected up to the current time point.</p></li>
-<li><p><strong>corona_tscs_betab_scale.stan</strong>: This Stan model extends the partially-identified model with the 10% lower threshold for tests to infections ratio described in the paper. This model will produce an estimate for <code>num_infected_high</code> that when converted with the inverse-logit function will represent the proportion infected in a country conditional on the model’s prior concerning the tests to infections ratio.</p></li>
-<li><p><strong>kubinec_model_preprint.Rmd</strong>: A copy of the paper draft with embedded R code. You can access fitted Stan model objects to compile the paper here: <a href="https://drive.google.com/open?id=1cTCQTAjH8I-11jp3CEdIJZ0NaGRAn8dT" class="uri">https://drive.google.com/open?id=1cTCQTAjH8I-11jp3CEdIJZ0NaGRAn8dT</a>. Otherwise all Stan models must be re-fit to compile the paper. The process will take approximately 2 hours.</p></li>
-<li><p><strong>kubinec_model_SI.Rmd</strong>: This file contains an Rmarkdown file with embedded R code showing how to simulate the model. It is the supplementary information for the paper. See the compiled .pdf version as well.</p></li>
-<li><p><strong>data</strong>: The data folder contains CSVs of tests and cases for US states and other data that were used to fit the models in the paper.</p></li>
-<li><p><strong>BibTexDatabase.bib</strong>: This file contains the Bibtex bibliography for the paper.</p></li>
-</ol>
-<p><img src="img/header.png" /></p>
+<p><br> <img src="img/header.png" /></p>
 </div>
 
 

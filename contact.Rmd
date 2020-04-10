@@ -5,31 +5,33 @@ title: "Contact"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-For English and German inquiries:
+<div style="text-align: justify"> 
 
-Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de | Richard-Wagner-Street 1 | 80333 Munich, Germany
+Please feel free to contact any of the PIs by using this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
 
-Chinese:
 
-Cindy Cheng | Hochschule für Politik at the TU Munich | cindy.cheng @ hfp.tum.de | Richard-Wagner-Street 1 | 80333 Munich, Germany
+**English and German:**
 
-Spanish:
+Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de 
+
+**Chinese**
+
+Cindy Cheng | Hochschule für Politik at the TU Munich | cindy.cheng @ hfp.tum.de 
+
+**Spanish**
 
 Joan Barceló | Social Science Division, New York University – Abu Dhabi | joan.barcelo @ nyu.edu
 
-
-Arabic: 
+**Arabic** 
 
 Robert Kubinec | Social Science Division, New York University – Abu Dhabi | rmk7 @ nyu.edu
 
 
-Any media and press related questions can also be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+***
 
-
-# Disclaimer for CoronaNet {-}
+### Disclaimer for CoronaNet {-}
 
 If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at  luca.messerschmidt @ hfp.tum.de.
-
 
 All the information on this website is published in good faith and for general information purpose only. CoronaNet does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website, is strictly at your own risk. will not be liable for any losses and/or damages in connection with the use of our website.
 
@@ -37,10 +39,12 @@ From our website, you can visit other websites by following hyperlinks to such e
 
 Please be also aware that when you leave our website, other sites may have different privacy policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their "Terms of Service" before engaging in any business or uploading any information.
 
-## Consent {-}
+### Consent {-}
 
 By using our website, you hereby consent to our disclaimer and agree to its terms.
 
-## Update {-}
+### Update {-}
 
 Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+
+</div>

@@ -27,8 +27,6 @@ navbar:
   - text: About CoronaNet
     href: about.html
     menu:
-      - text: "People"
-        href: about.html
       - text: "Media"
         href: media.html
       - text: "Contact"

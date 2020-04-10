@@ -37,18 +37,34 @@ c<-b[!is.na(b$Name),]
 
  data<-c %>%
   group_by(Name) %>% 
-  mutate(country = paste0(Country, collapse = ", ")) 
+  mutate(country = paste0(Country, collapse = ", "))
  
  data <- data[,-1]
 
  data<- setcolorder(data, c(1,3,5,4))
+ 
+ testing<- read_excel("testing.xlsx")
+ data<- bind_rows(data,testing)
+ 
+ 
+ data<-data.append(testing)
+ data<-data.frame(data)
  qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
  
  
  qualtrics<- sort(unique(qualtrics$ra_name))
 
  
- qualtrics<- append(qualtrics,c("Beatrice von Braunschweig","Lily Zandstra","Luise Modrakowski","Ricardo Buitrago"))
+ qualtrics<- append(qualtrics,c("Beatrice von Braunschweig",
+                                "Lily Zandstra",
+                                "Luise Modrakowski",
+                                "Ricardo Buitrago",
+                                "Sana Moghis",
+                                "Elliot Weir",
+                                "Kojo Vandyck",
+                                "Li Cheng",
+                                "Ha-Neul Yu",
+                                "Josef Montag"))
  
  qualtrics
  data<-data[data$Name%in%qualtrics,]
@@ -92,7 +108,10 @@ contribution[which(contribution$Name=="Victor Abuor"),"Vita"]  = "A data-driven 
 
 
 saveRDS(contribution,file="~/Documents/github/CoronaNet/data/people/contribution.rds")
+
 write_csv(contribution,"~/Documents/github/CoronaNet/data/people/contribution.csv")
+
+write_csv(contribution,"~/Documents/github/corona_tscs/data/CoronaNet/People/contribution.csv")
 
 ##Hogwarts
 house <- read_csv("~/Downloads/CoronaNet House Sign Up 2.csv")
