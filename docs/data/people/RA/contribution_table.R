@@ -6,7 +6,7 @@ library(readxl)
 library(tidyverse)
 library(data.table)
 
-form<- read_csv("CoronaNet Research Assistant Form  .csv")
+form<- read_csv("CoronaNet Research Assistant Form.csv")
 form<-form[,c(2,3)]
 form<- form %>%
   rename("Name" = 1,
@@ -46,6 +46,9 @@ c<-b[!is.na(b$Name),]
  
  
  qualtrics<- sort(unique(qualtrics$ra_name))
+
+ 
+ qualtrics<- append(qualtrics,c("Beatrice von Braunschweig","Lily Zandstra","Luise Modrakowski","Ricardo Buitrago"))
  
  qualtrics
  data<-data[data$Name%in%qualtrics,]
