@@ -56,6 +56,36 @@ c<-b[!is.na(b$Name),]
  
 contribution<-  data[!duplicated(data$Name), ]
 
+contribution[which(contribution$Name=="Adriana Poppe"),"Affiliation"]  = "University of Cologne"
+contribution[which(contribution$Name=="Adriana Poppe"),"Vita"]  = "Master Student of Sociology and Social Research at the Universtiy of Cologne"
+contribution[which(contribution$Name=="Andreas Duncan"),"Vita"]  = "Andy is an undergraduate student in Sustainable Regional Management."
+contribution[which(contribution$Name=="Cara Kim"),"Vita"]  = "Medical student from Germany"
+contribution[which(contribution$Name=="Caress Schenk"),"Vita"]  = "Associate Professor of Political Science"
+contribution[which(contribution$Name=="Cheng-Hao SHEN"),"Vita"]  = "A political science student interested in comparative government, British politics, and cross-strait relations from the Republic of China"
+contribution[which(contribution$Name=="Fabio Kadner"),"Vita"]  = "I'm currently writing my master thesis in the programme 'Society, Globalization, Development' at the university of Bonn, Germany. My main research topics include migration, religion and international relations."
+contribution[which(contribution$Name=="Fadhilah Fitri Primandari"),"Vita"]  = "Final year political science student at Universitas Indonesia, with a concentration in comparative politics. Her views on Indonesian politics have previously appeared on several notable platforms, such as East Asia Forum, New Mandala, and The Diplomat."
+contribution[which(contribution$Name=="Imogen Rickert"),"Affiliation"]  = "Policy Advisor in non-profit sector"
+contribution[which(contribution$Name=="Imogen Rickert"),"Vita"]  = "Social researcher with M.A. in Sociology from Freie Universität Berlin, B.A. from the University of Sydney and experience in providing policy analysis in the non-profit sector."
+contribution[which(contribution$Name=="Ines Böhret"),"Affiliation"]  = "University of Manchester, University of Passau"
+contribution[which(contribution$Name=="Ines Böhret"),"Vita"]  = "Ines has a B.A. in International Emergency and Disaster Relief and currently writes her theses for a M.Sc. in Global Health and a M.A. in Caritas Science and Value-based Management."
+contribution[which(contribution$Name=="Jasmina Sowa"),"Vita"]  = "I am Psychology student from Germany in the fourth year of my bachelors degree."
+contribution[which(contribution$Name=="Konstanze Schönfeld"),"Vita"]  = "Global Studies student at Uni Leipzig / Fudan University, focusing on visa policy; BA in Japanese Studies from Uni Heidelberg"
+contribution[which(contribution$Name=="Lena Kolb"),"Vita"]  = "I study in 4th Semester of political science at TUM"
+contribution[which(contribution$Name=="Maheen Zahra"),"Affiliation"]  = "Lecturer, Social Policy specialist"
+contribution[which(contribution$Name=="Maheen Zahra"),"Vita"]  = "Lecturer at the Department of Development Studies, National University of Science and Technology (NUST), Pakistan"
+contribution[which(contribution$Name=="Maximilian Dirks"),"Vita"]  = "I am studying Economic Policy Consulting M.Sc. at the University of Bochum."
+contribution[which(contribution$Name=="Miranda Tessore Janowski"),"Vita"]  = "I am a graduate of Politics, Psychology, Law and Economics (PPLE) with a specialisation in International Law from the University of Amsterdam, where I graduated with an Upper 2:1. I currently live in London and will start a Master's in International Peace and Security at King's College London in September 2020."
+contribution[which(contribution$Name=="Sana Moghis"),"Vita"]  = "I am a young doctor who has just graduated from Shifa College of Medicine. Passionate about developing a career in Critical Care and exploring methods that revolutionalize modern healthcare."
+contribution[which(contribution$Name=="Tanja Matheis"),"Vita"]  = "PhD candidate, Friedrich Ebert Foundation Fellow, writer and consultant with a background in economics, passionate about decent work in supply chains."
+contribution[which(contribution$Name=="Veronika Bartáková"),"Vita"]  = "I am a student at the London School of Economics and Political Science, pursuing an MSc in Theory & History of International Relations. I am passionate about research, data, public policy and I am very excited to be a part of this project."
+contribution[which(contribution$Name=="Victor Abuor"),"Affiliation"]  = "Kenyatta University"
+contribution[which(contribution$Name=="Victor Abuor"),"Vita"]  = "A data-driven young professional passionate in research, data analysis and presentation."
+
+
+
+
+
+
 
 
 
