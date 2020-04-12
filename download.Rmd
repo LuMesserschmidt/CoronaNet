@@ -29,8 +29,9 @@ This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/c
   + Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
   + Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)
 
-Download the BETA Version of the Extended Dataset [HERE](data/coronanet_release_allvars.csv)
+Download the CSV BETA Version of the Extended Dataset [HERE](data/coronanet_release_allvars.csv)
 
+Download the XLSX BETA Version of the Extended Dataset [HERE](data/coronanet_release_excel.xlsx)
 
 
 
