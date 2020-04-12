@@ -21,7 +21,7 @@ Citation:
 Cheng, C., Barcelo, J., Hartnett, A., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet Government Response Database: A Dyadic, Hand-Coded Dataset of World-wide Responses to the COVID-19 Pandemic. https://www.coronanet-project.org
 
 
-**Download the working paper [here](data/Working_Paper/corona_wp.pdf).**
+**Download the working paper [here](https://osf.io/preprints/socarxiv/dkvxy/).**
 
 ***
 
