@@ -1,4 +1,4 @@
-name: my-website
+name: CoronaNet
 output:
   html_document:
     css: style.css
@@ -22,6 +22,8 @@ navbar:
         href: download.html
       - text: "Methodology"
         href: methodology.html
+  - text: Visualizations
+    href: visuals.html
   - text: Working Papers
     href: working_papers.html
   - text: About CoronaNet
