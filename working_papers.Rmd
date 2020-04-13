@@ -13,12 +13,12 @@ text-align: justify}
 
 ***
 
-## CoronaNet Government Response Database: A Dyadic, Hand-Coded Dataset of World-wide Responses to the COVID-19 Pandemic {-}
+## CoronaNet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic {-}
 
 In this paper we present an initial release of a large hand-coded dataset of more than 5,000 separate policy announcements from governments around the world. The data are being made publicy available, in combination with COVID-19 testing data and country-level covariates. Due to the speed of the COVID-19 outbreak, we will be releasing this data on a daily basis with a 5-day lag for record validity checking. We believe this to be one of the largest and fastest manual data collection projects to date in political science, employing more than 150 research assistants across 18 time zones and making use of cloud-based managerial and data collection technology in addition to machine learning coding of news sources. We analyze the dataset with a Bayesian time-varying ideal point model showing the quick acceleration of more harsh policies across countries beginning in mid-March and continuing to the present. While some relatively low-cost policies like task forces and health monitoring began early, countries generally adopted more harsh measures within a narrow time window, giving indication of strong policy diffusion effects.
 
 Citation: 
-Cheng, C., Barcelo, J., Hartnett, A., Kubinec, R., & Messerschmidt, L. (2020). CoronaNet Government Response Database: A Dyadic, Hand-Coded Dataset of World-wide Responses to the COVID-19 Pandemic. https://www.coronanet-project.org
+Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” SocArXiv. April 12. doi:10.31235/osf.io/dkvxy.
 
 
 **Download the working paper [here](https://osf.io/preprints/socarxiv/dkvxy/).**

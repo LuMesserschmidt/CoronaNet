@@ -76,7 +76,8 @@ The data yields detailed information on
 
 Please cite the project and dataset as:
 
-Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, BETAVersion 1.0. https://www.coronanet-project.org.
+Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” BETAVersion 1.0. https://www.coronanet-project.org.
+
 
 
 ***
