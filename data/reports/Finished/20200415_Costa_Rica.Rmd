@@ -12,6 +12,10 @@ output: distill::distill_article
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+<style>
+body {
+text-align: justify}
+</style>
 
 ## National Measures
 Costa Rica, the country with the lowest fatality rate in the region, has been working hard since day one, creating and implementing policies that can be adopted and sustained in the mid-long term to battle the COVID-19. For instance, the Costa Rican government guaranteed that it would act with the World Health Organization, asking them to supervise the actions that have been taken by the government of Nicaragua. Because of not being taken any health prevention to stop the virus from being spreading. ^[https://www.bbc.com/mundo/noticias-america-latina-52225188] In response to the situation, the Costa Rican government close its borders by the COVID-19, but also suspended its policy of opening it to refugees from Nicaragua that are trying to reach the United States from its border with Panama as it will avoiding crows during the pandemic. This policy, among other restrictions that have been implementing, is proving the positive results obtained from the government. 
