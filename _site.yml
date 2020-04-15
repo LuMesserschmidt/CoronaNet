@@ -24,6 +24,11 @@ navbar:
         href: methodology.html
   - text: Visualizations
     href: visuals.html
+  - text: Country Reports
+    href: reports.html
+    menu:
+      - text: "Costa Rica"
+        href: data/reports/finished/20200415_Costa_Rica.html
   - text: Working Papers
     href: working_papers.html
   - text: About CoronaNet
