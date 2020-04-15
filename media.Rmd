@@ -13,17 +13,19 @@ text-align: justify}
 # Press Release {-}
 The Press releases can be found here
 
-+ [20200410_english](data/Press_release/CoronaNet_20200410_en.pdf)
++ [20200410_english](data/Press_release/Press_Release_20200415_en.pdf)
 
-+ [20200410_german](data/Press_release/CoronaNet_20200410_de.pdf)
++ [20200410_german](data/Press_release/Press_Release_20200415_de.pdf)
 
 <!-- + [20200401_arabic]() -->
 
-<!-- + [20200401_spanish]() -->
++ [20200401_spanish](data/Press_release/Press_Release_20200415_sp.pdf)
 
-<!-- + [20200401_chinese]() -->
++ [20200401_chinese modern](data/Press_release/Press_Release_20200415_ch.pdf)
 
-<!-- + [20200401_russian]() -->
++ [20200401_chinese traditional](data/Press_release/Press_Release_20200415_ch_traditional.pdf)
+
++ [20200401_russian](data/Press_release/Press_Release_20200415_ru.pdf)
 
 
 ***
