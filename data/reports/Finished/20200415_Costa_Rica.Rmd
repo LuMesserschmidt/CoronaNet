@@ -1,6 +1,6 @@
 ---
 title: "The Smart Response from the Costa Rican Government"
-description: Go back to the main site [here](https://coronanet-project.org/report)
+description: Go back to the main site [here](https://coronanet-project.org/)
 author:
   - name: Eduardo Landaeta 
     url: https://coronanet-project.org/report
