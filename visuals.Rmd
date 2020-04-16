@@ -9,8 +9,18 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 body {
 text-align: justify}
 </style>
-
-
 ***
+## Distribution Plot: Cumulative number of policies by type  {-}
+
+![](data/viz/viz_1.png)
+
+## Time Trend: Policy Activity Index {-}
+
+![](data/viz/viz_2.png)
+
+## Time Trend: Policy Activity Index (specific countries)  {-}
+
+![](data/viz/viz_3.jpeg)
+
 
 
