@@ -21,7 +21,7 @@ The Press releases can be found here
 
 + [20200401_spanish](data/Press_release/Press_Release_20200415_sp.pdf)
 
-+ [20200401_chinese modern](data/Press_release/Press_Release_20200415_ch.pdf)
++ [20200401_chinese simplified](data/Press_release/Press_Release_20200415_ch.pdf)
 
 + [20200401_chinese traditional](data/Press_release/Press_Release_20200415_ch_traditional.pdf)
 
