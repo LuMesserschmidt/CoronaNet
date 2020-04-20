@@ -98,7 +98,7 @@ The project is organized and led by:
 
 + [Cindy Cheng](http://cindyyawencheng.com/) (Hochschule für Politik at the TU Munich)
 
-+ [Allison Hartnett](http://www.allisonhartnett.io/) (Yale University)
++ [Allison Spencer Hartnett](http://www.allisonhartnett.io/) (Yale University)
 
 + [Robert Kubinec](http://www.robertkubinec.com/#about) (NYU Abu Dhabi)
 
