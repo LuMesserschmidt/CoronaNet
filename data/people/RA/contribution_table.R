@@ -118,7 +118,8 @@ contribution[which(contribution$Name=="Ricardo Buitrago"),"Affiliation"]  = "Uni
 contribution[which(contribution$Name=="Ricardo Buitrago"),"Vita"]  = "Head of the B.A. in International Business & Relations"
 contribution[which(contribution$Name=="Tess de Rooij"),"Affiliation"]  = "University of Amsterdam"
 contribution[which(contribution$Name=="Tess de Rooij"),"Vita"]  = "I hold a BSc in Politics, Psychology, Law & Economics (politics major, cum laude) from the University of Amsterdam. I've worked as a guest teacher and campaigner, and I'm currently deciding where to pursue my master's next year - next to assisting in the CoronaNet Research Project!"
-contribution[which(contribution$Name=="Samantha Reinard	"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
+contribution[which(contribution$Name=="Samantha Reinard"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
+contribution[which(contribution$Name=="Alexander Pachanov"),"Vita"]  = "Master's student at Berlin School of Public Health"
 
 contribution<- contribution[order(contribution$Name),]
 
