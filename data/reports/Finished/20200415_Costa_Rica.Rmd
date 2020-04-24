@@ -1,0 +1,44 @@
+---
+title: "The Smart Response from the Costa Rican Government"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Eduardo Landaeta 
+    url: https://twitter.com/orechie
+    affiliation: Doctoral Student in International Studies at Old Dominion University
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+## National Measures
+Costa Rica, the country with the lowest fatality rate in the region, has been working hard since day one, creating and implementing policies that can be adopted and sustained in the mid-long term to battle the COVID-19. For instance, the Costa Rican government guaranteed that it would act with the World Health Organization, asking them to supervise the actions that have been taken by the government of Nicaragua. Because of not being taken any health prevention to stop the virus from being spreading. ^[https://www.bbc.com/mundo/noticias-america-latina-52225188] In response to the situation, the Costa Rican government close its borders by the COVID-19, but also suspended its policy of opening it to refugees from Nicaragua that are trying to reach the United States from its border with Panama as it will avoiding crows during the pandemic. This policy, among other restrictions that have been implementing, is proving the positive results obtained from the government. 
+
+Among the policies the most important was made by the Costa Rican President on March 16 declaring National Emergency through an Executive decree 42227-MP-S.^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/decretos_cvd/decreto_ejecutivo_42227_mp_s_declaratoria_emergencia_nacional.pdf] Also, it has the restrictions of driving vehicles during daytime with different distribution plates (Executive decree 42285-MP-MOPT-S).^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/decretos_cvd/decreto_ejecutivo_numero_42285_mp_mopt_s.pdf]  and driving vehicles during nighttime to all types of plates (Executive decree 42284-MP-MOPT-S).^[ibid.] The closure of any transportation by air, sea, and land into all citizens and foreign in which Costa Rica close its border on March 26. However, those who have a temporary/permanent residency or citizenship of Costa Rica has been organizing humanitarian trips to bring them home where they must stay in isolation for 14 days. ^[https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm]
+
+There is no doubt that loopholes can appear; however, the results of the policies and restrictions implemented have been useful. Costa Rica has 579 people infected and three deceases up to date; it is the lowest fatality rate in all Latin America with 0.6%. ^[https://who.sprinklr.com/] Most of the cases have been the focus in San Jose (capital) with 49.7%  of the cases, and two near provinces, Alajuela 26.6% and Heredia with 9.8%. ^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/img_cvd/img_datos_marzo_2020_34.jpeg] Also, it was the first country in Central America to confirm a COVID-19 case. It is essential to address that since the 1970s, the Costa Rican government allows its citizens to have universal social security to health services. Additionally, for being one of the leaders and well know recognized for the health system could be the key that is lying on the response against the COVID-19. ^[https://www.bbc.com/mundo/noticias-america-latina-52225188] Furthermore, this could be the critical factor that is proving the rest of Central American countries the lowest level of fatalities, a good health system. On the other hand, it does not know any discontent among the Costa Rican populations related to the policies adopted by the government for the ongoing COVID-19. On the contrary, the policies adopted by the government have the intention of keeping the population safe and healthy. For instance, with the aims to help the population, the government put in action one of its policies referring to the tax moratoriums or a ban on water cuts, among other measures. 
+
+Regional Measures - "Central America united against the coronavirus."
+By March 12, with the initiative of the Honduras Pro Tempore Presidency and the Secretary-General at the Central America Integration System (SICA). It was held a meeting (virtual) to detect and implement cooperative and organized measures between the member's ^[Costa Rica, Panama, El Salvador, Nicaragua, Guatemala, Honduras, Belize, the Dominican Republic] of the integration system that complements the efforts that countries are making in common sense. The outcome was an announcement that recognized the steps of the joint action of its members to be prepared for the COVID-19. The plan is prepared to be a regional contingency plan intended to complement the national efforts for the deterrence, restraint, and treatment of COVID-19. Moreover, it was addressing the vital factor of the international cooperation management and the effortless communication on the output of the virus (number of cases, measures that have been effective in favor of stopping up the pandemic). Also, the actions on health and risk management, commerce, security, migration, among others that will help other countries of the region to understand and applied the necessary measures.^[https://www.sica.int/]
+
+
+## Methodology-Data
+The strategy adopted was the crossing of information provided by researching on governmental responses, newspapers, and conversations with locals. The data was submitted through the questionnaire provided by our leadership team that creates a crowd-sourcing hand-code data based on the online information collected through websites and emails for each of the research assistants.
+
+## Results
+The results of the research brought more than 50 articles, policies, news, conversations related to the COVID-19 in Costa Rica.
+
+## Recommendations
+For more accuracy on the results of the ongoing investigation, further research is encouraged to be made until the virus reaches its lowest level.
+
+
+  
+  
+
+

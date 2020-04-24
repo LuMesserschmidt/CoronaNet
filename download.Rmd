@@ -16,9 +16,9 @@ text-align: justify}
 
 1. **CoronaNet Database BETA Version 1.0 (core)**
 
-This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 140 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME).
+This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 140 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](data/codebook/CoronaNet_Codebook.pdf).
 
-Download the BETA Version of the Core Dataset [HERE](data/coronanet_release.csv)
+Download the BETA Version of the Core Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release.csv)
 
 
 2.  **CoronaNet Database BETA Version 1.0 (extended)** 
@@ -29,7 +29,7 @@ This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/c
   + Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
   + Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)
 
-Download the BETA Version of the Extended Dataset [HERE](data/coronanet_release_allvars.csv)
+Download the CSV BETA Version of the Extended Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release_allvars.csv)
 
 
 

@@ -1,0 +1,40 @@
+---
+title: "The Smart Response from the Costa Rican Government"
+description: Country Report
+author:
+  - name: Eduardo Landaeta 
+    url: https://coronanet-project.org/report
+    affiliation: Doctoral Student in International Studies at Old Dominion University
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Timeline of COVID-19 Measures**
+Costa Rica, the country with the lowest fatality rate in the region, has been working hard since day one, creating and implementing policies that can be adopted and sustained in the mid-long term to battle the COVID-19. To give just one example, the Costa Rican government guaranteed that it would act with the World Health Organization, asking them to supervise the actions that have been taken by the government of Nicaragua, which has not taken any actions to stop the virus from spreading^[https://www.bbc.com/mundo/noticias-america-latina-52225188]. In response to the growing pandemic, the Costa Rican government closed its borders to COVID-19, as well as refugees from Nicaragua that are trying to reach the United States from its border with Panama. This policy, among other restrictions that have been implementing, is seems to be underlying the positive results in the country. 
+
+Among the policies the most important was made by the Costa Rican President on March 16 declaring a national emergency through executive decree 42227-MP-S ^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/decretos_cvd/decreto_ejecutivo_42227_mp_s_declaratoria_emergencia_nacional.pdf]. Also, the government put in place restrictions of driving vehicles during the daytime with different distribution plates (Executive decree 42285-MP-MOPT-S)^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/decretos_cvd/decreto_ejecutivo_numero_42285_mp_mopt_s.pdf]  and driving vehicles during nighttime for all types of plates (Executive decree 42284-MP-MOPT-S)^[ibid.]. The closure of any transportation by air, sea, and land for all citizens and foreign  travelers occurred on March 26. However, those who have a temporary/permanent residency or citizenship of Costa Rica have been organizing humanitarian trips to bring them back to Costa Rica where they must stay in isolation for 14 days.^[https://www.iatatravelcentre.com/international-travel-document-news/1580226297.htm]  
+
+There is no doubt that loopholes can appear; however, the results of the policies and restrictions implemented have been useful. Costa Rica has 579 people infected and three dead so far; it is the lowest fatality rate in all Latin America with 0.6% ^[https://who.sprinklr.com/]. Most of the cases have been concentrated in San Jose (the capital) with 49.7%  of the cases, and two near provinces, Alajuela  at 26.6% and Heredia at 9.8% ^[https://www.ministeriodesalud.go.cr/sobre_ministerio/prensa/img_cvd/img_datos_marzo_2020_34.jpeg]. This is even more remarkable as Costa Rica was the first country in Central America to confirm a COVID-19 case. It is essential to note that, since the 1970s, the Costa Rican government has provided its citizens with universal social security and health services. Additionally, it is known as a leaders for its well-recognized health care system, which could be the key underlying its the response to COVID-19 ^[https://www.bbc.com/mundo/noticias-america-latina-52225188]. This could be the critical factor behind  its very low level of fatalities relative to other Central American countries. On the other hand, there does not yet seem to be any discontent among the Costa Rican population related to the policies adopted by the government vis-a-vis COVID-19. On the contrary, the policies adopted by the government appear to have the intention of keeping the population safe and healthy. In order to assist ordinary citizens, the government implemented a tax moratorium and a ban on water cuts, among other measures. 
+
+**Regional Measures - "Central America united against the coronavirus."**
+On March 12, at the initiative of the Honduras Pro Tempore Presidency and the Secretary-General at the Central America Integration System (SICA), a meeting was held virtually to decide on and implement cooperative and organized measures among the member states^[Costa Rica, Panama, El Salvador, Nicaragua, Guatemala, Honduras, Belize, the Dominican Republic] to create an integrated system that complements the efforts that countries are making individually. The outcome was an announcement that recognized the steps of the joint action of its members to be prepared for the COVID-19. The regional plan is a contingency plan intended to complement the national efforts for the deterrence, restraint, and treatment of COVID-19. Moreover, the plan addresses the vital factor of international cooperation management and effortless communication concerning the spread of the virus (number of cases and measures that have been effective in favor of stopping up the pandemic). Also, the agreement encourages the sharing of actions on health and risk management, commerce, security, migration, among others that will help other countries of the region to understand which measures work best.^[https://www.sica.int/].
+
+
+**Methodology-Data**
+The researcher examined information provided by official governmental sources, newspapers, and conversations with locals. All of the data was submitted via the CoronaNet to the hand-coded dataset covering countries around the world.
+
+**Results**
+The results of the research discovered more than 50 articles, policies, news, and conversations related to the COVID-19 in Costa Rica.
+
+**Recommendations**
+For more granularity on Costa Rica's response efforts, further research is encouraged to until the virus reaches is actually or effectively eliminated.
+
+
+  
+  
+
+

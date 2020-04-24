@@ -1,5 +1,5 @@
 ---
-title: 
+pagetitle: CoronaNet
 author: 
 output: 
   html_document:
@@ -76,7 +76,8 @@ The data yields detailed information on
 
 Please cite the project and dataset as:
 
-Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet - Tracking Governments COVID-19 Responses”, BETAVersion 1.0. https://www.coronanet-project.org.
+Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” BETAVersion 1.0. https://www.coronanet-project.org.
+
 
 
 ***
@@ -97,7 +98,7 @@ The project is organized and led by:
 
 + [Cindy Cheng](http://cindyyawencheng.com/) (Hochschule für Politik at the TU Munich)
 
-+ [Allison Hartnett](http://www.allisonhartnett.io/) (Yale University)
++ [Allison Spencer Hartnett](http://www.allisonhartnett.io/) (Yale University)
 
 + [Robert Kubinec](http://www.robertkubinec.com/#about) (NYU Abu Dhabi)
 
@@ -113,7 +114,7 @@ CoronaNet International Data Gathering Initiative on COVID-19 Testing is organiz
 
 + Josef Montag (Charles University)
 
-+ Sana Mughees (Shifa College of Medicine)
++ Sana Moghis (Shifa College of Medicine)
 
 
 

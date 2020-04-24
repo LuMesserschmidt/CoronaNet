@@ -17,9 +17,19 @@ library(xts)
 body {
 text-align: justify}
 </style>
-
-
 ***
+## Distribution Plot: Cumulative number of policies by type  {-}
+
+![](data/viz/viz_1.png)
+
+## Time Trend: Policy Activity Index {-}
+
+![](data/viz/viz_2.png)
+
+## Time Trend: Policy Activity Index (specific countries)  {-}
+
+![](data/viz/viz_3.jpeg)
+
 
 Given the enormous size of our data, we constructed a policy activity index that summarizes the different indicators in our data for each country for each day since Jan. 1st 2020. The index is produced using a statistical mdoel that takes into account which policies seem to be more costly/difficult to implement than other policies. For more details on the methodology, see our [working paper](https://osf.io/preprints/socarxiv/dkvxy/). The estimation is done with Stan and is updated daily. 
 

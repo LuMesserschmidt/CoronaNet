@@ -46,15 +46,12 @@ c<-b[!is.na(b$Name),]
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
- 
- data<-data.append(testing)
- data<-data.frame(data)
  qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
  
  
  qualtrics<- sort(unique(qualtrics$ra_name))
 
- 
+ qualtrics
  qualtrics<- append(qualtrics,c("Beatrice von Braunschweig",
                                 "Lily Zandstra",
                                 "Luise Modrakowski",
@@ -64,8 +61,17 @@ c<-b[!is.na(b$Name),]
                                 "Kojo Vandyck",
                                 "Li Cheng",
                                 "Ha-Neul Yu",
-                                "Josef Montag"))
- 
+                                "Josef Montag",
+                                "Alette Mengerink",
+                                "Bruno Ciccarini",
+                                "Borja Arrue-Astrain",
+                                "Eduardo Landaeta",
+                                "Fernanda Werneck",
+                                "Karina Lisboa Båsund",
+                                "Rosana Fayazzadh",
+                                "Tasia Wagner",
+                                "Victoria Atanasov"))
+
  qualtrics
  data<-data[data$Name%in%qualtrics,]
  data<- data[,-5]
@@ -96,8 +102,26 @@ contribution[which(contribution$Name=="Tanja Matheis"),"Vita"]  = "PhD candidate
 contribution[which(contribution$Name=="Veronika Bartáková"),"Vita"]  = "I am a student at the London School of Economics and Political Science, pursuing an MSc in Theory & History of International Relations. I am passionate about research, data, public policy and I am very excited to be a part of this project."
 contribution[which(contribution$Name=="Victor Abuor"),"Affiliation"]  = "Kenyatta University"
 contribution[which(contribution$Name=="Victor Abuor"),"Vita"]  = "A data-driven young professional passionate in research, data analysis and presentation."
+contribution[which(contribution$Name=="Chloë Fraser"),"Affiliation"]  = "Dual BA Sciences Po Paris/University of British Columbia"
+contribution[which(contribution$Name=="Chloë Fraser"),"Vita"]  = "Having grown up near Montreal and close to Brussels, I am now completing my second year in a Dual BA in social sciences between Sciences Po and UBC, and with an interest in human rights work and sustainable development."
+contribution[which(contribution$Name=="Daniel Boey"),"Affiliation"]  = "Hertie School & Columbia University"
+contribution[which(contribution$Name=="Raquel Karl"),"Affiliation"]  = "Zeppelin University"
+contribution[which(contribution$Name=="Raquel Karl"),"Vita"]  = "Undergraduate student in Sociology, Politics & Economics."
+contribution[which(contribution$Name=="Tasia Wagner"),"Affiliation"]  = " Institute for Islamic Strategic Affairs (IISA),  programme advisor & advisor to Executive Director"
+contribution[which(contribution$Name=="Alette Mengerink"),"Vita"]  = "Teacher (German and children’s rights)."
+contribution[which(contribution$Name=="Sana Moghis"),"Vita"]  = "I am a young doctor who has just graduated from Shifa College of Medicine. Passionate about developing a career in Critical Care and exploring methods that revolutionalize modern healthcare."
+contribution[which(contribution$Name=="Sana Moghis"),"country"]  = "Bangladesh, Nepal, Testing Data"
+contribution[which(contribution$Name=="Cheng-Hao SHEN"),"Affiliation"]  = "Sciences Po Paris"
+contribution[which(contribution$Name=="Kojo Vandyck"),"Affiliation"]  = "NYU Abu Dhabi"
+contribution[which(contribution$Name=="Kojo Vandyck"),"Vita"]  = "A Ghanaian STEM enthusiast keen on battling COVID-19!"
+contribution[which(contribution$Name=="Ricardo Buitrago"),"Affiliation"]  = "Universidad de La Salle Colombia"
+contribution[which(contribution$Name=="Ricardo Buitrago"),"Vita"]  = "Head of the B.A. in International Business & Relations"
+contribution[which(contribution$Name=="Tess de Rooij"),"Affiliation"]  = "University of Amsterdam"
+contribution[which(contribution$Name=="Tess de Rooij"),"Vita"]  = "I hold a BSc in Politics, Psychology, Law & Economics (politics major, cum laude) from the University of Amsterdam. I've worked as a guest teacher and campaigner, and I'm currently deciding where to pursue my master's next year - next to assisting in the CoronaNet Research Project!"
+contribution[which(contribution$Name=="Samantha Reinard"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
+contribution[which(contribution$Name=="Alexander Pachanov"),"Vita"]  = "Master's student at Berlin School of Public Health"
 
-
+contribution<- contribution[order(contribution$Name),]
 
 
 
@@ -114,7 +138,7 @@ write_csv(contribution,"~/Documents/github/CoronaNet/data/people/contribution.cs
 write_csv(contribution,"~/Documents/github/corona_tscs/data/CoronaNet/People/contribution.csv")
 
 ##Hogwarts
-house <- read_csv("~/Downloads/CoronaNet House Sign Up 2.csv")
+house <- read_csv("~/Downloads/CoronaNet House Sign Up 3.csv")
 
 house <- house %>%
   select(3,4)%>%

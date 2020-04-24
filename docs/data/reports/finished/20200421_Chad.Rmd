@@ -1,0 +1,36 @@
+---
+title: "Title"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Laureen Hannig 
+    affiliation: Student of International Relations and Communication Science at the University of Erfurt
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+## Country Report: Chad {-}
+The Chadian Government reacted quickly after the neighbour Cameroon had to cope with several cases of COVID-19. The first case in Chad was recognised on March 19. Already on March 18, the government closed airports for passengers and tried to control the borders, mostly to Cameroon. This closure was extended two times and is now extended until April 25.^[Tschadinfos. April 9th, 2020. Tschadinfos.com. https://tchadinfos.com/tchad/coronavirus-les-aeroports-du-tchad-resteront-fermes-jusquau-25-avril/]
+
+Eventhough Chad never had more than confirmed 50 cases, the restrictions were severe. Via Twitter, the president of Chad announced on March 24 that after just one infected Chadian all places of education, religious places, bars and restaurants will be closed due to the pandemic.^[Deby Itno, Idriss, March 24th, 2020. Twitter] Measures like prison inmate releases, the closure of weekly markets, the proscription of public transport followed shortly after.  Another measure was the enforcement of curfews in the capital N'Djamena and the regions of Logone Occidental, Logone Oriental, Mayo Kebbi Ouest and Mayo Kebbi Est. Most of them have a border to Cameroon. As of now (April 19) Chad declares 33 confirmed cases of the coronavirus and 0 death, which is compared to other countries not that much.^[Worldometers.info. April 19th, 2020. https://www.worldometers.info/coronavirus/country/chad/]  Cameroon has a total of 1017 confirmed cases^[Worlometers.info. April 19th, 2020. https://www.worldometers.info/coronavirus/country/cameroon/], which may have led to the strict and early measures in Chad. Many Chadians live and study in Cameroon. After all universities in Cameroon closed, many students wanted to go back to their families in Chad. At official borders, there are health tests but many Chadian students found and still find illegal ways to enter Chad without being tested. On March 30, the Chadian Minister of Public Health presented this issue, but the situation on the border to Cameroon has not changed yet.^[Dabesne, Moïsne. March 31st, 2020. Tschadinfos.com. https://tchadinfos.com/sante/coronavirus-pourquoi-le-retour-clandestin-des-etudiants-tchadiens-bloques-au-cameroun-i]  
+The president of Chad, Idriss Deby Itno, informs on a regular basis via Twitter and his website. In most of the statements it stays unclear whether the mandatory measures are underlined by sanctions or not. Nonetheless, the Government and Ministry of Public Health tries to inform the citizens of all the new developments and taken measures. Just to do so, a communication unit within the Ministry of Public Health was formed. ^[Charfadine, Al-mardi. April 11th, 2020. Tschadinfos.com. https://tchadinfos.com/sante/coronavirus-la-cellule-de-veille-designe-un-porte-parole/] Whether this unit is working and really has an impact on the Chadians is still unclear. It seems like the Chadian population has still issues in living with the government’s measures. There are the students returning illegally to Chad and people still celebrating and meeting without taking the danger of COVID-19 seriously. ^[Présidence de la République du Tschad. April 13th, 2020. https://www.presidence.td/fr-news-4198.html] Mostly people from rural areas were often mentioned in the official statements. They were informed on how to improve the hygiene and asked to avoid social contact. Especially women are suffering from the government’s measures. Especially those, who earn money as a saleswoman on one of the weekly markets. These markets are now closed and if not so, are stormed by military and security forces. For example, the forced closure of the weekly market in Koundoul near the capital N’Djamena which left behind women scared to lose their income.^[Beramgoto, Alexis. April 5th, 2020. Tschadinfos.com. https://tchadinfos.com/tchad/coronavirus-fermeture-forcee-du-marche-hebdomadaire-de-koundoul/]  The Government seems to act really strict and put many of the measures and their violations under the penal code.^[Présidence de la République du Tschad. April 13th, 2020. https://www.presidence.td/fr-news-4198.html] But obviously there are loopholes if it is not successful to fully shut borders and close markets without security forces. 
+Another issue that could limit the impact of several measures is the poverty especially in rural areas. Women are working for the income on markets that are now closed and water and hand sanitizer are not available everywhere. But the government of Idriss Deby Itno is in contact with the owners of businesses to change something about this. For the next 6 months, the access to water will be at free charge.^[Tschadinfos. April 16th, 2020. Tschadinfos.com. https://tchadinfos.com/tchad/coronavirus-ceux-qui-nont-pas-de-robinets-peuvent-payer-les-branchements-et-profiter-gratuitement-pendant-six-mois-khoubra-mahamat-itno/] This action may save families from poverty and increase the possibility for Chadians to wash their hands regularly. But after 6 months problems will appear again, so a limited free access to water may not be sustainable.
+Something many countries are struggling with, is the obligation to wear face covering masks. In Chad, this obligation was announced quit early on April 14. ^[Présidence de la République du Tschad. April 13th, 2020. https://www.presidence.td/fr-news-4198.html] Whether this obligation is able to stop the outbreak of the virus is unclear. Many countries are enforcing a similar measure limited to busses and trains, but the Chad banned public transport weeks ago. Furthermore, it is too early to say if there are enough masks for everyone. It does not seem so, because in his statement, the president already declared that scarfs and other materials can be alternatives. 
+Chad has to face two main issues in order to avoid an outbreak of the coronavirus in the next weeks. A solution on how to deal with returning students from Cameroon has to be found and if the access to hand sanitizer, masks and water is still not free and open to everyone, the low number of cases will not last. But right now, except for the few loopholes and issues, the measures seem to work. 33 cases, 8 recovered and 0 deaths on April 19 are great numbers and figures.^[Worldometers.info. April 19th, 2020. https://www.worldometers.info/coronavirus/country/chad/]  
+
+
+## About the author {-}
+Country Report by Laureen Hannig, 20, student of International Relations and Communication Science.
+
+
+  
+  
+
+
