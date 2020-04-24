@@ -20,6 +20,13 @@ ra_allocation<- ra_allocation %>%
   rename("Country" = 1,
          "Name" =2,
          "Mail"=3)
+leave<- read_excel("leave.xlsx")
+leave<- leave[,c(2,4,5)]
+leave<- leave %>%
+  rename("Country" = 1,
+         "Name" =2,
+         "Mail"=3)
+ra_allocation<- bind_rows(ra_allocation,leave)
 
 afil<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1cJv94NrO9Boahf441LkAqdY-xAZIlMCwnWdsrEQb8Wc/edit?usp=sharing')
 afil<-afil[,-c(8,9)]
@@ -46,9 +53,8 @@ c<-b[!is.na(b$Name),]
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
- qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
- 
- 
+ qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_raw_latest.csv")
+
  qualtrics<- sort(unique(qualtrics$ra_name))
 
  qualtrics
@@ -70,7 +76,8 @@ c<-b[!is.na(b$Name),]
                                 "Karina Lisboa Båsund",
                                 "Rosana Fayazzadh",
                                 "Tasia Wagner",
-                                "Victoria Atanasov"))
+                                "Victoria Atanasov",
+                                "Angeline Kanyangi"))
 
  qualtrics
  data<-data[data$Name%in%qualtrics,]
