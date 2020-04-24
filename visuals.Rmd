@@ -126,21 +126,6 @@ clean_data %>%
 
 ## Table: Cumulative number of policies by type  {-}
 
-```{r echo= FALSE, results='asis', message=FALSE}
-corona <- readr::read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_release_allvars.csv")
-
-corona %>% 
-  group_by(type) %>% 
-  summarize(`Total Number of Policies`=n(),
-            `Number of Countries`=length(unique(country)),
-            `Number of Targeted Countries`=length(unique(target_country)),
-            `% With Mandatory Enforcement`=round(mean(grepl(x=compliance,pattern="Mandatory")*100,na.rm=T),0)) %>% 
-  select(Type="type",everything()) %>% 
-  filter(!is.na(Type)) %>% 
-  arrange(desc(`Total Number of Policies`))  %>% 
-  ungroup() %>%
-  knitr::kable(booktabs=T) 
-
-```
+![](data/viz/viz.png)
 
 
