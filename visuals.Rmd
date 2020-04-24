@@ -79,6 +79,7 @@ dygraph(check_xts) %>%
               highlightSeriesBackgroundAlpha = 0.3,
               hideOnMouseOut = FALSE,
               highlightSeriesOpts = list(strokeWidth = 3)) %>% 
+  dyAxis("y", label = "Policy Activity Score") %>% 
   dyLegend(labelsSeparateLines = F) %>% 
   dyCSS("data/dy.css")
 
