@@ -24,6 +24,8 @@ navbar:
         href: methodology.html
   - text: Working Papers
     href: working_papers.html
+  - text: Policy Activity Index
+    href: visuals.html
   - text: About CoronaNet
     href: about.html
     menu:
