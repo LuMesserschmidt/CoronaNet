@@ -31,6 +31,8 @@ navbar:
         href: data/reports/finished/20200415_Costa_Rica.html
       - text: "Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
+      - text: "Italy"
+        href: data/reports/finished/20200422_Italy.html
   - text: Working Papers
     href: working_papers.html
   - text: Policy Activity Index
