@@ -48,11 +48,8 @@ You can **download the BETA dataset** and codebook [here](https://coronanet-proj
 For further information on the methodology and analyses please download our **working paper** [here](https://coronanet-project.org/working_papers).
 
 ***
-## Policy Activity Index {-}
 
-Given the enormous size of our data, we constructed a policy activity index that summarizes the different indicators in our data for each country for each day since Dec 31st 2019. The index is produced using a statistical mdoel that takes into account which policies seem to be more costly/difficult to implement than other policies. For more details on the methodology, see our [working paper](https://osf.io/preprints/socarxiv/dkvxy/). The estimation is done with Stan and is updated daily. 
-
-In the plot below you can see scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country's policy activity score for that day.
+In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see this page (link to policy activity tab).
 <br>
 <br>
 ```{r policyindex,echo= FALSE,  message=FALSE}
