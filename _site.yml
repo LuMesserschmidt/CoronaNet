@@ -25,7 +25,7 @@ navbar:
   - text: Visualizations
     href: visuals.html
   - text: Country Reports
-    href: reports.html
+    href: ra.html
     menu:
       - text: "Costa Rica"
         href: data/reports/finished/20200415_Costa_Rica.html
