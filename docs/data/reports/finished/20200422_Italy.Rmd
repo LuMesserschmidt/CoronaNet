@@ -1,0 +1,46 @@
+---
+title: "Italy as a model to tackle the same enemy"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Bruno Ciccarini 
+    affiliation: Communication Manager
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+Italy was the first European country to implement a lockdown to protect its citizens from COVID-19. Infected patients in Italy were recorded from a handful of small towns in the North of the country between the end of January and the beginning of February 2020. Since then, the number of cases in Italy increased steadily, reaching approximately 176 thousand as of April 19. The province most hit by the virus in the country is Lombardy with about 65,000 cases. The Italian National Institute of Health (Istituto Superiore di Sanità), which also recommended social distancing, presented the following data: the average age of patients who died and were found positive to SARS-CoV-2 infection was 79 years. 6,935 women (34.7% of total) and 16,292 men (65.3%) are among the dead.^[https://www.epicentro.iss.it/coronavirus/sars-cov-2-decessi-italia]
+
+In the last weeks, the Italian government has issued several decrees. On March 8, 2020, Italian Prime Minister signed a decree that puts millions of people under lockdown across northern Italy. The sweeping move put the entire territory of Lombardy as well as 14 other provinces under travel restrictions ^[http://www.governo.it/it/coronavirus-normativa], and was one of the toughest responses implemented outside of the People's Republic of China. The announcement came after Italy saw a dramatic spike of COVID-19 cases and recorded deaths, the most fatalities outside China and the biggest outbreak in the European Union. 
+While the lockdown was only applied in the north of the country, other measures were applied to the entire country. These included the suspension of schools, university classes, religious ceremonies (including funerals), theaters and cinemas, as well as bars, nightclubs and sports events. ^[http://www.governo.it/it/coronavirus-normativa]
+
+Meanwhile many other countries have advised to temporarily avoid travel to Italy, unless the travel is essential.
+
+On March 11, the Italian government effectively closed down the country, shutting everything but essential stores like supermarkets and pharmacies and restricting all forms of public congregation in an effort to contain the coronavirus that has ravaged the northern region of Lombardy and spread like wildfire to surrounding communities. ^[http://www.governo.it/it/coronavirus-normativa]
+
+In a matter of weeks (from February 21 to March 22), the country went from the discovery of the first official coronavirus case to a government decree that essentially prohibited all movements of people within the whole territory and the closure of all non-essential business activities (see hashtag  #Iorestoacasa (“I’m staying home”)).^[http://www.governo.it/it/coronavirus-normativa] Within this very short time period, the country has been hit by nothing short of a tsunami of unprecedented force, punctuated by an incessant stream of deaths. It is unquestionably the country’s biggest crisis since World War II.
+
+With the Prime Ministerial decree of April 1, all measures to fight the spread of the infection have been extended until April 13. The decree which entered into force on April 4 also suspended the training sessions of athletes, professionals and non-professionals, within sports facilities of all kinds.^[http://www.governo.it/it/coronavirus-normativa]
+
+With the last decree of April 10, the Italian government allowed some shops to reopen, such as bookstores and children’s clothing outlets, but extended lockdown until May 3.^[http://www.governo.it/it/coronavirus-normativa] The decision drew a mixed response with some bookshop owners saying that restarting business activity posed more risks than opportunities. On the other hand, the country’s wealthy Lombardy province is leading efforts to reopen businesses as soon as possible, starting May 4.^[https://www.ilsole24ore.com/art/lombardia-ed-emilia-romagna-conte-apertura-filiere-ADAnZAL] The region accounts for about 20% of Italy’s economy and Milan, it’s largest city, is an international business hub.^[https://www.refricerche.it] 
+
+According to preliminary estimates, Italy could loose $8.3bn in tourism revenue due to COVID-19. Associated industries such as restaurants and hotels are likely to see a significant fall in business due to knock-on effects of the virus. With the entire country locked-down, the impact on industries is likely to be much deeper than initial estimates.^[https://www.ilsole24ore.com/art/cina-pil-crolla-68percento-primo-trimestre-primo-segno-meno-1992-ADmNgpK]
+
+Concerning the economic impact, the country expects COVID-19 to result in a lower GDP for at least two months. The government has announced a spending allocation of approximately $28.3bn to deal with the coronavirus impact.^[https://www.ilsole24ore.com/art/cina-pil-crolla-68percento-primo-trimestre-primo-segno-meno-1992-ADmNgpK] The national research institute REF has projected that the country’s GDP will fall by roughly 7% in the first half of the year due to COVID-19. They also noted that a rebound is possible in the third quarter of the year.^[ https://www.refricerche.it]
+
+Analyzing some aspects of the Italian crisis contains unequivocal lessons for policymakers to recognize and address the unprecedented challenges, also learning from Italy´s mistakes. The first lesson consists of taking the decisions extremely early trying not to be influenced by any kind of cognitive biases.^[https://hbr.org/2020/03/lessons-from-italys-response-to-coronavirus] In Italy, the initial state-of-emergency declarations were met by scepticism by both the public and many in policy circles even though several scientists had been warning of the potential for a catastrophe for weeks. It is essential that in times of uncertainties the role of political parties need to resist that temptation to reflect public opinion. 
+
+In relation to the announced decrees, a second lesson is that an effective response to a pandemic attack needs to be orchestrated as a coherent system of actions taken simultaneously. The result of the strategies taken, for example in South Korea or in China, demonstrate the importance of taking a multitude of actions at once, particularly with regard to testing and to the organization of the health care system itself.^[https://www.nytimes.com/2020/03/22/health/coronavirus-restrictions-us.html?referringSource=articleShare] Testing is helpful when it is combined with careful contact tracing, and tracing is functional as long as it is combined with an effective communication system.^[https://www.esanum.it/today/posts/rapporto-prima-linea-covid-19] 
+
+Since the Italian health care system is decentralized, many provinces acted with different policy responses. The most obvious example is the contrast between the approaches taken by Veneto and Lombardy. It is always more evident that the variety of different public health solutions taken by provinces made early in the cycle of the pandemic resulted in different outcomes.^[https://medium.com/@michelezanini/managing-the-pandemic-lessons-from-italys-veneto-region-4d1259091879] This should have been recognized as a powerful learning opportunity from the beginning. 
+
+The last aspect to consider is that there is no time to waste if we are facing a progression of a virus. According to what has been stated by the head of the Italian Protezione Civile, “the COVID-19 is faster than our bureaucracy”.^[https://rep.repubblica.it/pwa/generale/2020/03/23/news/coronavirus_borrelli_i_numeri_sono_altri_l_epidemia_va_piu_veloce_della_nostra_burocrazia_-252124440/?ref=RHPPTP-BH-I252124970-C12-P3-S1.12-T1] Moreover, an appropriate approach toward coronavirus might require massive mobilization ^[https://www.cnn.com/2020/03/20/health/coronavirus-response-must-adapt-frieden-analysis/index.html], both in terms of human resources and budget as well as the extreme coordination that will be required across different parts of the health care system.
+
+If governments want to tackle coronavirus, the Italian case shows that it is essential to adopt a structured decision-making approach which quickly recognizes learnings, priorities successful experiments and immediately abandons ineffective ones.

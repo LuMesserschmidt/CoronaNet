@@ -25,12 +25,18 @@ navbar:
   - text: Visualizations
     href: visuals.html
   - text: Country Reports
-    href: reports.html
+    href: ra.html
     menu:
       - text: "Costa Rica"
         href: data/reports/finished/20200415_Costa_Rica.html
+      - text: "Indonesia"
+        href: data/reports/finished/20200416_Indonesia.html
+      - text: "Italy"
+        href: data/reports/finished/20200422_Italy.html
   - text: Working Papers
     href: working_papers.html
+  - text: Policy Activity Index
+    href: visuals.html
   - text: About CoronaNet
     href: about.html
     menu:

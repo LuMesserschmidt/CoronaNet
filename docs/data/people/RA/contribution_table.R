@@ -8,10 +8,16 @@ library(data.table)
 
 form<- read_csv("CoronaNet Research Assistant Form.csv")
 form<-form[,c(2,3)]
-form<- form %>%
+form1<- form %>%
   rename("Name" = 1,
          "Vita" =2)
 
+form<- read_csv("2.0.csv")
+form<-form[,c(2,3)]
+form2<- form %>%
+  rename("Name" = 1,
+         "Vita" =2)
+form<-bind_rows(form1,form2)
 
 library(gsheet)
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
@@ -20,8 +26,15 @@ ra_allocation<- ra_allocation %>%
   rename("Country" = 1,
          "Name" =2,
          "Mail"=3)
+leave<- read_excel("leave.xlsx")
+leave<- leave[,c(2,4,5)]
+leave<- leave %>%
+  rename("Country" = 1,
+         "Name" =2,
+         "Mail"=3)
+ra_allocation<- bind_rows(ra_allocation,leave)
 
-afil<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1cJv94NrO9Boahf441LkAqdY-xAZIlMCwnWdsrEQb8Wc/edit?usp=sharing')
+afil<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1yqz6q1-iVh6_j_a1ub7_krditog-KdweXPFM6r3Sv1Y/edit?usp=sharing')
 afil<-afil[,-c(8,9)]
 afil<- afil[,c(1:3)]
 afil<- afil %>%
@@ -46,9 +59,8 @@ c<-b[!is.na(b$Name),]
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
- qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
- 
- 
+ qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_raw_latest.csv")
+
  qualtrics<- sort(unique(qualtrics$ra_name))
 
  qualtrics
@@ -70,7 +82,8 @@ c<-b[!is.na(b$Name),]
                                 "Karina Lisboa Båsund",
                                 "Rosana Fayazzadh",
                                 "Tasia Wagner",
-                                "Victoria Atanasov"))
+                                "Victoria Atanasov",
+                                "Angeline Kanyangi"))
 
  qualtrics
  data<-data[data$Name%in%qualtrics,]
@@ -118,7 +131,8 @@ contribution[which(contribution$Name=="Ricardo Buitrago"),"Affiliation"]  = "Uni
 contribution[which(contribution$Name=="Ricardo Buitrago"),"Vita"]  = "Head of the B.A. in International Business & Relations"
 contribution[which(contribution$Name=="Tess de Rooij"),"Affiliation"]  = "University of Amsterdam"
 contribution[which(contribution$Name=="Tess de Rooij"),"Vita"]  = "I hold a BSc in Politics, Psychology, Law & Economics (politics major, cum laude) from the University of Amsterdam. I've worked as a guest teacher and campaigner, and I'm currently deciding where to pursue my master's next year - next to assisting in the CoronaNet Research Project!"
-contribution[which(contribution$Name=="Samantha Reinard	"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
+contribution[which(contribution$Name=="Samantha Reinard"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
+contribution[which(contribution$Name=="Alexander Pachanov"),"Vita"]  = "Master's student at Berlin School of Public Health"
 
 contribution<- contribution[order(contribution$Name),]
 
