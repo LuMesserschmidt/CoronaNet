@@ -8,10 +8,16 @@ library(data.table)
 
 form<- read_csv("CoronaNet Research Assistant Form.csv")
 form<-form[,c(2,3)]
-form<- form %>%
+form1<- form %>%
   rename("Name" = 1,
          "Vita" =2)
 
+form<- read_csv("2.0.csv")
+form<-form[,c(2,3)]
+form2<- form %>%
+  rename("Name" = 1,
+         "Vita" =2)
+form<-bind_rows(form1,form2)
 
 library(gsheet)
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
@@ -28,7 +34,7 @@ leave<- leave %>%
          "Mail"=3)
 ra_allocation<- bind_rows(ra_allocation,leave)
 
-afil<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1cJv94NrO9Boahf441LkAqdY-xAZIlMCwnWdsrEQb8Wc/edit?usp=sharing')
+afil<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1yqz6q1-iVh6_j_a1ub7_krditog-KdweXPFM6r3Sv1Y/edit?usp=sharing')
 afil<-afil[,-c(8,9)]
 afil<- afil[,c(1:3)]
 afil<- afil %>%
