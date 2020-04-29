@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-The CoronaNet project is an international effort to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. You can read more about the project at [our website](http://www.coronanet-project.org) and our [working paper](https://osf.io/preprints/socarxiv/dkvxy/). The dataset has already been used by government policymakers, academics and journalists, and we expect to be able to offer more thorough analysis of government responses (both determinants and effects) as we collect more data. The principal investigators for this project are:
+The CoronaNet project is an international effort of more than 250 scholars to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. You can read more about the project at [our website](http://www.coronanet-project.org) and our [working paper](https://osf.io/preprints/socarxiv/dkvxy/). The dataset, which captures already more than 12.000 policies, has already been used by government policy makers, academics and journalists, and we expect to be able to offer more thorough analysis of government responses (both determinants and effects) as we collect more data. The principal investigators for this project are:
 
 Joan Barceló, New York University Abu Dhabi
 
