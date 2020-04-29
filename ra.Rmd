@@ -1,5 +1,9 @@
 ---
 title: "RA Communication"
+output:
+  html_document:
+    includes:
+      before_body: inst/assets/dependencies.html
 ---
 
 ```{r setup, include=FALSE}
@@ -14,6 +18,9 @@ text-align: justify}
 
 In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see this page (link to policy activity tab).
 <br>
+<label for="country-search">Select countries:</label><br>
+<select class="country-search" id="countrySearch" name="country-search" multiple="multiple">
+</select>
 <br>
 ```{r policyindex,echo= FALSE,  message=FALSE}
 library(tidyverse)
@@ -66,7 +73,7 @@ check <- select(get_est_sum,country,date_announced,med_est) %>%
   spread(key="country",value="med_est") 
 check_xts <- xts::xts(as.matrix(select(ungroup(check),-date_announced)),check$date_announced)
 
-dygraph(check_xts) %>% 
+dy <- dygraph(check_xts, elementId = "policyActivityIndexDygraph") %>% 
   dyHighlight(highlightCircleSize = 0, 
               highlightSeriesBackgroundAlpha = 0.3,
               hideOnMouseOut = FALSE,
@@ -75,6 +82,7 @@ dygraph(check_xts) %>%
   dyLegend(labelsSeparateLines = F) %>% 
   dyCSS("data/dy.css")
 
+htmlwidgets::onRender(dy, "loadCountries")
 ```
 
 *** 
