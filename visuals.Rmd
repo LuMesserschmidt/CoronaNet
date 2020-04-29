@@ -25,8 +25,10 @@ Given the enormous size of our data, we constructed a policy activity index that
 
 In the plot below you can see scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country's policy activity score for that day.
 <br>
-<br>
-```{r policyindex}
+```{r policyindex,echo= FALSE,  message=FALSE}
+library(tidyverse)
+library(lubridate)
+library(dygraphs)
 
 get_est <- readRDS("data/get_est.rds")
  
@@ -72,9 +74,9 @@ random_country <- group_by(get_est_sum,country) %>%
 check <- select(get_est_sum,country,date_announced,med_est) %>% 
   arrange(country,date_announced) %>% 
   spread(key="country",value="med_est") 
-check_xts <- xts(as.matrix(select(ungroup(check),-date_announced)),check$date_announced)
+check_xts <- xts::xts(as.matrix(select(ungroup(check),-date_announced)),check$date_announced)
 
-dygraph(check_xts) %>% 
+dy <- dygraph(check_xts, elementId = "policyActivityIndexDygraph") %>% 
   dyHighlight(highlightCircleSize = 0, 
               highlightSeriesBackgroundAlpha = 0.3,
               hideOnMouseOut = FALSE,
@@ -83,6 +85,7 @@ dygraph(check_xts) %>%
   dyLegend(labelsSeparateLines = F) %>% 
   dyCSS("data/dy.css")
 
+htmlwidgets::onRender(dy, "loadCountries")
 ```
 
 ***

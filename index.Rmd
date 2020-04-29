@@ -103,7 +103,7 @@ check <- select(get_est_sum,country,date_announced,med_est) %>%
   spread(key="country",value="med_est") 
 check_xts <- xts::xts(as.matrix(select(ungroup(check),-date_announced)),check$date_announced)
 
-dygraph(check_xts) %>% 
+dy <- dygraph(check_xts, elementId = "policyActivityIndexDygraph") %>% 
   dyHighlight(highlightCircleSize = 0, 
               highlightSeriesBackgroundAlpha = 0.3,
               hideOnMouseOut = FALSE,
@@ -112,6 +112,7 @@ dygraph(check_xts) %>%
   dyLegend(labelsSeparateLines = F) %>% 
   dyCSS("data/dy.css")
 
+htmlwidgets::onRender(dy, "loadCountries")
 ```
 
 *** 
