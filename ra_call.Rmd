@@ -1,0 +1,34 @@
+---
+title: "Call for Research Assistants"
+output:
+  pdf_document: default
+  #html_document: default
+date: "April 29th, 2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The CoronaNet project is an international effort to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. You can read more about the project at [our website](http://www.coronanet-project.org) and our [working paper](https://osf.io/preprints/socarxiv/dkvxy/). The dataset has already been used by government policymakers, academics and journalists, and we expect to be able to offer more thorough analysis of government responses (both determinants and effects) as we collect more data. The principal investigators for this project are:
+
+Joan Barceló, New York University Abu Dhabi
+
+Cindy Cheng, Hochschule für Politik at the Technical University of Munich
+
+Allison Spencer Hartnett, Yale University
+
+Robert Kubinec, New York University Abu Dhabi
+
+Luca Messerschmidt, Hochschule für Politik at the Technical University of Munich
+
+This project has already collected initial data on government responses for all countries in the world. We have need of research assistants for the next several months to help us expand data collection to further categories and at sub-national levels, as well as keep our data up to date as countries relax and impose new restrictions. It is an excellent opportunity for those who want hands-on policy analysis. Research assistants also have the option of writing policy reports for their countries or interesting policy trends, which are then published on our website. Your name and bio will also appear in our published articles and on our website.
+
+In addition, we do have some needs for those with expertise in data engineering and visualization. If you would like to contribute in those areas, please fill out the form below and provide evidence of your experience in your CV.
+
+This position is an unpaid, volunteer position. However, the position can be done remotely, and the hours are flexible. We ask for a minimum of ten hour per week commitment for three months. As such, it can be used as a summer internship as well. Training will be done remotely, and you will be expected to participate in weekly team meetings and our online team Slack channel, which will connect you with research assistants from all over the world. We will attempt to assign you to a country you are interested in or have language/expertise in, but we cannot guarantee it. 
+
+*Applications will be processed on a rolling basis until May 31st, 2020. We encourage you to apply earlier so your start date on the project is not delayed.*
+
+To apply, please [use our online form](https://form.jotform.com/201172569499062). Any questions about the position can be directed to admin@coronanet-project.org.
