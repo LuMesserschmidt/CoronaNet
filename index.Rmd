@@ -4,11 +4,12 @@ author:
 output: 
   html_document:
     includes:
+      before_body: inst/assets/dependencies.html
       after_body: footer.html
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,warning=FALSE)
 
 ```
 
@@ -50,6 +51,11 @@ For further information on the methodology and analyses please download our **wo
 ***
 
 In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see this page (link to policy activity tab).
+<br>
+<br>
+<label for="country-search">Choose countries in the box below:</label><br>
+<select class="country-search" id="countrySearch" name="country-search" multiple="multiple">
+</select>
 <br>
 <br>
 ```{r policyindex,echo= FALSE,  message=FALSE}

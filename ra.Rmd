@@ -18,9 +18,11 @@ text-align: justify}
 
 In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see this page (link to policy activity tab).
 <br>
-<label for="country-search">Select countries:</label><br>
+<br>
+<label for="countrySearch">Choose countries in the box below:</label><br>
 <select class="country-search" id="countrySearch" name="country-search" multiple="multiple">
 </select>
+<br>
 <br>
 ```{r policyindex,echo= FALSE,  message=FALSE}
 library(tidyverse)
