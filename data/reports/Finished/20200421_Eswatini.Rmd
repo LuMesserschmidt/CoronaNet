@@ -1,5 +1,5 @@
 ---
-title: "Research Report on Eswatini"
+title: "Country Report on Eswatini"
 description: Return to [CoronaNet](https://coronanet-project.org/)
 author:
   - name: Laurent Frick 

@@ -27,8 +27,12 @@ navbar:
   - text: Country Reports
     href: ra.html
     menu:
+      - text: "Chad"
+        href: data/reports/finished/20200421_Chad.html
       - text: "Costa Rica"
         href: data/reports/finished/20200415_Costa_Rica.html
+      - text: "Eswatini"
+        href: data/reports/finished/20200421_Eswatini.html
       - text: "Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Italy"

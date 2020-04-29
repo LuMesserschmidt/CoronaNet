@@ -1,5 +1,5 @@
 ---
-title: "Title"
+title: "Country Report on Chad"
 description: Return to [CoronaNet](https://coronanet-project.org/)
 author:
   - name: Laureen Hannig 
@@ -16,7 +16,6 @@ body {
 text-align: justify}
 </style>
 
-## Country Report: Chad {-}
 
 The Chadian Government reacted quickly after its neighbour Cameroon had to cope with several cases of COVID-19. The first case in Chad was recognised on March 19. Already on March 18, the government closed airports for passengers and tried to control the borders, mostly to Cameroon. This closure was extended two times and is now extended until April 25.^[Tschadinfos. April 9th, 2020. Tschadinfos.com. https://tchadinfos.com/tchad/coronavirus-les-aeroports-du-tchad-resteront-fermes-jusquau-25-avril/]
 
