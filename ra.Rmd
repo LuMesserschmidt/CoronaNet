@@ -24,7 +24,7 @@ In the plot below you can see our policy activity index scores for the vast majo
 </select>
 <br>
 <br>
-```{r policyindex,echo= FALSE,  message=FALSE}
+```{r policyindex,echo= FALSE,  message=FALSE, out.width="100%"}
 library(tidyverse)
 library(lubridate)
 library(dygraphs)
