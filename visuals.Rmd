@@ -35,7 +35,7 @@ In the plot below you can see scores for the vast majority of countries in the w
 </select>
 <br>
 <br>
-```{r policyindex,echo= FALSE,  message=FALSE}
+```{r policyindex,echo= FALSE,  message=FALSE, out.width="100%"}
 library(tidyverse)
 library(lubridate)
 library(dygraphs)

@@ -50,7 +50,7 @@ For further information on the methodology and analyses please download our **wo
 
 ***
 
-In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see this page (link to policy activity tab).
+In the plot below you can see our policy activity index scores for the vast majority of countries in the world. If hover over a line in the plot, you can see the country’s policy activity score for that day. For more info, see [this page](https://coronanet-project.org/visuals.html).
 <br>
 <br>
 <label for="country-search">Choose countries in the box below:</label><br>
@@ -58,7 +58,7 @@ In the plot below you can see our policy activity index scores for the vast majo
 </select>
 <br>
 <br>
-```{r policyindex,echo= FALSE,  message=FALSE}
+```{r policyindex,echo= FALSE,  message=FALSE, out.width="100%"}
 library(tidyverse)
 library(lubridate)
 library(dygraphs)
