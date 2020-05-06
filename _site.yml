@@ -31,10 +31,14 @@ navbar:
     menu:
       - text: "Chad"
         href: data/reports/finished/20200421_Chad.html
+      - text: "Colombia"
+        href: data/reports/finished/20200422_Colombia.html
       - text: "Costa Rica"
         href: data/reports/finished/20200415_Costa_Rica.html
       - text: "Eswatini"
         href: data/reports/finished/20200421_Eswatini.html
+      - text: "Gambia"
+        href: data/reports/finished/20200428_Gambia.html
       - text: "Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Italy"
