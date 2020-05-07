@@ -98,5 +98,15 @@ Download the CSV BETA Version of the Extended Dataset [HERE](https://github.com/
 31. `news_WB` (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)
     
 
+### License {-}
+
+CC0 - Creative Commons
+
+Please cite the project and dataset as:
+
+Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” BETAVersion 1.0. https://www.coronanet-project.org.
+
+
+
 <br>
 ![](img/header.png)

@@ -45,11 +45,8 @@ navbar:
         href: data/reports/finished/20200422_Italy.html
   - text: Working Papers
     href: working_papers.html
+  - text: In the Media
+    href: media.html
   - text: About CoronaNet
-    href: about.html
-    menu:
-      - text: "Media"
-        href: media.html
-      - text: "Contact"
-        href: contact.html
+    href: contact.html
 

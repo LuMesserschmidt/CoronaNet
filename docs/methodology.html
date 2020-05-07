@@ -389,10 +389,16 @@ div.tocify {
       <a href="data/reports/finished/20200421_Chad.html">Chad</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200422_Colombia.html">Colombia</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200415_Costa_Rica.html">Costa Rica</a>
     </li>
     <li>
       <a href="data/reports/finished/20200421_Eswatini.html">Eswatini</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200428_Gambia.html">Gambia</a>
     </li>
     <li>
       <a href="data/reports/finished/20200416_Indonesia.html">Indonesia</a>
@@ -405,20 +411,11 @@ div.tocify {
 <li>
   <a href="working_papers.html">Working Papers</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    About CoronaNet
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="media.html">Media</a>
-    </li>
-    <li>
-      <a href="contact.html">Contact</a>
-    </li>
-  </ul>
+<li>
+  <a href="media.html">In the Media</a>
+</li>
+<li>
+  <a href="contact.html">About CoronaNet</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -442,7 +439,8 @@ body {
 text-align: justify}
 </style>
 <hr />
-<p>To collect the data, we recruited 188 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 5400 records as of the date of this article. Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>To collect the data, we recruited 250 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 14000 records as of the date of the latest update.</p>
+<p>Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 <p>We have also partnered with the machine learning company Jataware to automate the collection of more than 200,000 news articles from around the world related to COVID-19.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Jataware employes a natural language processing (NLP) classifier using Bidirectional Encoder Representations from Transformers (BERT) to detect whether a given article is indicative of a governmental policy intervention related to COVID-19. They then apply a secondary NLP classifier to categorize the type of policy intervention (e.g. “state of emergency”, “shelter-in-place”, “quarantine”, “travel restrictions”, etc). Next, Jataware extracts the geospatial and temporal extent of the policy intervention (e.g. “Washington DC” and “March 15, 2020”) whenever possible. The resulting list of news sources is then provided to our RAs for manual coding and further data validation.</p>
 <p>As researchers learn more about the various health, economic, and social effects of the corona-virus pandemic, it is crucial that they have access to both reliable, valid, and timely data. We have adopted the following data collection methodology to ensure the availability of such data as rapidly as possible while still maintaining high standards of quality at every stage of the data collection process.</p>
 <div id="data-collection-software-instrument" class="section level2 unnumbered">
@@ -464,8 +462,8 @@ text-align: justify}
 </div>
 <div id="ra-training" class="section level2 unnumbered">
 <h2>RA Training</h2>
-<p>All RAs watch a mandatory 50 minute video training of the survey instrument which explains how to use the survey instrument. RAs are also provided with written guidelines on how to collect data and a comprehensive codebook. While both of these documents are availble in the Appendix, to briefly describe it here, the written guidelines provide a definition of what counts as a new or updated policy and provides a checklist for RAs to follow in order to identify and document different policies. In the checklist, RAs are instructed to check the data sources in the order given in the guidelines to identify policies, to document the relevant information into the survey and to save and upload a .pdf of the source they found to document each policy into Qualtrics. The codebook meanwhile provides provides descriptions and examples of the different possible response options in the survey. Using a training video and the written codebook also has the added benefit of helping us efficiently disseminate the information RAs need to use the survey experiment consistently.</p>
-<p>In order to participate as an RA in this project, RAs must fill out the CoronaNet Research Assistant Form<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> in which:</p>
+<p>All RAs watch a mandatory video training of the survey instrument which explains how to use the survey instrument and need to pass a test survey (code more than 70% correctly). RAs are also provided with written guidelines on how to collect data and a comprehensive codebook. While both of these documents are availble in the Appendix, to briefly describe it here, the written guidelines provide a definition of what counts as a new or updated policy and provides a checklist for RAs to follow in order to identify and document different policies. In the checklist, RAs are instructed to check the data sources in the order given in the guidelines to identify policies, to document the relevant information into the survey and to save and upload a .pdf of the source they found to document each policy into Qualtrics. The codebook meanwhile provides provides descriptions and examples of the different possible response options in the survey. Using a training video and the written codebook also has the added benefit of helping us efficiently disseminate the information RAs need to use the survey experiment consistently.</p>
+<p>In order to participate as an RA in this project, RAs must fill out the CoronaNet Research Assistant Form in which:</p>
 <ul>
 <li>They identify themselves.</li>
 <li>They certify that they have viewed the training video in which we explain how to use the survey instrument.</li>
@@ -481,7 +479,6 @@ text-align: justify}
 <div id="real-time-communication-and-feedback" class="section level2 unnumbered">
 <h2>Real-Time Communication and Feedback</h2>
 <p>Once an RA joins the project, they can pose their questions on a CoronaNet Slack channel, which they must join in order to participate in the project. The channel allows any RA to pose a question or issue they may have in using the survey instrument to any of the PIs and allows all other RAs to learn from the exchange at the same time. As such, RAs are able to receive feedback and learn from each other’s questions in a timely and centralized manner.</p>
-<p>Since the data collection effort was launched on March 28, 2020 until April 6, 2020, both RAs and PIs have actively used Slack to communicate with on another. In particular, on the Slack channel devoted to asking questions about the Qualtrics survey, there were 1,091 messages posted by 108 project members. To provide a better sense of the level of activity on Slack, Figure @ref(fig:members) plots the number of project members who had logged into the Slack per day as well as the number of project members who posted at least one message per day and shows that participation and activity Slack has steadily grown over time and <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>.</p>
 </div>
 <div id="post-data-collection-validation-checks" class="section level2 unnumbered">
 <h2>Post-Data Collection Validation Checks</h2>
@@ -495,13 +492,11 @@ text-align: justify}
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://coronanet-project.org/people" class="uri">http://coronanet-project.org/people</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country, please see the Appendix.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://coronanet-project.org/index" class="uri">http://coronanet-project.org/index</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country.<a href="#fnref2" class="footnote-back">↩</a></p></li>
 <li id="fn3"><p>We thank Brandon Rose and Jataware for making the news database available to this project.<a href="#fnref3" class="footnote-back">↩</a></p></li>
 <li id="fn4"><p>The specific data source the PI cross referenced for this effort was the March 20, 2020 version of the following New York Times article Salcedo, Andrea and Gina Cherelus, “Coronavirus Travel Restrictions, Across the Globe” <em>New York Times</em>, 20 March 2020, <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html" class="uri">https://www.nytimes.com/article/coronavirus-travel-restrictions.html</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
 <li id="fn5"><p>Beech, Hannah. “Tracking the Coronavirus: How Crowded Asian Cities Tackled an Epidemic.” <em>New York Times</em> 18 March 2020 <a href="https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html" class="uri">https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html</a><a href="#fnref5" class="footnote-back">↩</a></p></li>
-<li id="fn6"><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeybAW0DC0UE1x2EqLiTifVFuSUxqJLGFB8VI4wVCG61tVYKg/viewform" class="uri">https://docs.google.com/forms/d/e/1FAIpQLSeybAW0DC0UE1x2EqLiTifVFuSUxqJLGFB8VI4wVCG61tVYKg/viewform</a><a href="#fnref6" class="footnote-back">↩</a></p></li>
-<li id="fn7"><p>Note, the dip in the overall trend corresponds to weekend days.<a href="#fnref7" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

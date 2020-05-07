@@ -21,7 +21,7 @@ form<-bind_rows(form1,form2)
 
 library(gsheet)
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
-ra_allocation<- ra_allocation[,c(2,4,5)]
+ra_allocation<- ra_allocation[,c(2,3,4)]
 ra_allocation<- ra_allocation %>%
   rename("Country" = 1,
          "Name" =2,
@@ -83,7 +83,8 @@ c<-b[!is.na(b$Name),]
                                 "Rosana Fayazzadh",
                                 "Tasia Wagner",
                                 "Victoria Atanasov",
-                                "Angeline Kanyangi"))
+                                "Angeline Kanyangi",
+                                "Rahman Demirkol"))
 
  qualtrics
  data<-data[data$Name%in%qualtrics,]

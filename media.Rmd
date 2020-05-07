@@ -1,5 +1,5 @@
 ---
-title: "Media"
+title: "In the Media"
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -10,7 +10,14 @@ text-align: justify}
 </style>
 
 ***
-# Press Release {-}
+
+May 5, 2020: Washington Post, [During the pandemic, Russia and the U.S. have these 3 things in common](https://www.washingtonpost.com/politics/2020/05/05/during-pandemic-russia-us-have-these-3-things-common/) by our member Caress Schenk
+
+April 25, 2020: web.de, [So weitreichend sind Deutschlands Corona-Maßnahmen im weltweiten Vergleich](https://web.de/magazine/politik/coronavirus-deutschland-massnahmen-weltweiten-vergleich-34630916) analyses the data and interviews CoronaNet members
+
+
+***
+# Initial Press Release {-}
 The Press releases can be found here
 
 + [20200410_english](data/Press_release/Press_Release_20200415_en.pdf)
@@ -27,14 +34,10 @@ The Press releases can be found here
 
 + [20200401_russian](data/Press_release/Press_Release_20200415_ru.pdf)
 
-
 ***
 # Press Contact {-}
-When using the data for press and media releases, or for interviews, please contact:
 
-Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de | +49 89 907793 105
-
-Any media and press related questions can also be asked via this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).
+Any media and press related questions can also be directed to admin@coronanet-project.org.
 
 
 
