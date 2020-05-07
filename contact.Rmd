@@ -40,7 +40,7 @@ Please be also aware that when you leave our website, other sites may have diffe
 
 ### License {-}
 
-CC0 - Creative Commons
+CC-By Attribution 4.0 International
 
 Please cite the project and dataset as:
 

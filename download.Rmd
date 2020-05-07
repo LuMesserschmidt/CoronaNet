@@ -100,7 +100,7 @@ Download the CSV BETA Version of the Extended Dataset [HERE](https://github.com/
 
 ### License {-}
 
-CC0 - Creative Commons
+CC-By Attribution 4.0 International
 
 Please cite the project and dataset as:
 
