@@ -28,9 +28,7 @@ knitr::opts_chunk$set(echo = TRUE,warning=FALSE)
 \renewcommand{\floatpagefraction}{.66}
 
 
-
-![](img/header_wide.png)
-
+![](img/logo_wide.png)
 <style>
 body {
 text-align: justify}
@@ -228,4 +226,7 @@ DT::datatable(contribution,
 <div style="width:100px; height:75px">
 [![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
+
+
+![](img/header_wide.png)
 
