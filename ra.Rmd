@@ -82,9 +82,10 @@ dy <- dygraph(check_xts, elementId = "policyActivityIndexDygraph") %>%
               highlightSeriesOpts = list(strokeWidth = 3)) %>% 
   dyAxis("y", label = "Policy Activity Score") %>% 
   dyLegend(labelsSeparateLines = F) %>% 
-  dyCSS("data/dy.css")
+  dyCSS("data/dy.css") %>%
+  dyOptions(colors = "#A0A0A0")
 
-htmlwidgets::onRender(dy, "loadCountries")
+htmlwidgets::onRender(dy, "loadCountriesWithColors")
 ```
 
 *** 
