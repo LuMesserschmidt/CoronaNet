@@ -1,0 +1,84 @@
+---
+title: "certificates"
+author: "Luca Messerschmidt"
+date: "`r lubridate::today()`"
+output: pdf_document
+params: 
+  ra_name: Lea Clara Frömchen-Zwick
+  ra_email: bobkubinec@gmail.com
+  country: "United States"
+  country_link: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
+
+# send RA update emails
+
+require(googlesheets4)
+require(dplyr)
+require(blastula)
+require(ggplot2)
+require(readr)
+require(stringr)
+require(lubridate)
+require(qualtRics)
+require(kableExtra)
+require(tidyr)
+
+
+
+# load qualtrics data 
+
+qdata <- read_survey("../../data/CoronaNet/RA/ra_data_pull.csv")
+
+
+```
+
+![](https://coronanet-project.org/img/header_wide.png){width=250px}
+
+Dear research assistants,
+
+This is your weekly update email from CoronaNet for `r params$country`. Thank you so much for your participation in this project; it is making a difference to people around the world. You are receiving this email because you have submitted at least one record for `r params$country`. Everyone who has submitted records for `r params$country` is receiving this email together so you all can coordinate on the update survey.
+
+We have generated a dashboard for `r params$country`. You can access the website from [this link](`r params$country_link`). It contains a list of all records submitted for `r params$country` in addition to news sources from our partner Jataware. Please review the website, then as a group (or by yourself if no one else is working on your country) submit an update survey so we know the status of coding on the country. Please have only one person submit an update survey for your country so we don't have duplicate records.
+
+You can take the survey using the link below. *Please try to get the survey done each week by Saturday so we can keep our data up to date.*
+
+`r add_cta_button("https://tummgmt.eu.qualtrics.com/jfe/form/SV_7PvvMTElF7Mey7X", "Take Survey", align = "center")`
+
+*You are amazing. Thank you for taking the time this week to track this data. You are making a difference.*
+
+All best,
+
+CoronaNet Research Team
+
+Joan Barcelo
+
+Cindy Cheng
+
+Allison Spencer Hartnett
+
+Robert Kubinec
+
+Luca Messerschmidt
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

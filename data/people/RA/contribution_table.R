@@ -21,7 +21,7 @@ form<-bind_rows(form1,form2)
 
 library(gsheet)
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
-ra_allocation<- ra_allocation[,c(2,3,4)]
+ra_allocation<- ra_allocation[,c(2,3,4,7,9,10)]
 ra_allocation<- ra_allocation %>%
   rename("Country" = 1,
          "Name" =2,
@@ -54,16 +54,35 @@ c<-b[!is.na(b$Name),]
  
  data <- data[,-1]
 
- data<- setcolorder(data, c(1,3,5,4))
+ data<- setcolorder(data, c(1,6,8,7,2,3,4,5))
  
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
  qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_raw_latest.csv")
+qualtrics<-qualtrics[,c(1,18)]
 
- qualtrics<- sort(unique(qualtrics$ra_name))
+qualtrics <- qualtrics%>% 
+  mutate(date_start=as.Date(StartDate, '%Y-%m-%d'),
+         date_end=as.Date(StartDate, '%Y-%m-%d'))%>%
+  select(-1,)
 
- qualtrics
+qualtrics_date<-qualtrics%>%
+  group_by(ra_name) %>%
+  # create ranking sequence
+  mutate(
+    start = min(date_start),
+    end = max(date_start)
+  )%>%
+  select(1,4,5)%>%
+  filter(!duplicated(ra_name))%>%
+  rename("Name" = 1,
+         "Start Date" =2 ,
+         "End Date" = 3)
+
+
+qualtrics<- sort(unique(qualtrics$ra_name))
+
  qualtrics<- append(qualtrics,c("Beatrice von Braunschweig",
                                 "Lily Zandstra",
                                 "Luise Modrakowski",
@@ -137,8 +156,20 @@ contribution[which(contribution$Name=="Alexander Pachanov"),"Vita"]  = "Master's
 
 contribution<- contribution[order(contribution$Name),]
 
+contribution<- left_join(contribution,qualtrics_date,by=c("Name"))
 
+contribution<-contribution %>%
+              rename("Cleaning"=7,
+                      "Since"=8,
+                     "End"=9)
+contribution[which(contribution$country=="Testing Data"),"country"]  = "2020-04-01"
 
+certificate<- contribution
+
+certificate[which(certificate$Validating=="1"),"Validating"]  = "The RA also validated the data. This role involved re-coding data previously collected by other RAs. The RA reentered the data without seeing prior entries. If the new entries matched the original data, then the data is considered accurate. If not, then the data needs to be rechecked by a third RA for resolution of errors."
+certificate[which(certificate$`Data Cleaning`=="1"),"Data Cleaning"]  = "The RA also participated in Data Cleaning. This role required the RA to use R-Studio to separate their allocated data set from the larger data set. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
+
+write_csv(certificate,"~/Documents/github/CoronaNet/data/people/RA/certificate.csv")
 
 
 

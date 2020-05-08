@@ -1,0 +1,17 @@
+
+---
+output: pdf_document
+---
+ 
+```{r echo=FALSE}
+library(readr)
+certificates <- read_csv("certificate.csv")
+name <- certificates$Name
+time <- certificates$country
+```
+ 
+Dear `r name`,
+ 
+Your meeting time is `r time`.
+ 
+See you then!
