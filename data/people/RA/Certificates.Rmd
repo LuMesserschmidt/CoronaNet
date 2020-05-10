@@ -1,13 +1,17 @@
+
 ---
-title: "Certificate of Appreciation"
-author: "Research Assistant of the CoronaNet"
+title: Certificate of Appreciation
+author: Research Assistant of the CoronaNet Reserach Group
 date: "`r lubridate::today()`"
-output: pdf_document
+geometry: margin=1.5cm
 params:
   Cleaning: 
-  Name: Lea Clara Frömchen-Zwick
+  Name: 
   Validating: 
-  country: United States
+  country: 
+  Since:
+  End:
+output: pdf_document  
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
@@ -33,8 +37,11 @@ certificate <- read_csv("certificate.csv")
 
 
 ```
+<style>
+body {
+text-align: justify}
+</style>
 
-![](~/Documents/github/CoronaNet/img/logo_wide.png)
 
 To whom it may concern, 
 
@@ -42,21 +49,27 @@ The CoronaNet Research Project recognises `r params$Name` for the outstanding co
 
 CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see www.coronanet-project.org 
 
-`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook.`r params$Validating` `r params$Cleaning`
+`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. `r params$Validating` `r params$Cleaning`
 
-`r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate his solidarity and thank `r params$Name` for being part of this project. 
+`r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project. 
 
-All best,
+\includegraphics[width=0.2\columnwidth]{~/Documents/github/CoronaNet/docs/img/unterschrift_LM.png}
 
-CoronaNet Research Team
+Luca Messerschmidt, Principal Investigator
+<br>
 
-Joan Barceló (NYU Abu Dhabi)
 
-Cindy Cheng (TU Munich)
+*CoronaNet Research Team*
 
-Allison Spencer Hartnett (Yale University)
+*Joan Barceló (NYU Abu Dhabi)*
 
-Robert Kubinec (NYU Abu Dhabi)
+*Cindy Cheng (TU Munich)*
 
-Luca Messerschmidt (TU Munich)
+*Allison Spencer Hartnett (Yale University)*
 
+*Robert Kubinec (NYU Abu Dhabi)*
+
+*Luca Messerschmidt (TU Munich)*
+
+
+![](~/Documents/github/CoronaNet/img/logo_wide.png){width=3in} 

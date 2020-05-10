@@ -48,7 +48,9 @@ b<- left_join(a,form,by=c("Name"))
 
 c<-b[!is.na(b$Name),]
 
- data<-c %>%
+c<-c[!duplicated(c),]
+ 
+data<-c %>%
   group_by(Name) %>% 
   mutate(country = paste0(Country, collapse = ", "))
  
@@ -167,7 +169,10 @@ contribution[which(contribution$country=="Testing Data"),"country"]  = "2020-04-
 certificate<- contribution
 
 certificate[which(certificate$Validating=="1"),"Validating"]  = "The RA also validated the data. This role involved re-coding data previously collected by other RAs. The RA reentered the data without seeing prior entries. If the new entries matched the original data, then the data is considered accurate. If not, then the data needs to be rechecked by a third RA for resolution of errors."
-certificate[which(certificate$`Data Cleaning`=="1"),"Data Cleaning"]  = "The RA also participated in Data Cleaning. This role required the RA to use R-Studio to separate their allocated data set from the larger data set. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
+certificate[which(certificate$`Cleaning`=="1"),"Cleaning"]  = "Moreover, the RA also participated in Data Cleaning. This role required the RA to use R-Studio to separate their allocated data set from the larger data set. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
+
+certificate[which(certificate$Validating=="0"),"Validating"]  = "Titit"
+certificate[which(certificate$`Cleaning`=="0"),"Cleaning"]  = "toto"
 
 write_csv(certificate,"~/Documents/github/CoronaNet/data/people/RA/certificate.csv")
 
