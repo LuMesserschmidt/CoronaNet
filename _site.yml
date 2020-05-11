@@ -26,22 +26,24 @@ navbar:
         href: methodology.html
   - text: Visualizations
     href: visuals.html
-  - text: Country Reports
+  - text: Reports
     href: ra.html
     menu:
-      - text: "Chad"
+      - text: "Research Note: Women´s Rights"
+        href: data/reports/finished/20200507_womensrights.html      
+      - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
-      - text: "Colombia"
+      - text: "Country Report: Colombia"
         href: data/reports/finished/20200422_Colombia.html
-      - text: "Costa Rica"
+      - text: "Country Report: Costa Rica"
         href: data/reports/finished/20200415_Costa_Rica.html
-      - text: "Eswatini"
+      - text: "Country Report: Eswatini"
         href: data/reports/finished/20200421_Eswatini.html
-      - text: "Gambia"
+      - text: "Country Report: Gambia"
         href: data/reports/finished/20200428_Gambia.html
-      - text: "Indonesia"
+      - text: "Country Report: Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
-      - text: "Italy"
+      - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
   - text: Working Papers
     href: working_papers.html
