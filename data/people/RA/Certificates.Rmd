@@ -49,7 +49,11 @@ The CoronaNet Research Project recognises `r params$Name` for the outstanding co
 
 CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see www.coronanet-project.org 
 
-`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. `r params$Validating` `r params$Cleaning`
+`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. 
+
+`r params$Validating`
+
+`r params$Cleaning`
 
 `r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project. 
 
