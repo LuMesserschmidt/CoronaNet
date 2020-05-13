@@ -1,15 +1,18 @@
----
-title: "certificates"
-author: "Luca Messerschmidt"
-date: "`r lubridate::today()`"
-output: pdf_document
-params: 
-  ra_name: Lea Clara Frömchen-Zwick
-  ra_email: bobkubinec@gmail.com
-  country: "United States"
-  country_link: ""
----
 
+---
+title: Certificate of Appreciation
+author: Research Assistant of the CoronaNet Reserach Group
+date: "`r lubridate::today()`"
+geometry: margin=1.5cm
+params:
+  Cleaning: 
+  Name: 
+  Validating: 
+  country: 
+  Since:
+  End:
+output: pdf_document  
+---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
 
@@ -30,55 +33,47 @@ require(tidyr)
 
 # load qualtrics data 
 
-qdata <- read_survey("../../data/CoronaNet/RA/ra_data_pull.csv")
+certificate <- read_csv("certificate.csv")
 
 
 ```
+<style>
+body {
+text-align: justify}
+</style>
 
-![](https://coronanet-project.org/img/header_wide.png){width=250px}
 
-Dear research assistants,
+To whom it may concern, 
 
-This is your weekly update email from CoronaNet for `r params$country`. Thank you so much for your participation in this project; it is making a difference to people around the world. You are receiving this email because you have submitted at least one record for `r params$country`. Everyone who has submitted records for `r params$country` is receiving this email together so you all can coordinate on the update survey.
+The CoronaNet Research Project recognises `r params$Name` for the outstanding contribution as a Research Assistant (RA). We appreciate the dedication and marvellous effort in volunteering for the project. `r params$Name` worked from `r params$Since` to `r params$End` for the project. `r params$Name` coded and updated policies for `r params$country` and without this support, we haven´t had more than 14.000 entries within a month. 
 
-We have generated a dashboard for `r params$country`. You can access the website from [this link](`r params$country_link`). It contains a list of all records submitted for `r params$country` in addition to news sources from our partner Jataware. Please review the website, then as a group (or by yourself if no one else is working on your country) submit an update survey so we know the status of coding on the country. Please have only one person submit an update survey for your country so we don't have duplicate records.
+CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see www.coronanet-project.org 
 
-You can take the survey using the link below. *Please try to get the survey done each week by Saturday so we can keep our data up to date.*
+`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. 
 
-`r add_cta_button("https://tummgmt.eu.qualtrics.com/jfe/form/SV_7PvvMTElF7Mey7X", "Take Survey", align = "center")`
+`r params$Validating`
 
-*You are amazing. Thank you for taking the time this week to track this data. You are making a difference.*
+`r params$Cleaning`
 
-All best,
+`r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project. 
 
-CoronaNet Research Team
+\includegraphics[width=0.2\columnwidth]{~/Documents/github/CoronaNet/docs/img/unterschrift_LM.png}
 
-Joan Barcelo
+Luca Messerschmidt, Principal Investigator
+<br>
 
-Cindy Cheng
 
-Allison Spencer Hartnett
+*CoronaNet Research Team*
 
-Robert Kubinec
+*Joan Barceló (NYU Abu Dhabi)*
 
-Luca Messerschmidt
+*Cindy Cheng (TU Munich)*
 
-## R Markdown
+*Allison Spencer Hartnett (Yale University)*
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+*Robert Kubinec (NYU Abu Dhabi)*
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+*Luca Messerschmidt (TU Munich)*
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![](~/Documents/github/CoronaNet/img/logo_wide.png){width=3in} 
