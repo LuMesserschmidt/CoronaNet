@@ -124,7 +124,7 @@ qualtrics<- sort(unique(qualtrics$ra_name))
 contribution<-  data[!duplicated(data$Name), ]
 
 contribution[which(contribution$Name=="Adriana Poppe"),"Affiliation"]  = "University of Cologne"
-contribution[which(contribution$Name=="Adriana Poppe"),"Vita"]  = "Master Student of Sociology and Social Research at the Universtiy of Cologne"
+contribution[which(contribution$Name=="Adriana Poppe"),"Vita"]  = "Master Student of Sociology and Social Research at the University of Cologne"
 contribution[which(contribution$Name=="Andreas Duncan"),"Vita"]  = "Andy is an undergraduate student in Sustainable Regional Management."
 contribution[which(contribution$Name=="Cara Kim"),"Vita"]  = "Medical student from Germany"
 contribution[which(contribution$Name=="Caress Schenk"),"Vita"]  = "Associate Professor of Political Science"
@@ -172,11 +172,34 @@ contribution[which(contribution$Name=="Nicole Oubre"),"Vita"]  = "Master of Publ
 contribution[which(contribution$Name=="Franziska Nguyen"),"Affiliation"]  = "ESB Business School"
 contribution[which(contribution$Name=="Feifei Wang"),"Affiliation"]  = "Eötvös Loránd University"
 contribution[which(contribution$Name=="Brian Chesney Quartey"),"Vita"]  = "I am an undergraduate Engineering major at New York University Abu Dhabi, originally from Ghana. "
+contribution[which(contribution$Name=="Alette Mengerink"),"Affiliation"]  = "Teacher (German and children's rights) to people with a migration background"
+contribution[which(contribution$Name=="Anna Sophia Körner"),"Affiliation"]  = "Sciences Po Paris/FU Berlin"
+contribution[which(contribution$Name=="Brahim Ouerghi"),"Vita"]  = "I am a 22 years old student at the technical university of Munich where I study technology and management"
+contribution[which(contribution$Name=="Elfriede Derrer-Merk"),"Affiliation"]  = "University of Liverpool"
+contribution[which(contribution$Name=="Fabienne Lind"),"Affiliation"]  = "University of Vienna"
+contribution[which(contribution$Name=="Frederic Denker"),"Vita"]  = "Undergraduate student interested in innovation and development economics."
+contribution[which(contribution$Name=="Luise Modrakowski"),"Vita"]  = "Master student of security risk management at Copenhagen University, originally from Dresden (DE), focusing on risk governance, poltical risk analysis, and sustainability."
+contribution[which(contribution$Name=="Nida Hasan"),"Affiliation"]  = "Dual BA Sciences Po Paris/Columbia University"
+contribution[which(contribution$Name=="Sana Moghis"),"Vita"]  = "I am a young doctor who has just graduated from Shifa College of Medicine. Passionate about developing a career in Critical Care and exploring methods that revolutionize modern healthcare."
+
+contribution = contribution %>% mutate(
+  Vita = gsub('righs', 'rights', Vita),
+  Vita = gsub('Universtiy|Univesity|Universiity', 'University', Vita),
+  Vita = gsub('Scienes', 'Sciences', Vita),
+  Vita = gsub('Student an ', 'Student at ', Vita),
+  Vita = gsub('Equatorinal', 'Equatorial', Vita),
+  Vita = gsub('I am a 22 years old student at the technical university of munich where i study technology and management', 
+              'I am a 22 year old student at the Technical University of Munich where I study technology and management', Vita),
+  Vita = gsub('(Ph. D)in ', '(Ph.D) in ', Vita),
+  Vita = gsub('these exceptional time', 'this exceptional time', Vita),
+  Vita = gsub('Palastine', 'Palestine', Vita),
+  Vita = gsub('develepment', 'development', Vita),
+  Vita = gsub('spanish', 'Spanish', Vita),
+  Vita = gsub('poltical', 'political', Vita),
+  Vita = gsub('revolutionalize', 'revolutionize', Vita),
+  Vita = gsub('Sience', 'Science', Vita))
 
 
-
-
-sort(qualtrics)
 contribution<- contribution[order(contribution$Name),]
 
 contribution<- left_join(contribution,qualtrics_date,by=c("Name"))
