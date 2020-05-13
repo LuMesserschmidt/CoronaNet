@@ -17,9 +17,18 @@ form<-form[,c(2,3)]
 form2<- form %>%
   rename("Name" = 1,
          "Vita" =2)
-form<-bind_rows(form1,form2)
 
 library(gsheet)
+form<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1stwbU5h-gAxkKYcNkMK8kcG3w8wz1VnyBewvKmJl6Q4/edit?usp=sharing")
+form$Name<- paste(form$`First Name`,form$`Last Name`, sep = " ")
+form<-form[,c(11,5)]
+form3<- form %>%
+  rename("Name" = 1,
+         "Vita" =2)
+
+form<-bind_rows(form1,form2,form3)
+
+
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
 ra_allocation<- ra_allocation[,c(2,3,4,7,9,10)]
 ra_allocation<- ra_allocation %>%
@@ -61,7 +70,7 @@ data<-c %>%
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
- qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_raw_latest.csv")
+ qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/RA/ra_data_pull.csv")
 qualtrics<-qualtrics[,c(1,18)]
 
 qualtrics <- qualtrics%>% 
@@ -105,7 +114,8 @@ qualtrics<- sort(unique(qualtrics$ra_name))
                                 "Tasia Wagner",
                                 "Victoria Atanasov",
                                 "Angeline Kanyangi",
-                                "Rahman Demirkol"))
+                                "Rahman Demirkol",
+                                "Seung-A Paik"))
 
  qualtrics
  data<-data[data$Name%in%qualtrics,]
@@ -155,7 +165,18 @@ contribution[which(contribution$Name=="Tess de Rooij"),"Affiliation"]  = "Univer
 contribution[which(contribution$Name=="Tess de Rooij"),"Vita"]  = "I hold a BSc in Politics, Psychology, Law & Economics (politics major, cum laude) from the University of Amsterdam. I've worked as a guest teacher and campaigner, and I'm currently deciding where to pursue my master's next year - next to assisting in the CoronaNet Research Project!"
 contribution[which(contribution$Name=="Samantha Reinard"),"Vita"]  = "Undergraduate student of International Relations and Comparative World Literature, soon to study in Taiwan."
 contribution[which(contribution$Name=="Alexander Pachanov"),"Vita"]  = "Master's student at Berlin School of Public Health"
+contribution[which(contribution$Name=="Ugochukwu Okoye"),"Vita"]  = "An MSc graduate in Africa and International Development from the University of Edinburgh, with research experience in African politics, environmental governance and social anthropology"
+contribution[which(contribution$Name=="Janice Klaiber"),"Vita"]  = "Final year US-German double degree undergraduate in International Business / Management"
+contribution[which(contribution$Name=="Lea Clara Frömchen-Zwick"),"Vita"]  = "Currently doing an M.A. in Pedagogy."
+contribution[which(contribution$Name=="Nicole Oubre"),"Vita"]  = "Master of Public Policy candidate at the Willy Brandt School of Public Policy with a background in criminology."
+contribution[which(contribution$Name=="Franziska Nguyen"),"Affiliation"]  = "ESB Business School"
+contribution[which(contribution$Name=="Feifei Wang"),"Affiliation"]  = "Eötvös Loránd University"
+contribution[which(contribution$Name=="Brian Chesney Quartey"),"Vita"]  = "I am an undergraduate Engineering major at New York University Abu Dhabi, originally from Ghana. "
 
+
+
+
+sort(qualtrics)
 contribution<- contribution[order(contribution$Name),]
 
 contribution<- left_join(contribution,qualtrics_date,by=c("Name"))
@@ -167,15 +188,17 @@ contribution<-contribution %>%
 contribution[which(contribution$country=="Testing Data"),"country"]  = "2020-04-01"
 
 certificate<- contribution
+certificate$Inactive <- as.character(certificate$Inactive)
+certificate$Validating <- as.character(certificate$Validating)
+certificate$Cleaning <- as.character(certificate$Cleaning)
 
-certificate[which(certificate$Validating=="1"),"Validating"]  = "The RA also validated the data. This role involved re-coding data previously collected by other RAs. The RA reentered the data without seeing prior entries. If the new entries matched the original data, then the data is considered accurate. If not, then the data needs to be rechecked by a third RA for resolution of errors."
-certificate[which(certificate$`Cleaning`=="1"),"Cleaning"]  = "Moreover, the RA also participated in Data Cleaning. This role required the RA to use R-Studio to separate their allocated data set from the larger data set. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
+certificate[which(certificate$Validating==1),"Validating"]  = "* Data validation: This role involved re-coding data previously collected by other RAs. The RA reentered the data without seeing prior entries. If the new entries matched the original data, then the data is considered accurate. If not, then the data needs to be rechecked by a third RA for resolution of errors. This task requires high expertise in coding and knwoledge of the codebook"
+certificate[which(certificate$`Cleaning`==1),"Cleaning"]  = "* Data cleaning: This role required the RA to use R-Studio in order to clean errors that were detected in the policy entries. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
 
-certificate[which(certificate$Validating=="0"),"Validating"]  = "Titit"
-certificate[which(certificate$`Cleaning`=="0"),"Cleaning"]  = "toto"
+certificate[which(certificate$Validating=="0"),"Validating"]  = ""
+certificate[which(certificate$`Cleaning`=="0"),"Cleaning"]  = ""
 
 write_csv(certificate,"~/Documents/github/CoronaNet/data/people/RA/certificate.csv")
-
 
 
 
@@ -186,6 +209,7 @@ saveRDS(contribution,file="~/Documents/github/CoronaNet/data/people/contribution
 write_csv(contribution,"~/Documents/github/CoronaNet/data/people/contribution.csv")
 
 write_csv(contribution,"~/Documents/github/corona_tscs/data/CoronaNet/People/contribution.csv")
+
 
 ##Hogwarts
 house <- read_csv("~/Downloads/CoronaNet House Sign Up 3.csv")
