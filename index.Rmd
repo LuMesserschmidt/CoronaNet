@@ -179,6 +179,10 @@ The project is organized and led by:
 
 
 ***
+Chief Data Scientist for CoronaNet:
+
++ [Timothy A. Model](https://www.timothymodel.com/) (Havighurst Fellow at the Miami University, Ohio)
+
 
 CoronaNet International Data Gathering Initiative on COVID-19 Testing is organized by
 
