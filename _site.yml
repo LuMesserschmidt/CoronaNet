@@ -45,6 +45,8 @@ navbar:
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
+      - text: "Country Report: Syria"
+        href: data/reports/finished/20200507_Syria.html
   - text: Working Papers
     href: working_papers.html
   - text: In the Media

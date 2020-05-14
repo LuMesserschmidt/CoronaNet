@@ -1,1 +1,2 @@
 load("/Users/ge38kad/Documents/github/CoronaNet/data/people/contribution.rds")
+load("/Users/ge38kad/Documents/github/CoronaNet/data/people/hogwarts.rds")
