@@ -70,7 +70,7 @@ data<-c %>%
  testing<- read_excel("testing.xlsx")
  data<- bind_rows(data,testing)
  
- qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/RA/ra_data_pull.csv")
+ qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/RA/ra_data_pull_1.csv")
 qualtrics<-qualtrics[,c(1,18)]
 
 qualtrics <- qualtrics%>% 
@@ -115,7 +115,8 @@ qualtrics<- sort(unique(qualtrics$ra_name))
                                 "Victoria Atanasov",
                                 "Angeline Kanyangi",
                                 "Rahman Demirkol",
-                                "Seung-A Paik"))
+                                "Seung-A Paik",
+                                "Tara Goodsir"))
 
  qualtrics
  data<-data[data$Name%in%qualtrics,]
@@ -181,6 +182,9 @@ contribution[which(contribution$Name=="Frederic Denker"),"Vita"]  = "Undergradua
 contribution[which(contribution$Name=="Luise Modrakowski"),"Vita"]  = "Master student of security risk management at Copenhagen University, originally from Dresden (DE), focusing on risk governance, poltical risk analysis, and sustainability."
 contribution[which(contribution$Name=="Nida Hasan"),"Affiliation"]  = "Dual BA Sciences Po Paris/Columbia University"
 contribution[which(contribution$Name=="Sana Moghis"),"Vita"]  = "I am a young doctor who has just graduated from Shifa College of Medicine. Passionate about developing a career in Critical Care and exploring methods that revolutionize modern healthcare."
+contribution[which(contribution$Name=="Tara Goodsir"),"Affiliation"]  = "University of Amsterdam"
+contribution[which(contribution$Name=="Jessica Johansson"),"Affiliation"]  = "University of Hamburg"
+
 
 contribution = contribution %>% mutate(
   Vita = gsub('righs', 'rights', Vita),
@@ -224,8 +228,8 @@ certificate[which(certificate$`Cleaning`=="0"),"Cleaning"]  = ""
 write_csv(certificate,"~/Documents/github/CoronaNet/data/people/RA/certificate.csv")
 
 
-
-
+cont<-contribution$Name
+paste(cont, collapse = ", ")
 
 saveRDS(contribution,file="~/Documents/github/CoronaNet/data/people/contribution.rds")
 
@@ -233,14 +237,76 @@ write_csv(contribution,"~/Documents/github/CoronaNet/data/people/contribution.cs
 
 write_csv(contribution,"~/Documents/github/corona_tscs/data/CoronaNet/People/contribution.csv")
 
+#Country Activity----
 
-##Hogwarts
+qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/RA/ra_data_pull_1.csv")
+qualtrics<-qualtrics[,c(1,18,51,160,161)]
+
+qualtrics <- qualtrics%>% 
+  mutate(date_start=as.Date(StartDate, '%Y-%m-%d'),
+         date_end=as.Date(StartDate, '%Y-%m-%d'))%>%
+  select(-1)%>%
+  slice(-1:-2)
+
+update_country<-qualtrics%>%
+  select(3,5,6)%>%
+  group_by(init_country) %>%
+  # create ranking sequence
+  mutate(
+    start = min(date_start),
+    end = max(date_start)
+  )%>%
+  select(-2,-3)%>%
+  filter(!duplicated(init_country))
+
+update_ra<-qualtrics%>%
+  select(1,5,6)%>%
+  group_by(ra_name) %>%
+  # create ranking sequence
+  mutate(
+    start = min(date_start),
+    end = max(date_start)
+  )%>%
+  select(-2,-3)%>%
+  filter(!duplicated(ra_name))
+
+
+ra<-update_ra %>% arrange(end)
+ras<-ra[1:151,]
+ra<-ras$ra_name
+ras<- ra_allocation[ra_allocation$Name %in% ra,]
+ras<- ras[ras$Inactive!=1,]
+ras<-ras[,3]
+
+qualtrics <- read_csv("~/Documents/github/corona_tscs/data/CoronaNet/RA/ra_data_pull_1.csv")
+qualtrics<-qualtrics[,c(1,18,51,160,161)]
+country_alloc<-qualtrics%>%
+  group_by(init_country) %>%
+  summarize(n=n())
+
+##Hogwarts----
 house <- read_csv("~/Downloads/CoronaNet House Sign Up 3.csv")
 
-house <- house %>%
-  select(3,4)%>%
-  rename(Mail=1,
+form1 <- house %>%
+  select(2,4)%>%
+  rename(Name=1,
          House = 2)
+
+form<- read_csv("2.0.csv")
+form<-form[,c(2,6)]
+form2<- form %>%
+  rename(Name = 1,
+         House =2)
+form<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1stwbU5h-gAxkKYcNkMK8kcG3w8wz1VnyBewvKmJl6Q4/edit?usp=sharing")
+form$Name<- paste(form$`First Name`,form$`Last Name`, sep = " ")
+form<-form[,c(11,6)]
+form3<- form %>%
+  rename(Name = 1,
+         House =2)
+
+form<-bind_rows(form1,form2,form3)
+
+write_csv(form,"~/Documents/github/CoronaNet/data/people/hogwarts_list.csv")
 
 qualtrics <- readRDS("~/Documents/github/CoronaNet/data/coranaNetData_clean.rds")
 
@@ -253,5 +319,6 @@ qualtrics <- qualtrics %>%
 hogwarts <- left_join(qualtrics,house, by=c("Mail"))
 
 table(hogwarts$House) 
+write_csv(hogwarts,"~/Documents/github/CoronaNet/data/people/hogwarts.csv")
 
 saveRDS(hogwarts,file="~/Documents/github/CoronaNet/data/people/hogwarts.rds")
