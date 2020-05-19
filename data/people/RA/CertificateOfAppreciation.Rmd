@@ -1,0 +1,108 @@
+
+---
+title: |
+  | \vspace{-2cm} \fontfamily{qhv}\fontsize{50}{100}\selectfont {\color{cngray} \lsstyle \textbf{CERTIFICATE}}
+  | \vspace{0.5cm} \fontsize{30}{40}\selectfont {\color{cngray} \lsstyle \textbf{OF APPRECIATION}}
+geometry: "left=1.5cm, right=1.5cm"
+params:
+  Cleaning: 
+  Name: 
+  Validating: 
+  country: 
+  Since:
+  End:
+documentclass: article
+classoption: 
+  - landscape
+  - a4paper
+header-includes:
+  \usepackage{background}
+  \usepackage{float}
+  \usepackage{fancyhdr}
+  \usepackage{xcolor}
+  \usepackage{microtype}
+  \pagenumbering{gobble}
+  \backgroundsetup{
+  placement=center,
+  scale=1,
+  opacity=1,
+  pages=all,
+  contents={
+  \includegraphics[width=\paperwidth,height=\paperheight]{../../../docs/img/8.png}
+  }
+  }
+  \definecolor{cngray}{RGB}{80, 80, 80}
+  \definecolor{cntext}{RGB}{45, 45, 45}
+output: pdf_document
+---
+\addtolength{\headheight}{2.0cm}
+\pagestyle{fancyplain}
+\fancyhf{}
+\chead{\includegraphics[height=2cm]{../../../docs/img/header_wide.png}} 
+\renewcommand{\headrulewidth}{0pt} 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
+
+# send RA update emails
+
+require(googlesheets4)
+require(dplyr)
+require(purrr)
+require(blastula)
+require(ggplot2)
+require(readr)
+require(stringr)
+require(lubridate)
+require(qualtRics)
+require(kableExtra)
+require(tidyr)
+
+
+
+# load qualtrics data 
+
+certificate <- read_csv("certificate.csv")
+countries <- params$country %>%
+  str_split(pattern = ",") %>%
+  unlist() %>%
+  str_trim()
+countries_clean <- countries %>%
+  # remove sub-national indicator
+  map(~str_split(., pattern = ":")[[1]][1]) %>%
+  unlist() %>%
+  # remove repetitions
+  unique()
+
+counts <- length(countries_clean)
+word <- if (counts > 1) "countries" else "country"
+
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+\vspace{1cm}
+
+\fontfamily{qhv}\fontsize{15}{4}\selectfont
+\setlength{\baselineskip}{0.7cm}
+
+\color{cntext}
+The CoronaNet Research Project recognizes \textbf{`r params$Name`}  
+for the outstanding contribution as a Research Assistant (RA)    
+in policy collection for the `r word` `r countries_clean`.  
+
+\vspace{1cm}
+
+\includegraphics[width=0.15\columnwidth]{../../../docs/img/unterschrift_LM.png}\vspace{-0.9cm}  
+\makebox[1.5in]{\hrulefill}  
+
+\fontsize{12}{4}\selectfont
+\vspace{0.3cm}
+\setlength{\baselineskip}{0.5cm}
+**Luca Messerschmidt**  
+Principal Investigator  
+CoronaNet Research Team
+<br>
+\lfoot{\fontsize{8}{4}\selectfont \fontfamily{qhv}\selectfont Learn more about the CoronaNet project on \url{https://coronanet-project.org/}}
+\rfoot{\fontsize{12}{4}\selectfont \fontfamily{qhv}\selectfont Issued on `r format(Sys.time(), '%d %B %Y')`}
