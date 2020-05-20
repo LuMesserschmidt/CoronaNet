@@ -27,6 +27,7 @@ header-includes:
   \includegraphics[width=\paperwidth,height=\paperheight]{../../../img/background.png}
   }
   }
+  \definecolor{cnlightgray}{RGB}{137, 137, 137}
   \definecolor{cngray}{RGB}{80, 80, 80}
   \definecolor{cntext}{RGB}{45, 45, 45}
 output: pdf_document
@@ -34,7 +35,10 @@ output: pdf_document
 \addtolength{\headheight}{2.0cm}
 \pagestyle{fancyplain}
 \fancyhf{}
-\rhead{\includegraphics[height=2cm]{../../../img/logo_transparent.png}} 
+\rhead{\begin{tabular}{l}
+\includegraphics[height=2cm]{../../../img/logo_transparent.png} \\ 
+\fontsize{12}{4}\fontfamily{phv}\selectfont \hspace{0.45cm} {\color{cngray} `r format(Sys.time(), '%B %d, %Y')`}
+\end{tabular}}
 \renewcommand{\headrulewidth}{0pt} 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
@@ -84,7 +88,7 @@ text-align: justify}
 \color{cntext}
 To whom it may concern, 
 
-The CoronaNet Research Project recognises **`r params$Name`** for the outstanding contribution as a Research Assistant (RA). We appreciate the dedication and marvellous effort in volunteering for the project. `r params$Name` worked from `r format(as.Date(params$Since), '%d %B %Y')` to `r format(as.Date(params$End), '%d %B %Y')` for the project. `r params$Name` coded and updated policies for `r params$country` and without this support, we wouldn't have collected more than 14.000 entries within a month. 
+The CoronaNet Research Project recognises **`r params$Name`** for the outstanding contribution as a Research Assistant (RA). We appreciate the dedication and marvellous effort in volunteering for the project. `r params$Name` worked from `r format(as.Date(params$Since), '%B %d %Y')` to `r format(as.Date(params$End), '%B %d %Y')` for the project. `r params$Name` coded and updated policies for `r params$country` and without this support, we wouldn't have collected more than 14.000 entries within a month. 
 
 CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see [www.coronanet-project.org](www.coronanet-project.org). 
 
@@ -106,6 +110,13 @@ CoronaNet Research Project compiles a database on government responses to the CO
 \setlength{\baselineskip}{0.5cm}
 **Luca Messerschmidt**  
 Principal Investigator  
-CoronaNet Research Team
+CoronaNet Research Team  
+
+\vspace{0.1cm}
+**CoronaNet Research Team**  
+Joan Barceló (NYU Abu Dhabi)  
+Cindy Cheng (TU Munich)  
+Allison Spencer Hartnett (Yale University)  
+Robert Kubinec (NYU Abu Dhabi)  
+Luca Messerschmidt (TU Munich)  
 <br>
-\rfoot{\fontsize{12}{4}\selectfont Issued on `r format(Sys.time(), '%d %B %Y')`}
