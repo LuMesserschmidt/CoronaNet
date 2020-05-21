@@ -1,0 +1,31 @@
+---
+title: "Turkey's Approach to the COVID-19 Pandemic"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Rahman Demirkol
+    url: https://www.linkedin.com/in/rahman-demirkol-33a319152/
+    affiliation: Technical University of Munich
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+While the COVID-19 pandemic continues to cause unprecedented health crises and threaten global security, Turkey took swift preventative measures after the first cases of the coronavirus in the country were detected. In early February, Turkey was among the first countries to cancel flights from China and imposed social distancing measures in mid-March. Large events and social gatherings were suspended, universities and schools were closed, and borders were only admitting citizens. Intercity travel in 31 cities was banned and partial curfews for the elderly over 65 and young people under 20 were announced. Turkey has taken unique preventative measures, through weekend lockdowns and age-specific restrictions.^[Arwa Damon and Gul Tuysuz, April 17th 2020, CNN, https://edition.cnn.com/2020/04/17/europe/turkey-coronavirus-lockdown-response-intl/index.html] According to the COVID-19 Community Mobility Reports, which was launched by Google to analyze mobility patterns during the pandemic, community mobility in Turkey’s national parks and beach decreased by 58%. Additionally, the use of public transportation, including the metro, bus, and trains have decreased by 71%.^[COVID-19 Community Mobility Reports – Google, April 3rd 2020, https://www.google.com/covid19/mobility/]
+
+Turkey is a bridge between Europe and Asia and has one of the busiest and most highly trafficked airports in the world. Despite fears of the country becoming an epicenter for the pandemic, policies implemented to overcome COVID-19 have been exemplary. For example, school closures, extending remote learning, and limiting the movement of the elderly have assisted in prohibiting the rapid spread of the virus without fully burdening the health care system. These measures captured national attention and led to a decrease in reported deaths.
+
+Turkey’s low fatality rate and its measures to fight the pandemic are not praised by all in Turkey due to its polarized political climate. The level of trust in the Turkish government’s approach and efforts in response to COVID-19 have varied considerably. Opposition groups accuse the authorities of underreporting fatalities and the rates of infection. The international media have also joined in the domestic discourse. The New York Times blamed Turkey for concealing coronavirus cases and not reporting COVID-19-related deaths.^[Gall Carlotta, April 20th 2020, The New York Times, Istanbul Death Toll Hints Turkey Is Hiding a Wider Coronavirus Calamity, https://www.nytimes.com/2020/04/20/world/middleeast/coronavirus-turkey-deaths.html] Assuming Turkey’s coronavirus death toll is 25% higher than the government’s official reports, Turkey still has a lower death rate compared to other countries and the United States. 
+
+Turkey’s health infrastructure and social reform agendas in the last two decades demonstrate the country's capability to fight the coronavirus.^[Özmen Mustafa, 2008, HealthManagement.org, https://healthmanagement.org/c/imaging/issuearticle/overview-of-the-healthcare-system-in-turkey] The stress on the healthcare system that Turkey was able to endure highlights the country's achievements in tackling the spread of the coronavirus and keeping the death toll significantly lower than in other countries. Turkey has more intensive care unit (ICU) beds than most countries and its healthcare system is more accessible to the population.^[Ediboğlu Ö, Moçin ÖY, Özyılmaz E, et al. Current Statement of Intensive Care Units in Turkey: Data obtained from 67 Centers. Turkish Thoracic Journal. 2018 Oct;19(4):209-215. DOI: 10.5152/TurkThoracJ.2018.170104] Additionally, data collected by the World Bank illustrates that health expenditures in Turkey have dramatically increased during the last decade before the recession in 2010.^[The World Bank, World Health Organization Global Health Expenditure Database, Current health expenditure per capita, PPP (current international $) – Turkey, https://data.worldbank.org/indicator/SH.XPD.CHEX.PP.CD?end=2017&locations=TR&start=2002] Turkey’s ICUs, devoted healthcare professionals, and preventative measures ensure low fatality rates and have aided the country's response to the pandemic.
+
+The most contentious decision Turkey has made was to allow more than 20,000 pilgrims to fly to Mecca. Turkey’s Religious Affairs Directorate has come under fire for its decision not to cancel Umrah travel to Saudi Arabia. After public outrage, returning pilgrims were placed under quarantine. However, some of the early returnees went back to their cities and participated in large gatherings. Turkey accused Saudi Arabia of downplaying their coronavirus outbreak. The Turkish authorities have also faced questions on their delayed decision to suspend mass Friday prayer gatherings.
+
+During the pandemic, most countries have struggled to manage their economy and safety measures while trying to tackle the spread of the virus. To counter the economic stress as a result of the pandemic, Turkey announced new measures to normalize business and public life. They include deferring debts for companies, increasing the payouts to pensioners, assisting exporters by lifting taxes, and allocating 2 billion liras for families in need.^[Açikgöz, Ö., & Günay, A. (2020). The early impact of the Covid-19 pandemic on the global and Turkish economy. Turkish journal of medical sciences, 50(SI-1), 520–526. https://doi.org/10.3906/sag-2004-6]
+
