@@ -204,14 +204,14 @@ contribution <- read_csv("data/people/contribution.csv")
 library(knitr)
 library(readxl)
 contribution <- dplyr::rename(contribution, Country = country) %>%
-  dplyr::select(-c(5:7,9))
+  dplyr::select(-c(2:7,12))
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
           filter = 'top',
           escape= c(1,2,4,3,5),
           fillContainer = FALSE, 
-          options = list(pageLength = 300, 
+          options = list(pageLength = 320, 
                          autoWidth = TRUE,
                          dom = 'Bfrtip',
                          scrollX = TRUE, 
