@@ -93,16 +93,17 @@ dy <- dygraph(check_xts, elementId = "policyActivityIndexDygraph") %>%
               highlightSeriesOpts = list(strokeWidth = 3)) %>% 
   dyAxis("y", label = "Policy Activity Score") %>% 
   dyLegend(labelsSeparateLines = F) %>% 
-  dyCSS("data/dy.css")
+  dyCSS("data/dy.css") %>%
+  dyOptions(colors = "#A0A0A0")
 
-htmlwidgets::onRender(dy, "loadCountries")
+htmlwidgets::onRender(dy, "loadCountriesWithColors")
 ```
 
 ***
 ## Distribution Plot: Cumulative Incidence of Policy Event Types Over Time {-}
 
 ```{r overtime, message=FALSE}
-clean_data <- readr::read_csv("~/Documents/github/corona_tscs/data/CoronaNet/coronanet_release_allvars.csv")
+clean_data <- readr::read_csv("data/coronanet_release_allvars.csv")
 library(ggplot2)
 
 clean_data %>%
