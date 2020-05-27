@@ -12,16 +12,16 @@ text-align: justify}
 
 <br>
 
-**Please note that while we make every effort to validate this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this [Github page](https://github.com/saudiwin/corona_tscs/issues) or fill out this [form](https://forms.gle/2Zc5Rrdq9J43b7NR9).**
+**Please note that while we make every effort to clean this data, the speed and scale with which it was collected means that we cannot validate all of it. If you find an error in the data, please file an issue on this [Github page](https://github.com/saudiwin/corona_tscs/issues)**
 
-1. **CoronaNet Database BETA Version 1.0 (core)**
+1. **CoronaNet Database Version 1.0 (core)**
 
-This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 140 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](data/codebook/CoronaNet_Codebook.pdf).
+This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 190 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](data/codebook/CoronaNet_Codebook.pdf).
 
-Download the BETA Version of the Core Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release.csv)
+Download the Version of the Core Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release.csv)
 
 
-2.  **CoronaNet Database BETA Version 1.0 (extended)** 
+2.  **CoronaNet Database Version 1.0 (extended)** 
 
 This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release_allvars.csv) contains the government response information from the core data along with the following datasets:
 
@@ -29,7 +29,7 @@ This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/c
   + Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
   + Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)
 
-Download the CSV BETA Version of the Extended Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release_allvars.csv)
+Download the CSV Version of the Extended Dataset [HERE](https://github.com/saudiwin/corona_tscs/blob/master/data/CoronaNet/coronanet_release_allvars.csv)
 
 
 
@@ -104,9 +104,35 @@ CC-By Attribution 4.0 International
 
 Please cite the project and dataset as:
 
-Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” BETAVersion 1.0. https://www.coronanet-project.org.
-
-
+Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). https://www.coronanet-project.org
 
 <br>
+
+
+### The Data {-}
+
+
+```{r echo= FALSE, results='asis', message=FALSE}
+library(readr)
+myfile <- "https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release.csv"
+
+data <- read_csv(myfile)
+library(knitr)
+library(readxl)
+DT::datatable(data,
+          caption = 'CoronaNet Data Release',
+          class = 'cell-border stripe', 
+          filter = 'top',
+          #escape= c(1,2,4,3,5),
+          fillContainer = FALSE, 
+          options = list(pageLength = 50, 
+                         autoWidth = TRUE,
+                         dom = 'Bfrtip',
+                         scrollX = TRUE, 
+            selection="multiple"
+          ))
+```
+
+
+
 ![](img/header.png)

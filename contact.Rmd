@@ -11,20 +11,19 @@ Please feel free to contact us via this mail: admin@coronanet-project.org
 
 **English and German:**
 
-Luca Messerschmidt | Hochschule für Politik at the TU Munich | luca.messerschmidt @ hfp.tum.de 
+Luca Messerschmidt | Hochschule für Politik at the TU Munich 
 
 **Chinese**
 
-Cindy Cheng | Hochschule für Politik at the TU Munich | cindy.cheng @ hfp.tum.de 
+Cindy Cheng | Hochschule für Politik at the TU Munich 
 
 **Spanish**
 
-Joan Barceló | Social Science Division, New York University – Abu Dhabi | joan.barcelo @ nyu.edu
+Joan Barceló | Social Science Division, New York University – Abu Dhabi 
 
 **Arabic** 
 
-Robert Kubinec | Social Science Division, New York University – Abu Dhabi | rmk7 @ nyu.edu
-
+Robert Kubinec | Social Science Division, New York University – Abu Dhabi
 
 ***
 
@@ -44,7 +43,7 @@ CC-By Attribution 4.0 International
 
 Please cite the project and dataset as:
 
-Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” BETAVersion 1.0. https://www.coronanet-project.org.
+Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). https://www.coronanet-project.org.
 
 ### Consent {-}
 

@@ -135,10 +135,3 @@ clean_data %>%
 ```
 
 <br>
-
-
-## Table: Cumulative number of policies by type  {-}
-
-![](data/viz/viz.png)
-
-

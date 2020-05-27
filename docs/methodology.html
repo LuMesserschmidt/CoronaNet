@@ -13,6 +13,7 @@
 
 <title>Methodology</title>
 
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -357,9 +358,6 @@ div.tocify {
         <li>
   <a href="index.html">Introduction</a>
 </li>
-<li>
-  <a href="ra_call.html">Join CoronaNet</a>
-</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Data
@@ -380,31 +378,40 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Country Reports
+    Reports
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="data/reports/finished/20200421_Chad.html">Chad</a>
+      <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200422_Colombia.html">Colombia</a>
+      <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200415_Costa_Rica.html">Costa Rica</a>
+      <a href="data/reports/finished/20200422_Colombia.html">Country Report: Colombia</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200421_Eswatini.html">Eswatini</a>
+      <a href="data/reports/finished/20200415_Costa_Rica.html">Country Report: Costa Rica</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200428_Gambia.html">Gambia</a>
+      <a href="data/reports/finished/20200421_Eswatini.html">Country Report: Eswatini</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200416_Indonesia.html">Indonesia</a>
+      <a href="data/reports/finished/20200428_Gambia.html">Country Report: Gambia</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200422_Italy.html">Italy</a>
+      <a href="data/reports/finished/20200416_Indonesia.html">Country Report: Indonesia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200422_Italy.html">Country Report: Italy</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200507_Syria.html">Country Report: Syria</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200521_Turkey.html">Country Report: Turkey</a>
     </li>
   </ul>
 </li>
@@ -416,6 +423,9 @@ div.tocify {
 </li>
 <li>
   <a href="contact.html">About CoronaNet</a>
+</li>
+<li>
+  <a href="ra_call.html">Join CoronaNet</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -439,12 +449,12 @@ body {
 text-align: justify}
 </style>
 <hr />
-<p>To collect the data, we recruited 250 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 14000 records as of the date of the latest update.</p>
+<p>To collect the data, we recruited research assistants (RAs) from colleges and universities around the world. <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Data collection started on March 28, 2020.</p>
 <p>Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-<p>We have also partnered with the machine learning company Jataware to automate the collection of more than 200,000 news articles from around the world related to COVID-19.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Jataware employes a natural language processing (NLP) classifier using Bidirectional Encoder Representations from Transformers (BERT) to detect whether a given article is indicative of a governmental policy intervention related to COVID-19. They then apply a secondary NLP classifier to categorize the type of policy intervention (e.g. “state of emergency”, “shelter-in-place”, “quarantine”, “travel restrictions”, etc). Next, Jataware extracts the geospatial and temporal extent of the policy intervention (e.g. “Washington DC” and “March 15, 2020”) whenever possible. The resulting list of news sources is then provided to our RAs for manual coding and further data validation.</p>
+<p>We have also partnered with the machine learning company Jataware to automate the collection of more than 200,000 news articles from around the world related to COVID-19.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Jataware employes a natural language processing (NLP) classifier using Bidirectional Encoder Representations from Transformers (BERT) to detect whether a given article is indicative of a governmental policy intervention related to COVID-19. They then apply a secondary NLP classifier to categorize the type of policy intervention (e.g. “state of emergency”, “shelter-in-place”, “quarantine”, “travel restrictions”, etc). Next, Jataware extracts the geospatial and temporal extent of the policy intervention (e.g. “Washington DC” and “March 15, 2020”) whenever possible. The resulting list of news sources is then provided to our RAs for manual coding and further data validation.</p>
 <p>As researchers learn more about the various health, economic, and social effects of the corona-virus pandemic, it is crucial that they have access to both reliable, valid, and timely data. We have adopted the following data collection methodology to ensure the availability of such data as rapidly as possible while still maintaining high standards of quality at every stage of the data collection process.</p>
-<div id="data-collection-software-instrument" class="section level2 unnumbered">
-<h2>Data Collection Software Instrument</h2>
+<div id="data-collection-software-instrument" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">Data Collection Software Instrument</h2>
 <p>To streamline the CoronaNet data collection effort, we designed a Qualtrics survey with survey questions about different aspects of a government policy action. With this tool, RAs can easily and efficiently document different policy actions by answering the relevant questions posed in the survey. For example, instead of entering the country that initiated a policy action into a spreadsheet, RAs answer the following question in the survey: “From what country does this policy originate from?” and choose from the available options given in the survey.</p>
 <p>By using a survey instrument to collect data, we are able to systemetize the collection of very fine-grained data while avoiding coding errors common to tools like shared spreadsheets. The value of this approach of course, depends on the comprehensiveness of the questions posed in the survey, especially in terms of the universe of policy actions that countries have implemented against COVID-19. For example, if the survey only allowed RAs to select ‘quarantines’ as a government policy, it would not capture any data on external border restrictions, which would seriously reduce the value of the resulting data.</p>
 <p>As such, to ensure the comprehensiveness of the data, before designing the survey, one of the authors collected in depth, over-time data on policy actions taken by one country, Taiwan, since the beginning of the outbreak as well as cross-national data on travel bans implemented by most countries for a total of 245 events.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> We chose to focus on Taiwan on because of its relative success, as of March 28, 2020, in limiting the negative health consequences of the coronavirus within its borders.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> As such, it seems likely that other countries may choose to emulate some of the policy measures that Taiwan had implemented, which helps increase the comprehensiveness of the questions we ask in our survey. Meanwhile, by also investigating variation in how different countries around the world have implemented travel restrictions, we have also helped ensure that our survey is able to comprehensively document variation in how an important and commonly used policy tool is applied, e.g. restrictions of different methods of travel (e.g. flights, cruises), restrictions across borders and within borders, restrictions targeted toward people of different status (e.g. citizens, travelers).</p>
@@ -460,8 +470,8 @@ text-align: justify}
 <li><p>Finally, the use of a survey instrument allows us to easily link policy events together over time should there be updates to existing policies. Once coded, each policy is given a unique Record ID, which RAs can easily look up, reference and link to if they need to update a particular policy.</p></li>
 </ol>
 </div>
-<div id="ra-training" class="section level2 unnumbered">
-<h2>RA Training</h2>
+<div id="ra-training" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">RA Training</h2>
 <p>All RAs watch a mandatory video training of the survey instrument which explains how to use the survey instrument and need to pass a test survey (code more than 70% correctly). RAs are also provided with written guidelines on how to collect data and a comprehensive codebook. While both of these documents are availble in the Appendix, to briefly describe it here, the written guidelines provide a definition of what counts as a new or updated policy and provides a checklist for RAs to follow in order to identify and document different policies. In the checklist, RAs are instructed to check the data sources in the order given in the guidelines to identify policies, to document the relevant information into the survey and to save and upload a .pdf of the source they found to document each policy into Qualtrics. The codebook meanwhile provides provides descriptions and examples of the different possible response options in the survey. Using a training video and the written codebook also has the added benefit of helping us efficiently disseminate the information RAs need to use the survey experiment consistently.</p>
 <p>In order to participate as an RA in this project, RAs must fill out the CoronaNet Research Assistant Form in which:</p>
 <ul>
@@ -476,12 +486,12 @@ text-align: justify}
 </ul>
 <p>Once the RA submits the form, they are sent a personalized link to access the survey. With the customized link, we are also able to keep track of which RA coded what entries.</p>
 </div>
-<div id="real-time-communication-and-feedback" class="section level2 unnumbered">
-<h2>Real-Time Communication and Feedback</h2>
+<div id="real-time-communication-and-feedback" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">Real-Time Communication and Feedback</h2>
 <p>Once an RA joins the project, they can pose their questions on a CoronaNet Slack channel, which they must join in order to participate in the project. The channel allows any RA to pose a question or issue they may have in using the survey instrument to any of the PIs and allows all other RAs to learn from the exchange at the same time. As such, RAs are able to receive feedback and learn from each other’s questions in a timely and centralized manner.</p>
 </div>
-<div id="post-data-collection-validation-checks" class="section level2 unnumbered">
-<h2>Post-Data Collection Validation Checks</h2>
+<div id="post-data-collection-validation-checks" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">Post-Data Collection Validation Checks</h2>
 <p>Lastly, we take the following steps in order to validate the quality of the resulting data collected:</p>
 <ol style="list-style-type: decimal">
 <li><p>First, we sample 10% of the dataset, using the source of the data (e.g. newspaper article, government press release) as our unit of randomization, to validate. We use the source as our unit of randomization because one source may detail many different policy types.</p></li>
@@ -492,11 +502,11 @@ text-align: justify}
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://coronanet-project.org/index" class="uri">http://coronanet-project.org/index</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>We thank Brandon Rose and Jataware for making the news database available to this project.<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>The specific data source the PI cross referenced for this effort was the March 20, 2020 version of the following New York Times article Salcedo, Andrea and Gina Cherelus, “Coronavirus Travel Restrictions, Across the Globe” <em>New York Times</em>, 20 March 2020, <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html" class="uri">https://www.nytimes.com/article/coronavirus-travel-restrictions.html</a><a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>Beech, Hannah. “Tracking the Coronavirus: How Crowded Asian Cities Tackled an Epidemic.” <em>New York Times</em> 18 March 2020 <a href="https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html" class="uri">https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html</a><a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>For more information on the individual RAs, please visit <a href="http://coronanet-project.org/index" class="uri">http://coronanet-project.org/index</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>We thank Brandon Rose and Jataware for making the news database available to this project.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>The specific data source the PI cross referenced for this effort was the March 20, 2020 version of the following New York Times article Salcedo, Andrea and Gina Cherelus, “Coronavirus Travel Restrictions, Across the Globe” <em>New York Times</em>, 20 March 2020, <a href="https://www.nytimes.com/article/coronavirus-travel-restrictions.html" class="uri">https://www.nytimes.com/article/coronavirus-travel-restrictions.html</a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Beech, Hannah. “Tracking the Coronavirus: How Crowded Asian Cities Tackled an Epidemic.” <em>New York Times</em> 18 March 2020 <a href="https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html" class="uri">https://www.nytimes.com/2020/03/17/world/asia/coronavirus-singapore-hong-kong-taiwan.html</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 

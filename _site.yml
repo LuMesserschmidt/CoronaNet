@@ -15,8 +15,6 @@ navbar:
   left:
   - text: Introduction
     href: index.html
-  - text: Join CoronaNet
-    href: ra_call.html
   - text: Data
     href: Methodology.html
     menu:
@@ -55,4 +53,6 @@ navbar:
     href: media.html
   - text: About CoronaNet
     href: contact.html
+  - text: Join CoronaNet
+    href: ra_call.html
 

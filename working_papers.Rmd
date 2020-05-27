@@ -13,12 +13,12 @@ text-align: justify}
 
 ***
 
-## CoronaNet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic {-}
+## CoronaNet: COVID-19 Government Response Event Dataset {-}
 
-In this paper we present an initial release of a large hand-coded dataset of more than 5,000 separate policy announcements from governments around the world. The data are being made publicy available, in combination with COVID-19 testing data and country-level covariates. Due to the speed of the COVID-19 outbreak, we will be releasing this data on a daily basis with a 5-day lag for record validity checking. We believe this to be one of the largest and fastest manual data collection projects to date in political science, employing more than 150 research assistants across 18 time zones and making use of cloud-based managerial and data collection technology in addition to machine learning coding of news sources. We analyze the dataset with a Bayesian time-varying ideal point model showing the quick acceleration of more harsh policies across countries beginning in mid-March and continuing to the present. While some relatively low-cost policies like task forces and health monitoring began early, countries generally adopted more harsh measures within a narrow time window, giving indication of strong policy diffusion effects.
+Governments worldwide have implemented countless policies in response to the COVID-19 pandemic. We present an initial public release of a large hand-coded dataset of over 12,000 such policy announcements across more than 190 countries. The dataset is updated daily, with a 5-day lag for validity checking. We document policies across numerous dimensions, including the type of policy; national vs. sub-national enforcement; the specific human group and geographic region targeted by the policy; and the time frame within which each policy is implemented. We further analyze the dataset using a Bayesian measurement model which shows the quick acceleration of the adoption of costly policies across countries beginning in mid-March and continuing to the present. We believe that the data will be instrumental for helping policy makers and researchers assess, among other objectives, how effective different policies are in addressing the spread and health outcomes of COVID-19.
 
 Citation: 
-Cheng, Cindy, Joan Barcelo, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “Coronanet: A Dyadic Dataset of Government Responses to the COVID-19 Pandemic.” SocArXiv. April 12. doi:10.31235/osf.io/dkvxy.
+Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). https://www.coronanet-project.org. SocArXiv. April 12. doi:10.31235/osf.io/dkvxy.
 
 
 **Download the working paper [here](https://osf.io/preprints/socarxiv/dkvxy/).**

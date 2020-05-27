@@ -30,7 +30,7 @@ form<-bind_rows(form1,form2,form3)
 
 
 ra_allocation<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing")
-ra_allocation<- ra_allocation[,c(2,3,4,7,9,10)]
+ra_allocation<- ra_allocation[,c(2,3,4,7,9,10,11,12)]
 ra_allocation<- ra_allocation %>%
   rename("Country" = 1,
          "Name" =2,
@@ -218,12 +218,32 @@ certificate<- contribution
 certificate$Inactive <- as.character(certificate$Inactive)
 certificate$Validating <- as.character(certificate$Validating)
 certificate$Cleaning <- as.character(certificate$Cleaning)
+certificate$Managing <-as.character(certificate$Regional_Manager)
+certificate$Special <-as.character(certificate$Special_Role)
+
 
 certificate[which(certificate$Validating==1),"Validating"]  = "* Data validation: This role involved re-coding data previously collected by other RAs. The RA reentered the data without seeing prior entries. If the new entries matched the original data, then the data is considered accurate. If not, then the data needs to be rechecked by a third RA for resolution of errors. This task requires high expertise in coding and knwoledge of the codebook"
 certificate[which(certificate$`Cleaning`==1),"Cleaning"]  = "* Data cleaning: This role required the RA to use R-Studio in order to clean errors that were detected in the policy entries. The RA then checked the data for errors and fixed it in the Qualtrics survey. This role involved performing repetitive tasks over a long period with high accuracy."
 
 certificate[which(certificate$Validating=="0"),"Validating"]  = ""
 certificate[which(certificate$`Cleaning`=="0"),"Cleaning"]  = ""
+
+certificate$Managing[is.na(certificate$Managing)]  = "0"
+certificate$Managing[certificate$Managing!="0"]  = "* Regional Manager: This role comes along with the responsibility of leading a group of RAs. It involves the oversight and support of RAs as well as the conduction of regular performance and activity appraisals to guarantee the development of a consistent and up-to-date dataset. The RAs can approach the regional manager for research related questions and organizational issues. The role requires a profound knowledge of the construction of the dataset and strong leadership skills in order to contribute to the development of a certain team spirit among the RAs."
+certificate[which(certificate$Managing=="0"),"Managing"]  = ""
+
+table(certificate$Special_Role)
+certificate$Special[is.na(certificate$Special)]  = "0"
+certificate[which(certificate$Special=="0"),"Special"]  = ""
+certificate$Special[certificate$Special=="TUM Course"]  = "The CoronaNet Project includes a course at the Hochschule für Politik at the Technical University of Munich. Taking part in the class ´Analyzing the Coronavirus Pandemic in Real Time: An Introduction to Evidenced-Based Global Public Policy´ allows the students to gain experience in applying quantitative and statistical analyses in order to generate original knowledge that can help us better understand the politics of the pandemic. In this course, the notion of “evidence-based public policy” is introduced and explored on the basis of own work that addresses a variety of questions about the drivers and consequences of the public policies adopted across the globe in response to the pandemic."
+certificate$Special[certificate$Special=="TUM Project Study"]  = ""
+certificate$Special[certificate$Special=="TUM RA"]  = ""
+certificate$Special[certificate$Special=="Project Management"]  = ""
+certificate$Special[certificate$Special=="Reports"]  = ""
+certificate$Special[certificate$Special=="Prefect"]  = "* RA Manager: This role comes along with the responsibility of leading a group of RAs. It involves the oversight and support of RAs as well as the conduction of regular performance and activity appraisals to guarantee the development of a consistent and up-to-date dataset. The RAs can approach the managing RA for research related questions and organizational issues. The role requires a profound knowledge of the construction of the dataset and strong leadership skills in order to contribute to the development of a certain team spirit among the RAs."
+certificate$Special[certificate$Special=="Data Science"]  = "* Data Science Analyst: The work of data scientists at CoronaNet consists of the technical management of the rapidly evolving database and the analysis of the large amount of data the RAs are collecting. The data science team then uses the insights of this analysis to identify opportunities for leveraging the data and driving the optimization and the development of the dataset. Being part of the data science team requires strong problem-solving skills and the ability to work with different data architectures."
+
+
 
 write_csv(certificate,"~/Documents/github/CoronaNet/data/people/RA/certificate.csv")
 

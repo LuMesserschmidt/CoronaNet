@@ -13,7 +13,7 @@ text-align: justify}
 
 ***
 
-To collect the data, we recruited 250 research assistants (RAs) from colleges and universities around the world, representing 18 out of the 24 time zones.^[For more information on the individual RAs, please visit http://coronanet-project.org/index]  Data collection started on March 28, 2020 and has proceeded very rapidly, accumulating 14000 records as of the date of the latest update. 
+To collect the data, we recruited research assistants (RAs) from colleges and universities around the world. ^[For more information on the individual RAs, please visit http://coronanet-project.org/index]  Data collection started on March 28, 2020.
 
 Each RA is responsible for tracking government policy actions for at least one country. RAs were allocated depending on their background, language skills and expressed interest in certain countries.^[Note depending on the level of policy coordination at the national level, certain countries were assigned multiple RAs, e.g. the United States, Germany, or France. For a comprehensive list of which RAs were assigned to which country.]
 
