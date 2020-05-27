@@ -89,3 +89,136 @@ htmlwidgets::onRender(dy, "loadCountriesWithColors")
 ```
 
 *** 
+
+```{r bioplot, echo= FALSE, message=FALSE}
+require(dplyr)
+require(tidyr)
+require(ggplot2)
+require(lubridate)
+require(stringr)
+require(kableExtra)
+require(rstan)
+require(ggrepel)
+library(readr)
+library(knitr)
+library(readxl)
+require(gghighlight)
+require(patchwork)
+library(devtools)
+library(igraph)
+library(RBioFabric)
+'%!in%' <- function(x,y)!('%in%'(x,y))
+
+clean_data <- read.csv("data/coronanet_release.csv", stringsAsFactors = FALSE) %>% 
+   mutate(date_announced=as.Date(date_announced, '%Y-%m-%d'),
+          date_start=as.Date(date_start, '%Y-%m-%d')) %>% 
+  # filter(date_announced<(today()-days(5)),!is.na(country),is.na(init_other),is.na(target_other) | target_other=="")
+  filter(!is.na(country),is.na(target_other)| target_other=="")%>%
+  filter(type %!in% c('Hygiene', "Anti-Disinformation Measures", "Quarantine/Lockdown", "Lockdown" ))
+
+regions_df = read.csv("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/regions/country_regional_groups_concordance.csv", stringsAsFactors = FALSE)
+countries = read.csv("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/regions/all_countries.csv", stringsAsFactors = FALSE)
+
+clean_data$region = regions_df$regions[match(clean_data$country, regions_df$country)]
+# create numeric ids per country; needed to create igraph
+country_id = factor(unique(countries$Country))
+levels(country_id ) = 1:length(country_id )
+country_id = as.numeric(as.character(country_id))
+cid = data.frame(country_name = countries$Country, country_id)
+clean_data$country_id = cid$country_id[match(clean_data$country, cid$country_name)]
+clean_data$target_country_id = cid$country_id[match(clean_data$target_country, cid$country_name)]
+# user function to create a network where nodes are countries and edges are travel restrictions
+createTravelRestrictionNet = function(regionName,
+                        policyType,
+                        dateStart,
+                        allDum  = FALSE,
+                        travelMech = c('Flights' ,'All kinds of transport'),
+                        travelDir = c("Inbound", "Inbound/Outbound")) {
+  sub_data = clean_data %>% filter(date_start<= dateStart)
+  sub_data =  sub_data %>% filter(type == policyType )
+  sub_data = sub_data %>% separate_rows(travel_mechanism, sep = ',')
+  sub_data = sub_data %>% filter(travel_mechanism %in% travelMech)
+  sub_data = sub_data %>% filter(target_direction %in% travelDir )
+  # mandatory compliance
+  sub_data = sub_data %>% separate_rows(compliance, sep = ',' )
+  sub_data = sub_data %>% filter(compliance %!in% "Voluntary/Recommended but No Penalties")
+  sub_data = sub_data %>% filter(target_country!="Other (please specify below)")
+  # conditional logic for only selecting inbound flight bans external border restrctions
+  if(policyType == 'External Border Restrictions'){
+    sub_data = sub_data %>% filter(type_sub_cat %!in% c("Health Screenings (e.g. temperature checks)", "Health Certificates", "Travel History Form (e.g. documents where traveler has recently been)") )
+    sub_data = sub_data %>% filter(target_who_what %in% c("All (Travelers + Residents)", "All Travelers (Citizen Travelers + Foreign Travelers )") )
+  }
+  ## Note, the following entry is not 'wrong', but is not a sweeping travel ban
+  # Macau, not travel ban but health declaration doesn't fit into existing categories
+  sub_data = sub_data %>% filter(policy_id %!in% c(4638284 ))
+  # Italian ban only for Sardenia
+  sub_data = sub_data %>% filter(policy_id %!in% c(4539256))
+  # Portugal ban only for Maideria
+  sub_data = sub_data %>% filter(policy_id %!in% c(6369772))
+  ## FIX THE BELOW LATER IN QUALTRICS
+  # this is not a travel ban for people entering Italy,but a health declaration form
+  sub_data = sub_data %>% filter(policy_id %!in% c(1727181))
+  # South Sudan, not a ban on all countries, but on unsepcified countries affected by covid
+  sub_data = sub_data %>% filter(policy_id %!in% c(5302981))
+  # add data for italy's ban of inbound flights from Taiwan, Hong Kong and Macau
+  # currently not in the data but we should add these entries
+  # https://www.reuters.com/article/china-health-taiwan-italy/italy-says-taiwan-flight-resumption-request-noted-after-virus-ban-idUSL4N2A52YR
+  sub_data = sub_data %>% add_row(country = 'Italy', target_country = 'Taiwan', type = 'External Border Restrictions', target_direction = 'Inbound', travel_mechanism = "Flights", date_start = as.Date("2020-02-02"), region = 'Europe')
+  sub_data = sub_data %>% add_row(country = 'Italy', target_country = 'Hong Kong', type = 'External Border Restrictions', target_direction = 'Inbound', travel_mechanism = "Flights", date_start = as.Date("2020-02-02"), region = 'Europe')
+  sub_data = sub_data %>% add_row(country = 'Italy', target_country = 'Macau', type = 'External Border Restrictions', target_direction = 'Inbound', travel_mechanism = "Flights", date_start = as.Date("2020-02-02"), region = 'Europe')
+  # add data for greece's ban of inbound/outbound flights from Italy
+  # https://www.reuters.com/article/us-health-coronavirus-greece-death/greece-reports-two-more-coronavirus-fatalities-suspends-all-flights-to-italy-idUSKBN2110H1
+  sub_data = sub_data %>% add_row(country = 'Greece', target_country = 'Italy', type = 'External Border Restrictions', target_direction = 'Inbound', travel_mechanism = "Flights", date_start = as.Date("2020-03-14"), region = 'Europe')
+  # expand dataset to include disaggregated country data when applicable
+  sub_data[which(sub_data$target_country == 'All countries'), 'target_country'] = paste(cid$country_name, collapse = ',')
+  sub_data = sub_data %>% separate_rows(target_country, sep = ',')
+  # remove duplicates
+  sub_data = sub_data %>%
+    distinct(country, target_country, .keep_all = TRUE)
+  # subset to a region, if applicable
+  if(allDum == FALSE){
+    sub_data = sub_data %>% filter(region %in% regionName)}
+  # extract edges and nodes for network
+  nodes = data.frame(unique(c(sub_data$country,sub_data$target_country)))
+  edges = data.frame(from = sub_data$country,to = sub_data$target_country)
+  # create network from subdata
+  sub_data_net = graph_from_data_frame(edges, nodes, directed = TRUE)
+  sub_data_net
+}
+# user function for plotting biofabric plots by region, policy type, date, travel mechanism and travel direction
+plotBioGraph = function(regionName,
+                        policyType,
+                        dateStart,
+                        allDum  = FALSE,
+                        travelMech = c('Flights' ,'All kinds of transport'),
+                        travelDir = c("Inbound", "Inbound/Outbound")){
+  # subset data
+  sub_data_net <- createTravelRestrictionNet(regionName,
+                        policyType,
+                        dateStart,
+                        allDum,
+                        travelMech,
+                        travelDir)
+  #format .pdf size and save pdf of bifabric
+  height <- vcount(sub_data_net)
+  width <- ecount(sub_data_net)
+  aspect <- height / width;
+  plotWidth <- 100.0
+  plotHeight <- plotWidth * (aspect * 1.2)
+  # make biofabric plot
+  bioFabric(passthroughNodeOrder(sub_data_net) )
+}
+```
+
+```{r biograph, echo=FALSE, message=FALSE}
+plotBioGraph("Europe", "External Border Restrictions", "2020-05-27")
+```
+
+```{r edgebundle, echo= FALSE, message=FALSE}
+#devtools::install_github("garthtarr/edgebundleR")
+library(edgebundleR)
+
+sub_data_net <- createTravelRestrictionNet("Europe", "External Border Restrictions", "2020-05-27")
+edgebundle(sub_data_net, directed = TRUE, fontsize = 8, width=800, nodesize = c(2,10))
+```
+
