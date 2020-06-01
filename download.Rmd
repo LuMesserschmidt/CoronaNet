@@ -23,33 +23,9 @@ text-align: justify}
 
 This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 190 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](data/codebook/CoronaNet_Codebook.pdf).  
 
-
-```{r echo= FALSE, message=FALSE, cache=TRUE, results='asis', out.width='100%'}
-release <- "https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release.csv"
-data_release <- read_csv(release)
-
-dt <- datatable(data_release,
-          caption = 'CoronaNet Core Dataset',
-          class = 'cell-border stripe',
-          filter = 'top',
-          escape= c(1,2,4,3,5),
-          fillContainer = FALSE,
-          extensions = 'Buttons',
-          options = list(pageLength = 5,
-                         autoWidth = TRUE,
-                         dom = 'Bfrtip',
-                         scrollX = TRUE,
-                         selection="multiple",
-                         buttons = list(list(extend = 'collection',
-                                   buttons = c('csv', 'excel'),
-                                   text = 'Download'
-                         ))
-          ))
-
-dt
-```
-
-<br>
+<div class="text-center">
+<a href="https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release.csv" download="coronanet_release.csv" role="button" class="btn btn-primary">Download Core Dataset</a>
+</div>
 <br>
 
 2. **CoronaNet Database Version 1.0 (extended)**
@@ -60,30 +36,9 @@ This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/c
   * Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
   * Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)  
 
-
-```{r echo=FALSE, message=FALSE, cache=TRUE, results='asis', out.width='100%'}
-allvars <- "https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release_allvars.csv"
-data_allvars <- read_csv(allvars)
-
-dt <- datatable(data_allvars,
-          caption = 'CoronaNet Extended Dataset',
-          class = 'cell-border stripe', 
-          filter = 'top',
-          escape= c(1,2,4,3,5),
-          fillContainer = FALSE, 
-          options = list(pageLength = 5, 
-                         autoWidth = TRUE,
-                         dom = 'Bfrtip',
-                         scrollX = TRUE, 
-                         selection="multiple",
-                         buttons = list(list(extend = 'collection',
-                                   buttons = c('csv', 'excel'),
-                                   text = 'Download'
-                         ))
-          ))
-
-dt
-```
+<div class="text-center">
+<a href="https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release_allvars.csv" download="coronanet_release_allvars.csv" role="button" class="btn btn-primary">Download Extended Dataset</a>
+</div>
 
 ***
 
