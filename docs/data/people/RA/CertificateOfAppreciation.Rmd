@@ -1,7 +1,7 @@
 
 ---
 title: |
-  | \vspace{-3cm} \fontfamily{cmr}\fontsize{20}{100}\selectfont {\color{cngray} \textbf{Certificate of appreciation}}
+  | \vspace{-3cm} \fontfamily{cmr}\fontsize{20}{100}\selectfont {\color{cngray} \textbf{Certificate of Appreciation}}
 geometry: "left=1.5cm, right=1.5cm, top=1.5cm"
 params:
   Cleaning: 
@@ -9,7 +9,8 @@ params:
   Validating: 
   country: 
   Since: 
-  End: 
+  End:
+  Special:
 documentclass: article
 header-includes:
   \usepackage{background}
@@ -37,7 +38,7 @@ output: pdf_document
 \fancyhf{}
 \rhead{\begin{tabular}{l}
 \includegraphics[height=2cm]{../../../img/logo_transparent.png} \\ 
-\fontsize{12}{4}\fontfamily{phv}\selectfont \hspace{0.45cm} {\color{cngray} `r format(Sys.time(), '%B %d, %Y')`}
+\fontsize{12}{4}\fontfamily{phv}\selectfont \hspace{0.45cm} {\color{cngray} `r format(Sys.time(), '%m/%d/%Y')`}
 \end{tabular}}
 \renewcommand{\headrulewidth}{0pt} 
 ```{r setup, include=FALSE}
@@ -88,22 +89,30 @@ text-align: justify}
 \color{cntext}
 To whom it may concern, 
 
-The CoronaNet Research Project recognises **`r params$Name`** for the outstanding contribution as a Research Assistant (RA). We appreciate the dedication and marvellous effort in volunteering for the project. `r params$Name` worked from `r format(as.Date(params$Since), '%B %d %Y')` to `r format(as.Date(params$End), '%B %d %Y')` for the project. `r params$Name` coded and updated policies for `r params$country` and without this support, we wouldn't have collected more than 14.000 entries within a month. 
+The CoronaNet Research Project recognizes **`r params$Name`** for their outstanding contributions as a Research Assistant (RA). `r params$Name` worked from `r params$Since` to `r params$End` for the project. Without their support documenting and updating government policies in reaction to the COVID-19 pandemic, CoronaNet would not have been able to provide systematic and detailed information on how the government of  `r params$country` responded to the pandemic. We appreciate the dedication and incredible effort put into volunteering for this data collection effort in a time of truly exceptional global uncertainty.
 
-CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see [www.coronanet-project.org](www.coronanet-project.org). 
+The CoronaNet Research Project collates data on government responses to the COVID-19 crisis. Its primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the spread and effects of COVID-19. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 300 political, social and public health science scholars from all over the world, CoronaNet makes publicly available an initial release of a comprehensive hand-coded dataset of more than 17,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see [www.coronanet-project.org](www.coronanet-project.org).
 
-`r params$Name` collected an amazing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. 
+* `r params$Name` collected an impressive number of policies and became a country expert for `r params$country`. To fulfill this role, `r params$Name` participated in our online training session, identified information on government policies made in response to COVID-19 from various information sources including government websites and newspaper articles and documented the government policies that they found following the procedures and classification scheme outlined in the [CoronaNetCodebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing). They further contributed to the CoronaNet community by posting and reading questions and comments on the CoronaNet Slack channel and participating in CoronaNet's weekly RA Zoom meetings. 
 
 `r params$Validating`
 
 `r params$Cleaning`
 
-`r params$Name` has invested everything possible to support not only the project but also collecting a dataset that supports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project.  
+`r params$Special`
+
+`r params$Name` has invested substantial time and effort in collecting up-to-date information of great value to policy makers, scientists and the global community. We appreciate them for their exceptional sense of solidarity and their contribution to this important public good and are deeply thankful to `r params$Name` for being part of this project.
+
 
 \vspace{1cm}
 
-\includegraphics[width=0.15\columnwidth]{../../../docs/img/unterschrift_LM.png}\vspace{-0.7cm}  
-\makebox[1.5in]{\hrulefill}  
+
+```{r, echo=FALSE, out.width="20%"}
+knitr::include_graphics("unterschrift_LM.png")
+```
+
+Luca Messerschmidt, Principal Investigator
+<br>
 
 \fontsize{12}{4}\selectfont
 \vspace{0.3cm}
@@ -120,3 +129,7 @@ Allison Spencer Hartnett (Yale University)
 Robert Kubinec (NYU Abu Dhabi)  
 Luca Messerschmidt (TU Munich)  
 <br>
+
+```{r, echo=FALSE, out.width="40%"}
+knitr::include_graphics("logo_wide.png")
+```

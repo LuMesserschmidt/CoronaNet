@@ -57,7 +57,10 @@ CoronaNet Research Project compiles a database on government responses to the CO
 
 `r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project. 
 
-\includegraphics[width=0.2\columnwidth]{~/Documents/github/CoronaNet/docs/img/unterschrift_LM.png}
+
+```{r, echo=FALSE, out.width="20%"}
+knitr::include_graphics("unterschrift_LM.png")
+```
 
 Luca Messerschmidt, Principal Investigator
 <br>
@@ -76,4 +79,6 @@ Luca Messerschmidt, Principal Investigator
 *Luca Messerschmidt (TU Munich)*
 
 
-![](~/Documents/github/CoronaNet/img/logo_wide.png){width=3in} 
+```{r, echo=FALSE, out.width="40%"}
+knitr::include_graphics("logo_wide.png")
+```

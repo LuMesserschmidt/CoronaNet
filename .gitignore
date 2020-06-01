@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 .DS_Store
+
+docs/data/reports/TUM_report.html
+
+docs/data/reports/TUM_report.Rmd
