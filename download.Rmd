@@ -8,7 +8,6 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE)
 
 library(readr)
 library(knitr)
-library(DT)
 ```
 <style>
 body {
@@ -23,6 +22,13 @@ text-align: justify}
 
 This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/coronanet_release.csv) contains variables from the CoronaNet government response project, representing national and sub-national policy event data from more than 190 countries since January 1st, 2020. The data include source links, descriptions, targets (i.e. other countries), the type and level of enforcement, and a comprehensive set of policy types. For more detail on this data, you can see our [codebook here](data/codebook/CoronaNet_Codebook.pdf).  
 
+```{r, include=FALSE, echo=FALSE}
+# get newest dataset version from the main repository
+# you still have to push the two files!
+download.file("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release.csv", "./data/coronanet_release.csv")
+download.file("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release.csv", "./docs/data/coronanet_release.csv")
+```
+
 <div class="text-center">
 <a href="http://coronanet-project.org/data/coronanet_release.csv" download="coronanet_release.csv" role="button" class="btn btn-primary">Download Core Dataset</a>
 </div>
@@ -35,6 +41,13 @@ This [file](https://github.com/saudiwin/corona_tscs/tree/master/data/CoronaNet/c
   * Tests from the CoronaNet testing database (see http://coronanet-project.org for more info);
   * Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
   * Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)  
+
+```{r, include=FALSE, echo=FALSE}
+# get newest dataset version from the main repository
+# you still have to push the two files!
+download.file("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release_allvars.csv", "./data/coronanet_release_allvars.csv")
+download.file("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/data/CoronaNet/coronanet_release_allvars.csv", "./docs/data/coronanet_release_allvars.csv")
+```
 
 <div class="text-center">
 <a href="http://coronanet-project.org/data/coronanet_release_allvars.csv" download="coronanet_release_allvars.csv" role="button" class="btn btn-primary">Download Extended Dataset</a>
