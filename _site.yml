@@ -22,6 +22,8 @@ navbar:
         href: download.html
       - text: "Methodology"
         href: methodology.html
+      - text: "Validation & Reliability Checks"
+        href: validation_website.html
   - text: Visualizations
     href: visuals.html
   - text: Reports
