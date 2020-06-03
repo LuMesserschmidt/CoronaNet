@@ -1,0 +1,30 @@
+---
+title: "Saint Kitts and Nevis Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Lea Clara Frömchen-Zwick 
+    url: 
+    affiliation: Christian-Albrechts Universität zu Kiel
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+Saint Kitts and Nevis is a federation of two islands in the West Indies that has a population of 53,199.^[https://worldpopulationreview.com/countries/saint-kitts-and-nevis-population/] On March 27th, 2 individuals tested positive for COVID-19. As of May 11th, 20 people have tested positive from 332 tests. Only 5 test results are pending and there have been no deaths reported in Saint Kitts and Nevis in connection to the virus.^[https://www.covid19.gov.kn/statistics/]
+
+The government of Saint Kitts and Nevis took the pandemic seriously and reacted fast. After 2 individuals tested positive, the government declared a temporary state of emergency and imposed a curfew on March 28th.^[https://www.thestkittsnevisobserver.com/coronavirus-state-of-emergency-declared-curfew-imposed] The state of emergency was extended on April 18th for 6 additional months by parliament.^[https://www.thestkittsnevisobserver.com/parliament-votes-to-extend-state-of-emergency-up-to-6-months/] The curfew is revised and renewed regularly and currently lasts until May 22nd.^[https://www.covid19.gov.kn/2020/05/07/new-covid-19-regulations-provide-for-five-days-of-operations-and-greater-relaxation-of-restrictions/] A total lockdown alternates between days where businesses can have limited operations.^[https://www.covid19.gov.kn/2020/04/24/address-no-6-to-the-nation-by-prime-minister-dr-the-hon-timothy-harris-on-the-state-of-emergency-friday-24th-april-2020/] These measures aim to prevent the communal transmission of the virus and to relieve the health care system by slowing down the rate of transmission.^[https://www.covid19.gov.kn/2020/03/30/st-kitts-and-nevis-confirms-first-two-cases-of-covid-19-disease-every-effort-being-made-to-prevent-communal-transmission/] Beginning on May 11th, the government started to reopen the country by adding more business days and longer operating hours to encourage economic activity.^[https://www.covid19.gov.kn/2020/05/07/new-covid-19-regulations-provide-for-five-days-of-operations-and-greater-relaxation-of-restrictions/] To slow the rate of transmission, the government of Saint Kitts and Nevis implemented contact tracing. All individuals who were in contact with someone who had tested positive are taken into quarantine or isolated to prevent further transmission.^[https://www.covid19.gov.kn/2020/04/13/contact-tracing-is-a-critical-measure-to-contain-covid-19-in-st-kitts-nevis/]
+
+These strategies were combined with a public awareness campaign that includes a hotline to ask questions about the virus, a website by the Ministry of Health^[https://www.covid19.gov.kn/], and posts on Facebook to inform the public about new policies and hygiene measures.^[https://www.facebook.com/StKittsHPU/?__tn__=%2Cd%2CP-R&eid=ARCP9BtUy4cOxZW0VMqIifRirhrcUHTAMPfanzl1u_xt9nzWgVFYz6ZEag3OGCNzJhAW9shJ3ZgmnF3G]
+
+All schools in Saint Kitts and Nevis have been closed as of March 27th^[https://zizonline.com/schools-closing-as-of-monday-march-30-2020-education-minister-says/]and remain closed until further notice.^[https://zizonline.com/schools-remain-closed/] The start of virtual classes was first scheduled for May 5th but was delayed and is expected to begin soon.^[https://www.thestkittsnevisobserver.com/virtual-school-classes-delayed-for-teacher-training/]
+
+Although tourism is a major source of income for the country, on March 31st the government restricted all international inbound and outbound travel. Additionally, domestic travel within the federation has been restricted.^[https://mcusercontent.com/bb7c8b2d02cf287e7132078a2/files/4a67d749-e8b6-446d-898e-25ae07a70e7a/SRO_9_of_2020.pdf]
+
+The policies of Saint Kitts and Nevis reveal how swift reactions to the virus can prevent large outbreaks and save lives. The government is transparent about all case numbers as well as current policies and changes. 

@@ -39,10 +39,16 @@ navbar:
         href: data/reports/finished/20200421_Eswatini.html
       - text: "Country Report: Gambia"
         href: data/reports/finished/20200428_Gambia.html
+      - text: "Country Report: Grenada"
+        href: data/reports/finished/20200602_Grenada.html
       - text: "Country Report: Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
+      - text: "Country Report: Saint Kitts and Nevis"
+        href: data/reports/finished/20200602_Saint_Kitts.html
+      - text: "Country Report: Saint Vincent and the Grenadines"
+        href: data/reports/finished/20200602_Saint_Vincent.html
       - text: "Country Report: Syria"
         href: data/reports/finished/20200507_Syria.html
       - text: "Country Report: Turkey"

@@ -1,0 +1,28 @@
+---
+title: "Grenada Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Lea Clara Frömchen-Zwick 
+    url: 
+    affiliation: Christian-Albrechts Universität zu Kiel
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+Grenada is an island state in the West Indies with 112,523 inhabitants.^[https://worldpopulationreview.com/countries/grenada-population/] On March 22nd, the first case of COVID-19 was confirmed in Grenada.^[https://www.nowgrenada.com/2020/03/grenada-confirms-first-covid-19-case/] As of May 8th, 21 cases of the virus have been reported within the country, of which 13 are recoveries. There have been no deaths concerning COVID-19 recorded in Grenada.^[https://covid19.gov.gd/]
+
+The government took the pandemic seriously and reacted fast. After the first positive test result, the government declared a limited state of emergency on March 25th.^[https://www.nowgrenada.com/2020/03/21-days-limited-state-of-emergency-commencing-at-6-pm-today/] The state of emergency was extended on April 17th for 6 additional months.^[https://www.nowgrenada.com/2020/04/parliamentarians-in-both-houses-unanimously-support-extending-state-of-emergency/] A curfew was also implemented on March 25th^[https://www.nowgrenada.com/2020/03/21-days-limited-state-of-emergency-commencing-at-6-pm-today/], which is extended regularly.^[https://covid19.gov.gd/government-of-grenada-announces-regulations-for-week-march-27th-to-march-5th/] A total lockdown alternates between designated business days, allowing some businesses to resume limited operations. People are also allowed to leave their homes during specified times to go grocery shopping. As of May 4th, people can participate in recreational activities outdoors with other people in their households.^[https://covid19.gov.gd/regulations-for-week-may-4th-to-12th/] All schools in Grenada were closed on March 16th and remain closed until further notice.^[https://www.nowgrenada.com/2020/03/grenada-government-announces-closure-of-schools/] These measures aim to prevent communal transmission of the virus and relieve the health care system by slowing down the rate of transmission. Grenada received healthcare support from both the Republic of China and Cuba.^[https://www.nowgrenada.com/2020/04/grenadas-fight-against-covid-19-boosted-with-donation-from-peoples-republic-of-china/]
+
+The government of Grenada has implemented contact tracing to prevent further communal transmission of the virus. In one case, 4 workers from the same company were infected with the virus. To prevent further spread, the government closed the company and is testing extensively.^[https://www.nowgrenada.com/2020/05/mass-retesting-of-staff-at-company-with-cluster-of-covid-19-positive-cases/] 
+
+These strategies were combined with a public awareness campaign that includes an informational website by the Ministry of Health on COVID-19^[https://covid19.gov.gd/]and Facebook posts to inform the public about policies, business days, and new hygiene measures.^[ https://www.facebook.com/HealthGrenada/] Although Grenada is reliant on international travel and visitors from cruise ships, the government restricted all international and domestic travel^[https://www.nowgrenada.com/2020/03/emergency-powers-covid-19-no-2-sro-16-regulations/#ten]until May 11th, when the first ferries were allowed to restart their domestic inter-island service with international borders remaining closed. The closure of the borders also affects Grenadians stuck abroad. Starting in May, the government will allow citizens to return to Grenada with a 2-week quarantine and a COVID-19 test.^[[15] https://www.nowgrenada.com/2020/05/national-address-by-dr-the-right-honourable-keith-mitchell/] 
+
+The measures the government of Grenada took are similar to the policies of Saint Kitts and Nevis. Both countries exemplify how swift measures can prevent a large outbreak and save lives. As of May 11th, no deaths have been reported in Grenada or Saint Kitts and Nevis. The government of Grenada is transparent about case numbers and current policies. 

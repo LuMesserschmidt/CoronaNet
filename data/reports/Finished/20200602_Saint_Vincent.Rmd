@@ -1,0 +1,28 @@
+---
+title: "Saint Vincent and the Grenadines Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Lea Clara Frömchen-Zwick 
+    url: 
+    affiliation: Christian-Albrechts Universität zu Kiel
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+Saint Vincent and the Grenadines is a country of several islands in the West Indies that has a population of 110,940.^[https://worldpopulationreview.com/countries/saint-vincent-and-the-grenadines-population/] The country reported its first positive COVID-19 case on March 11th.^[ http://www.gov.vc/images/pdf_documents/no-new-cases-26_03_2020.pdf] As of May 7th, 17 positive cases have been recorded of which 9 are recoveries.^[http://www.gov.vc/index.php/media-center/1304-situation-report-on-the-covid-19-pandemic-as-at-7th-may-2020]
+
+The government has not declared a state of emergency or a curfew. Instead, the government of Saint Vincent and the Grenadines closed schools on March 20th. Schools remain closed until further notice, but remote learning is taking place.^[http://www.gov.vc/images/pdf_documents/Press_Release_Ministry_of_Education_To_Strengthen_Its_E-Learning_Modalities_To_Provide_Home-based_Learning.pdf] Additionally, the government declared that travelers entering the country will be quarantined and monitored to prevent the spread of the virus.^[http://www.gov.vc/images/pdf_documents/HEOC_COVID_19_Advisory_Canada_Quarantine-25_03_2020.pdf] 
+
+Based on an official advisory issued on March 22nd by the government, people are advised to engage in social distancing and good hygiene practices.^[http://www.gov.vc/images/pdf_documents/HEOC_COVID-19-advisory_social_distancing_and_the_church_skb.docxedt.pdf] Cuba supports the government to improve the country's health infrastructure. Since the beginning of April, tests were available within Saint Vincent and the Grenadines.^[http://www.gov.vc/index.php/media-center/1237-mission-critical-in-fight-against-covid-19]
+
+Saint Vincent and the Grenadines shows that strict quarantine and isolation measures can prevent an outbreak of COVID-19. The country has maintained low case numbers without implementing “hard” measures such as curfews or state of emergencies. As of May 7th, only 137 people have tested positive in the country.
+
+
