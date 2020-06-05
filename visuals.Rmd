@@ -40,7 +40,7 @@ library(tidyverse)
 library(lubridate)
 library(dygraphs)
 
-get_est <- readRDS("data/get_est.rds")
+get_est <- readRDS("~/Documents/github/corona_private/data/website/get_est.rds")
  
  
 get_est_sum <- get_est %>%
@@ -103,7 +103,7 @@ htmlwidgets::onRender(dy, "loadCountriesWithColors")
 ## Distribution Plot: Cumulative Incidence of Policy Event Types Over Time {-}
 
 ```{r overtime, message=FALSE}
-clean_data <- readr::read_csv("data/coronanet_release_allvars.csv")
+clean_data <- readr::read_csv("~/Documents/github/corona_private/data/website/coronanet_release_allvars.csv")
 library(ggplot2)
 
 clean_data %>%

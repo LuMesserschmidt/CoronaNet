@@ -33,7 +33,7 @@ We are thankful for the amazing network of 260 scholars from social and politica
 ```{r echo= FALSE, results='asis'}
 library(knitr)
 library(readxl)
-contribution <- readRDS("data/people/contribution.rds")
+contribution <- read.csv("~/Documents/github/corona_private/data/website/people/contribution.csv")
 contribution <- dplyr::rename(contribution, Country = country)
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',

@@ -61,7 +61,7 @@ library(tidyverse)
 library(lubridate)
 library(dygraphs)
 
-get_est <- readRDS("data/get_est.rds")
+get_est <- readRDS("~/Documents/github/corona_private/data/website/get_est.rds")
  
  
 get_est_sum <- get_est %>%
@@ -200,7 +200,7 @@ We are thankful for the amazing network of 300 scholars from social, political, 
 
 ```{r echo= FALSE, results='asis', message=FALSE}
 library(readr)
-contribution <- read_csv("data/people/contribution.csv")
+contribution <- read_csv("~/Documents/github/corona_private/data/website/people/contribution.csv")
 library(knitr)
 library(readxl)
 contribution <- dplyr::rename(contribution, Country = country) %>%

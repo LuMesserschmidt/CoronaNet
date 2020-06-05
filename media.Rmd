@@ -3,7 +3,7 @@ title: "In the Media"
 output:  
   html_document:
     includes:
-      before_body: inst/assets/dependencies.html
+    before_body: inst/assets/dependencies.html
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
