@@ -1,6 +1,9 @@
 ---
 title: "In the Media"
-output: pdf_document
+output:  
+  html_document:
+    includes:
+      before_body: inst/assets/dependencies.html
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -11,6 +14,10 @@ text-align: justify}
 </style>
 
 ***
+
+
+June 1, 2020: **TEDx Vienna**, [History on the fly: documenting a pandemic](https://www.tedxvienna.at/blog/history-on-the-fly-documenting-a-pandemic/) 
+
 May 26, 2020: **FAZ**, [Corona-Strategien im Vergleich : Wie die Länder im Kampf gegen die Pandemie abschneiden](https://www.faz.net/aktuell/wissen/medizin-ernaehrung/corona-strategien-wie-die-laender-im-kampf-gegen-die-pandemie-abschneiden-16777168.html) 
 
 May 8, 2020: **Lowy Institute**, [Indonesia’s democracy is flawed, but do enough people care?](https://www.lowyinstitute.org/the-interpreter/indonesia-s-democracy-flawed-do-people-care) by our member Fadhilah Fitri Primandari 
