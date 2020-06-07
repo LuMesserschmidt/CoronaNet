@@ -200,18 +200,19 @@ We are thankful for the amazing network of 300 scholars from social, political, 
 
 ```{r echo= FALSE, results='asis', message=FALSE}
 library(readr)
-contribution <- read_csv("~/Documents/github/corona_private/data/website/people/contribution.csv")
+library(tidyverse)
+contribution <- read_csv("~/Documents/github/corona_private/data/website/people/RA/contribution.csv")
 library(knitr)
 library(readxl)
 contribution <- dplyr::rename(contribution, Country = country) %>%
-  dplyr::select(-c(2:7,12))
+  dplyr::select(-c(2,4:7,11))
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
           filter = 'top',
           escape= c(1,2,4,3,5),
           fillContainer = FALSE, 
-          options = list(pageLength = 320, 
+          options = list(pageLength = 360, 
                          autoWidth = TRUE,
                          dom = 'Bfrtip',
                          scrollX = TRUE, 
