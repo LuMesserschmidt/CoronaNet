@@ -54,3 +54,12 @@ By using our website, you hereby consent to our disclaimer and agree to its term
 Should we update, amend or make any changes to this document, those changes will be prominently posted here.
 
 </div>
+
+***
+### Funding Institutions {-}
+
+Leibniz Research Alliance „Crises in a globalised World”
+
+<div style="width:150px; height:112px">
+[![Starsift](img/LFV.png)](https://www.leibniz-krisen.de/en.html)
+</div>
