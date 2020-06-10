@@ -234,6 +234,20 @@ DT::datatable(contribution,
 [![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
 
+***
+### Funding Institutions {-}
+
+Leibniz Research Alliance „Crises in a globalised World”
+
+<div style="width:150px; height:112px">
+[![Starsift](img/LFV.png)](https://www.leibniz-krisen.de/en.html)
+</div>
+
+<br>
+
+<br>
+
+<br>
 
 ![](img/header_wide.png)
 

@@ -31,6 +31,8 @@ navbar:
     menu:
       - text: "Research Note: Women´s Rights"
         href: data/reports/finished/20200507_womensrights.html      
+      - text: "Research Note: USA - 50 States' Stay At Home Orders"
+        href: data/reports/finished/20200610_StayatHome.html    
       - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
       - text: "Country Report: Colombia"
@@ -47,6 +49,8 @@ navbar:
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
+      - text: "Country Report: Myanmar"
+        href: data/reports/finished/20200610_Myanmar.html
       - text: "Country Report: Saint Kitts and Nevis"
         href: data/reports/finished/20200602_Saint_Kitts.html
       - text: "Country Report: Saint Vincent and the Grenadines"
