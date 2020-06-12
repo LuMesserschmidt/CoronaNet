@@ -1,0 +1,84 @@
+
+---
+title: Certificate of Appreciation
+author: Research Assistant of the CoronaNet Reserach Group
+date: "`r lubridate::today()`"
+geometry: margin=1.5cm
+params:
+  Cleaning: 
+  Name: 
+  Validating: 
+  country: 
+  Since:
+  End:
+output: pdf_document  
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE,message=FALSE)
+
+# send RA update emails
+
+require(googlesheets4)
+require(dplyr)
+require(blastula)
+require(ggplot2)
+require(readr)
+require(stringr)
+require(lubridate)
+require(qualtRics)
+require(kableExtra)
+require(tidyr)
+
+
+
+# load qualtrics data 
+
+certificate <- read_csv("certificate.csv")
+
+
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+
+To whom it may concern, 
+
+The CoronaNet Research Project recognises `r params$Name` for the outstanding contribution as a Research Assistant (RA). We appreciate the dedication and marvellous effort in volunteering for the project. `r params$Name` worked from `r params$Since` to `r params$End` for the project. `r params$Name` coded and updated policies for `r params$country` and without this support, we haven´t had more than 14.000 entries within a month. 
+
+CoronaNet Research Project compiles a database on government responses to the COVID-19 crises. The primary objective is to collect as much information as possible about the diverse actions governments are taking to contain the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 250 political, social and public health science scholars from all over the world, CoronaNet presents an initial release of a comprehensive hand-coded dataset of more than 14,000 separate policy announcements from governments around the world visible since December 31st 2019. For more information, see www.coronanet-project.org 
+
+`r params$Name` collected an amzing amount of policies and became a country expert for `r params$country`. This role involved collecting and entering government policies related to COVID-19 Public Health Emergency. It involved classifying government policies in a Qualtrics database by coding an online survey and following procedures outlined in the Codebook. 
+
+`r params$Validating`
+
+`r params$Cleaning`
+
+`r params$Name` has invested everything possible to support not only the project but also collecting a dataset thatsupports policy makers and scientists in real-time. We appreciate this exceptional solidarity and thank `r params$Name` for being part of this project. 
+
+
+```{r, echo=FALSE, out.width="50%"}
+knitr::include_graphics("unterschrift_LM.png")
+```
+
+Luca Messerschmidt, Principal Investigator
+<br>
+
+
+*CoronaNet Research Team*
+
+*Joan Barceló (NYU Abu Dhabi)*
+
+*Cindy Cheng (TU Munich)*
+
+*Allison Spencer Hartnett (Yale University)*
+
+*Robert Kubinec (NYU Abu Dhabi)*
+
+*Luca Messerschmidt (TU Munich)*
+getwd()
+
+```{r, echo=FALSE, out.width="50%"}
+knitr::include_graphics("logo_wide.png")
+```

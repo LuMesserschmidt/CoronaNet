@@ -1,0 +1,27 @@
+---
+title: "Rwanda Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Dick Paul Ouko
+    url: https://www.linkedin.com/in/dick-paul-ouko-14844816a/
+    affiliation: SciencesPo Paris
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+In the 25 years following the 1994 Rwandan Genocide, the government has embarked on a long path to develop and integrate a healthcare system based on primary care. These efforts have borne fruits with a report published by the Wellcome Trust and the Gallup Institute.^[https://theconversation.com/lessons-from-rwanda-on-how-trust-can-help-repair-a-broken-health-system-124183] It states that efforts made by the government have resulted in an increase in citizen trust in the national healthcare system. This has allowed the government to implement health policies that require maximum community participation, such as mass child immunization. In 2020, as the coronavirus is spreading around the world, the faith and trust that the government has built with its citizens might prove beneficial in fighting COVID-19 in Rwanda. 
+
+As many countries were reporting cases of coronavirus, Rwanda established a multidisciplinary team to assess and strengthen Rwanda’s preparedness and response to the virus.^[https://www.aa.com.tr/en/africa/rwanda-uses-ebola-experience-to-combat-covid-19/1813902] Through the work of the team, several regulations were laid out to Rwandan citizens.^[https://www.iol.co.za/news/africa/rwanda-sets-up-hand-washing-facilities-at-bus-station-amid-coronavirus-fears-44517299] They included the need for social distancing, washing hands regularly, avoiding handshakes, and most importantly maintaining high levels of hygiene. The foundation of trust between the citizens and the government made it easier for the public to accept and follow the new guidelines. However, on March 14th, the country reported its first coronavirus case.^[https://www.theeastafrican.co.ke/scienceandhealth/Rwanda-confirms-first-coronavirus-case/3073694-5490792-ob8jmgz/index.html] The news panicked the public and the government began contact tracing patient zero in an effort to halt the spread of the virus. The government traced people who had come into contact with the patient, placed them in government quarantine facilities, and tested them. The government relied on trust to relay messages and inform the public on the actions they were taking as more cases were being reported.
+
+COVID-19 is the ‘invincible enemy’, being fought on two fronts: the government and the citizens. With increasing coronavirus cases, the government announced a lockdown^[https://twitter.com/PrimatureRwanda/status/1241412264193937412/photo/1], the first in sub-Saharan Africa, which would commence on March 2nd for an initial two weeks and was then extended until May 4th. The country closed its borders, banned movement outside the home and between cities, advised all public and private employees to work from home, and encouraged the use of electronic payment. The trust between the citizens and the government ensured that the lockdown succeeded in flattening the curve and preventing increased infections. In Rwanda, where some families live hand-to-mouth, the government came up with a feeding program^[https://www.nepad.org/news/rwanda-deliver-free-food-20-000-households-during-coronavirus-lockdown] to support these families and enable their participation in the lockdown without fear of starvation. Rwanda’s cabinet members unanimously agreed to direct all of their April salaries to the county’s fight against the coronavirus.^[https://www.nation.co.ke/news/africa/Rwandan-cabinet--PSs-forfeit-April-salary/1066-5515776-hawrgv/index.html] The money partially funded the feeding programs. These programs were instrumental in ensuring the lockdown and new regulations were implemented and reduced infections in the country.
+
+Trust in the government enabled the country to organize to fight the virus during the lockdown. 7 days after the lockdown, daily reported cases were lower than reported before the lockdown. As of May 12th, Rwanda has 286 confirmed cases, 153 recoveries, and 0 deaths.^[https://www.afro.who.int/news/update-covid-19-12-may-2020] Although far from victorious over the virus, the cooperation between the Rwandan government and its people will ensure maximum efforts to combat the virus. 
+
