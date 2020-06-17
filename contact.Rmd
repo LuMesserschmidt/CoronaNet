@@ -56,7 +56,7 @@ Should we update, amend or make any changes to this document, those changes will
 </div>
 
 ***
-### Funding Institutions {-}
+### Partner Institutions {-}
 
 Leibniz Research Alliance „Crises in a globalised World”
 

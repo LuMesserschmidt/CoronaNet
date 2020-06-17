@@ -61,7 +61,7 @@ library(tidyverse)
 library(lubridate)
 library(dygraphs)
 
-get_est <- readRDS("~/Documents/github/corona_private/data/website/get_est.rds")
+get_est <- readRDS("~/Documents/github/corona_tscs/data/get_est.rds")
  
  
 get_est_sum <- get_est %>%
@@ -201,7 +201,7 @@ We are thankful for the amazing network of 300 scholars from social, political, 
 ```{r echo= FALSE, results='asis', message=FALSE}
 library(readr)
 library(tidyverse)
-contribution <- read_csv("~/Documents/github/corona_private/data/website/people/RA/contribution.csv")
+contribution <- read_csv("~/Documents/github/CoronaNet/data/people/contribution.csv")
 library(knitr)
 library(readxl)
 contribution <- dplyr::rename(contribution, Country = country) %>%
@@ -228,14 +228,15 @@ DT::datatable(contribution,
 <img width="20%" src="img/TUM.png"/>
 <img width="20%" src="img/NYU.png"/>
 
+
 ***
 ### Partner Institutions {-}
+
+Jataware
+
 <div style="width:100px; height:75px">
 [![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
-
-***
-### Funding Institutions {-}
 
 Leibniz Research Alliance „Crises in a globalised World”
 
