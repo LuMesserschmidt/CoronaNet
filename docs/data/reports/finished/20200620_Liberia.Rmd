@@ -1,0 +1,34 @@
+---
+title: "Liberia Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Ingrid Ravnanger
+    url: https://www.linkedin.com/in/ingrid-ravnanger/
+    affiliation: Sciences Po Paris
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+When the outbreak of COVID-19 hit, fear spread among many West-African nations, and Liberia was no exception. Liberia, a country of approximately 5 million, is located in the western part of Africa, bordering Guinea, Sierra Leone, and Côte d'Ivoire. For over a decade, the country struggled with a civil war, halting investment in infrastructure and healthcare. When the situation stabilized, the country suffered from the Ebola epidemic between 2014 and 2016, devastating the health system. During this time, it became evident that there was a severe lack of health facilities, with 1.2 million people living more than an hour walk from the nearest health facility.^[“Liberia” (2020) Last Mile Health organization https://lastmilehealth.org/where-we-work/liberia/] Therefore, the Ebola epidemic highlighted the need to develop a more resilient health system.
+
+In Liberia alone, Ebola claimed 4,809 lives.^[“Ebola, mapping the outbreak” (2016) BBC https://www.bbc.com/news/world-africa-28755033] The government seems to have taken similar measures as during the Ebola crisis, and has been very successful overall in keeping COVID-19 infections low. As of June 18th, Liberia has 542 known coronavirus cases, 33 deaths, and 250 recoveries.^[“Liberia” (2020) Worldometers https://www.worldometers.info/coronavirus/country/liberia/] 
+
+The country had not yet fully recovered from the devastation of Ebola and was working on improving the accessibility of health facilities when the coronavirus became an international threat. Since then, an incident management system has monitored the global trends in COVID-19 and prepared a Liberian response to the pandemic, given the potential of the virus spreading to the country. The Commander, Dr. Mosoka Fallah, worked alongside several agencies to establish screening and quarantine measures for travelers coming from high-risk countries. The government made preliminary preparations to test and respond to coronavirus cases that could arise.^[“A Coordinated Public-Private Sector Response in Liberia to COVID-19” (2020) Health Policy Plus http://www.healthpolicyplus.com/liberiaHFL.cfm] Additionally, Liberia provided thousands of masks to China, that were shipped to assist with the virus.^[“Liberia” (2020) BBC https://www.bbc.com/news/topics/c77jz3md70rt/liberia] 
+
+The turning point came on March 16th, when the first case of COVID-19 was confirmed in Liberia^[“Liberia Records First Case of Coronavirus; Health Authorities Hold Emergency Meeting” (2020) Front Page African News Online https://frontpageafricaonline.com/front-slider/liberia-records-first-case-of-coronavirs-health-authorities-hold-emergency-meeting/], from a government official that had returned from Switzerland. Following the first case of coronavirus, the government closed schools and ordered the restriction of movement. The second case was confirmed on March 17th, reportedly a close contact of the first case.^[“Liberia's index case refused COVID-19 quarantine, his worker now infected” (2020) Africa News https://www.africanews.com/2020/03/17/liberia-s-first-coronavirus-case-involves-official-returning-from-swiss-trip/] On March 20th, the minister of health, Wilhelmina Jallah, declared a national health emergency.^[“Declaration of National Health Emergency” (2020) Republic of Liberia Ministry of Health https://www.emansion.gov.lr/doc/COVID-19%20Declaration%20of%20National%20Health%20Emergency%20-%20MoH.pdf] Following the announcement, further restrictions and a government lockdown to stop the spread of COVID-19 were enforced. 
+
+Not all Liberians complied with the new measures. At the end of March, the police were deployed in the capital (Monrovia), to maintain order when thousands of angry sellers took to the streets to protest the demolition of their stalls following the restrictions.^[“Liberia takes classes to the airwaves during COVID-19 pandemic” (2020) Al Jazeera https://www.aljazeera.com/news/2020/04/liberia-takes-classes-airwaves-covid-19-pandemic-200415203012448.html] 
+
+Shortly after, on April 4th, Liberia reported its first death. A few days later, on April 8th, the President of Liberia, George Weah, declared a state of emergency caused by the coronavirus pandemic.^[“Liberia” (2020) BBC https://www.bbc.com/news/topics/c77jz3md70rt/liberia] To assist the country in responding to the outbreak, The World Bank approved $7.5 million on April 9th^["More support to boost Liberia-COVID-19 response" (2020) The World Bank https://www.worldbank.org/en/news/press-release/2020/04/09/more-support-to-boost-liberia-covid-19-response] to aid Liberia. The country has a vast rural population, leaving many people without access to health facilities and unable to afford the necessary equipment to protect themselves against the coronavirus.
+
+Remarkably, Liberia continued its education system using the radio. Similar to the response of Ebola, the country used the radio to educate children when schools closed on March 16th. After two weeks, the first lesson aired throughout the country, with 32 different stations for broadcasting.^[Liberia takes classes to the airwaves during COVID-19 pandemic" (2020) Al Jazeera https://www.aljazeera.com/news/2020/04/liberia-takes-classes-airwaves-covid-19-pandemic-200415203012448.html] This innovative learning technique takes into account the rural population and considers that not all Liberians can afford a computer. The country also conducted contact-tracing, a similar system to the one used during the Ebola epidemic.^["Liberia deploys contract tracers to break COVID-19 transmission" (2020) UNFPA https://www.unfpa.org/news/learning-ebola-experience-liberia-deploys-contact-tracers-break-covid-19-transmission]
+
+On June 7th, the president declared that the country had made enough progress against the coronavirus and would begin to reopen international airports and hotels within two weeks. The state of emergency in Liberia expired, indicating that the government response to COVID-19 has been successful in the country. 

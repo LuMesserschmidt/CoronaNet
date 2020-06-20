@@ -1,0 +1,45 @@
+---
+title: "Nicaragua Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Ana Belén Perianes
+    url: https://www.linkedin.com/in/anabelenperianes/
+    affiliation: The University Institute General Gutiérrez Mellado-UNED, Madrid
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+The government of Nicaragua is addressing the COVID-19 pandemic from a position of inaction^[Foreign Poliy, https://foreignpolicy.com/2020/04/17/ortega-virus-murillo-nicaragua-is-stumbling-into-coronavirus-disaster/; 
+Confidencial https://confidencial.com.ni/nicaragua-el-record-de-ausencias-de-daniel-ortega-en-el-cargo/; 
+BBC Mundo https://www.bbc.com/mundo/52530594] and is disregarding the World Health Organization's (WHO) recommendations. As an exception in Central America and the broader Latin American region, Nicaragua is not enacting the kind of preventative measures that are occurring around the world. 
+
+By June 16th, the Nicaraguan Ministry of Health (MINSA) has confirmed 1,823 cases of COVID-19, resulting in 64 deaths.^[La Prensa https://www.laprensa.com.ni/2020/06/16/nacionales/2685957-informe-del-minsa-asegura-que-casos-de-covid-19-llegan-a-1823-en-nicaragua; The US Embassy in Nicaragua https://ni.usembassy.gov/covid-19-information-2-2/; Johns Hopkins University. Coronavirus Research Center https://coronavirus.jhu.edu/map.html] To date, the Nicaraguan government has not imposed domestic travel restrictions, policies for quarantine regulations, or a lockdown.^[The US Embassy in Nicaragua https://ni.usembassy.gov/covid-19-information-2/] The Ministry of Health continues to state that the situation is being monitored closely. 
+
+In contrast, parts of civil society and the private sector have endorsed the preventative campaign #QuédateEnCasa^[Confidencial https://confidencial.com.ni/a-pesar-el-gobierno-ciudadanos-se-imponen-cuarentena-voluntaria/; Deutsche Welle https://www.dw.com/es/no-crear-alarma-la-vida-se-detiene-en-nicaragua-por-crisis-del-coronavirus/a-52919169 Confidencial https://confidencial.com.ni/ortega-lanza-ataque-contra-la-campana-preventiva-quedate-en-casa/] (#StayAtHome), which was publicly rejected by the President of Nicaragua, Daniel Ortega. Based on the campaign, Nicaraguan citizens, businesses, private schools, and other entities have opted to voluntarily comply with self-quarantine^[Confidencial https://confidencial.com.ni/a-pesar-el-gobierno-ciudadanos-se-imponen-cuarentena-voluntaria/] or isolation measures to halt the outbreak of COVID-19 in the country.
+
+The government of Nicaragua has responded differently than Costa Rica and Honduras, Nicaragua's regional neighbors.^[ACAPS https://www.acaps.org/country/nicaragua/crisis/socioeconomic-crisis] Costa Rica and Honduras share land borders with Nicaragua and have active outbreaks of COVID-19, which have initiated measures against the spread of the virus in Latin America, the new epicenter.^[CNN https://cnnespanol.cnn.com/2020/06/01/latinoamerica-el-nuevo-epicentro-de-covid-19-podria-ser-el-peor-hasta-ahora/] However, in Nicaragua, classes have resumed following Easter break, national quarantines and lockdowns haven been absent, mass gatherings have continued, and the government has asked people to continue with normal activities.
+
+Additionally, borders^[The US Embassy in Nicaragua https://ni.usembassy.gov/covid-19-information-2/] and airports have not been officially closed. Despite the lack of official restrictions, airports are effectively closed, and travel companies have halted operations.^[Nicaragua Investiga https://www.nicaraguainvestiga.com/funides-propone-al-gobierno-crear-estrategia-nacional-frente-al-covid19/ The US Embassy in Nicaragua https://ni.usembassy.gov/covid-19-information-2/] Travelers also do not require any specific documentation to enter and exit Nicaragua. 
+
+Since the beginning of the pandemic, independent mass media (El Diario, La Prensa), regional and international health organizations (PanAmerican Health Organization), doctors, civil society, and other independent sources (Nicaragua Investiga, Observatorio Ciudadano COVID-19 Nicaragua) have called for the Nicaraguan government to release accurate data on the virus due to fears of underreporting in official government figures.
+
+The government of Nicaragua is accused of underreporting infections and deaths^[Nicaragua Investiga https://www.nicaraguainvestiga.com/la-negligencia-de-daniel-ortega-propaga-la-covid-19-en-nicaragua/; ACAPS https://www.acaps.org/country/nicaragua/crisis/socioeconomic-crisis; Reuters https://www.reuters.com/article/us-health-coronavirus-nicaragua-insight-idUSKBN22N28L], imposing secrecy^[CNN https://cnnespanol.cnn.com/video/nicaragua-organizacion-panamericana-ortega-coronavirus-covid-cifras-datos-oficiales-perspectivas-mexico/; Observatorio Ciudadano COVID-19 Nicaragua https://observatorioni.org/] about the management of the pandemic, censoring information from independent media sources^[Voa Noticias https://www.voanoticias.com/centroamerica/periodistas-nicaraguenses-denuncian-aumento-de-censura-para-reportar-sobre-covid19], and acting negligently in tackling the crisis.^[Youtube https://www.youtube.com/watch?v=WMl_vcXjNHI] 
+
+The Nicaraguan Medical Association issued a statement^[Facebook: Asociación Médica Nicaragüense https://www.facebook.com/photo?fbid=2332301280408260&set=pcb.2332301350408253; Nicaragua Investiga https://www.nicaraguainvestiga.com/asociaciones-medicas-de-nicaragua-llaman-a-cuarentena-nacional-en-junio-por-el-covid-19/] on June 1st alerting the people of Nicaragua and the international community about the dramatic situation that the country is facing. They declared that the country is experiencing a phase of accelerated spread caused by community transmission. The increase in COVID-19 cases has led to a collapse of the underdeveloped public and private healthcare systems^[Foreign Policy https://foreignpolicy.com/2020/04/17/ortega-virus-murillo-nicaragua-is-stumbling-into-coronavirus-disaster/; The Lancet https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(20)30131-5/fulltext], which suffer from a lack of sufficient resources. 
+
+Moreover, the Nicaraguan Medical Association reported that dozens of healthcare workers have become infected from COVID-19. For this reason, the organization called for Nicaraguans to quarantine voluntarily to reduce the impact of the pandemic. Nicaragua has high levels of poverty^[UNDP http://hdr.undp.org/en/2019-MPI], unemployment, and informal employment^[Confidencial https://confidencial.com.ni/a-pesar-el-gobierno-ciudadanos-se-imponen-cuarentena-voluntaria/], making the conditions of a quarantine difficult and unsustainable for the population.
+
+Currently, the bulk of the public policies implemented by the Nicaraguan government have focused on health monitoring, hygiene, and public awareness measures. They include gathering information, raising awareness by health brigades going house to house, creating a 24/7 hotline to field questions regarding the pandemic, and promoting hygiene measures.
+
+The Ministry of Health revealed that the country does not intend to establish quarantine protocols but assured that preventive measures would continue to be promoted.^[The Nicaraguan Ministry of Health http://www.minsa.gob.ni/index.php/repository/Descargas-MINSA/Columna-Derecha/Medidas-Frente-al-Coronavirus/] The government of Nicaragua adopted an especially contested policy^[The Nicaraguan Ministry of Health https://confidencial.com.ni/wp-content/uploads/2020/03/Protocolo_Coronoavirus.pdf] that calls for the immediate burial of the deceased and bans^[La Prensa https://www.laprensa.com.ni/2020/03/13/nacionales/2650654-ni-velatorio-ni-funerales-el-estricto-protocolo-que-diseno-la-dictadura-para-los-que-mueran-de-coronavirus-en-nicaragua] all funerals and wakes. The significant increase requested burials and the lack of accurate data provided to the families have raised concerns^[BBC Mundo https://www.bbc.com/mundo/noticias-america-latina-52716064; La Jornada https://www.lajornadanet.com/index.php/2020/05/14/sepelios-expres-disparan-dudas-sobre-fallecimientos-por-covid-19-en-nicaragua/#.XtVZijozbIU; The New York Times https://www.nytimes.com/2020/05/31/world/americas/coronavirus-nicaragua-burials.html; NBC News https://www.nbcnews.com/news/latino/nicaragua-express-burials-cast-doubt-official-coronavirus-numbers-say-doctors-n1205071] regarding the number of deaths as a result of COVID-19.
+
+
+

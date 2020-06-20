@@ -35,6 +35,8 @@ navbar:
         href: data/reports/finished/20200610_StayatHome.html    
       - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
+      - text: "Country Report: China"
+        href: data/reports/finished/20200620_China.html
       - text: "Country Report: Colombia"
         href: data/reports/finished/20200422_Colombia.html
       - text: "Country Report: Costa Rica"
@@ -51,8 +53,14 @@ navbar:
         href: data/reports/finished/20200416_Indonesia.html
       - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
+      - text: "Country Report: Liberia"
+        href: data/reports/finished/20200620_Liberia.html
       - text: "Country Report: Myanmar"
         href: data/reports/finished/20200610_Myanmar.html
+      - text: "Country Report: Nicaragua"
+        href: data/reports/finished/20200620_Nicaragua.html
+      - text: "Country Report: Papua New Guinea"
+        href: data/reports/finished/20200620_Papua.html
       - text: "Country Report: Rwanda"
         href: data/reports/finished/20200612_Rwanda.html
       - text: "Country Report: Saint Kitts and Nevis"

@@ -1,0 +1,33 @@
+---
+title: "China Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Tong Xu
+    url: 
+    affiliation: "Texas A&M University"
+  - name: Yu Shi
+    url: https://www.linkedin.com/in/yu-shi-9766a7190/
+    affiliation: "Texas A&M University"
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+China experienced the first outbreak of the coronavirus. On December 31st, 2019, the first case of COVID-19 was detected in Wuhan, Hubei Province of China.^[World Health Organization. January 30th, 2020. www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/] The first cases were initially concentrated in the city of Wuhan and then spread throughout the country. The Chinese government fought the virus with steadfast policies that are currently regarded as textbook examples. China succeeded in combating the virus for two main reasons. Firstly, a series of mandatory restrictions were enforced by the government after the outbreak which effectively contained and minimized the impact of the virus. Secondly, Chinese citizens complied with the measures outlined by the government and made individual sacrifices to combat the spread of COVID-19. 
+
+China took several steps to control the spread of the virus beginning in early January. Due to the variation in the severity of the virus, regions in China employed distinct preventative measures. Cities near Wuhan administered heavy restrictions and utilized the majority of available health resources. Alternatively, cities located far from Hubei province implemented limited preventative policies like public awareness campaigns. Among all major cities in China, 200 cities (64.3%) prohibited mass gatherings, 136 cities (39.7%) shut down public transportation, and 219 cities (64%) banned all intercity travel.^[Li, Heping. April 1st, 2020. Sciencenet. http://news.sciencenet.cn/htmlnews/2020/4/437782.shtm] The policies enacted across the country have been successful in terms of virus control. 
+
+On January 23rd, the national government implemented a lockdown policy^[Novel Coronavirus Epidemic Prevention and control Headquarters in Wuhan. January 23rd, 2020. http://news.cjn.cn/sywh/202001/t3541195.htm] that required residents to seek shelter and remain in their homes with limited exceptions. Public transportation ceased, businesses were forced to close, and mass gatherings were prohibited.^[Novel Coronavirus Epidemic Prevention and control Headquarters in Wuhan. January 23rd, 2020. http://news.cjn.cn/sywh/202001/t3541195.htm] Before these restrictions were implemented, hundreds of residents were unknowingly infected and spread the virus to other provinces in China. Following the enforcement of lockdown policies, the rate of infection slowed drastically. The Chinese University of Hong Kong stated, “If the government does not take decisive action to block cities outside Hubei Province, the rate of new coronavirus infection in other Chinese cities outside Hubei Province will increase by 64.8%”.^[CUHK. March 30th, 2020. https://www.bschool.cuhk.edu.hk/chi/zh-hans/china-business-knowledge-sc/how-the-wuhan-lockdown-significantly-cut-covid-19-infections-sc/] According to a report, “the travel ban of Wuhan delayed the outbreak for other cities by approximately 2.91 days”^[Li, Heping. April 1st, 2020. Sciencenet. http://news.sciencenet.cn/htmlnews/2020/4/437782.shtm], which provided other regions with extra time to prepare for the virus. Moreover, the government ensured there were no loopholes in the policies and enabled restrictions to be strictly enforced in all regions. 
+
+On January 23rd, the National Health Commission issued six public prevention guidelines to help citizens avoid infection. These warnings included general guidelines for tourism, family interactions, public places, public transportation, and home observation.^[Chen, Fang, Liu, Hua, Han, Mo, Li, Zhihui. April 6th, 2020. Xinhuanet. www.xinhuanet.com/2020-04/06/c_1125819214.htm] During the period from January 24th to January 31st, 25 ministries and commissions issued more than 30 epidemic prevention and control notices. They covered emergency response measures which included, epidemic monitoring, emergency resource supply, traffic control regulations, financial subsidy allocation, social stability, and medical insurance reimbursement.^[Xu, Tingting. Yang, Ruoyu. April 1st, 2020. Journal of Epidemiology and Global Health. www.atlantis-press.com/journals/jegh/125939135/view] Regardless of the overall success, the policies created resentment among business owners and entrepreneurs. Some businesses were mandated to close, resulting in major financial losses for business owners. Despite the financial burden, the majority of them demonstrated support for the preventative policies implemented to combat the virus. 
+
+During the pandemic, the Ministry of Finance posted temporary policies to reduce the financial burden on medical staff and their patients. For suspected and diagnosed COVID-19 patients, the financial burden was subsidized by the Ministry of Finance. Medical staff and other frontline healthcare workers were given 200-300 yuan per day. The subsidized funds were given by the central government to assist in the fight against the coronavirus.^[The Ministry of Finance of the People’s Republic of China. March 21st, 2020. www.gov.cn/fuwu/2020-03/21/content_5493863.htm] The Chinese government also provided loans to enterprises that were heavily impacted by the pandemic. It was difficult for the Chinese government to prolong restrictions due to the loss of labor, material, and capital. 
+
+As of May 22nd, China has 82,971 confirmed cases, 4,634 deaths (6%), and 78,255 recoveries (94%).^[Worldometer. May 22nd, 2020. www.worldometers.info/coronavirus/country/china/] In a country with a population of 1.4 billion, the relatively low infection and death rates are remarkable. Additionally, based on a poll conducted by the CCTV, “86% of the Chinese residents participating in the survey are satisfied with the policies and leadership of the national government during this crisis”.^[Wang, Wei. May 8th, 2020. CCTV. http://m.news.cctv.com/2020/05/08/ARTIGcMhShG4JrgUo2QxNuDY200508.shtml] The Chinese government made a bold decision to restrict business and travel at a crucial time during the pandemic. The abundance of restrictive policies that were implemented demonstrates the determination of the government to minimize the deaths of its citizens. However, these policies come at the price of citizen's freedoms, financial stability, and the overall prosperity of the economy.  
