@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  <title>Response Tracker Map</title>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+</head>
+
+<body>
+  <div id="background"></div>
+  <nav id="menu"></nav>
+  <div id="map"></div>
+
+  <div class="loader loader--style1" title="0" id="loader">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" width="70px" height="70px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
+      xml:space="preserve">
+      <path opacity="0.5" fill="#767E86" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+      <path fill="#DE3C67" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+  C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+          dur="0.8s" repeatCount="indefinite" />
+      </path>
+    </svg>
+  </div>
+
+
+
+  <!-- <div id="buttons3D" class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" id="button3d" class="button3d" value="2D">2D</button>
+      <button type="button" id="button3d" class="button3d" value="3D">3D</button>
+    </div> -->
+
+
+
+  <div class="map-console" id="mobile">
+    <h1><a id="link-website" href="http://www.coronanet-project.org/" target="_blank">CoronaNet Government Response Database</a></h1>
+    <h5 id="arrow-mobile">▼</h5>
+    
+    <div id="vizsel">
+      <a id="viz1" href="#" class="active">POLICY TARGETS</a>
+      <a id="viz2" href="#">SEVERITY INDEX HEATMAP</a>
+    </div>
+
+    <div id="slider-box">
+      <label id="slider-label">Responses up to </label>
+    <input id="slider" class="slider" type="range" min="0" max="10" step="1" value="0" />
+          
+        </div>
+    <!-- 
+      <div id="menu">
+        <a href="#" class="active">points</a>
+        <a href="#">heatmap</a>
+        <a href="#">bars</a>
+      </div> -->
+    <div id="sub-panel"></div>
+    <div id="text-panel"></div>
+
+
+  </div>
+
+  <div class="legend-box"><a >
+    <h2 id="legend-title">LEGEND</h2>
+    <img id="legend" src="img/legend.png" /></a></div>
+ 
+
+
+
+  <!-- <a href="https://deepmoire.com/" target="_blank"><img id="logo" src="img/legend.png" /></a> -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+  <script src="js/csv2geojson.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

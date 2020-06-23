@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>CoronaNet Research Project Manual</title>
+
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CoronaNet Research Project</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introduction</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="download.html">Download</a>
+    </li>
+    <li>
+      <a href="methodology.html">Methodology</a>
+    </li>
+    <li>
+      <a href="validation_website.html">Validation &amp; Reliability Checks</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="visuals.html">Visualizations</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Reports
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_StayatHome.html">Research Note: USA - 50 States' Stay At Home Orders</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_China.html">Country Report: China</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200422_Colombia.html">Country Report: Colombia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200415_Costa_Rica.html">Country Report: Costa Rica</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200421_Eswatini.html">Country Report: Eswatini</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200428_Gambia.html">Country Report: Gambia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Grenada.html">Country Report: Grenada</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200612_Honduras.html">Country Report: Honduras</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200416_Indonesia.html">Country Report: Indonesia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200422_Italy.html">Country Report: Italy</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Liberia.html">Country Report: Liberia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_Myanmar.html">Country Report: Myanmar</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Nicaragua.html">Country Report: Nicaragua</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Papua.html">Country Report: Papua New Guinea</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200612_Rwanda.html">Country Report: Rwanda</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Saint_Kitts.html">Country Report: Saint Kitts and Nevis</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Saint_Vincent.html">Country Report: Saint Vincent and the Grenadines</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200507_Syria.html">Country Report: Syria</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200521_Turkey.html">Country Report: Turkey</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="working_papers.html">Working Papers</a>
+</li>
+<li>
+  <a href="media.html">In the Media</a>
+</li>
+<li>
+  <a href="contact.html">About CoronaNet</a>
+</li>
+<li>
+  <a href="ra_call.html">Join CoronaNet</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CoronaNet Research Project Manual</h1>
+
+</div>
+
+
+<style>
+body {
+text-align: justify}
+</style>
+<hr />
+<p>This document contains thorough instructions for project implementation for CoronaNet. Given the complexity of this project, we want to thoroughly document all of our procedures so that we can ensure quality control and produce as excellent a dataset as we can.</p>
+<p>Each section should be as precise as possible, mentioning what the goals we want to accomplish are (on what time scale), and list a series of steps that should be completed for each task to be complete. Please use screenshots whenever possible to make it abundantly clear what the person reading this document is supposed to do. The goal would be for it to be relatively easy to add people to any of the main areas of this document and have them participate.</p>
+<div id="useful-links" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Useful Links</h1>
+<div id="training-videos" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> Training Videos</h2>
+<ul>
+<li><strong><a href="https://nyu.zoom.us/rec/play/v8B8f--r_TI3HIXH5QSDA_cvW9XpJ_6s0CRMqPtYzU6xBngHMAGlYLVHMOFrjixNPdfSi0IE6gbKbHQ2?continueMode=true&amp;_x_zm_rtaid=GA1uE4UPTNCAvxyXCOkx8Q.1591210535149.378a4abe9ece4f1a731c0b0c710927c9&amp;_x_zm_rhtaid=261">RA Training CoronaNet</a>,</strong> 14th May(1:46h) : This is the main training video which all RAs must watch before starting on the CoronaNet Research Project</li>
+<li><strong><a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">Updating and ending policies</a></strong> 14th May. Password: 7C&amp;*60@= ( : This training video shows RAs how to enter an update and how to end a policy. The accompanying slides are pinned to the #ra-chat channel. Note that the video is somewhat dated in that it was not possible to enter in updates using the RShiny App and the video shows how to do a manual update which is no longer possible. However, the underlying guidelines of when to do a ‘change of policy’ or ‘end of policy’ as well as what counts as an update still holds.</li>
+<li><strong><a href="https://www.dropbox.com/s/61byca7367mfhr9/Zoom_CoronaNet_Process.mp4?dl=0">CoronaNet Background Video</a></strong>: This video outlines the process of registering RAs, data collection, advantages of qualtrics, data validation, reliability, cleaning, difference between beta and final dataset (15:00h)</li>
+</ul>
+</div>
+<div id="weekly-meetings" class="section level2" number="1.2">
+<h2 number="1.2"><span class="header-section-number">1.2</span> Weekly Meetings</h2>
+<ul>
+<li><strong><a href="https://nyu.zoom.us/j/58230804">CoronaNet General RA Meeting</a>: </strong>In the general RA meeting that we have every Wednesday at 4:30pm CET, the PIs share updates about the progress of the project. Recordings of older meetings can be found at the end of this section.</li>
+<li><strong>Regional/Country RA Meetings</strong>: RAs should also have a regular weekly meeting with their regional or country manager. The relevant link for that meeting should be provided by the appropriate regional or country manager.</li>
+</ul>
+</div>
+<div id="surveys" class="section level2" number="1.3">
+<h2 number="1.3"><span class="header-section-number">1.3</span> Surveys</h2>
+<ul>
+<li><strong><a href="https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB?RID=MLRP_3foqmqo1KXqJesd&amp;Q_CHL=email">Test Survey</a> : </strong>This is the link to the test survey that each RA must pass with at least 70% accuracy in order to join the project. After passing the test, RAs should feel free to take the test survey as many times as they would like in order to learn more about how to use the main survey.</li>
+<li><strong>Main Qualtrics Survey: </strong>The main Qualtrics survey is the main tool by which RAs collect data on government policies for the CoronaNet project. Note that there is no general link for the main Qualtrics survey. Everyone has an individualized survey link that is emailed to you.</li>
+</ul>
+</div>
+<div id="correcting-or-updating-the-main-survey" class="section level2" number="1.4">
+<h2 number="1.4"><span class="header-section-number">1.4</span> Correcting or Updating the Main Survey</h2>
+<p>RAs can correct or update the main survey using either:</p>
+<ul>
+<li><strong><a href="https://kubinec.shinyapps.io/corona_validate/">The Shiny App</a>: </strong>This app allows RAs to visualize policies. It also provides links to update or correct the survey for each unique record. It further allows RAs to directly correct a limited number of dimensions of a policy directly in the app. Please see the section of this manual on the Shiny App for more information on how to use it.</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/183lWnJH7rSVkOTiuCXt9D7uCwS1SdJSOleXPpFkj2us/edit#gid=0">CoronaNet Record Lookup</a>: </strong>This google sheet provides an overview of all records in the CoronaNet database and the corresponding links to update or correct each unique record.</li>
+</ul>
+</div>
+<div id="information-resources" class="section level2" number="1.5">
+<h2 number="1.5"><span class="header-section-number">1.5</span> Information Resources</h2>
+<ul>
+<li><strong><a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Data Codebook</a>: </strong>This codebook explains what dimensions of a given policy different questions/variables in the main survey seek to capture. It previously also had information about data collection which has now been moved to this manual in the ‘Data Collection and Entry’ section.</li>
+<li><strong><a href="https://app.slack.com/client/T010PHG8J6A/C010V8MKHK2">#ra-chat</a>: </strong>This Slack channel is the main place where RAs should post questions about how to code different policies</li>
+<li>The FAQ tab in the <strong><a href="https://kubinec.shinyapps.io/corona_validate/">Shiny App</a></strong> : The FAQ tab summarizes and organizes common questions asked in the #ra-chat channel</li>
+</ul>
+</div>
+<div id="organizational-tools" class="section level2" number="1.6">
+<h2 number="1.6"><span class="header-section-number">1.6</span> Organizational Tools</h2>
+<ul>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1jzj02OIWQPNtV-sT82ZT7_qW5XJRpchbc9-xD3zI4rw/edit#gid=0">Validation sheet</a>: </strong>RAs on the validation team should assign themselves a record to validate using this sheet</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing">RA Allocation Sheet</a>:</strong> Information on which RAs are allocated to which countries are available in this sheet</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1cesReaVkn0-w-0kGjgGHX7WHVZqtejbcQAw0SC7VRZ0/edit?usp=sharing">RA Allocation of sub-national states</a></strong>: Information on which RAs are allocated to which subnational regions are available in this sheet</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0">Regional Update and Completeness Sheet:</a> </strong>Information on the up to dateness and completeness of records at the national level are available in this sheet</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1J45Gme8WoxV2CaqrhiQa2wDXazQrw99wrAzF_Ew511U/edit#gid=508634612">Country Update and Completeness Sheet</a></strong>Information on the up to dateness and completeness of records at the sub-national level are available in this sheet</li>
+</ul>
+</div>
+<div id="other" class="section level2" number="1.7">
+<h2 number="1.7"><span class="header-section-number">1.7</span> Other</h2>
+<p><strong><a href="https://docs.google.com/document/d/11sz8NnVmf5-XzfEpxjbfJzxoOXv1euCDngTXwNu7-UA/edit">Instructions for Country Reports and Research Notes</a> : </strong>Instructions on how RAs should write country reports or research notes are available at this link.</p>
+</div>
+<div id="recordings-of-previous-coronanet-general-ra-meetings" class="section level2" number="1.8">
+<h2 number="1.8"><span class="header-section-number">1.8</span> Recordings of Previous CoronaNet General RA Meetings</h2>
+<ul>
+<li><p><a href="https://nyu.zoom.us/rec/share/5PJED-3B-EFOaavQz0Pif7A8ILviT6a80CEf_aZbxE9KKnrmgEPcg4sL-1Q__qFj">6 May 2020</a></p></li>
+<li><p><a href="https://nyu.zoom.us/rec/share/4v52c-nTyDJOeqPi2R-OArQ6J4_Uaaa8hCEWq_UPmUt7Jp-ax2nMhzw7C8NS6h_E">20 May 2020</a></p></li>
+<li><p><a href="https://nyu.zoom.us/rec/share/7MNzJpHWynFLZIXf4mr-e6g8JoXhX6a8hnIW8qAKmE7cVne9yaIIQ5PxAmxv_to6">3 June 2020</a></p></li>
+<li><p><a href="https://nyu.zoom.us/rec/share/6ZV6AZPd1EFLbK_n1UTtY74fM6LqX6a8gCNK8vAIxUj-Q7kfk0GqKFQsBh98-ff6">10 June 2020</a></p></li>
+<li><p><a href="https://nyu.zoom.us/rec/share/_etbA77w7WdJXM_x8BDvBOknJaXLaaa8gCYe8_QEzBogpRx-DJ9HArk3_iRmD7ut">17 June 2020</a></p></li>
+</ul>
+</div>
+</div>
+<div id="data-collection-and-entry" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Data Collection and Entry</h1>
+<div id="what-is-data-collection-and-entry" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> What is data collection and entry?</h2>
+<p>Data collection and entry forms the foundation on which the rest of the project is built. The ultimate goal of the project is to produce an accurate and complete record of all policies governments have taken in response to COVID-19. This entails 1) identifying relevant policies that governments have taken in response to COVID-19 2) documenting them in a standardized format.</p>
+</div>
+<div id="what-should-i-do-before-starting-with-data-collection-and-entry" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> What should I do before starting with data collection and entry?</h2>
+<p>Before entering in data, you should:</p>
+<ol style="list-style-type: decimal">
+<li>Watch the required general <a href="https://nyu.zoom.us/rec/share/9cdaCrL_qUFOYbfT5EDxe_I8D7q-eaa82iVNr_APzBuFcffq3OYSOR7NqOaeBScY">training on Zoom</a> before starting to collect the data.</li>
+<li>Watch the required training on zoom on how to do updates to the data</li>
+<li>Read through the Variable Definitions in the codebook and the corresponding examples provided below</li>
+<li>Pass the CoronaNet Training survey with at least 70%</li>
+<li>Look through the RA FAQs in the<strong><a href="https://kubinec.shinyapps.io/corona_validate/">Shiny App</a></strong> for commonly asked questions</li>
+</ol>
+<p>The value of this data is only as good as its quality so please be sure to take your time with documenting these policies, and pose your questions to the Slack Channel or the PIs if in doubt!</p>
+</div>
+<div id="what-counts-as-a-policy" class="section level2" number="2.3">
+<h2 number="2.3"><span class="header-section-number">2.3</span> What counts as a ‘policy’?</h2>
+<p>These policies can be thought as being in one of two categories:</p>
+<ol style="list-style-type: decimal">
+<li><strong>A new policy</strong></li>
+<li><strong>An updated policy</strong></li>
+</ol>
+<p>A <strong>new policy</strong> is a policy in a category that the government has not addressed before, such as the imposition of a quarantine on the country. An <strong>updated </strong>policy is a policy change in which the details of the policy change, <strong>but not whom the policy is targeted at</strong>. For example, if Germany announces a quarantine for one province, and then later extends the quarantine for two weeks, that would count as an <strong>update</strong>. But if Germany announces a quarantine covering the whole country, that would count as a <strong>new policy</strong>. The same logic goes for travel bans – making travel bans cover more countries/areas counts as new policies. Changing the way existing travel bans are enforced would be an <strong>update</strong>. For more information, please reference the codebook below. Please watch the required training on zoom on how to do updates to the data for more information and refer to the accompanying slides.</p>
+<p><strong>If in doubt, ask on the #ra-chat Slack channel!</strong></p>
+<p>In the Qualtrics survey, you must select either new or updated. To update a policy, find the previous record either:</p>
+<ol style="list-style-type: decimal">
+<li>The Record Look up sheet or</li>
+<li>The Shiny Web Application</li>
+</ol>
+<p>Moving forward, we would want you to use the web application as it contains the same data as the Record Lookup sheet, but in a format that is easier to visualize. Also, you can do some corrections in the app itself.</p>
+<p>To update, click on the ‘update’ link that is on the left-hand side of the table/google sheet. See pictures:</p>
+<center>
+<p><img src="img/Codebook/1.%20What%20counts%20as%20a%20policy.png" /></p>
+</center>
+<div id="how-do-i-document-a-policy" class="section level3" number="2.3.1">
+<h3 number="2.3.1"><span class="header-section-number">2.3.1</span> How do I document a ‘policy’?</h3>
+<p>The below gives a textual overview of how to document a policy. Please refer to the required general <a href="https://nyu.zoom.us/rec/share/9cdaCrL_qUFOYbfT5EDxe_I8D7q-eaa82iVNr_APzBuFcffq3OYSOR7NqOaeBScY">training on Zoom</a> for more information.</p>
+<p><span style="text-decoration:underline;">Use the following checklist:</span></p>
+<ol style="list-style-type: decimal">
+<li><p>For each country, check the data sources, in the order given below in the “Data Sources” section, for relevant information on government policy toward combating the coronavirus.</p></li>
+<li><p>Enter the relevant information into your country specific dataset. It should always be possible to answer the following request/questions for a particular policy:</p>
+<ul>
+<li>What type of entry is this? (e.g. new, correction, update)</li>
+<li>Description of the government policy</li>
+<li>What is the policy category? (e.g. travel ban)</li>
+<li>From what level of government does this policy originate from?</li>
+<li>What kind of enforcement does this policy have (if any)?</li>
+<li>Which organizations or entities are in charge of enforcing a policy?</li>
+<li>When was the policy announced?</li>
+<li>What information sources did you use to identify this policy?</li>
+</ul>
+<p>Some, but not all policies,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> will also require you to identify:</p>
+<ul>
+<li>Which geographical entity is the target of this policy?</li>
+<li>What or whom is the policy targeted toward?</li>
+<li>Is this policy inbound, outbound or both?</li>
+<li>What kind of transportation is this policy targeted toward?</li>
+</ul>
+<p>When it is not possible to collect this information, please note the reason for the difficulty at the end of the survey.</p>
+<p>Please document each source by answering the according survey question. Currently, the dataset allows you to code up to 10 sources. Note also that it is possible that you will need more than one source to collect all the information for each event.</p></li>
+<li><p>Save a .pdf for each data source that you use. As the file name, use the following format: [Date Collected]_[Title of article].pdf where the [Date Collected] should follow the format MM-DD-YYYY</p></li>
+<li><p>You can upload the file within the Qualtrics survey (be sure to choose the correct country):</p></li>
+</ol>
+</div>
+</div>
+<div id="how-do-i-find-a-policy" class="section level2" number="2.4">
+<h2 number="2.4"><span class="header-section-number">2.4</span> How do I find a policy?</h2>
+<p>The rest of this document tells you how to go about finding policies. Of course you can just use your own knowledge and Google, but we have some great resources we’ve identified below you should use to get started.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>We now have a source of news articles possibly related to the coronavirus by country compiled by the data science company Starsift. </strong>Please see <a href="https://docs.google.com/spreadsheets/d/1EW-Vsue2fQ7k41gC31hWjIUr290VPDO-0w-Ig_Wh71E/edit?ts=5e865e7d#gid=0">this link</a> for a list of news articles (articles that are more likely to contain a policy are marked in the “policy” column, though all of the articles could contain some information.</p></li>
+<li><p><strong>Use the ACAPS COVID-19: Government Measures Dataset as a foundation</strong></p>
+<p><span style="text-decoration:underline;">What is this?</span></p>
+<p>The first resource to check for government policies against coronavirus is this easy to use online dataset, ACAPS COVID-19, which has collected data on government to COVID-19 on the country level. While their data provides an excellent foundation for our data collection effort, we seek to build more fine-grained data in terms of, among other things, (1) what types of policies were implemented (2) who the policies were targeted to and (3) whether there were updates to existing policies, than the ACAPS COVID-19 dataset does. ACAPS is a non-profit humanitarian organization which regularly works with international aid partners to provide analysis on humanitarian crises.</p>
+<p><span style="text-decoration:underline;">How to access this source:</span></p>
+<p>You can download the ACAPS COVID-19 dataset <a href="https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset">here</a>.</p>
+<p><span style="text-decoration:underline;">How to use this source for your country:</span></p>
+<p>The dataset contains a list of government restrictions with helpful URL links. We may need more info than they have on their to complete our Qualtrics survey, but please work through all their data and links before searching elsewhere.</p>
+<p>Once you’ve worked through that dataset, you should do some searching on your own. Of course Google/Google News is a good asset, but there are other available sources:</p></li>
+</ol>
+<hr />
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Check the U.S. Embassy website for your country.</strong></p>
+<p><span style="text-decoration:underline;">What is this?</span></p>
+<p>Most U.S. Embassies’ have a designated webpage for disseminatingCOVD-19</p>
+<p>Information for a particular country. For example, the U.S. Embassy &amp; Consulates in Germany’s web page for this information can be found <a href="https://de.usembassy.gov/covid-19-information/">here</a>.</p>
+<p><span style="text-decoration:underline;">How to access this source for your country:</span></p>
+<p>You should be able to find this page for your website by Googling “U.S. Embassy [Your Country Name] COVID-19 Information”.</p>
+<p><span style="text-decoration:underline;">How to use this source in the dataset:</span></p>
+<p><span style="text-decoration:underline;"> </span></p>
+<p>The U.S. Embassy’s designated webpage on the coronavirus in a particular country will often list information on, for example, entry and exit requirements or quarantine information. Often the U.S. Embassy will also link to the primary home government source for this information.</p>
+<p>When links to the primary source of information are made available:</p>
+<ol style="list-style-type: decimal">
+<li>Click on the link</li>
+<li>Corroborate the information from the primary source</li>
+<li>Use this link as the primary source of information when using the survey instrument. entering the data into the database.</li>
+</ol>
+<p>Use the U.S. Embassy page as the primary source if:</p>
+<ul>
+<li>There is no link or;</li>
+<li>The information on the linked page is in a language you do not speak.</li>
+</ul>
+<p>Please especially make sure to save a .pdf of the relevant page for your country for the day you collect the information if using the U.S. Embassy page as a source because it may update relatively frequently with new information.</p>
+<hr /></li>
+<li><p><strong>Check Wikipedia for your country’s response to the corona pandemic</strong></p>
+<p><span style="text-decoration:underline;">What is this?</span></p>
+<p>For many countries, there is a designated Wikipedia page for how a country has dealt with the coronavirus pandemic. For example, the “2020 coronavirus pandemic in the Dominican Republic” can be found <a href="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_Dominican_Republic.">here</a>.</p>
+<p><span style="text-decoration:underline;">How to access this source for your country:</span></p>
+<p>You should be able to find this page for your website by Googling “Wikipedia [Your Country Name] corona”.</p>
+<p><span style="text-decoration:underline;">How to use this source in the dataset:</span></p>
+<p>You should treat the Wiki as a platform that aggregates information sources, not as an information source itself. That is, you should <strong>NOT</strong> cite the Wikipedia page as your news source. When entering information from Wikipedia into the dataset, please do the following:</p>
+<ol style="list-style-type: decimal">
+<li>For every claim made on Wikipedia, visit the link of cited source in the footnotes.</li>
+<li>Corroborate the information stated on Wikipedia in the information source</li>
+<li>Add additional relevant information from the primary source to the dataset if you find it.</li>
+<li>If there is no source given for a claim made on Wikipedia or if you cannot corroborate the source, Google it — if you still do not find a corroborating source, do not enter the information into the dataset.</li>
+</ol>
+<hr /></li>
+<li><p><strong>Check Government websites for your country</strong></p>
+<p><span style="text-decoration:underline;">What is this?</span></p>
+<p>Different countries will have different government ministries issuing information in response to the crisis. In the course of gathering information on your country from going through the relevant U.S. Embassy and Wikipedia web pages, you may be able to identify the most relevant government ministries for your particular country. For example, the <a href="https://www.cdc.gov.tw/En">Taiwan CDC</a> has up to date information on government policy toward the coronavirus.</p>
+<p><span style="text-decoration:underline;">How to access this source for your country:</span></p>
+<p>If you have identified the relevant government ministries in charge of responding to the corona crisis for your country, Google: “[relevant ministry or department] corona”</p>
+<p>If, however, you have been unable to identify a relevant government body from the relevant U.S. Embassy and Wikipedia web pages, then:</p>
+<ol style="list-style-type: decimal">
+<li>Identify/Google the executive body for your country and your country’s government bodies in charge of health, foreign affairs, or internal affairs and</li>
+<li>Google: “[relevant ministry or department] corona”</li>
+</ol>
+<p><span style="text-decoration:underline;">How to use this source in the dataset:</span></p>
+<p>We consider information that comes directly from the government as a primary</p>
+<p>source. Identify any relevant information from the government websites and enter them into the dataset.</p>
+<p>Please especially make sure to save a .pdf of the relevant page for your country if using the a government page as a source because it may update relatively frequently with new information.</p></li>
+<li><p><strong>Check Newspaper coverage on the coronavirus in your country</strong></p>
+<p><span style="text-decoration:underline;">What is this?</span></p>
+<p>LexisNexis, Factiva are platforms which aggregate, among other things, newspaper articles around the world.</p>
+<p><span style="text-decoration:underline;">How to access this source for your country:</span></p>
+<p><span style="text-decoration:underline;"> </span></p>
+<p>Use your home institution to access these datasets.</p>
+<p>For NYU students, you can do so here:</p>
+<ul>
+<li><p><a href="https://persistent.library.nyu.edu/arch/NYU00954">Factiva</a></p></li>
+<li><p><a href="https://persistent.library.nyu.edu/arch/NYU02479">Nexis Uni</a></p></li>
+</ul>
+<p>For the Technical University of Munich, you can do so here:</p>
+<ul>
+<li><p><a href="https://www.ub.tum.de/en/datenbanken/details/102480">Factiva</a></p></li>
+<li><p><a href="https://www.ub.tum.de/datenbanken/details/1670">LexisNexis</a></p></li>
+</ul>
+<p><span style="text-decoration:underline;">How to use this source in the dataset:</span></p>
+<p>You can search these articles for different search terms such as “quarantine” and “travel ban” to see what pops up and when. Please limit your search to December 31, 2019 (when China first reported the coronavirus to the WHO) to the present.</p>
+<p>We consider information that comes from newspaper articles as a primary source. Identify any relevant information from the newspaper article and enter them into the dataset. However, if you have doubts or qualms about the rigor of a particular publication outlet, please do not hesitate to raise your concern with us.</p></li>
+<li><p><strong>Other resources</strong></p>
+<p>We will update this section accordingly as more information becomes available. For now, some other resources you might consider include:</p>
+<ul>
+<li>Check Facebook and Twitter accounts for political leaders in the country (or for health ministries).</li>
+<li>This is a crowd-sourced list of government actions against the coronavirus by the Open Government Partnership (OGP). Note please be sure to vet the sources here carefully as the OGP themselves do not control for the quality of the entries made <a href="https://docs.google.com/spreadsheets/d/1UOdONQoD5wiS2MZW8PEwnEyklDTUZqWKlys3304WKoY/edit#gid=921375421">here</a>.</li>
+<li><a href="https://coronavirustechhandbook.com/data">This website</a> is a crowd-sourced compendium of information about the coronavirus. For now these appear to deal largely with the health outcomes associated with coronavirus but may be useful insofar as includes many links to in-country websites.</li>
+</ul></li>
+</ol>
+</div>
+<div id="what-to-do-if-i-need-to-delete-an-entry" class="section level2" number="2.5">
+<h2 number="2.5"><span class="header-section-number">2.5</span> What to do if I need to delete an entry?</h2>
+<p>Please post the entry that you need to be deleted in the #orphaned-records channel.</p>
+</div>
+</div>
+<div id="data-cleaning" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Data Cleaning</h1>
+<div id="why-are-we-doing-data-cleaning" class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Why are we doing data cleaning?</h2>
+<p>In parallel to the regular validation process, we need reliable people who can take the responsibility of cleaning our main dataset. As of today, we have over 12,000 policies in the dataset with great granularity. Unsurprisingly, we are sure that some of them have errors and typos. While it will be impossible to correct all of them, we need to make an effort to minimize errors. To do this, we have designed the following cleaning protocol that those involved with data cleaning should follow.</p>
+</div>
+<div id="what-should-be-cleaned" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> What should be ‘cleaned’?</h2>
+<p>The goal of data cleaning is to clean <em>clear errors and or typos</em> as opposed to conceptual errors.</p>
+<p>Clear errors/typos are of the following kind: e.g. the policy is targeted toward ’ China, Iran, Singapore, South Korea, or Italy’ but the original coder left out ‘Iran’.</p>
+<p>Conceptual errors have more to do with how certain policy types should be coded to match our coding guidance: e.g. is this policy about social distancing or a quarantine?</p>
+<p>There will be a gray zone between clear errors and conceptual errors. Please do feel very very free to ask us as many questions as you have about what should be ‘cleaned’ and what shouldn’t be and how to clean it, but for the most part, if you’re finding it difficult to judge if something is an ‘error’ or not, then leave it alone.</p>
+<p>Please pay special attention to the qualitative description, as it should contain:</p>
+<ul>
+<li>The name of the country from which a policy originates</li>
+<li>The date the policy is supposed to take effect</li>
+<li>Information about the ‘type’ of policy (see buttons below)</li>
+<li>If applicable, the country or region that a policy is targeted towards</li>
+<li>If applicable, the type of people or resources a policy is targeted towards</li>
+<li>If applicable, when a policy is slated to end</li>
+</ul>
+<p>A proper description should contain all the above points where applicable.</p>
+</div>
+<div id="how-do-i-get-started-with-data-cleaning" class="section level2" number="3.3">
+<h2 number="3.3"><span class="header-section-number">3.3</span> How do I get started with data cleaning?</h2>
+<p>The process requires you to follow these basic instructions:</p>
+<div id="get-organized" class="section level3" number="3.3.1">
+<h3 number="3.3.1"><span class="header-section-number">3.3.1</span> Get Organized:</h3>
+<ol style="list-style-type: decimal">
+<li>Get an account in Trello and make sure that one of the PIs gives you access to edit the project “Data cleaning (validation team)”<br />
+</li>
+<li>Make sure one of the PIs invites you to the #data_cleaning_ Slack channel</li>
+</ol>
+<center>
+<p><img src="img/Codebook/2.%20data%20cleaning%20slack.png" style="width:30.0%" /></p>
+</center>
+</div>
+<div id="assign-yourself-a-cleaning-task" class="section level3" number="3.3.2">
+<h3 number="3.3.2"><span class="header-section-number">3.3.2</span> Assign yourself a Cleaning Task</h3>
+<p>In this project, you will see that we have divided the dataset in different chunks. This allows the cleaning process to be divided into several people.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Assign one of these to yourself by editing “change members”, “Change Due date” and “Move” to the cleaning column (with the date that you expect to be done with this cleaning).</li>
+</ol>
+<center>
+<p><img src="img/Codebook/3.%20Data%20cleaning%20trello.png" style="width:70.0%" /></p>
+</center>
+</div>
+<div id="clean-the-data" class="section level3" number="3.3.3">
+<h3 number="3.3.3"><span class="header-section-number">3.3.3</span> Clean the Data</h3>
+<ol start="4" style="list-style-type: decimal">
+<li>Go to the CoronaNet website and <a href="https://coronanet-project.org/download">download</a> the latest version of our core dataset (CoronaNet Database BETA Version 1.0 (core)).</li>
+</ol>
+<center>
+<p><img src="img/Codebook/4.%20Data%20cleaning%20download%20dataset.png" style="width:70.0%" /></p>
+</center>
+<ol start="5" style="list-style-type: decimal">
+<li><p>In the main dataset, for the observations that you have been assigned to, evaluate whether the information entered across all columns adequately captures the information in the column “event_description.”</p></li>
+<li><p>To check the event description, please use the R-Studio code posted in the #data_cleaning_ Slack Channel. For instructions on how to use the code, please watch this <a href="https://corona-govt-response.slack.com/archives/G011RS4L03Y/p1591792230012400">video</a>.</p></li>
+<li><p>If you consider that the observation requires no changes, move to the next observation.</p></li>
+<li><p>If you think that the observation requires being changed, use the RShiny App to correct the entry (Note that the released dataset has one row per target rather than one row per entry, so you need to take that into account when adding a correction).</p>
+<p>The instructions on how to use the R-Shiny app are also present on the video above.</p></li>
+<li><p><strong>NOTE: You should not be spending more than a couple of minutes per record maximum, if you’re spending more time, than either ask for guidance in the #data_cleaning_ channel or move on</strong></p></li>
+</ol>
+</div>
+<div id="dealing-with-systematic-errors" class="section level3" number="3.3.4">
+<h3 number="3.3.4"><span class="header-section-number">3.3.4</span> Dealing with Systematic errors</h3>
+<ol start="10" style="list-style-type: decimal">
+<li>If, in the process of cleaning, you notice that the original coder is making a systematic error, please
+<ol style="list-style-type: decimal">
+<li>Notify the #data_cleaning channel that this is has happened</li>
+<li>After consulting with a PI, please contact the original coder and let them know that they are making this systematic error and ask them if they could please code back, and make the appropriate corrections to their entries</li>
+<li>If the original coder is no longer involved in the project or otherwise unresponsive, please let the #data_cleaning_ channel know and we will assign a new RA to address this systematic error</li>
+</ol></li>
+</ol>
+</div>
+<div id="finalize-a-cleaning-task" class="section level3" number="3.3.5">
+<h3 number="3.3.5"><span class="header-section-number">3.3.5</span> Finalize a Cleaning Task</h3>
+<ol start="11" style="list-style-type: decimal">
+<li>Once you have finalized cleaning all the observations that you have been assigned to, please update the “due date” in Trello and move the card to the column on the right to “complete” section.</li>
+</ol>
+<center>
+<p><img src="img/Codebook/5.%20Data%20cleaning%20finilize%20a%20cleaning%20task.png" style="width:70.0%" /></p>
+</center>
+</div>
+</div>
+<div id="how-do-i-become-a-data-cleaner" class="section level2" number="3.4">
+<h2 number="3.4"><span class="header-section-number">3.4</span> How do I become a data cleaner?</h2>
+<p>Data cleaners must possess a deep knowledge of the ins and outs of the survey and data collection process to maintain the integrity of the data cleaning process. Data cleaners must also possess working knowledge of a programming language (preferably R) in order to participate in the data cleaning process. To date, a select few research assistants have been invited to be data cleaners only after they have spent substantial time with data collection and validation.</p>
+</div>
+<div id="examples" class="section level2" number="3.5">
+<h2 number="3.5"><span class="header-section-number">3.5</span> Examples</h2>
+<p>For example, see policy_id = 6298255:</p>
+<p>event_description = ‘Albania began health checks at the airport for passengers coming from China, Iran, Singapore, South Korea, or Italy on February 25th’.</p>
+<p>4 rows:</p>
+<p>target_country = China (row1)</p>
+<p>target_country = Italy (row2)</p>
+<p>target_country = Singapore (row3)</p>
+<p>target_country = South Korea (row4)</p>
+<p>Our coder forgot to select “Iran” in this entry. Sort the dataset to make sure that Iran has not been added later on (e.g., order the data by “init_country” and “target_country” and search for “Albania” and “Iran”). Once you certify that Iran is missing, go to the main survey in Qualtrics and add a Correction for this record_id where you will be able to correct the target_country so that you select China, Italy, Singapore, South Korea AND Iran. All else equal. Remember to sort the data again by “record_date” so that you ONLY change the observations that have been assigned to you)</p>
+<p>Example 2:</p>
+<p>policy_ID 5808477</p>
+<p>Event_description: “Nation steps up to COVID-19 Alert Level 2”</p>
+<p>This policy is coded under “Declaration of Emergency”, but the description is not precise enough (there is no country name, and no dates) to understand if this policy was coded correctly. In this case we need to refer to the source, check the entry according to the information in the source, then correct the description and other variables if needed.</p>
+</div>
+</div>
+<div id="data-validation" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Data Validation</h1>
+<div id="why-do-we-validate-data" class="section level2" number="4.1">
+<h2 number="4.1"><span class="header-section-number">4.1</span> Why do we validate data?</h2>
+<p>Data validation is required to ensure our dataset is reliable and accurate. At the moment we have over 250 hundred hard working research assistants that are entering more than 17,000 policies, updates and corrections. With so many minds, there is bound to be a difference of opinion and skill on how policies should be coded. This difference gives rise to conceptual errors and policies that have been entered that differ to our coding guidelines. For example, is a policy about quarantining or lockdown? Should a policy be entered as one, or broken down into smaller policies? Ideally, we should have high intercoder reliability, which means that two independent people will code the same source in the same way, but with a complex survey this is increasingly difficult. To increase intercoder reliability, we have designed a validation process.</p>
+</div>
+<div id="how-do-we-validate-data" class="section level2" number="4.2">
+<h2 number="4.2"><span class="header-section-number">4.2</span> How do we validate data?</h2>
+<p>Validation is split into two main stages; recoding and reconciliation. Recoding is carried out by experienced coders, from a source chosen out of the randomly selected validation dataset. Reconciliation is done by the validation PIs, who take the original policy and the recoded entries and try to find a match, determining if two independent coders, who had the same source, found the same policy and coded it in the same way.</p>
+</div>
+<div id="how-do-i-join-the-validation-team" class="section level2" number="4.3">
+<h2 number="4.3"><span class="header-section-number">4.3</span> How do I join the validation team?</h2>
+<ol style="list-style-type: decimal">
+<li>Send an email to Allison (<a href="mailto:ahartnet@usc.edu">ahartnet@usc.edu</a>) or Joan (<a href="mailto:joan.barcelo@nyu.edu">joan.barcelo@nyu.edu</a>) to signal your interest in becoming a validator.</li>
+<li>We will then send you a link to a quick test survey that helps us check your coding level. We do this to ensure that everyone who joins the team has a comparable level of coding skills. The score threshold for being added to the validation team is 70% accuracy.</li>
+</ol>
+<div id="getting-started-with-validation" class="section level3" number="4.3.1">
+<h3 number="4.3.1"><span class="header-section-number">4.3.1</span> Getting started with validation</h3>
+<ol style="list-style-type: decimal">
+<li>Once you pass the test, Joan or Allison will add you to the ra-validation slack channel.</li>
+<li>Pinned to the slack channel is a Google Sheet listing all observations to be validated (also known as the validation dataset) and the link to the validation survey. Click on it and follow the instructions below.</li>
+</ol>
+</div>
+<div id="assigning-an-observation" class="section level3" number="4.3.2">
+<h3 number="4.3.2"><span class="header-section-number">4.3.2</span> Assigning an observation</h3>
+<ol style="list-style-type: decimal">
+<li>Look for an observation in the Google Sheet validation dataset that is not assigned to anyone else.</li>
+</ol>
+<center>
+<p><img src="img/Codebook/6.%20Validation%20look%20for%20observation.png" style="width:50.0%" /></p>
+</center>
+<ol start="2" style="list-style-type: decimal">
+<li>Click on the source to see the country/language.</li>
+</ol>
+<center>
+<p><img src="img/Codebook/7.%20Validation%20click%20on%20source.png" style="width:50.0%" /></p>
+</center>
+<ol start="3" style="list-style-type: decimal">
+<li><p>If you have the skills to code that observation (and you did not code that observation in the main dataset), then put your name on the RA_validate column in the Google Sheet.</p></li>
+<li><p>After assigning an observation to yourself, click the validation survey link, select “Validation” and insert the corresponding “record_id,” which you can find in the spreadsheet. Identify yourself using the dropdown menu. If your name is not in the list, please send an email to <a href="mailto:ahartnet@usc.edu">ahartnet@usc.edu</a> or <a href="mailto:joan.barcelo@nyu.edu">joan.barcelo@nyu.edu</a> and they will add you.</p></li>
+<li><p>Complete the survey for as many entries as you think it is necessary to have a complete picture of the policies announced in that country on that date from that source - in case of doubt, too many is better than too few.</p></li>
+<li><p>Once done, put a 1 on the column “Validation_complete”.</p>
+<p><strong>Note: If the link to a source does not work, is missing, or links to an updating source, please message the PIs in the ra-validation slack channel to ask for the original PDF. </strong></p></li>
+</ol>
+</div>
+</div>
+<div id="second-round-of-validation-checking" class="section level2" number="4.4">
+<h2 number="4.4"><span class="header-section-number">4.4</span> Second Round of Validation: “Checking”</h2>
+<p>Every entry in the validation set will be validated twice. The second round of validation - termed checking for clarity - will help us determine the most appropriate coding for each policy. The procedure for checking is _nearly _identical to the first round of validation described above. Two important things to note:</p>
+<ol style="list-style-type: decimal">
+<li>You should <strong><span style="text-decoration:underline;">not</span></strong> check an observation that you coded in the original dataset.</li>
+<li>You should <strong><span style="text-decoration:underline;">not</span></strong> check an observation that you validated in the first round of validation.</li>
+</ol>
+<p>It is important that each round (original entry, validation, and checking) be done by three different individuals. This ensures that our original coding, validation, and checking processes are independent of each other and makes the quality of our data more reliable (statistically speaking)! What follows is a description of how to get involved in checking the data.</p>
+<div id="getting-started-with-checking" class="section level3" number="4.4.1">
+<h3 number="4.4.1"><span class="header-section-number">4.4.1</span> Getting started with checking</h3>
+<ol style="list-style-type: decimal">
+<li>You should email Allison or Joan with your intention to join the validation/checking team and pass the same coding survey test described in the validation section with a score of 70% or higher.</li>
+<li>Once you are added to the ra-validation Slack channel, open the validation spreadsheet and look for an observation that is blank or NA in the column “RA_checker”</li>
+<li>Click on the source/s to see country/language</li>
+<li>If you have the skills to code that observation (and you did not code that observation for the main dataset and for the validation dataset), then put your name on the RA_checker column (you are assigning this observation to you)</li>
+<li>After assigning an observation to you, then click on the survey link and complete the survey for as many entries as you think it is necessary to have a complete picture of the policies announced in that country on that date from that source—in case of doubt, too many is better than too few</li>
+<li>Please, find your name in the list of contributors within the Survey (if your name is not in the list, send an email to <a href="mailto:ahartnet@usc.edu">ahartnet@usc.edu</a> or <a href="mailto:joan.barcelo@nyu.edu">joan.barcelo@nyu.edu</a>)</li>
+<li>Select “Checker Entry” from the multiple choice options and enter the record ID that you are checking.</li>
+<li>Once done, put a 1 on the column “checker_complete”</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="coronanet-policy-completeness-check" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> CoronaNet Policy Completeness Check</h1>
+<p>This section contains coding instructions for policy-based completeness checkers. Before reading this, you should be familiar with the following resources:</p>
+<ul>
+<li><a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit#heading=h.h8ru4k1sblui">CoronaNet Data Collection Guidelines and Codebook</a></li>
+<li>CoronaNet Training Videos:
+<ul>
+<li><a href="https://nyu.zoom.us/rec/share/1_MyF6re50NLHYHqzljUQJUPNKvUT6a81nQY_PdYzU2QdKqLzG2K_QS3k8t8nFDB">https://nyu.zoom.us/rec/share/1_MyF6re50NLHYHqzljUQJUPNKvUT6a81nQY_PdYzU2QdKqLzG2K_QS3k8t8nFDB</a></li>
+<li><a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000</a> (Password: 7C&amp;*60@=)</li>
+</ul></li>
+</ul>
+<div id="why-is-a-completeness-check-necessary" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> Why is a completeness check necessary?</h2>
+<p>The primary objective of a policy-based completeness checker is to evaluate the completeness of our dataset on some policies across several countries.</p>
+<p>Ever since we began this project, hundreds of research assistants have helped us in collecting policy information. While everyone has put a huge effort in systematically collecting all policies for all countries, we are aware that some policies might have gone undetected by our talented RAs.</p>
+<p><br />
+To ensure the completeness of our dataset, we request policy-based completeness checkers to compare our dataset with other datasets and check whether their information fully matches with our released dataset. We compare our dataset with the following datasets:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.acaps.org/covid19-government-measures-dataset">ACAPS COVID-19: Government Measures Dataset</a></li>
+<li><a href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker">Oxford COVID-19 Government Response Tracker</a></li>
+<li><a href="https://www.oecd.org/coronavirus/country-policy-tracker/">OECD Country Policy Tracker</a></li>
+<li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/phsm">WHO PHSM Dataset</a></li>
+</ol>
+<p>As you will see, policy types are coarser and the country coverage is more limited in the other datasets compared to our dataset. Therefore, we provide an overview of the different policy categories and how they can be assigned to the CoronaNet policy categories. This is helpful for the identification of policies that are compared.</p>
+</div>
+<div id="data-collection-methodology" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Data collection methodology</h2>
+<ol style="list-style-type: decimal">
+<li>Access the<a href="https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=142648945">CoronaNet Policy Completeness Check</a> sheet and identify the policy category sheet you have been assigned to (e.g. Curfew).</li>
+<li>Find a region that has not been previously completed and add your name in the column “policy checker” for the subset of countries in your region. (Before adding yourself as a policy checker, make sure you have time to complete your task within a 24-h window).</li>
+<li>Make sure to get access to all datasets including CoronaNet (via RShiny App).</li>
+<li>The idea is now to systematically compare the recorded policies of the other datasets with CoronaNet. Start with getting access to the respective dataset and getting familiar with the policies you are responsible for. (In the same file, you can see which policy categories of the other datasets belong to the your CoronaNet policy category you have been assigned to.)</li>
+<li>Check for the present country each listed policy within the category if it is included in your assigned policy category in CoronaNet. Therefore, search the country/policy information in CoronaNet via the RShiny App.</li>
+<li>Compare the information from the dataset under investigation with the information that appears in our dataset. Do this for all countries within your region or subset of countries that you indicated in the spreadsheet.</li>
+<li>At least, evaluate the following aspects:
+<ol style="list-style-type: decimal">
+<li>Policy EXISTS in our dataset<br />
+(e.g., if Canada closed schools, our dataset has information about closure of schools in Canada)</li>
+<li>Policy BEGINS at the same time in our dataset as in the reliable source</li>
+<li>Policy ENDS at the same time in our dataset as in the reliable source</li>
+<li>Policy CONTENT in our dataset adequately captures the policy information in our reliable source (e.g., target country/region, enforcement).</li>
+</ol></li>
+<li>Once you are done with one policy-country, add “Yes” in the column “Completed” of the spreadsheet. If the country is missing from your reliable source, then add “NA” in the column “Completed.”</li>
+<li>Once you are done with an entire policy-region, contact the responsible Regional Manager and report all the incompleteness that you have detected. If you have not detected any incompleteness, please let the Regional Manager know that you have successfully checked the completeness for a policy in the region. You can identify the responsible regional manager <a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0">here</a>.<br />
+</li>
+</ol>
+</div>
+</div>
+<div id="data-science-team" class="section level1" number="6">
+<h1 number="6"><span class="header-section-number">6</span> Data Science Team</h1>
+<p>The data science team exists to manage the export and cleaning of Qualtrics survey data, and also to visualize and analyze the data. This team is led by Tim Model (Chief Data Scientist) and Clara Wang (Chief Data Engineer). The members of this team may have some data entry responsibilities but their primary goal is to ensure that our data pipeline is as smooth as possible, and also to employ data-analytic tools to check the data and extract insights.</p>
+<p>Regular tasks assigned to the team include:</p>
+<ol style="list-style-type: decimal">
+<li>Daily exports of the Qualtrics data to our Github site, including cleaning the data, uploading for the RA record sheet/RShiny Data Validation App.</li>
+<li>Retrieving changed records from the RShiny Data Validation App and merging into the released data.</li>
+<li>Maintenance of the RShiny Data Validation App.</li>
+<li>Help with adjusting the Qualtrics JavaScript backend.</li>
+<li>Extract insights from the data through analysis and visualization.</li>
+<li>Monitoring the #orphaned-records channel and adding deleted records to removal lists (and also identify any record issues outstanding).</li>
+</ol>
+<p>The data science team currently consists of five groups:</p>
+<ol style="list-style-type: decimal">
+<li>Qualtrics: developing, managing, and maintaining the Qualtrics survey</li>
+<li>Data Pipeline: data cleaning and wrangling, as well as releasing data to record lookup, AWS, and public Github repository</li>
+<li>Shiny App: developing, managing, and maintaining the Shiny app used for data validation by RAs</li>
+<li>Issue Triage and QC: identifying source of errors reported in Slack and elsewhere, including bad record IDs</li>
+<li>Data Visualization: developing visualizations for public-facing presentations of our data</li>
+</ol>
+</div>
+<div id="qualtrics" class="section level1" number="7">
+<h1 number="7"><span class="header-section-number">7</span> Qualtrics</h1>
+<p>Once an RA is onboarded, they will receive a link to the Qualtrics survey they should use to enter new records.</p>
+<p>RA’s should select their name from the drop-down list (Hint: typing your name once the drop-down list is open makes it easier to find yourself in the list).</p>
+<p>The <strong><a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Data Codebook</a></strong> can be used to help fill out the Qualtrics survey.</p>
+<p>The penultimate page of the Qualtrics survey is a review of all the information about the policy that has been entered, RA’s should scroll down and read this page before finally clicking on the ‘advance arrow’ to ensure the entry gets submitted to the dataset.</p>
+<p><strong>How to retrieve a PDF Source?</strong></p>
+<p>If you are working on validating an entry, you can request a PDF source by posting in the #ra-validation channel and someone with access to the survey will retrieve it for you.</p>
+<p>Note that only those with permission to view/edit the Qualtrics survey will be able to retrieve a PDF Source. You will only be granted access if you are actively working on editing the Qualtrics survey or actively working on the raw Qualtrics output. Validators should not request to view the raw survey, as this will compromise the blind validation process.</p>
+<p>If you do have permission to view/edit the survey, you can retrieve a source by following this procedure:</p>
+<p>Click on the dataset &gt; Data &amp; Analysis &gt; Add Filter &gt; Embedded data, record ID &gt; Once you have the record you want, click Export &amp; Import &gt; Export &gt; User Submitted Files. This will produce a .zip file of the desired source pdf(s) for that record ID.</p>
+</div>
+<div id="slack" class="section level1" number="8">
+<h1 number="8"><span class="header-section-number">8</span> Slack</h1>
+<div id="what-is-slack" class="section level2" number="8.1">
+<h2 number="8.1"><span class="header-section-number">8.1</span> What is Slack?</h2>
+<p>Slack is a collaboration software tool that enables users to share messages, tools, and files with their fellow team members.</p>
+<p>It helps increase productivity amongst large, remote teams and saves everybody from getting lost in endless email chains.</p>
+</div>
+<div id="key-functionalities" class="section level2" number="8.2">
+<h2 number="8.2"><span class="header-section-number">8.2</span> Key Functionalities</h2>
+<p><em><span style="text-decoration:underline;">Channels</span></em></p>
+<div class="line-block">  Channels are where the work happens!</div>
+<center>
+<img src="img/Codebook/8.%20Slack%20chennels.png" />
+</center>
+<div class="line-block">  Each different part of the project has its own dedicated channel, where all the people involved in that part can easily communicate.</div>
+<div class="line-block">  All the messages shared in these channels are searchable, so you will never lose out on information.<br />
+</div>
+<p><em><span style="text-decoration:underline;">Threads</span></em></p>
+<div class="line-block">  If somebody posts a message in a channel that you want to add to, start a thread specific to the original message.<br />
+</div>
+<center>
+<p><img src="img/Codebook/9.%20Slack%20threads.png" /></p>
+</center>
+<p><em><span style="text-decoration:underline;">Direct Messages</span></em></p>
+<div class="line-block">  Perhaps you need to contact somebody within the project personally, but there is no need for a specific channel, utilise the direct message<br />
+  function instead.<br />
+</div>
+<center>
+<p><img src="img/Codebook/10.%20slack%20direct%20messages.png" /></p>
+</center>
+<p><em><span style="text-decoration:underline;">Notifications / Mute Channel</span></em></p>
+<div class="line-block">  Maybe it’s the weekend or you’re taking a break; pause all notifications here!</div>
+<div class="line-block">  You can also customize notification settings or mute specific channels by clicking on the ‘Details’ tab of the channel.<br />
+</div>
+<center>
+<p><img src="img/Codebook/11.%20Slack%20notifications%20mute.png" /></p>
+</center>
+<p><em><span style="text-decoration:underline;">Pinned Items</span></em></p>
+<div class="line-block">  Important/useful messages in a channel may be ‘pinned’.</div>
+<div class="line-block">  ‘Pinned’ items can be viewed here!<br />
+</div>
+<center>
+<img src="img/Codebook/13.%20Slack%20pinned%20items.png" />
+</center>
+<p><em><span style="text-decoration:underline;">“Online” / “Away”</span></em></p>
+<div class="line-block">  Let your colleagues know whether you are available or not by changing your appearance between ‘online’ and ‘away’.</div>
+<center>
+<img src="img/Codebook/14.%20Slack%20online%20away.png" />
+</center>
+</div>
+<div id="coronanet-workspace" class="section level2" number="8.3">
+<h2 number="8.3"><span class="header-section-number">8.3</span> CoronaNet Workspace</h2>
+<p>All the information you need regarding the CoronaNet project can be found in our Slack workspace. In the rare circumstance you can’t find what you’re looking for, there will be somebody on-hand in Slack to help you answer your question.</p>
+<p>Queries regarding policy coding, data validation, data cleaning, existing records, using the CoronaNet app, Hogwarts houses, Zoom team meetings, even birthday wishes for your CoronaNet colleagues, can all be found in Slack. It is the beating heart of CoronaNet!</p>
+<p>Slack workspaces have subsets of different <em>channels</em>, the more aspects of the project you are involved in, the more _channels _you will be invited to join.</p>
+<p>To help you navigate your way through the different <em>channels</em>, below you will find a brief summary of each one.</p>
+<p><strong># general</strong></p>
+<p>Here you will find CoronaNet-wide announcements and updates, links to useful documents and general information about the project</p>
+<hr />
+<p><strong><a href="https://app.slack.com/client/T010PHG8J6A/C010V8MKHK2">#ra-chat</a>:</strong></p>
+<p>This is perhaps the most vital channel for newcomers to the project. It’s the channel where you should direct any questions you have when you are coding policy. Please don’t hesitate to ask any questions you may have, there is a group of experienced Research Assistants who are responsible for monitoring this channel daily to ensure you get a quick response.</p>
+<p><strong>Check the “pinned items”</strong> for some useful information for all RA’s. You can also utilise the FAQ tab in the <a href="https://kubinec.shinyapps.io/corona_validate/">Shiny App</a>, which is updated based on the questions you ask in this channel.</p>
+<p>You can see the pinned items in the top left corner of #ra-chat</p>
+<center>
+<p><img src="img/Codebook/15.%20CoronaNet%20worspace%20pinned%20items.png" style="width:30.0%" /></p>
+</center>
+<p>Example of a pinned post on #ra-chat</p>
+<center>
+<img src="img/Codebook/16.%20CoronaNet%20workspace%20examped%20pinned.png" style="width:20.0%" />
+</center>
+<p><strong># random</strong></p>
+<p>With such a global team, spread across multiple time-zones, it’s impossible for us all to gather around the water cooler for a short conversation. Utilise this channel as a substitute! Also, a good place to wish people a happy birthday!</p>
+<hr />
+<p><strong># record-tracker-app</strong></p>
+<p>Direct any question you have about the CoronaNet record online app here.</p>
+<hr />
+<p><strong># orphaned-records</strong></p>
+<p>Use this channel to talk about any records you are having trouble locating (or otherwise need help with).</p>
+<hr />
+<p><strong># research-ideas</strong></p>
+<p>An open forum where you can share any research ideas you may have as you are entering data. Have you noticed anything peculiar / interesting / innovative about certain Countries / Regions approach to policy making? This is the channel to share those thoughts in.</p>
+<hr />
+<p><strong># Country / Region </strong></p>
+<p>Once you are assigned a Country to work on, you will be invited to the corresponding channel. These channels are a platform for you to coordinate with the other RA’s working on the same Country / Region as you and provide an easy way for you to contact your Country/Regional Manager regarding any specific questions you have.</p>
+<hr />
+<p><strong># Gryffindor / # Hufflepuff / # Ravenclaw / # Slytherin</strong></p>
+<p>Once you are registered as a member of CoronaNet, the sorting hat will assign you a house! Use this channel to meet your fellow house members and consider it an additional support resource for any questions you may have.</p>
+</div>
+</div>
+<div id="shiny-web-application-guide" class="section level1" number="9">
+<h1 number="9"><span class="header-section-number">9</span> Shiny Web Application Guide</h1>
+<p>In this section, we describe some of the useful features and tools of the web application for updating records, in addition to providing some helpful background for how it works.</p>
+<ol style="list-style-type: decimal">
+<li>Select the Country and/or City/Province of the records you are trying to locate (one or more Countries can be selected simultaneously)</li>
+</ol>
+<center>
+<img src="img/Codebook/17.%20Shiny%20select%20country.png" style="width:70.0%" />
+</center>
+<ol start="2" style="list-style-type: decimal">
+<li>To further refine your search, the specific policy category can also be defined</li>
+</ol>
+<center>
+<p><img src="img/Codebook/18.%20Shiny%20policy%20catergory.png" style="width:70.0%" /></p>
+</center>
+<ol start="3" style="list-style-type: decimal">
+<li>“Policy Records Table” displays a full list of all available records that match the criteria entered above</li>
+</ol>
+<ul>
+<li>The “Correct” and “Update” buttons, shown in the table above, are a direct link to the Qualtrics survey for that individual record. The ‘record_id’ and ‘policy_id’ are also easily identifiable in this table</li>
+</ul>
+<center>
+<p><img src="img/Codebook/19.%20Shiny%20Policy%20records%20table%20(1).png" style="width:70.0%" /></p>
+<p><img src="img/Codebook/19.%20Shiny%20Policy%20records%20table%20(2).png" style="width:70.0%" /></p>
+</center>
+<ol start="4" style="list-style-type: decimal">
+<li>“Timeline Visualization” shows the timeline in which the policies are active, and can be used to monitor ongoing policies and see if they need to be updated/ended</li>
+</ol>
+<center>
+<p><img src="img/Codebook/20.%20Shiny%20timeline%20visualization.png" style="width:70.0%" /></p>
+</center>
+<ul>
+<li>By hovering the cursor over one of the blue tiles for a few seconds, the record description will appear</li>
+<li>By clicking on one of the blue tiles, that record will become ‘selected’. The record_id’s of the policies selected by the user will appear at the top of the page (top left of the screenshot above)</li>
+<li>If the user then clicks on the ‘Policy Records Table’ tab again, only the records selected by the user will now be visible in the list (as shown below)</li>
+</ul>
+<center>
+<p><img src="img/Codebook/21.%20Shiny%20if%20user%20then%20clicks%20on%20the%20policy%20records%20table....png" style="width:70.0%" /></p>
+</center>
+<ul>
+<li>Utilise the ‘Clear records selected’ button to clear this filter and repeat the process from the beginning</li>
+</ul>
+<p><strong>Link to the <a href="https://kubinec.shinyapps.io/corona_validate/">app</a>.</strong></p>
+<p><strong>Any questions regarding the App please direct towards the #record-tracker-app slack channel.</strong></p>
+</div>
+<div id="coronanet-learning-platform" class="section level1" number="10">
+<h1 number="10"><span class="header-section-number">10</span> CoronaNet Learning Platform</h1>
+<p>CoronaNet also has a <a href="https://lumesserschmidt.github.io/stats_CoronaNet/index.html">website</a> dedicated to providing learning resources and free tutorials to anybody who wants to learn the software “R”.</p>
+<p>The learning platform offers an introduction to “R” for new users and is paired with webinars and tutorials that utilise the CoronaNet data. So users can learn how to use/import/analyse/visualise data in “R” using the CoronaNet data as we collect it!</p>
+<p>Moreover, there is a <a href="https://join.slack.com/share/zt-f2gjfcd2-YfqDx61ber6qGAhImKZqAQ">Slack channel</a> - #coding - that can be used for sharing R code that you find interesting and want to share, and for any coding/data related questions people have as they are learning!</p>
+</div>
+<div id="project-administration" class="section level1" number="11">
+<h1 number="11"><span class="header-section-number">11</span> Project Administration</h1>
+<div id="organisational-flow-chart" class="section level2" number="11.1">
+<h2 number="11.1"><span class="header-section-number">11.1</span> Organisational Flow Chart</h2>
+<p><a href="https://drive.google.com/file/d/13f9kqLVbxOncZQGEyfCuUM8My6pd_0ui/view?usp=sharing">Click here for high resolution version</a></p>
+<center>
+<p><img src="img/Codebook/22.%20Organisational%20flow%20chart.png" /></p>
+<ul>
+<li><strong>All questions about how to do something in the project/where to go to help, please contact the prefects.</strong></li>
+<li><strong>Any questions about your region, sources for entering your policy or if you need a break, please contact regional managers</strong></li>
+</ul>
+</div>
+<div id="pi-responsibilities" class="section level2" number="11.2">
+<h2 number="11.2"><span class="header-section-number">11.2</span> PI Responsibilities</h2>
+<p>The Principal Investigators (PIs) are in charge of charting the overall course of the CoronaNet Project and for providing guidance and direction for RAs working on different parts of the project. They are also the points of contact for collaborations with other research endeavors or for handling media requests.</p>
+<p>In addition, the PIs also take responsibility over certain parts of the project:</p>
+<p><strong>Main Qualtrics Survey</strong></p>
+<p>Cindy takes primary charge of making changes to the main Qualtrics survey in consultation with the other PIs.</p>
+<p><strong>Data Cleaning and Validation</strong></p>
+<p>[…] Cindy also provides support for the cleaning process and makes changes to the validation survey to mirror the changes made to the Qualtrics survey</p>
+<p>Joan Barcelo and Allison Hartnett</p>
+<p><strong>R Shiny App</strong></p>
+<p>Robert Kubinec</p>
+<p><strong>Project Management</strong></p>
+<p>Luca Messerschmidt</p>
+</div>
+<div id="regionalcountry-managers-responsibilities" class="section level2" number="11.3">
+<h2 number="11.3"><span class="header-section-number">11.3</span> Regional/Country Managers Responsibilities</h2>
+<p>Regional managers oversee the countries in their region, and country managers oversee the subnational provinces/states for a particular country. In some countries, there will be more than one country manager. This is especially true for countries with large numbers of subnational provinces/states. You can find the list of countries allocated to a region and all country managers for a country in t<a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?usp=sharing">his document</a></p>
+<div id="organization" class="section level3" number="11.3.1">
+<h3 number="11.3.1"><span class="header-section-number">11.3.1</span> Organization</h3>
+<ul>
+<li>Regional and country managers will be added to the #regional-managers Slack channel</li>
+<li>Regional and country managers will be added to the regions or country Slack channel specific to the region or country that they are in charge of overseeing</li>
+<li>In addition to the weekly meetings that regional and country managers should have with the RAs under their supervision (see more below in the ‘Key Responsibilities’ section), there will be periodic meetings for regional and country managers to provide feedback and exchange information with each other and the PIs. These meetings will be announced in advanced in the #regional-managers Slack channel.</li>
+</ul>
+</div>
+<div id="scope-of-responsibilities" class="section level3" number="11.3.2">
+<h3 number="11.3.2"><span class="header-section-number">11.3.2</span> Scope of Responsibilities</h3>
+<ul>
+<li>Regional managers are responsible for fulfilling the ‘Key responsibilities’ listed below for all the countries in their region <em>except</em> for the countries for which there is already a country manager</li>
+<li>Country managers are responsible for fulfilling the ‘Key responsibilities’ listed below for the national level for their country as well as the subnational provinces/states that are within their country
+<ul>
+<li>For countries with more than one country manager, there will still be a ‘head’ country manager should it be necessary to make decisions that affect the whole country. Regardless of how many country managers a country has, each country manager will still be solely responsible for completing the ‘Key responsibilities’ listed below for the particular provinces/states that they are overseeing.</li>
+</ul></li>
+<li>Regional managers and Country managers thus have parallel roles: regional managers will be responsible for countries under their purview (again, except for ones that have a regional manager) and country managers will be responsible for the national and subnational levels of the country under their purview.</li>
+</ul>
+</div>
+<div id="key-responsibilities" class="section level3" number="11.3.3">
+<h3 number="11.3.3"><span class="header-section-number">11.3.3</span> Key responsibilities</h3>
+<ol style="list-style-type: decimal">
+<li>Provide a short weekly “Progress Report” to the PIs <strong>every Friday</strong>. This aim of the progress report is to give a brief overview of how the region is progressing in terms of up to dateness and completeness.
+<ol style="list-style-type: lower-alpha">
+<li>The progress report will be submitted via an excel sheet (regional managers should use <a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0">regional managers excel sheet</a>; country managers should use the <a href="https://docs.google.com/spreadsheets/d/1J45Gme8WoxV2CaqrhiQa2wDXazQrw99wrAzF_Ew511U/edit#gid=508634612">country managers excel sheet</a>) this noting:
+<ol style="list-style-type: lower-roman">
+<li>the ‘up-to-dateness’ of policies for a particular region or country. See part 2) for more information.</li>
+<li>the ‘completeness’ of policies for a particular region or country. See part 3) for more information.</li>
+</ol></li>
+<li>Additionally, please contact the project management team to provide any additional information that you think is important to report. This can include:
+<ol style="list-style-type: lower-roman">
+<li>Whether there are any inactive RAs in your group</li>
+<li>Whether there are any country reports or research notes you would like to be posted to the website</li>
+</ol></li>
+</ol></li>
+<li>Check for up-to-dateness. This involves providing information about when an RA was last able to code policies for their country/region.
+<ol style="list-style-type: lower-alpha">
+<li>By ‘up to date’ we mean, just knowing about when the last time it was that an RA was able to look at a particular country in a given week. It is fine if they didn’t have time, just having the information is in itself valuable</li>
+<li>Please have the RAs under your responsibility fill out the <a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0">excel sheet</a>: noting when they were able to document policies for a particular country.
+<ol style="list-style-type: lower-roman">
+<li>They should open the “ ‘Policy Up-to-Dateness” tab and use the pop-up calendars to indicate when they last updated policies for each of the policy areas.</li>
+</ol></li>
+<li>If the work is not up to date, please make sure that you know the reason why.
+<ol style="list-style-type: lower-roman">
+<li>If the RA does not have time for a given week but is otherwise stated a commitment to the project, then note this in the excel sheet by filling in “On a break” in the “Are the RA’s Active?” column.</li>
+<li>If the RA is unresponsive/no longer active, these tasks may need to be reallocated. You may also nudge and message or nudge RA in your region to be more responsive</li>
+</ol></li>
+</ol></li>
+<li>Check for completeness and/or accuracy of records
+<ol style="list-style-type: lower-alpha">
+<li>By ‘completeness’, we mean assessing, to the best of your ability, whether
+<ol style="list-style-type: lower-roman">
+<li>All policy types for a particular region are coded:
+<ol style="list-style-type: decimal">
+<li>For example, maybe there are no policies about restrictions of mass gatherings because a) the RA didn’t code it or because b) there are simply no policies created by that government. Part of your job as a regional manager would be to communicate with the RA and figure out if the issue is a) or b).</li>
+</ol></li>
+<li>Each policy type is appropriately coded over time:
+<ol start="2" style="list-style-type: decimal">
+<li>For example, it may be the case that there are multiple policies about ‘restrictions on mass gatherings’ that overlap over time. This may be because a) the government has implemented sequential updates to one policy about restriction of mass gatherings such that the policies should not in fact, overlap in time and corrections need to be done to fix the timeline of a given policy or b) the government has implemented multiple policies for restrictions of mass gatherings that should indeed be coded separately and there is no adjustment that needs to be made. Part of your job as regional manager would be to assess if the issue is a) or b) and communicate with the RA as necessary.<br />
+</li>
+</ol></li>
+</ol></li>
+<li>The RShiny App is primarily useful for comparing policy types and countries to pin down which policy types in which countries appear to be out of date. You can also use it to see if policies are no longer enforced (end date has passed) but may still be in force, and which policies are in force but may have expired.</li>
+<li>Document the completeness of the records for each week in the <a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0">excel sheet</a> in the ‘ ‘Policy Completeness Form’. Note we expect that checking for ‘completeness’ will be a medium-term task, such that in the beginning, it might take one week to check the completeness of a just a few policies such that it might take 4-6 weeks to do an initial assessment of the completeness of the policies for the regions under the regional/country managers’ purview. After this initial assessment is done, going forward, assessing completeness should take less time/be comparable to the time it takes to check for up-to-dateness. This is a ‘joint’ task in that both RAs and regional/country managers can fill in this spreadsheet, but regional/country managers are responsible for verifying the RAs ‘completeness’ assessment.</li>
+<li>If the work is incomplete, contains errors or requires attention, please contact the RA directly to resolve any issues. If the RA is no longer active, these tasks may need to be reallocated. Regional managers may also message or nudge an RA in their region to be more responsive.</li>
+<li>If you find repeated errors with the coding in your region, leave a note in the “RA Activity+Notes” tab.</li>
+</ol></li>
+<li>Delegate tasks within their region. If a new RA is allocated to their region, they can delegate states or tasks to them as needed.</li>
+<li>Check and give approval for country reports for their region.</li>
+<li>Weekly meetings with their team. Each Regional and Country manager should organize a short weekly Zoom meeting with your team (suggested length of time is half an hour but regional/country managers have flexibility to decide how long they want their meetings to be). Ideally regional and country managers would not go over the updates and completeness line by line in the meeting for each team member. Rather the meeting should be focused on discussing and resolving any issues in terms of the updateness or completeness of regions under your responsibility.</li>
+</ol>
+<p>For country managers: to to allocate and designate tasks for their subnational regions, please make use of this <a href="https://docs.google.com/spreadsheets/d/1cesReaVkn0-w-0kGjgGHX7WHVZqtejbcQAw0SC7VRZ0/edit?usp=sharing">sheet</a>.</p>
+</div>
+<div id="sops-for-inactive-ras." class="section level3" number="11.3.4">
+<h3 number="11.3.4"><span class="header-section-number">11.3.4</span> <strong>SOPs for Inactive RAs.</strong></h3>
+<ol style="list-style-type: decimal">
+<li>Check if the RA is marked inactive in the <a href="https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing">RA Allocation Sheet</a>: If the RA is colored in orange and has number “2” marked in the inactive column, this means that the RA is no longer active with the CoronaNet Project and you should proceed to step 4.</li>
+<li>If the RA is not marked inactive, message the RA on Slack. If you do not receive a response in a reasonable time, follow up with the RA via email.</li>
+<li>If there is no response from email or Slack, mark “no” in the “Are All RA’s Active?” column in the “RA Activity+Notes” tab and put their name down in the “Names of Inactive RAs” column.</li>
+<li>If possible, the task may need to be reallocated to other active RAs.</li>
+</ol>
+</div>
+<div id="how-do-i-become-a-regionalcountry-manager" class="section level3" number="11.3.5">
+<h3 number="11.3.5"><span class="header-section-number">11.3.5</span> How do I become a regional/country manager?</h3>
+<p>Research assistants are invited to become regional/country managers based on some combination of their expertise in the region/country, their familiarity with the CoronaNet project and their previous experience managing and coordinating people.</p>
+<p>There are a limited number of regional/country manager positions available and when one becomes available, we invite a research assistant to fill the vacancy. Note, while all countries have a regional manager, not all countries have country managers (that is, we do not make a systematic effort to collect subnational data for all countries) though we may expand the number of country managers on a limited basis in the future.</p>
+<p>If you are interested in becoming a regional or country manager, or if you would like to take on the country manager role for a country that currently is not assigned one, please contact the project management team at at <a href="mailto:onadmin@coronanet-project.org">admin@coronanet-project.org</a>!</p>
+</div>
+</div>
+</div>
+<div id="section" class="section level1" number="12">
+<h1 number="12"><span class="header-section-number">12</span> </h1>
+<div id="hogwarts-houses-and-prefects" class="section level2" number="12.1">
+<h2 number="12.1"><span class="header-section-number">12.1</span> Hogwarts Houses and Prefects</h2>
+<p>As part of the onboarding process each RA will be assigned to a Hogwarts house - Gryffindor, Slytherin, Hufflepuff or Ravenclaw!</p>
+<p>Current prefects are:</p>
+<ol style="list-style-type: decimal">
+<li>Hufflepuff:
+<ol style="list-style-type: decimal">
+<li>Naela Elmore</li>
+<li>Jule Scholen</li>
+</ol></li>
+<li>Ravenclaw
+<ol start="3" style="list-style-type: decimal">
+<li>Julia Weissman</li>
+<li>Fadhilah F. Primandari</li>
+<li>Cheng-Hao Shen</li>
+</ol></li>
+<li>Slytherin
+<ol start="6" style="list-style-type: decimal">
+<li>Tasia Wagner</li>
+<li>Konstanze Schonfeld</li>
+</ol></li>
+<li>Gryffindor
+<ol start="8" style="list-style-type: decimal">
+<li>Ines Bohret</li>
+<li>Kayla Schwoerer</li>
+</ol></li>
+</ol>
+<p>Prefects are the leaders of each of these houses. They are responsible for the social onboarding to the project and the general wellbeing of their house members. They are an additional resource for RA’s to direct their questions towards and help RA’s find answers to their questions and/or help RA’s finding the right person for them to direct their questions to. As well as this, they are generally responsible for maintaining the team spirit of their houses and ensuring RA’s have access to the resources they need.</p>
+<p>You can see which house RAs have been allocated to on this sheet: <a href="https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit#gid=0">https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit#gid=0</a>. If an RA is marked in Red in the “house assigned” column, then it means they have not been allocated into a house yet.</p>
+<div id="summary-of-the-main-tasks" class="section level3" number="12.1.1">
+<h3 number="12.1.1"><span class="header-section-number">12.1.1</span> Summary of the Main Tasks</h3>
+<ul>
+<li><p>Evaluation of Applications</p></li>
+<li><p>Allocation of approved applicants to the houses</p></li>
+<li><p>Managing the House Slack Channels</p></li>
+<li><p>Answering their house members questions</p></li>
+<li><p>Generally ensuring the team spirit of their house is maintained</p></li>
+</ul>
+</div>
+</div>
+<div id="how-do-i-become-a-hogwarts-prefect" class="section level2" number="12.2">
+<h2 number="12.2"><span class="header-section-number">12.2</span> How do I become a Hogwarts Prefect?</h2>
+<p>Becoming a Hogwarts Prefect is an exciting and rare opportunity! It is also a role of responsibility and empathy.</p>
+<p>So, first check #general Slack channel. All prefect vacancies are advertised there. Use the channel search function for “in:#general vacancy”. This should filter out the results.</p>
+<p>If you see a vacancy, follow the instructions on the advert. This usually involves messaging the person that posted the advert.</p>
+<p>If you do not find any vacancies on #general Slack channel, then you should reach out to a member of the Project Management Team at <a href="mailto:onadmin@coronanet-project.org">admin@coronanet-project.org</a>. Let them know that you are interested in becoming a prefect. A member of the Project Management Team will contact you with further instructions.</p>
+</div>
+<div id="ra-responsibilities" class="section level2" number="12.3">
+<h2 number="12.3"><span class="header-section-number">12.3</span> RA Responsibilities</h2>
+<p>Once the onboarding process is completed each RA is assigned a Country to work on. They will be added to the relevant Region and Country Slack channels and should introduce themselves to their fellow RA’s in the Country/Region.</p>
+<p>They can use these channels to ask any questions they have about getting started and to communicate with the Regional/Country Manager. Other resources available are</p>
+<ul>
+<li><strong><a href="https://app.slack.com/client/T010PHG8J6A/C010V8MKHK2">#ra-chat</a></strong> Slack channel</li>
+<li>the Hogwarts House Prefects (perhaps there is an issue with something they do not feel comfortable discussing in the Region/Country channel – this is what the Prefects are for!)</li>
+<li>RA FAQ in the <strong><a href="https://kubinec.shinyapps.io/corona_validate/">Shiny App</a></strong></li>
+<li><strong><a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Data Codebook</a></strong></li>
+<li>More relevant links are found in the ‘Useful Links’ section of the Manual</li>
+</ul>
+<p>Once an RA has been assigned a Country/State they commit to completing and updating the records for that assignment. The RA must also enter information into the Country/State specific spreadsheets that will be made available to them by the Regional/Country Manager. This information concerns the date in which they have coded policies up to and the completeness of the records – important information for the Regional/Country managers and should be updated regularly.</p>
+<p>There is no requirement on the number of policies coded per day/week by each RA. Each Country is unique in their approach and we understand that finding and coding policies vary in the time it takes. It is recommended you take your time with your research before coding a policy, to ensure you code as accurately as possible. RA’s should not hesitate in asking questions in the slack channels if they are unsure. If an RA feels overwhelmed and feels they need extra support, they should contact their Region/Country Managers to let them know.</p>
+<p>RA’s should also participate in the weekly meeting with their Regional Managers – which will be set up by the Regional Managers and links posted in the Slack channel.</p>
+<p>In addition, RA’s should participate in/watch the recording of the general RA meeting where updates about the whole project are shared. These meetings take place on Wednesdays at 4.30pm CET at this <a href="https://nyu.zoom.us/j/58230804">link</a>.</p>
+<div id="summary-of-main-tasks" class="section level3" number="12.3.1">
+<h3 number="12.3.1"><span class="header-section-number">12.3.1</span> Summary of Main Tasks</h3>
+<ul>
+<li>Research policies thoroughly and enter them using the Qualtrics questionnaire.</li>
+<li>Keep policy records up-to-date (enter records chronologically in order to make it easier to update/end policies as they develop).</li>
+<li>Continually fill out the Country specific spreadsheets - concerning how up-to-date and complete the records are for the Country/State they are covering. These sheets will be made available by the Country/Region Manger.</li>
+<li>Attend weekly RA meetings with the CoronaNet team (Wednesdays 4.30pm CEST, weekly).</li>
+<li>Attend weekly meetings with the Regional/Country Managers (to be set up by the Managers and communicated in Slack).</li>
+</ul>
+</div>
+<div id="ra-points-of-contact" class="section level3" number="12.3.2">
+<h3 number="12.3.2"><span class="header-section-number">12.3.2</span> RA points of contact?</h3>
+<ul>
+<li><strong>Regional/Country Manager</strong>
+<ul>
+<li>Specific questions regarding process in the Region/Country</li>
+<li>General point of contact/support</li>
+<li>Questions regarding the Country specific spreadsheets</li>
+</ul></li>
+<li><strong>Hogwarts Prefects </strong>
+<ul>
+<li>General point of contact/support</li>
+<li>Issues that may occur where the RA doesn’t feel comfortable communicating them with the Regional/Country Manager or in the public slack channels</li>
+</ul></li>
+<li><strong>#ra-chat </strong>
+<ul>
+<li>Questions regarding how policies should be coded in Qualtrics</li>
+</ul></li>
+<li><strong>#orphaned-records</strong>
+<ul>
+<li>If a record cannot be located</li>
+<li>If a record needs to be deleted</li>
+</ul></li>
+<li><strong>#record-tracker-app</strong>
+<ul>
+<li>Any questions regarding the app functionality</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="ra-onboarding-process" class="section level2" number="12.4">
+<h2 number="12.4"><span class="header-section-number">12.4</span> RA Onboarding Process</h2>
+<p>In this section, we explain how CoronaNeta’s project management team onboards RAs:</p>
+<p><strong>STEP 0: </strong>Set up the mail account: We are using Amazon AWS which you can access <a href="https://coronanet.awsapps.com/mail">here</a>. Login/Password: Ask the project management team</p>
+<p>Here you will find some folders in the inbox but you just need to care about the folder “RA Registration” (see screenshot). A PI or one of you should put every email from our application form in the RA-Registration Folder - Pending subfolder. All application email will have “Re: Application for Research Assistant Position” in the heading:</p>
+<center>
+<p><img src="img/Codebook/23.%20Application%20for%20research%20position.png" style="width:50.0%" /></p>
+</center>
+<p>Once the application has been scored by at least two of you, you can put the mail in the sub-folder “Done”.</p>
+<center>
+<p><img src="img/Codebook/24.%20RA%20Onboarding%20mail%20sub%20folder%20done.png" style="width:50.0%" /></p>
+</center>
+<p><strong><span style="text-decoration:underline;">Drawing the Registration Process</span></strong></p>
+<p><strong>STEP 1: </strong>Students share their interest either via mail or click on the <a href="https://form.jotform.com/201172569499062">form</a> linked to the <a href="https://coronanet-project.org/ra_call.html">ra_call</a>. If we get any general questions by email about how to apply, send them the following text:</p>
+<p><span style="text-decoration:underline;">MAIL 1: </span></p>
+<div class="line-block">      Dear XYZ,<br />
+<br />
+      We appreciate your interest to join the CoronaNet Research Group. In these exceptional times it is important to gather data for real-time<br />
+      research. In order to apply and to become a member of the team, please fill out the following form: <a href="https://form.jotform.com/201172569499062">https://form.jotform.com/201172569499062</a><br />
+<br />
+      More information on the research assistant position can be found here: <a href="https://coronanet-project.org/ra_call.html">https://coronanet-project.org/ra_call.html</a><br />
+<br />
+      If you have any questions, feel free to contact us!<br />
+<br />
+      Kind regards,<br />
+<br />
+      CoronaNet<br />
+<br />
+</div>
+<p><strong>STEP 2: </strong>Once we get an application in the email inbox, you are going to screen the applications and evaluate them. Please note that the CVs/resumes will only go to the <a href="mailto:admin@coronannet-project.org">admin@coronannet-project.org</a> email, so be sure to look for the applications there so you can read all the info.</p>
+<p>With this in mind, we want at least two of you to read every application and score them on a scale of 1 to 5, with 5 being the highest score possible. We have a <a href="https://docs.google.com/spreadsheets/d/1F2IkLcIgsw7JPzJ3sS-DcM5owF-gaoc-35T0pf6vh4U/edit#gid=0">google spreadsheet</a> where you can see a record of all the applications:</p>
+<p>On the far right-hand side are two columns, Evaluation 1 and Evaluation 2. You can record your score there once you read it (whoever gets to it first can give a score):</p>
+<center>
+<img src="img/Codebook/25.%20RA%20Onboarding%20eval%201%20eval%202.png" style="width:60.0%" />
+</center>
+<p>We will then come back and look at the application scores and make a final decision. Once we put a Y in the decision column, you can then send them the following mail:</p>
+<p><span style="text-decoration:underline;">MAIL 2: </span></p>
+<div class="line-block">      Dear XYZ,<br />
+<br />
+      We are happy to announce that you have been chosen to become part of the CoronaNet Research Group.<br />
+<br />
+<br />
+      Your will be involved in the data collection process. The work mainly involves sifting through news reports to identify different policies that<br />
+      government have enacted to combat COVID-19. You will each be assigned one unique country if you choose to participate. If chosen, you will<br />
+      be responsible for (1) researching what government policies your country has implemented starting from the beginning of the epidemic and (2)<br />
+      keeping up to date with new government policy actions on a daily basis.<br />
+<br />
+      When you become experienced, you will be asked to do validation work, visualisations or write country reports.<br />
+<br />
+      <strong>There are only few steps you will need to take to support this research team:</strong></div>
+<ul>
+<li><p>Add your name to this <strong>Google Docs list</strong>: (<a href="https://docs.google.com/spreadsheets/d/1cJv94NrO9Boahf441LkAqdY-xAZIlMCwnWdsrEQb8Wc/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1cJv94NrO9Boahf441LkAqdY-xAZIlMCwnWdsrEQb8Wc/edit?usp=sharing</a>) Please indicate what applicable skills you may possess (e.g. language skills) and your country preferences (please see which countries are left in column H), which we will try to accommodate as much as possible.</p></li>
+<li><p>In order to start as a Research Assistant, you are required to watch two brief <strong>training videos: </strong>which will explain the project in greater depth and give you the tools you need to use our data collection software.</p>
+<p><strong>First:</strong> <a href="https://nyu.zoom.us/rec/share/1_MyF6re50NLHYHqzljUQJUPNKvUT6a81nQY_PdYzU2QdKqLzG2K_QS3k8t8nFDB">https://nyu.zoom.us/rec/share/1_MyF6re50NLHYHqzljUQJUPNKvUT6a81nQY_PdYzU2QdKqLzG2K_QS3k8t8nFDB</a></p>
+<p><strong>Second:</strong><a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000</a> (Password: 7C&amp;*60@=)</p></li>
+</ul>
+<div class="line-block"></div>
+<ul>
+<li><p>Through the following <strong>survey link</strong>, you will be asked to do an** interactive training after **you watched the videos.. <a href="https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB">https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB</a></p></li>
+<li><p>If you have questions on how to fill out the survey, please read the <a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">codebook</a> and feel free to contact <a href="mailto:admin@coronanet-project.org">admin@coronanet-project.org</a></p></li>
+<li><p>After you passed the training, you will be allocated a country, receive the link to the main survey and will be added to Slack. |<br />
+|</p></li>
+</ul>
+<div class="line-block">      We hope that our project will increase the public’s awareness and understanding of what policies governments around the world are taking in<br />
+      response to the virus. Thank you for joining this journey!<br />
+<br />
+<br />
+      All the best,<br />
+<br />
+<br />
+      Robert Kubinek, Cindy Cheng, Joan Barcelo, and Luca Messerschmidt<br />
+<br />
+<br />
+</div>
+<p><strong>If we put a N in the decision column, you can send them the following email:</strong></p>
+<p><span style="text-decoration:underline;">MAIL 3: </span></p>
+<div class="line-block">      Dear XYZ,<br />
+<br />
+      We appreciate your interest and application at CoronaNet. We are sorry to tell you that we have decided not to invite you to become a research<br />
+      assistant for our team. This does not mean that you won´t be able to use the data (which you can download here: <a href="http://www.coronanet-project.org">www.coronanet-project.org</a>)<br />
+      or tell others about it (Twitter: coronanet_org).<br />
+<br />
+      We want you to know that your attempt to help us in this project is overwhelming and you are a real hero of this crisis.<br />
+<br />
+      All the best<br />
+<br />
+      CoronaNet<br />
+<br />
+</div>
+<p><strong>STEP 3:</strong> Once people pass the test, they are directed to a <a href="https://form.jotform.com/201202703393039">form</a> they will need to fill out in order to agree with the conditions of becoming a RA. Luca is going to allocate the participant to a country and connect this person with previous RAs. It can happen that people pass the test but close the tab etc.which will not allow them to enter the form. If people send you a mail with this inquiry, leave it for Luca to check the records and make a decision.</p>
+<p>Every time someone fills out the confirmation form, you will also see a record of it in the admin email account. Once you receive such a record, you can then add them to the Slack channel. To do so, go into slack and hit the following button on the bottom left-hand side:</p>
+<center>
+<img src="img/Codebook/26.%20RA%20Onboarding%20add%20to%20slack.png" />
+</center>
+<p>Fill out their name and email in the dialog box and hit enter. Then go back to the Application sheet and enter the <strong>date in month-day </strong>form into the final two columns showing that they 1) have been added to slack and 2) have passed the test/committed.</p>
+<center>
+<p><img src="img/Codebook/27.%20date%20in%20month-day%20form.png" style="width:50.0%" /></p>
+</center>
+<ul>
+<li>Also Add them to the <strong>Shiny App</strong> by inviting them via email. Will require access to the Shiny App.</li>
+</ul>
+<p><strong>STEP 4:</strong> Finally, when people are good to go, they need to be allocated to a Hogwarts House. Please check the <a href="https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing">allocation sheet</a> if there are people that have not been assigned to houses. While some people will write down their preference in the allocation form, some will just let the sorting hat decide. Please try to distribute the people equally along the houses. After you allocate a RA to a house via the allocation sheet (Column F), add them to your Slack House Channel (this can only be done by the respective prefects). When you have done so, send the applicant a welcome email to your house (be sure to offer to answer any questions they may have!), and add them to your Slack channel. Be sure to finally go back to the application Google sheet and enter the date they were added to your house.</p>
+</div>
+</div>
+<div id="section-1" class="section level1" number="13">
+<h1 number="13"><span class="header-section-number">13</span> </h1>
+<div id="need-a-break-vacation" class="section level2" number="13.1">
+<h2 number="13.1"><span class="header-section-number">13.1</span> Need a break? / Vacation</h2>
+<p>We understand nobody wants to be coding whilst they are on vacation! And there is zero expectation for you to do so, this is a voluntary project and we pride ourselves on our flexibility.</p>
+<p>If you have a holiday booked and/or need a break due to other commitments, please get in touch with the Country/Regional Manager for the Country you are responsible for and let them know.</p>
+<p>They can arrange for another RA to cover you whilst you take a break, and ensure that the records remain up-to-date whilst you are away.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Policies for which you will need to identify this information are those which can be categorized as dealing with: Quarantine, External Border Restrictions, Internal Border Restrictions, Health Monitoring, Health Testing, and Health Resources. Policies for which you will not need to identify this information are those which can be categorized as dealing with: Declaration of Emergency, Restriction of Mass Gatherings, Social Distancing, Curfew, Closure of Schools, Restriction of Non-Essential Government Services, Restriction of Non-Essential Businesses, New Task Force or Bureau. The presumption is that these categories are all targeted domestically. For more information on each of these categories, please see the type variable in the codebook.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
