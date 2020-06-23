@@ -40,7 +40,7 @@ map.on("load", function () {
   $(document).ready(function () {
     $.ajax({
       type: "GET",
-	  url: "https://raw.githubusercontent.com/saudiwin/corona_private/master/visual_js/data/data_viz_clean.csv?token=AEV324LQQECGH4TZ35CQXOC65X2AA",
+	  url: "https://raw.githubusercontent.com/LuMesserschmidt/CoronaNet/master/docs/visual_js/data/data_viz_clean.csv",
       dataType: "text",
       success: function (csvData) {
         makeGeoJSON(csvData);
@@ -131,7 +131,7 @@ map.on("load", function () {
           //var filters = ["all", ["<", "TimeCodeReduced", step], ["==", "month", month]];
         }
 
-        d3.json("https://raw.githubusercontent.com/saudiwin/corona_private/master/visual_js/data/toMapbox-02.geojson?token=AEV324JZJ622F4FTOQRMOGK65XJFW", function (err, data1) {
+        d3.json("https://raw.githubusercontent.com/LuMesserschmidt/CoronaNet/master/docs/visual_js/data/toMapbox-02.geojson", function (err, data1) {
           if (err) throw err;
 
           map.addSource("worldCountries", {
