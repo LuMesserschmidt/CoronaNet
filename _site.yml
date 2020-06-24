@@ -29,10 +29,12 @@ navbar:
   - text: Reports
     href: ra.html
     menu:
-      - text: "Research Note: Women´s Rights"
-        href: data/reports/finished/20200507_womensrights.html      
+      - text: "Research Note: MENA Region"
+        href: data/reports/finished/20200620_MENA.html 
       - text: "Research Note: USA - 50 States' Stay At Home Orders"
         href: data/reports/finished/20200610_StayatHome.html    
+      - text: "Research Note: Women´s Rights"
+        href: data/reports/finished/20200507_womensrights.html 
       - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
       - text: "Country Report: China"

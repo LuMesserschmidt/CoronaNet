@@ -149,9 +149,7 @@ The data yields detailed information on
 
 Please cite the project and dataset as:
 
-Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). https://www.coronanet-project.org.
-
-
+Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). https://doi.org/10.1038/s41562-020-0909-7 
 
 ***
 ##  Questions, feedback or joining the team? {-}
