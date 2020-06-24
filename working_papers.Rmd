@@ -1,5 +1,5 @@
 ---
-title: "Working Papers"
+title: "Publications"
 ---
 
 ```{r echo = F}
@@ -24,6 +24,13 @@ Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messersc
 
 ***
 
+<br>
+
+
+# Working Paper {-}
+
+***
+
 ## A Retrospective Bayesian Model for Measuring Covariate Effects on Observed COVID-19 Test and Case Counts {-}
 
 As the COVID-19 outbreak progresses, increasing numbers of researchers are examining how an array of factors either hurt or help the spread of the disease. Unfortunately, the majority of available data, primarily confirmed cases of COVID-19, are widely known to be biased indicators of the spread of the disease.  In this paper we present a retrospective Bayesian model that is much simpler than epidemiological models of disease progression but is still able to identify the effect of covariates on the historical infection rate. The model is validated by comparing our estimation of the count of infected to projections from expert surveys and extant disease forecasts. To apply the model, we show that as of April 20th, there are approximately 3 million infected people in the United States, and these people are increasingly concentrated in states with more wealth, better air quality, fewer smokers, more residents under the age of 18, more public health funding and a history of more cardiovascular deaths. On the other hand, the timing of state declarations of emergency and the proportion of people who voted for President Trump in 2016 are not clear predictors of COVID-19 trends. In addition, we find that the US states have increased testing at approximately the same level in line with infections, suggesting that testing has not yet increased significantly above infection trends.
@@ -37,6 +44,12 @@ Kubinec, Robert, and Luiz Carvalho. 2020. “A Retrospective Bayesian Model for 
 
 ***
 
+<br>
+
+
+# Other Publications {-}
+
+***
 ## Policy Responses to the Coronavirus in Germany {-}
 
 Faced with major crises, policymakers are at risk of various pathologies Even in the absence of such pathologies, governments, when faced with a major crisis such as the COVID-19 pandemic, have strong incentives to try to go it alone at the national level: Both policy implementation and political accountability still mostly take place at the national level. Federal political systems, such as Germany, face similar challenges at the sub-national level. At the same time, Louis Brandeis' classic depiction of U.S. states as "laboratories of democracy" reminds us that federalism offers opportunities for trying different policy responses and learning from the differing results, especially when federalism has "experimentalist" characteristics to encourage feedback and learning. We provide a brief overview of the public and political discourse in Germany, as well as the German federal and state-level policy responses, during the first months of the pandemic and an early, tentative assessment of commonalities, divergence, pathologies, and learning – as well as broader implications for conflict and cooperation in Europe and beyond. 
@@ -46,4 +59,4 @@ Citation:
 Buthe, Tim and Messerschmidt, Luca and Cheng, Cindy, Policy Responses to the Coronavirus in Germany (May 8, 2020). In The World Before and After COVID-19: Intellectual Reflections on Politics, Diplomacy and International Relations, edited by Gian Luca Gardini. Stockholm – Salamanca: European Institute of International Relations, 2020. Available at SSRN: https://ssrn.com/abstract=3614794 or http://dx.doi.org/10.2139/ssrn.3614794 
 
 
-**Download the working paper [here](https://ssrn.com/abstract=3614794).**
+**Download the paper [here](https://ssrn.com/abstract=3614794).**
