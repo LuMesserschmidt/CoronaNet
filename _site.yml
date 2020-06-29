@@ -29,6 +29,8 @@ navbar:
   - text: Reports
     href: ra.html
     menu:
+      - text: "Research Note: Migration in Ghana"
+        href: data/reports/finished/20200629_Ghana.html 
       - text: "Research Note: MENA Region"
         href: data/reports/finished/20200620_MENA.html 
       - text: "Research Note: USA - 50 States' Stay At Home Orders"
@@ -73,7 +75,7 @@ navbar:
         href: data/reports/finished/20200507_Syria.html
       - text: "Country Report: Turkey"
         href: data/reports/finished/20200521_Turkey.html
-  - text: Working Papers
+  - text: Publications
     href: working_papers.html
   - text: In the Media
     href: media.html

@@ -191,7 +191,7 @@ library(tidyverse)
 contribution <- read_csv("~/Documents/github/CoronaNet/data/people/contribution.csv")
 library(knitr)
 library(readxl)
-contribution <- dplyr::rename(contribution, Country = country) %>%
+contribution <- dplyr::rename(contribution, Country = End) %>%
   dplyr::select(-c(2,4:7,11))
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
@@ -199,7 +199,7 @@ DT::datatable(contribution,
           filter = 'top',
           escape= c(1,2,4,3,5),
           fillContainer = FALSE, 
-          options = list(pageLength = 380, 
+          options = list(pageLength = 50, 
                          autoWidth = TRUE,
                          dom = 'Bfrtip',
                          scrollX = TRUE, 
