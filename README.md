@@ -17,69 +17,159 @@ First, CoronaNet data releases:
 
 2. **`data/CoronaNet/coronanet_release.csv`** This file contains the government response information from `coronanet_release.csv` along with the following datasets:
 
-    a. Tests from the CoronaNet testing database (see http://coronanet-project.org for more info);
-    b. Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);
-    c. Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)
+    a. Tests from the CoronaNet testing database (see http://coronanet-project.org for more info);  
+    b. Cases/deaths/recovered from the JHU data repository (https://github.com/CSSEGISandData/COVID-19);  
+    c. Country-level covariates including GDP, V-DEM democracy scores, human rights indices, power-sharing indices, and press freedom indices from the Niehaus World Economics and Politics Dataverse (https://niehaus.princeton.edu/news/world-economics-and-politics-dataverse)  
     
 ## `coronanet_release.csv` Field Dictionary
 
-1. `record_id` Unique identifier for each policy record
-2. `entry_type` Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.
-3. `event_description` A short description of the policy change
-4. `type` The category of the policy
-5. `country` The country initiating the policy
-6. `init_country_level` Whether the policy came from the national level or a sub-national unit
-7. `index_prov` The ID of the sub-national unit
-8. `target_country` Which foreign country a policy is targeted at (i.e. travel policies)
-9. `target_geog_level` Whether the target of the policy is a country as a whole or a sub-national unit of that country
-10. `target_who_what` Who the policy is targeted at
-11. `recorded_date` When the record was entered into our data 
-12. `target_direction` Whether a travel-related policy affects people coming in (Inbound) or leaving (Outbound)
-13. `travel_mechanism` If a travel policy, what kind of transportation it affects
-14. `compliance` Whether the policy is voluntary or mandatory
-15. `enforcer` What unit in the country is responsible for enforcement
-16. `date_announced` When the policy goes into effect
-17. `link` A link to at least one source for the policy
-18. `ISO_A3` 3-digit ISO country codes
-19. `ISO_A2` 2-digit ISO country codes
-20. `severity_index_5perc` 5% posterior low estimate (i.e. lower bound of uncertainty interval) for severity index
-21. `severity_index_median` posterior median estimate (point estimate) for severity index, which comes from a Bayesian latent variable model aggregating across policy types to measure country-level policy severity (see paper on our website)
-22. `severity_index_5perc` 95% posterior high estimate (i.e. upper bound of uncertainty interval) for severity index
+1.  `record_id` Unique identifier for each unique policy record
+2.  `policy_id` Identifier linking new policies with subsequent updates
+    to policies
+3.  `recorded_date` When the record was entered into our data
+4.  `date_updated` When we can confirm the country - policy type was
+    last checked/updated (we can only confirm policy type for a given
+    country is up to date as of this date)
+5.  `date_announced` When the policy is announced
+6.  `date_start` When the policy goes into effect
+7.  `date_end` When the policy ends (if it has an explicit end date)
+8.  `entry_type` Whether the record is new, meaning no restriction had
+    been in place before, or an update (restriction was in place but
+    changed). Corrections are corrections to previous entries.
+9.  `event_description` A short description of the policy change
+10. `domestic_policy` Indicates where policy targets an area within the
+    initiating country (i.e. is domestic in nature)
+11. `type` The category of the policy
+12. `type_sub_cat` The sub-category of the policy (if one exists)
+13. `type_text` Any additional information about the policy type (such
+    as the number of ventilators/days of quarantine/etc.)
+14. `index_high_est` The high (95% posterior density) estimate of the
+    country policy activity score (0-100)
+15. `index_med_est` The median (most likely) estimate of the country
+    policy activity score (0-100)
+16. `index_low_est` The low (95% posterior density) estimate of the
+    country policy activity score (0-100)
+17. `index_country_rank` The relative rank by each day for each country
+    on the policy activity score
+18. `country` The country initiating the policy
+19. `init_country_level` Whether the policy came from the national level
+    or a sub-national unit
+20. `province` Name of sub-national unit
+21. `target_country` Which foreign country a policy is targeted at
+    (i.e. travel policies)
+22. `target_geog_level` Whether the target of the policy is a country as
+    a whole or a sub-national unit of that country
+23. `target_region` The name of a regional grouping (like ASEAN) that is
+    a target of the policy (if any)
+24. `target_province` The name of a province targeted by the policy (if
+    any)
+25. `target_city` The name of a city targeted by the policy (if any)
+26. `target_other` Any geographical entity that does not fit into the
+    targeted categories mentioned above
+27. `target_who_what` Who the policy is targeted at
+28. `target_direction` Whether a travel-related policy affects people
+    coming in (Inbound) or leaving (Outbound)
+29. `travel_mechanism` If a travel policy, what kind of transportation
+    it affects
+30. `compliance` Whether the policy is voluntary or mandatory
+31. `enforcer` What unit in the country is responsible for enforcement
+32. `link` A link to at least one source for the policy
+33. `ISO_A3` 3-digit ISO country codes
+34. `ISO_A2` 2-digit ISO country codes
 
 ## `coronanet_release_allvars.csv` Field Dictionary
 
-1. All of the fields listed above, plus
-2. `tests_daily_or_total` Whether a country reports the daily count of tests a cumulative total
-3. `tests_raw` The number of reported tests collected from host country websites or media reports
-4. `deaths` The number of COVID-19 deaths, aggregated to the country-day level (JHU CSSE data)
-5. `confirmed_cases` The number of confirmed cases of COVID-19, aggregated to the country-day level (JHU CSSE data)
-6. `recovered` The number of recoveries from COVID-19,  aggregated to the country-day level (JHU CSSE data)
-7. `ccode` The Correlates of War country code
-8. `ifs` IMF IFS country code
+1.  All of the fields listed above, plus
 
-9. `Rank_FP` (most recent year available from Niehaus dataset) Reporters without Borders Press Freedom Annual Ranking
-10. `Score_FP` (most recent year available from Niehaus dataset) Reporters with Borders Press Freedom Score
-11. `state_IDC` (most recent year available from Niehaus dataset) State/Provincial Governments Locally Elected
-12. `muni_IDC` (most recent year available from Niehaus dataset) Municipal Governments Locally Elected
-13. `dispersive_IDC` (most recent year available from Niehaus dataset) Dispersive Powersharing 
-14. `constraining_IDC` (most recent year available from Niehaus dataset) Constraining Powersharing 
-15. `inclusive_IDC` (most recent year available from Niehaus dataset) Inclusive powersharing 
-16. `sfi_SFI` (most recent year available from Niehaus dataset) State fragility index
-17. `ti_cpi_TI` (most recent year available from Niehaus dataset) Corruption perceptions index
-18. `pop_WDI_PW` (most recent year available from Niehaus dataset) World Bank population
-19. `gdp_WDI_PW` (most recent year available from Niehaus dataset) World Bank GDP (total)
-20. `gdppc_WDI_PW` (most recent year available from Niehaus dataset) World Bank GDP per capita
-21. `growth_WDI_PW` (most recent year available from Niehaus dataset) World Bank GDP growth percent
-22. `lnpop_WDI_PW` (most recent year available from Niehaus dataset) Log of World Bank population
-23. `lngdp_WDI_PW` (most recent year available from Niehaus dataset) Log of World Bank GDP
-24. `lngdppc_WDI_PW` (most recent year available from Niehaus dataset) Log of World Bank GDP per capita
-25. `disap_FA` (most recent year available from Niehaus dataset) 3 category, ordered variable for disappearances index
-26. `polpris_FA` (most recent year available from Niehaus dataset) 3 category, ordered variable for political imprisonment index
-27. `latentmean_FA` (most recent year available from Niehaus dataset) the posterior mean of the latent variable index for human rights protection)
-28. `transparencyindex_HR` (most recent year available from Niehaus dataset) Transparency Index
-29. `EmigrantStock_EMS` (most recent year available from Niehaus dataset) Total emmigrant stock from
-30. `v2x_polyarchy_VDEM` (most recent year available from Niehaus dataset) Electoral democracy index
-31. `news_WB` (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)
+2.  `tests_daily_or_total` Whether a country reports the daily count of
+    tests a cumulative total
+
+3.  `tests_raw` The number of reported tests collected from host country
+    websites or media reports
+
+4.  `deaths` The number of COVID-19 deaths, aggregated to the
+    country-day level (JHU CSSE data)
+
+5.  `confirmed_cases` The number of confirmed cases of COVID-19,
+    aggregated to the country-day level (JHU CSSE data)
+
+6.  `recovered` The number of recoveries from COVID-19, aggregated to
+    the country-day level (JHU CSSE data)
+
+7.  `ccode` The Correlates of War country code
+
+8.  `ifs` IMF IFS country code
+
+9.  `Rank_FP` (most recent year available from Niehaus dataset)
+    Reporters without Borders Press Freedom Annual Ranking
+
+10. `Score_FP` (most recent year available from Niehaus dataset)
+    Reporters with Borders Press Freedom Score
+
+11. `state_IDC` (most recent year available from Niehaus dataset)
+    State/Provincial Governments Locally Elected
+
+12. `muni_IDC` (most recent year available from Niehaus dataset)
+    Municipal Governments Locally Elected
+
+13. `dispersive_IDC` (most recent year available from Niehaus dataset)
+    Dispersive Powersharing
+
+14. `constraining_IDC` (most recent year available from Niehaus dataset)
+    Constraining Powersharing
+
+15. `inclusive_IDC` (most recent year available from Niehaus dataset)
+    Inclusive powersharing
+
+16. `sfi_SFI` (most recent year available from Niehaus dataset) State
+    fragility index
+
+17. `ti_cpi_TI` (most recent year available from Niehaus dataset)
+    Corruption perceptions index
+
+18. `pop_WDI_PW` (most recent year available from Niehaus dataset) World
+    Bank population
+
+19. `gdp_WDI_PW` (most recent year available from Niehaus dataset) World
+    Bank GDP (total)
+
+20. `gdppc_WDI_PW` (most recent year available from Niehaus dataset)
+    World Bank GDP per capita
+
+21. `growth_WDI_PW` (most recent year available from Niehaus dataset)
+    World Bank GDP growth percent
+
+22. `lnpop_WDI_PW` (most recent year available from Niehaus dataset) Log
+    of World Bank population
+
+23. `lngdp_WDI_PW` (most recent year available from Niehaus dataset) Log
+    of World Bank GDP
+
+24. `lngdppc_WDI_PW` (most recent year available from Niehaus dataset)
+    Log of World Bank GDP per capita
+
+25. `disap_FA` (most recent year available from Niehaus dataset) 3
+    category, ordered variable for disappearances index
+
+26. `polpris_FA` (most recent year available from Niehaus dataset) 3
+    category, ordered variable for political imprisonment index
+
+27. `latentmean_FA` (most recent year available from Niehaus dataset)
+    the posterior mean of the latent variable index for human rights
+    protection)
+
+28. `transparencyindex_HR` (most recent year available from Niehaus
+    dataset) Transparency Index
+
+29. `EmigrantStock_EMS` (most recent year available from Niehaus
+    dataset) Total emmigrant stock from
+
+30. `v2x_polyarchy_VDEM` (most recent year available from Niehaus
+    dataset) Electoral democracy index
+
+31. `news_WB` (most recent year available from Niehaus dataset) Daily
+    newspapers (per 1,000
+people)
     
 # A Retrospective Bayesian Model for Measuring Covariate Effects Data and Code
 
