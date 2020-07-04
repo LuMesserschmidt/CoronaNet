@@ -26,53 +26,49 @@ Each section should be as precise as possible, mentioning what the goals we want
 |
 |
 
-## Useful Links
+## Useful Links{-}
+** **
 
-### Training Videos
-
+### Training Videos{-}
 
 
 *   **[RA Training CoronaNet](https://nyu.zoom.us/rec/play/v8B8f--r_TI3HIXH5QSDA_cvW9XpJ_6s0CRMqPtYzU6xBngHMAGlYLVHMOFrjixNPdfSi0IE6gbKbHQ2?continueMode=true&_x_zm_rtaid=GA1uE4UPTNCAvxyXCOkx8Q.1591210535149.378a4abe9ece4f1a731c0b0c710927c9&_x_zm_rhtaid=261),** 14th May(1:46h) : This is the main training video which all RAs must watch before starting on the CoronaNet Research Project
 *   **[Updating and ending policies](https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000)** 14th May. Password: 7C&*60@= ( : This training video shows RAs how to enter an update and how to end a policy. The accompanying slides are pinned to the #ra-chat channel. Note that the video is somewhat dated in that it was not possible to enter in updates using the RShiny App and the video shows how to do a manual update which is no longer possible. However, the underlying guidelines of when to do a ‘change of policy’ or ‘end of policy’ as well as what counts as an update still holds. 
 *   **[CoronaNet Background Video ](https://www.dropbox.com/s/61byca7367mfhr9/Zoom_CoronaNet_Process.mp4?dl=0)**: This video outlines the process of registering RAs, data collection, advantages of qualtrics, data validation, reliability, cleaning, difference between beta and final dataset (15:00h)
+*   **[How to Use the Shiny App/How to Fill out the Up-To-Dateness Completeness Sheet:](https://www.dropbox.com/s/et6swhdzqy9u66m/Up-To-Dateness%20and%20Completeness%20Tutorial.mp4?dl=0)** This video outlines how to use the Shiny App and how to fill out the Up to Dateness and Completeness Sheet (see [Regional Update and Completeness Sheet](https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0) and/or [Country Update and Completeness Sheet](https://docs.google.com/spreadsheets/d/1J45Gme8WoxV2CaqrhiQa2wDXazQrw99wrAzF_Ew511U/edit#gid=508634612) for the relevant sheets )
 
-
-### Weekly Meetings
-
+### Weekly Meetings{-}
 
 
 *   **[CoronaNet General RA Meeting](https://nyu.zoom.us/j/58230804): **In the general RA meeting that we have every Wednesday at 4:30pm CET, the PIs share updates about the progress of the project. Recordings of older meetings can be found at the end of this section. 
 *   **Regional/Country RA Meetings**: RAs should also have a regular weekly meeting with their regional or country manager. The relevant link for that meeting should be provided by the appropriate regional or country manager.
 
 
-### Surveys
-
+### Surveys{-}
 
 
 *   **[Test Survey](https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB?RID=MLRP_3foqmqo1KXqJesd&Q_CHL=email) : **This is the link to the test survey that each RA must pass with at least 70% accuracy in order to join the project. After passing the test, RAs should feel free to take the test survey as many times as they would like in order to learn more about how to use the main survey.
 *   **Main Qualtrics Survey: **The main Qualtrics survey is the main tool by which RAs collect data on government policies for the CoronaNet project. Note that there is no general link for the main Qualtrics survey. Everyone has an individualized survey link that is emailed to you. 
 
 
-### Correcting or Updating the Main Survey
+### Correcting or Updating the Main Survey{-}
 
 RAs can correct or update the main survey using either:
 
-
-
-*   **[The Shiny App](https://kubinec.shinyapps.io/corona_validate/): **This app allows RAs to visualize policies. It also provides links to update or correct the survey for each unique record. It further allows RAs to directly correct a limited number of dimensions of a policy directly in the app. Please see the section of this manual on the Shiny App for more information on how to use it.
+*   **[The Shiny App](https://kubinec.shinyapps.io/corona_validate/): **This app allows RAs to visualize policies. It further provides links to update or correct the survey for each unique record. It further allows RAs to directly correct a limited number of dimensions of a policy directly in the app. Please see the section of this manual on the Shiny App for more information on how to use it.
 *   **[CoronaNet Record Lookup](https://docs.google.com/spreadsheets/d/183lWnJH7rSVkOTiuCXt9D7uCwS1SdJSOleXPpFkj2us/edit#gid=0 ): **This google sheet provides an overview of all records in the CoronaNet database and the corresponding links to update or correct each unique record.
 
 
-### Information Resources 
+### Information Resources{-} 
 
 
 
 *   **[CoronaNet Data Codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing): **This codebook explains what dimensions of a given policy different questions/variables in the main survey seek to capture. It previously also had information about data collection which has now been moved to this manual in the ‘Data Collection and Entry’ section.
 *   **[#ra-chat](https://app.slack.com/client/T010PHG8J6A/C010V8MKHK2): **This Slack channel is the main place where RAs should post questions about how to code different policies
-*   The FAQ tab in the **[Shiny App](https://kubinec.shinyapps.io/corona_validate/)** : The FAQ tab summarizes and organizes common questions asked in the #ra-chat channel
+*   The FAQ tab in the **Shiny App**: The FAQ tab summarizes and organizes common questions asked in the #ra-chat channel
 
 
-### Organizational Tools
+### Organizational Tools{-}
 
 
 
@@ -83,36 +79,39 @@ RAs can correct or update the main survey using either:
 *   **[Country Update and Completeness Sheet ](https://docs.google.com/spreadsheets/d/1J45Gme8WoxV2CaqrhiQa2wDXazQrw99wrAzF_Ew511U/edit#gid=508634612)**Information on the up to dateness and completeness of records at the sub-national level are available in this sheet
 
 
-### Other
+### Other{-}
 
 **[Instructions for Country Reports and Research Notes](https://docs.google.com/document/d/11sz8NnVmf5-XzfEpxjbfJzxoOXv1euCDngTXwNu7-UA/edit) : **Instructions on how RAs should write country reports or research notes are available at this link.
 
 
-### Recordings of Previous CoronaNet General RA Meetings 
+#### Recordings of Previous CoronaNet General RA Meetings{-} 
 
-  * [6 May 2020](https://nyu.zoom.us/rec/share/5PJED-3B-EFOaavQz0Pif7A8ILviT6a80CEf_aZbxE9KKnrmgEPcg4sL-1Q__qFj)
+  * **[6 May 2020](https://nyu.zoom.us/rec/share/5PJED-3B-EFOaavQz0Pif7A8ILviT6a80CEf_aZbxE9KKnrmgEPcg4sL-1Q__qFj)**
 
-  * [20 May 2020](https://nyu.zoom.us/rec/share/4v52c-nTyDJOeqPi2R-OArQ6J4_Uaaa8hCEWq_UPmUt7Jp-ax2nMhzw7C8NS6h_E) 
+  * **[20 May 2020](https://nyu.zoom.us/rec/share/4v52c-nTyDJOeqPi2R-OArQ6J4_Uaaa8hCEWq_UPmUt7Jp-ax2nMhzw7C8NS6h_E)** 
 
-  * [3 June 2020](https://nyu.zoom.us/rec/share/7MNzJpHWynFLZIXf4mr-e6g8JoXhX6a8hnIW8qAKmE7cVne9yaIIQ5PxAmxv_to6) 
+  * **[3 June 2020](https://nyu.zoom.us/rec/share/7MNzJpHWynFLZIXf4mr-e6g8JoXhX6a8hnIW8qAKmE7cVne9yaIIQ5PxAmxv_to6)** 
 
-  * [10 June 2020](https://nyu.zoom.us/rec/share/6ZV6AZPd1EFLbK_n1UTtY74fM6LqX6a8gCNK8vAIxUj-Q7kfk0GqKFQsBh98-ff6)
+  * **[10 June 2020](https://nyu.zoom.us/rec/share/6ZV6AZPd1EFLbK_n1UTtY74fM6LqX6a8gCNK8vAIxUj-Q7kfk0GqKFQsBh98-ff6)**
 
-  * [17 June 2020](https://nyu.zoom.us/rec/share/_etbA77w7WdJXM_x8BDvBOknJaXLaaa8gCYe8_QEzBogpRx-DJ9HArk3_iRmD7ut)
+  * **[17 June 2020](https://nyu.zoom.us/rec/share/_etbA77w7WdJXM_x8BDvBOknJaXLaaa8gCYe8_QEzBogpRx-DJ9HArk3_iRmD7ut)**
+
+  * **[1 July 2020](https://tum-conf.zoom.us/rec/share/18lRAKiu9XpIT6PiyWzEW6IuB6j5X6a8gSgZqKIPxU26LvKiZ4mNaTKbzMXLATsB)** (the week Luca takes over! Password: 1t@8%PjI)
 
 |
 |
 |
 
-## Data Collection and Entry
+## Data Collection and Entry{-}
 
+** **
 
-### What is data collection and entry?
+### What is data collection and entry?{-}
 
 Data collection and entry forms the foundation on which the rest of the project is built. The ultimate goal of the project is to produce an accurate and complete record of all policies governments have taken in response to COVID-19. This entails 1) identifying relevant policies that governments have taken in response to COVID-19 2) documenting them in a standardized format.
 
 
-### What should I do before starting with data collection and entry?
+### What should I do before starting with data collection and entry?{-}
 
 Before entering in data, you should:
 
@@ -122,12 +121,19 @@ Before entering in data, you should:
 2. Watch the required training on zoom on how to do updates to the data
 3. Read through the Variable Definitions in the codebook and the corresponding examples provided below
 4. Pass the CoronaNet Training survey with at least 70%
-5. Look through the RA FAQs in the**[ Shiny App](https://kubinec.shinyapps.io/corona_validate/)** for commonly asked questions
+5. Look through the RA FAQs in the **Shiny App** for commonly asked questions
 
- The value of this data is only as good as its quality so please be sure to take your time with documenting these policies, and pose your questions to the Slack Channel or the PIs if in doubt! 
+The value of this data is only as good as its quality so please be sure to take your time with documenting these policies, and pose your questions to the Slack Channel or the PIs if in doubt! 
+ 
+**If you are the first person to code for a particular country or subnational region:**
+Please start as far back to December 31, 2019 (when China first reported the COVID-19 outbreak in Wuhan to the WHO) and start documenting policies forward in time.
+
+**If you are not the first person to code for a particular country or subnational region:**
+Please first review what policies the previous coder has coded for your country or subnational region; the **Shiny App** provides a great tool with which to get the lay of the land. In doing so, please check for the up-to-dateness and completeness of the policies entered. By up-to-dateness, we mean, assess when the last time a particular policy type for your region has been coded. By completeness, we mean, assess whether all policies types have been documented by checking against available primary sources (see more on this below). Where you identify mistakes, please make the appropriate corrections. Ideally, you would only begin coding new policies after this has been done.
 
 
-### What counts as a ‘policy’?
+
+### What counts as a ‘policy’?{-}
 
 These policies can be thought as being in one of two categories:
 
@@ -159,7 +165,7 @@ To update, click on the ‘update’ link that is on the left-hand side of the t
 
 
 
-#### How do I document a ‘policy’?
+#### How do I document a ‘policy’?{-}
 
 The below gives a textual overview of how to document a policy. Please refer to the required general [training on Zoom](https://nyu.zoom.us/rec/share/9cdaCrL_qUFOYbfT5EDxe_I8D7q-eaa82iVNr_APzBuFcffq3OYSOR7NqOaeBScY) for more information.
 
@@ -199,7 +205,7 @@ The below gives a textual overview of how to document a policy. Please refer to 
   4. You can upload the file within the Qualtrics survey (be sure to choose the correct country): 
 
 
-### How do I find a policy? 
+### How do I find a policy?{-} 
 
 The rest of this document tells you how to go about finding policies. Of course you can just use your own knowledge and Google, but we have some great resources we’ve identified below you should use to get started.
 
@@ -227,7 +233,7 @@ The rest of this document tells you how to go about finding policies. Of course 
 
     Once you’ve worked through that dataset, you should do some searching on your own. Of course Google/Google News is a good asset, but there are other available sources:
 
-** **
+
 
 
 
@@ -273,7 +279,7 @@ The rest of this document tells you how to go about finding policies. Of course 
     Please especially make sure to save a .pdf of the relevant page for your country for the day you collect the information if  using the U.S. Embassy page as a source because it may update relatively frequently with new information.
 
 
-    ** **
+   
 
 
 4. **Check Wikipedia for your country’s response to the corona pandemic**
@@ -302,7 +308,7 @@ The rest of this document tells you how to go about finding policies. Of course 
     3. Add additional relevant information from the primary source to the dataset if you find it.
     4. If there is no source given for a claim made on Wikipedia or if you cannot corroborate the source, Google it --- if you still do not find a corroborating source, do not enter the information into the dataset.
 
-    ** **
+   
 
 
 5. **Check Government websites for your country**
@@ -340,7 +346,7 @@ The rest of this document tells you how to go about finding policies. Of course 
 
     Please especially make sure to save a .pdf of the relevant page for your country if using the a government page as a source because it may update relatively frequently with new information.
 
-** **
+
          
 
 6. **Check Newspaper coverage on the coronavirus in your country**
@@ -399,7 +405,7 @@ The rest of this document tells you how to go about finding policies. Of course 
 
     We consider information that comes from newspaper articles as a primary source. Identify any relevant information from the newspaper article and enter them into the dataset. However, if you have doubts or qualms about the rigor of a particular publication outlet, please do not hesitate to raise your concern with us.
     
-** **
+
 
 7. **Other resources**
 
@@ -412,23 +418,29 @@ The rest of this document tells you how to go about finding policies. Of course 
     *   [This website](https://coronavirustechhandbook.com/data) is a crowd-sourced compendium of information about the coronavirus. For now these appear to deal largely with the health outcomes associated with coronavirus but may be useful insofar as includes many links to in-country websites.
 
 
-### What to do if I need to delete an entry? 
+### What to do if I need to delete an entry?{-} 
 
-Please post the entry that you need to be deleted in the #orphaned-records channel.
+Please post the entry that you need to be deleted in the #orphaned-records channel and provide a reason for why the entry needs to be deleted.
+
+With regards to incomplete records, please note:
+
+  * We DO include in the dataset records for which the RA filled everything out except they didn’t hit the final submit button; all other records are not included
+  * If, however, you are seeing a record in the record sheet that looks incomplete, please let us know (those are supposed to be filtered out before the record sheet is populated). Note however, if the record is is a correction, it may look incomplete because a correction may only correct one part of the original record
 
 |
 |
 |
 
-## Data Cleaning
+## Data Cleaning{-}
 
+** **
 
-### Why are we doing data cleaning?
+### Why are we doing data cleaning?{-}
 
 In parallel to the regular validation process, we need reliable people who can take the responsibility of cleaning our main dataset. As of today, we have over 12,000 policies in the dataset with great granularity. Unsurprisingly, we are sure that some of them have errors and typos. While it will be impossible to correct all of them, we need to make an effort to minimize errors. To do this, we have designed the following cleaning protocol that those involved with data cleaning should follow.
 
 
-### What should be ‘cleaned’?
+### What should be ‘cleaned’?{-}
 
 The goal of data cleaning is to clean _clear errors and or typos_ as opposed to conceptual errors. 
 
@@ -452,12 +464,12 @@ Please pay special attention to the qualitative description, as it should contai
 A proper description should contain all the above points where applicable.
 
 
-### How do I get started with data cleaning?
+### How do I get started with data cleaning?{-}
 
 The process requires you to follow these basic instructions:
 
 
-#### Get Organized:
+#### Get Organized:{-}
 
 
 
@@ -473,7 +485,7 @@ The process requires you to follow these basic instructions:
 </center>
 
 
-#### Assign yourself a Cleaning Task
+#### Assign yourself a Cleaning Task{-}
 
 In this project, you will see that we have divided the dataset in different chunks. This allows the cleaning process to be divided into several people.
 
@@ -490,7 +502,7 @@ In this project, you will see that we have divided the dataset in different chun
 </center>
 
 
-#### Clean the Data
+#### Clean the Data{-}
 
 
 
@@ -517,7 +529,7 @@ In this project, you will see that we have divided the dataset in different chun
 9. **NOTE: You should not be spending more than a couple of minutes per record maximum, if you’re spending more time, than either ask for guidance in the #data_cleaning_ channel or move on**
 
 
-#### Dealing with Systematic errors
+#### Dealing with Systematic errors{-}
 
 
 
@@ -527,7 +539,7 @@ In this project, you will see that we have divided the dataset in different chun
     3. If the original coder is no longer involved in the project or otherwise unresponsive, please let the #data_cleaning_ channel know and we will assign a new RA to address this systematic error 
 
 
-#### Finalize a Cleaning Task
+#### Finalize a Cleaning Task{-}
 
 
 
@@ -542,12 +554,12 @@ In this project, you will see that we have divided the dataset in different chun
 </center>
 
 
-### How do I become a data cleaner?
+### How do I become a data cleaner?{-}
 
 Data cleaners must possess a deep knowledge of the ins and outs of the survey and data collection process to maintain the integrity of the data cleaning process. Data cleaners must also possess working knowledge of a programming language (preferably R) in order to participate in the data cleaning process. To date, a select few research assistants have been invited to be data cleaners only after they have spent substantial time with data collection and validation.
 
 
-### Examples
+### Examples{-}
 
 For example, see policy_id = 6298255:
 
@@ -577,20 +589,21 @@ This policy is coded under “Declaration of Emergency”, but the description i
 |
 |
 
-## Data Validation
+## Data Validation{-}
 
+** **
 
-### Why do we validate data?
+### Why do we validate data?{-}
 
 Data validation is required to ensure our dataset is reliable and accurate. At the moment we have over 250 hundred hard working research assistants that are entering more than 17,000 policies, updates and corrections. With so many minds, there is bound to be a difference of opinion and skill on how policies should be coded. This difference gives rise to conceptual errors and policies that have been entered that differ to our coding guidelines. For example, is a policy about quarantining or lockdown? Should a policy be entered as one, or broken down into smaller policies? Ideally, we should have high intercoder reliability, which means that two independent people will code the same source in the same way, but with a complex survey this is increasingly difficult. To increase intercoder reliability, we have designed a validation process.
 
 
-### How do we validate data?
+### How do we validate data?{-}
 
 Validation is split into two main stages; recoding and reconciliation. Recoding is carried out by experienced coders, from a source chosen out of the randomly selected validation dataset. Reconciliation is done by the validation PIs, who take the original policy and the recoded entries and try to find a match, determining if two independent coders, who had the same source, found the same policy and coded it in the same way.
 
 
-### How do I join the validation team?
+### How do I join the validation team?{-}
 
 
 
@@ -598,7 +611,7 @@ Validation is split into two main stages; recoding and reconciliation. Recoding 
 2. We will then send you a link to a quick test survey that helps us check your coding level. We do this to ensure that everyone who joins the team has a comparable level of coding skills. The score threshold for being added to the validation team is 70% accuracy. 
 
 
-#### Getting started with validation
+#### Getting started with validation{-}
 
 
 
@@ -606,7 +619,7 @@ Validation is split into two main stages; recoding and reconciliation. Recoding 
 2.  Pinned to the slack channel is a Google Sheet listing all observations to be validated (also known as the validation dataset) and the link to the validation survey. Click on it and follow the instructions below.
 
 
-#### Assigning an observation
+#### Assigning an observation{-}
 
 
 1.  Look for an observation in the Google Sheet validation dataset that is not assigned to anyone else.
@@ -640,7 +653,7 @@ Validation is split into two main stages; recoding and reconciliation. Recoding 
     **Note: If the link to a source does not work, is missing, or links to an updating source, please message the PIs in the ra-validation slack channel to ask for the original PDF. **
 
 
-### Second Round of Validation: “Checking”
+### Second Round of Validation: “Checking”{-}
 
 Every entry in the validation set will be validated twice. The second round of validation - termed checking for clarity - will help us determine the most appropriate coding for each policy. The procedure for checking is _nearly _identical to the first round of validation described above. Two important things to note:
 
@@ -652,7 +665,7 @@ Every entry in the validation set will be validated twice. The second round of v
 It is important that each round (original entry, validation, and checking) be done by three different individuals. This ensures that our original coding, validation, and checking processes are independent of each other and makes the quality of our data more reliable (statistically speaking)! What follows is a description of how to get involved in checking the data.
 
 
-#### Getting started with checking
+#### Getting started with checking{-}
 
 
 
@@ -666,7 +679,9 @@ It is important that each round (original entry, validation, and checking) be do
 8.  Once done, put a 1 on the column "checker_complete"
 
 
-## Policy Completeness Check
+## Policy Completeness Check{-}
+
+** **
 
 This section contains coding instructions for policy-based completeness checkers. Before reading this, you should be familiar with the following resources: 
 
@@ -678,33 +693,27 @@ This section contains coding instructions for policy-based completeness checkers
     *   [https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000](https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000) (Password: 7C&*60@=)
 
 
-### Why is a completeness check necessary?
+### Why is a completeness check necessary?{-}
 
 The primary objective of a policy-based completeness checker is to evaluate the completeness of our dataset on some policies across several countries. 
 
 Ever since we began this project, hundreds of research assistants have helped us in collecting policy information. While everyone has put a huge effort in systematically collecting all policies for all countries, we are aware that some policies might have gone undetected by our talented RAs. 
 
- \
-To ensure the completeness of our dataset, we request policy-based completeness checkers to compare our dataset with other datasets and check whether their information fully matches with our released dataset. We compare our dataset with the following datasets: 
+To ensure the completeness of our dataset, we request policy-based completeness checkers to compare our dataset with other datasets and check whether their information fully matches with our released dataset. We compare our dataset with the following dataset: [WHO PHSM Dataset](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/phsm) consists of multiple other datasets and gives a great opportunity for a systematic comparison. 
+
+As you will see, policy types are coarser and the country coverage is more limited in this dataset compared to our dataset. Therefore, we provide an overview of the different policy categories and how they can be assigned to the CoronaNet policy categories. This is helpful for the identification of policies that are compared. 
 
 
 
-1. [ACAPS COVID-19: Government Measures Dataset](https://www.acaps.org/covid19-government-measures-dataset) 
-2. [Oxford COVID-19 Government Response Tracker ](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker)
-3. [OECD Country Policy Tracker](https://www.oecd.org/coronavirus/country-policy-tracker/)
-4. [WHO PHSM Dataset](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/phsm)
 
-As you will see, policy types are coarser and the country coverage is more limited in the other datasets compared to our dataset. Therefore, we provide an overview of the different policy categories and how they can be assigned to the CoronaNet policy categories. This is helpful for the identification of policies that are compared. 
-
-
-### Data collection methodology
+### Data collection methodology{-}
 
 
 
-1. Access the[ CoronaNet Policy Completeness Check](https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=142648945) sheet and identify the policy category sheet you have been assigned to (e.g. Curfew). 
+1. Access the [CoronaNet Policy Completeness Check](https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=142648945) sheet and identify the policy category sheet you have been assigned to (e.g. Curfew). 
 2. Find a region that has not been previously completed and add your name in the column “policy checker” for the subset of countries in your region. (Before adding yourself as a policy checker, make sure you have time to complete your task within a 24-h window). 
 3. Make sure to get access to all datasets including CoronaNet (via RShiny App).
-4. The idea is now to systematically compare the recorded policies of the other datasets with CoronaNet. Start with getting access to the respective dataset and getting familiar with the policies you are responsible for. (In the same file, you can see which policy categories of the other datasets belong to the your CoronaNet policy category you have been assigned to.)
+4. The idea is now to systematically compare the recorded policies of the other datasets with CoronaNet. Start with getting access to the respective dataset and getting familiar with the policies you are responsible for. (In the same file, you can see which policy categories of the other datasets belong to the your CoronaNet policy category you have been assigned to. Try to identify the WHO measures first. If they are not classified look at the class or sub-class of this policy.)
 5. Check for the present country each listed policy within the category if it is included in your assigned policy category in CoronaNet. Therefore, search the country/policy information in CoronaNet via the RShiny App. 
 6. Compare the information from the dataset under investigation with the information that appears in our dataset. Do this for all countries within your region or subset of countries that you indicated in the spreadsheet.
 7. At least, evaluate the following aspects:
@@ -720,7 +729,14 @@ As you will see, policy types are coarser and the country coverage is more limit
 |
 |
 
-## Data Science Team
+
+
+
+
+
+## Data Science Team{-}
+
+** **
 
 The data science team exists to manage the export and cleaning of Qualtrics survey data, and also to visualize and analyze the data. This team is led by Tim Model (Chief Data Scientist) and Clara Wang (Chief Data Engineer). The members of this team may have some data entry responsibilities but their primary goal is to ensure that our data pipeline is as smooth as possible, and also to employ data-analytic tools to check the data and extract insights.
 
@@ -745,12 +761,17 @@ The data science team currently consists of five groups:
 4. Issue Triage and QC: identifying source of errors reported in Slack and elsewhere, including bad record IDs 
 5. Data Visualization: developing visualizations for public-facing presentations of our data
 
+If you are interested in joining the Data Science team, please message Tim Model or Clara Wang on Slack. 
+
 |
 |
 |
 
 
-## Qualtrics
+
+## Qualtrics{-}
+
+** **
 
 Once an RA is onboarded, they will receive a link to the Qualtrics survey they should use to enter new records.
 
@@ -781,10 +802,11 @@ Click on the dataset > Data & Analysis > Add Filter > Embedded data, record ID >
 |
 
 
-## Slack 
+## Slack{-} 
 
+** **
 
-### What is Slack?
+### What is Slack?{-}
 
 Slack is a collaboration software tool that enables users to share messages, tools, and files with their fellow team members.
 
@@ -793,7 +815,7 @@ Slack is a collaboration software tool that enables users to share messages, too
 It helps increase productivity amongst large, remote teams and saves everybody from getting lost in endless email chains.
 
 
-### Key Functionalities
+### Key Functionalities{-}
 
  
 
@@ -880,8 +902,34 @@ Let your colleagues know whether you are available or not by changing your appea
 ![](img/Codebook/14. Slack online away.png)
 </center>
 
+### Slack 'Office Hours'{-}
 
-### CoronaNet Workspace
+We have Slack ‘Office Hours’ in the  #ra-chat Slack channel from 8am CEST to 4pm CEST every day to answer your questions and provide feedback (while we may also be on at other times, we are making a commitment to being there during those times in particular). Please feel free to post to the channel in off-hours as well! We will get to your questions and comments as soon as we can.  
+
+We  have some great RAs who have been working with us on this project for a long time who will be stepping in to help out with the #ra-chat questions, they are:
+
+|   **Monday:** @Natalia Filkina-Spreizer
+
+|   **Tuesday:** @Saif Khan
+
+|   **Wednesday:** @Sarah Edmonds
+
+|   **Thursday:** @Danny Downes
+
+|   **Friday:** @Annika Kaiser
+
+|   **Saturday/Sunday:** @Jack Kubinec
+
+|
+|
+
+Note that a PI will always be monitoring these exchanges and a PI might step in if there is a tricky question, but you’ll be in very competent hands with the team above!
+
+
+
+
+
+### CoronaNet Workspace{-}
 
 All the information you need regarding the CoronaNet project can be found in our Slack workspace. In the rare circumstance you can’t find what you’re looking for, there will be somebody on-hand in Slack to help you answer your question.
 
@@ -909,7 +957,7 @@ This is perhaps the most vital channel for newcomers to the project. It’s the 
 
  
 
-**Check the “pinned items”** for some useful information for all RA’s. You can also utilise the FAQ tab in the [Shiny App](https://kubinec.shinyapps.io/corona_validate/), which is updated based on the questions you ask in this channel. 
+**Check the “pinned items”** for some useful information for all RA’s. You can also utilise the FAQ tab in the Shiny App, which is updated based on the questions you ask in this channel. 
 
 
 
@@ -966,13 +1014,42 @@ Once you are registered as a member of CoronaNet, the sorting hat will assign yo
 |
 
 
-## Shiny Web Application Guide
+## Shiny Web Application Guide{-}
+
+** **
 
 In this section, we describe some of the useful features and tools of the web application for updating records, in addition to providing some helpful background for how it works.
 
+The Shiny App can be found [here](https://kubinec.shinyapps.io/corona_validate/). In order to access the app, you will need to get permission. You should get a message from “shinyapps.io” in your email to get access to the app. Please search your email for “shinyapps.io” if you did not receive the invitation. If you still do not receive one a few days after joining the project, please message in the #record-tracker-app channel on Slack.
 
+**What do I use the app for?**
 
-1. Select the Country and/or City/Province of the records you are trying to locate (one or more Countries can be selected simultaneously) 
+*   You can use it to:
+*   Make corrections to policy entries (NOT updates)
+*   Find links to make corrections or updates to a policy entry
+*   Look at what policies have currently been entered for certain countries
+*   See a timeline visualization of policies
+*   Find FAQs for internal use about the project
+
+**How often is the data updated in the app?**
+
+The data is updated approximately every 24 hours. In the “Recorded Data” section of the app, it will note the most recent data currently in the app.
+
+<center>
+
+![](img/Codebook/ShinyApp Recorded Data.png){width=50%}
+</center>
+
+**How do I use the app?**
+
+You can filter the data in the Policy Table in the app in two ways:
+
+1.    You can use the filters for country, RA name, policy type, etc.
+2.    You can click on a policy in the Timeline Visualization
+
+**Filtering using country, RA name, etc:**
+
+1. Select the Country and/or City/Province of the records you are trying to locate (one or more Countries can be selected simultaneously). You MUST select at least one country.
 
 <center>
 
@@ -1023,7 +1100,19 @@ In this section, we describe some of the useful features and tools of the web ap
 
   *   Utilise the ‘Clear records selected’ button to clear this filter and repeat the process from the beginning 
 
-**Link to the [app](https://kubinec.shinyapps.io/corona_validate/).**
+**Correcting Entries using the Shiny App**
+
+The Shiny App is also probably the easiest place for you to quickly correct any mistakes you have made whilst coding a policy. 
+
+Once you have found the policy you want to correct, and it is visible in the “Policy Records Table” in the App, the sheet can be treated as a normal spreadsheet. All cells are editable by double clicking (the only cells that cannot be manually corrected are the record_id, policy_id and recorded_date).
+
+After correcting what you require, click “upload corrections” at the top of the table, and the record will be updated!
+
+|
+
+IMPORTANT: THIS IS ONLY APPLICABLE FOR RECORD CORRECTIONS, NOT POLICY UPDATES! 
+
+
 
 **Any questions regarding the App please direct towards the #record-tracker-app slack channel.**
 
@@ -1032,7 +1121,9 @@ In this section, we describe some of the useful features and tools of the web ap
 |
 
 
-## CoronaNet Learning Platform 
+## CoronaNet Learning Platform{-} 
+
+** **
 
 CoronaNet also has a [website](https://lumesserschmidt.github.io/stats_CoronaNet/index.html) dedicated to providing learning resources and free tutorials to anybody who wants to learn the software “R”.
 
@@ -1044,10 +1135,11 @@ Moreover, there is a [Slack channel](https://join.slack.com/share/zt-f2gjfcd2-Yf
 |
 |
 
-## Project Administration
+## Project Administration{-}
 
+** **
 
-### Organisational Flow Chart 		
+### Organisational Flow Chart{-} 		
 [Click here for high resolution version](https://drive.google.com/file/d/13f9kqLVbxOncZQGEyfCuUM8My6pd_0ui/view?usp=sharing) 
 
 <center>
@@ -1060,7 +1152,9 @@ Moreover, there is a [Slack channel](https://join.slack.com/share/zt-f2gjfcd2-Yf
 *   **Any questions about your region, sources for entering your policy or if you need a break, please contact regional managers**
 
 
-### PI Responsibilities
+### PI Responsibilities{-}
+
+** **
 
 The Principal Investigators (PIs) are in charge of charting the overall course of the CoronaNet Project and for providing guidance and direction for RAs working on different parts of the project. They are also the points of contact for collaborations with other research endeavors or for handling media requests.  
 
@@ -1089,12 +1183,12 @@ Luca Messerschmidt
 
 
 
-### Regional / Country Managers Responsibilities
+### Regional / Country Managers Responsibilities{-}
 
-Regional managers oversee the countries in their region, and country managers oversee the subnational provinces/states for a particular country. In some countries, there will be more than one country manager. This is especially true for countries with large numbers of subnational provinces/states. You can find the list of countries allocated to a region and all country managers for a country in t[his document](https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?usp=sharing)
+Regional managers oversee the countries in their region, and country managers oversee the subnational provinces/states for a particular country. In some countries, there will be more than one country manager. This is especially true for countries with large numbers of subnational provinces/states. You can find the list of countries allocated to a region and all country managers for a country in [this document](https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?usp=sharing)
 
 
-#### Organization
+#### Organization{-}
 
 
 
@@ -1103,7 +1197,7 @@ Regional managers oversee the countries in their region, and country managers ov
 *   In addition to the weekly meetings that regional and country managers should have with the RAs under their supervision (see more below in the ‘Key Responsibilities’ section), there will be periodic meetings for regional and country managers to provide feedback and exchange information with each other and the PIs. These meetings will be announced in advanced in the #regional-managers Slack channel.
 
 
-#### Scope of Responsibilities
+#### Scope of Responsibilities{-}
 
 
 
@@ -1113,7 +1207,7 @@ Regional managers oversee the countries in their region, and country managers ov
 *   Regional managers and Country managers thus have parallel roles: regional managers will be responsible  for countries under their purview (again, except for ones that have a regional manager) and country managers will be responsible for the national and subnational levels of the country under their purview. 
 
 
-#### Key responsibilities
+#### Key responsibilities{-}
 
 
 
@@ -1148,7 +1242,7 @@ Regional managers oversee the countries in their region, and country managers ov
 For country managers: to to allocate and designate tasks for their subnational regions, please make use of this [sheet](https://docs.google.com/spreadsheets/d/1cesReaVkn0-w-0kGjgGHX7WHVZqtejbcQAw0SC7VRZ0/edit?usp=sharing).
 
 
-####  **SOPs for Inactive RAs.**
+####  **SOPs for Inactive RAs.**{-}
 
 
 
@@ -1158,7 +1252,7 @@ For country managers: to to allocate and designate tasks for their subnational r
 4. If possible, the task may need to be reallocated to other active RAs.
 
 
-#### How do I become a regional/country manager?
+#### How do I become a regional/country manager?{-}
 
 Research assistants are invited to become regional/country managers based on some combination of their expertise in the region/country, their familiarity with the CoronaNet project and their previous experience managing and coordinating people. 
 
@@ -1167,10 +1261,10 @@ There are a limited number of regional/country manager positions available and w
 If you are interested in becoming a regional or country manager, or if you would like to take on the country manager role for a country that currently is not assigned one, please contact the project management team at at [admin@coronanet-project.org](mailto:onadmin@coronanet-project.org)!
 
 
-## 
 
 
-### Hogwarts Houses and Prefects
+
+### Hogwarts Houses and Prefects {-}
 
 As part of the onboarding process each RA will be assigned to a Hogwarts house - Gryffindor, Slytherin, Hufflepuff or Ravenclaw! 
 
@@ -1194,12 +1288,11 @@ Current prefects are:
 
 Prefects are the leaders of each of these houses. They are responsible for the social onboarding to the project and the general wellbeing of their house members. They are an additional resource for RA’s to direct their questions towards and help RA’s find answers to their questions and/or help RA’s finding the right person for them to direct their questions to. As well as this, they are generally responsible for maintaining the team spirit of their houses and ensuring RA’s have access to the resources they need.
 
-You can see which house RAs have been allocated to on this sheet:
-[https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit#gid=0](https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit#gid=0). 
+You can see which house RAs have been allocated to on [this sheet](https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit#gid=0). 
 If an RA is marked in Red in the “house assigned” column, then it means they have not been allocated into a house yet.
 
 
-#### Summary of the Main Tasks
+#### Summary of the Main Tasks {-}
 
   -   Evaluation of Applications
 
@@ -1216,7 +1309,7 @@ If an RA is marked in Red in the “house assigned” column, then it means they
   -   Generally ensuring the team spirit of their house is maintained
 
 
-### How do I become a Hogwarts Prefect?
+### How do I become a Hogwarts Prefect? {-}
 
 Becoming a Hogwarts Prefect is an exciting and rare opportunity! It is also a role of responsibility and empathy. 
 
@@ -1229,7 +1322,7 @@ If you do not find any vacancies on #general Slack channel, then you should reac
 
 
 
-### RA Responsibilities 
+### RA Responsibilities {-} 
 
 Once the onboarding process is completed each RA is assigned a Country to work on. They will be added to the relevant Region and Country Slack channels and should introduce themselves to their fellow RA’s in the Country/Region.
 
@@ -1239,7 +1332,7 @@ They can use these channels to ask any questions they have about getting started
 
 *    **[#ra-chat](https://app.slack.com/client/T010PHG8J6A/C010V8MKHK2)** Slack channel 
 *   the Hogwarts House Prefects (perhaps there is an issue with something they do not feel comfortable discussing in the Region/Country channel – this is what the Prefects are for!)
-*   RA FAQ in the **[Shiny App](https://kubinec.shinyapps.io/corona_validate/)** 
+*   RA FAQ in the **Shiny App** 
 *   **[CoronaNet Data Codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing)**
 *   More relevant links are found in the ‘Useful Links’ section of the Manual
 
@@ -1260,7 +1353,7 @@ RA’s should also participate in the weekly meeting with their Regional Manager
 In addition, RA’s should participate in/watch the recording of the general RA meeting where updates about the whole project are shared. These meetings take place on Wednesdays at 4.30pm CET at this [link](https://nyu.zoom.us/j/58230804 ). 
 
 
-#### Summary of Main Tasks
+#### Summary of Main Tasks {-}
 
 
 
@@ -1271,7 +1364,7 @@ In addition, RA’s should participate in/watch the recording of the general RA 
 *   Attend weekly meetings with the Regional/Country Managers (to be set up by the Managers and communicated in Slack).
 
 
-#### RA points of contact? 
+#### RA points of contact? {-} 
 
 
 
@@ -1293,7 +1386,7 @@ In addition, RA’s should participate in/watch the recording of the general RA 
 
 
 
-### RA Onboarding Process
+### RA Onboarding Process {-}
 
 In this section, we explain how CoronaNeta’s project management team onboards RAs: 
 
@@ -1433,10 +1526,9 @@ Fill out their name and email in the dialog box and hit enter. Then go back to t
 **STEP 4:** Finally, when people are good to go, they need to be allocated to a Hogwarts House. Please check the [allocation sheet](https://docs.google.com/spreadsheets/d/1qxkKu7gOdt2I0JjgJmviD6EpKdJoP9gU1p5cjOqgONk/edit?usp=sharing) if there are people that have not been assigned to houses. While some people will write down their preference in the allocation form, some will just let the sorting hat decide. Please try to distribute the people equally along the houses. After you allocate a RA to a house via the allocation sheet (Column F), add them to your Slack House Channel (this can only be done by the respective prefects). When you have done so, send the applicant a welcome email to your house (be sure to offer to answer any questions they may have!), and add them to your Slack channel. Be sure to finally go back to the application Google sheet and enter the date they were added to your house.
 
 
-## 
 
 
-### Need a break? / Vacation
+### Need a break? / Vacation {-}
 
 We understand nobody wants to be coding whilst they are on vacation! And there is zero expectation for you to do so, this is a voluntary project and we pride ourselves on our flexibility.
 

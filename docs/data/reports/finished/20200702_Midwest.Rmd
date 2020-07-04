@@ -1,0 +1,32 @@
+---
+title: "Midwestern States Research Note"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Sean-Michael Pigeon
+    url: https://www.linkedin.com/in/sean-michael-pigeon-842255156/
+    affiliation: Yale University
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+The Midwestern states in the United States, characterized by the area from Ohio to Missouri to the Dakotas, are typically more rural and conservative than major metropolitan cities and coastal states. Midwestern states took different approaches to the pandemic, some opting to enforce stay-at-home orders while others bucked the national trend and refused to enforce a state-wide lockdown. Some were heavily impacted by the virus, while others continue to report low infection and death rates. 
+
+Midwestern states were generally no slower to respond to the virus than other U.S. states. On March 9th, the governors of Iowa^[https://governor.iowa.gov/press-release/gov-reynolds-signs-new-proclamation-continuing-the-state-public-health-emergency] and Illinois^[https://thesouthern.com/news/local/state-and-regional/illinois-governor-declares-state-of-emergency-due-to-covid-19-illinois-now-has-11-cases/article_5221117c-75e7-5609-97e2-b54a39e03473.html] issued executive orders declaring states of emergency, just two days after New York’s declaration.^[https://www.governor.ny.gov/news/no-20238-continuing-temporary-suspension-and-modification-laws-relating-disaster-emergency] Other Midwestern states, such as Wisconsin^[https://evers.wi.gov/Documents/EO/EO072-DeclaringHealthEmergencyCOVID-19.pdf] and Michigan^[https://www.michigan.gov/whitmer/0,9309,7-387-90499_90705-530039--,00.html], took similar executive actions just days later. It is emblematic that the Midwest took early action to meet the pandemic, and that the initial responses by state governors were independent but similar. 
+
+However, further responses varied within the region. Michigan’s Governor Gretchen Whitmer issued an executive order restricting all non-essential activities on March 24th^[https://www.michigan.gov/whitmer/0,9309,7-387-90499_90705-522626--,00.html], following the announcement of lockdown initiatives in Ohio and Illinois just days earlier. By March 27th, half of the midwestern states had issued a lockdown, pointing to high numbers of COVID-19 cases and concerning death tolls.
+
+While several governors acted aggressively to curtail activities deemed as non-essential, others were reticent to take executive action to keep residents at home. While Kansas and Missouri finally issued stay-at-home orders on March 30th and April 6th, respectively, residents of North and South Dakota, Iowa, and Nebraska were never under lockdown orders.^[https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html] In fact, the majority of states without lockdown orders are in the Midwest.^[https://www.businessinsider.com/us-map-stay-at-home-orders-lockdowns-2020-3] These states are overwhelmingly rural with a low population density and typically more conservative than the average state population. These factors may explain why these governors felt they had more flexibility in their responses.^[https://state.1keydata.com/state-population-density.php] 
+
+As of June 26th, according to publicly available records, the effects of the coronavirus on the Midwest under lockdown have been quite varied. Illinois, the first state to issue a stay-at-home order, has seen 113,000 cases of COVID-19, resulting in almost 7,000 deaths. Illinois’ infections are nearly double that of the Midwestern state with the second-highest number of cases, Michigan, which has suffered over 6,000 deaths from 68,000 coronavirus cases. While Ohio and Minnesota had relatively low death tolls (around 2,500 and 1,500 respectively), they reported a high total case count, each numbering over 40,000. The states without lockdown orders avoided high death counts. North Dakota only lost 77 residents to COVID-19, a tragic number but still far below the rate of its neighbors. South Dakota, Nebraska, and Iowa all have official death counts below 1,000. Intuitively, states that were most affected by the pandemic responded with more executive action than areas without coronavirus hotspots. 
+
+The prolonged nature of the lockdowns produced a reaction from conservatives who argued the stay-at-home orders were too draconian. These attitudes were evident in Michigan, where anti-lockdown protesters staged a “sit-in” in their vehicles on April 15th and April 30th. The protestors argued against the stay-at-home orders, claiming they violated their civil liberties and would provoke an economic downturn.^[https://www.cbsnews.com/news/michigan-protest-gretchen-whitmer-operation-gridlock-lansing/] These protests were of little policy consequence but point to the unease many residents felt with being locked down. Minneapolis erupted with protesters after the tragic killing of George Floyd by police officers. The protests gained national attention leading to unrest in many Midwestern cities.^[https://www.baltimoremagazine.com/section/community/baltimore-responds-to-the-death-of-george-floyd] It is still currently unclear whether the protests will spark increases in COVID-19 cases.
+
+In total, Midwestern states took varying approaches in their responses to the coronavirus and experienced differing levels of exposure to the virus. While some imposed strict quarantine measures to deal with the crisis, such as Illinois and Michigan, others kept regulations lax. Political unrest created difficulties, with protests of different kinds erupting throughout the region, the final effects of which are still unclear. 

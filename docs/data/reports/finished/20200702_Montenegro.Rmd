@@ -1,0 +1,59 @@
+---
+title: "Montenegro Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Helwan Felappi
+    url: https://www.linkedin.com/in/helwan-felappi-709aab162/
+    affiliation: Sciences Po Paris
+  - name: Klea Vogli
+    url: https://www.linkedin.com/in/klea-vogli-11050a177/
+    affiliation: Technical University of Munich
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+Montenegro is a Balkan country located in Southeast Europe with a population of approximately 628,060.^[“Montenegro Population .” Worldometer, www.worldometers.info/world-population/montenegro-population/.] In 1992 and the breakup of Yugoslavia, Montenegro became a Federation known as the State Union of Serbia and Montenegro. In 2006, Montenegro finally gained independence. Montenegro is a parliamentary Republic, and Duško Marković is the current Prime Minister. As of 2019, the coronavirus pandemic has spread to more than 180 countries and hit the global economy. Inevitably, COVID-19 reached Montenegro, despite the preventive measure implemented.  
+
+On March 17th, the country reported its first case of COVID-19, considerably later than most other European countries. The infections in the county have remained low. As of May 29th, Montenegro reported 324 infections resulting in 9 deaths.^[“Montenegro.” Worldometer, www.worldometers.info/coronavirus/country/montenegro/.] Remarkably in late May, according to the Montenegrin government, the country became the first European nation to become coronavirus-free, meaning it no longer had any active cases within its territory.^[Montenegro, Govt. of. Twitter, Twitter, 24 May 2020, twitter.com/MeGovernment/status/1264598489318776832.] Whether this was due to its small size, low population density, relatively low levels of trade and tourism (which meant fewer occasions for contaminated foreigners entering the country), or to the preventative policies implemented is unknown. A number of the rapidly implemented measures put in place remain throughout the country. 
+
+Despite dodging the worst impacts of the virus, the country implemented stringent and restrictive policies. The government enacted measures early to tackle the pandemic. They were imposed before even a single case of the coronavirus was reported. 
+
+Initially, the government launched public awareness campaigns, closed all schools, and suspended all flights. As of early June, borders reopened to certain countries with fewer than 25 active cases per 100,000 residents. On the whole, the policies were in line with other Balkan countries, with relatively strict confinement measures, border closures, as well as public information campaigns. Nonetheless, other policies went considerably further.
+
+Globally, governments are making trade-offs between strong health measures and limitations on individual liberties and the economy. Some observers criticized Montenegro for policies, which allegedly infringed upon the privacy of its citizens. Critics cited a measure in which authorities published a list of the identities and places of residence of citizens suspected of having COVID-19. According to Prime Minister Markovic, one's "right to health and life" is justifiable to temporarily override the right to privacy.^[Stojkovski, Bojan. “Covid-19&nbsp;: Au Monténégro, La Santé Passe Avant Le Respect De La Vie Privée.” ZDNet France, 28 Mar. 2020, www.zdnet.fr/actualites/covid-19-au-montenegro-la-sante-passe-avant-le-respect-de-la-vie-privee-39901401.htm.] This was vehemently opposed by several actors, including the NGO Civil Alliance. They sued the government on the basis that publishing the names of those undergoing self-isolation and thus suspected of infection, went against the rights guaranteed by the constitution. In late May, the Constitutional Court agreed to examine such charges.^[Kajosevic, Samir. “Montenegro Court to Examine Publication of Self-Isolating Citizens' Names.” Balkan Insight, 29 May 2020, balkaninsight.com/2020/05/29/montenegro-court-to-examine-publication-of-self-isolating-citizens-names/.] Whether it will rule in favor or against the government remains to be seen. Nonetheless, restraints were imposed on the transmission of private information. A healthcare worker in Podgorica, the capital, was detained after allegedly sharing and publishing the names of infected patients.  
+
+In addition to the threat against civil rights, the economy suffered. Experts fear that the pandemic, and the lockdown measures associated with it, may worsen an already complicated economic situation. The OECD produced a report warning that high debt levels and low levels of economic growth in 2019, make Montenegro particularly vulnerable.^[“The COVID-19 Crisis in Montenegro.” OECD, 22 June 2020, https://www.oecd.org/south-east-europe/COVID-19-Crisis-in-Montenegro.pdf.] Although the country was relatively spared by the pandemic, with many municipalities not reporting a single case, the worse impact may be on the economy. Additionally, GDP is estimated to decrease by 9% in December 2020.^[“Montenegro .” IMF, www.imf.org/en/Countries/MNE.]  
+
+In the short term, several warning signs suggest the scope of the economic impact. For instance, the MNSE10 financial index lost nearly 12% of its value between January and late April. However, the country has seen the start of a recovery, regaining around 5%.^[“The COVID-19 Crisis in Montenegro.” OECD, 22 June 2020, https://www.oecd.org/south-east-europe/COVID-19-Crisis-in-Montenegro.pdf.] 
+
+Additionally, the country relies heavily on tourism. In 2019, it welcomed over 2 million foreign visitors, who came in droves to places such as Podgorica and the numerous World Heritage Sites.^[-. “World Travel &amp; Tourism Council: Montenegro 3rd Destination by Growth in 2018.” SENAT.me | MeP, 3 May 2018, senat.me/en/world-travel-tourism-council-montenegro-3rd-destination-by-growth-in-2018/.] Scholar Maria Vodenska argued pre-crisis, that by 2025 tourism would account for approximately 7.6% of GDP.^[Vodenska, Maria. Hospitality and Tourism in Transition in Central and Eastern Europe a Comparative Analysis. Cambridge Scholars Publishing, 2018.] The OECD report places its value at 11.7%, making the nation particularly vulnerable to the fall in travel brought on by the pandemic.  
+
+The tourism industry plays a crucial role in Montenegro's economic growth and development. During the pandemic, tourism is considered one of the hardest-hit industries. Nonetheless, Montenegro has taken many steps to counter and mitigate the economic impact. The government has adopted new measures to ensure economic resilience.^[“The COVID-19 Crisis in Montenegro.” OECD, 22 June 2020, https://www.oecd.org/south-east-europe/COVID-19-Crisis-in-Montenegro.pdf.] Below are some of them:
+
+Tax payments on earnings are delayed for 90 days. In theory, this should relieve businesses and households from further straining their finances. However, this may be postponing the inevitable and damaging defaults. 
+
+The central bank announced a moratorium on loan repayments for a period of up to 90 days. These include the interim suspension of all payments on obligations based on the loan. Again, this should help individuals and businesses cope with the economic downfall. 
+
+The government provided support packages, including subsidies of 70% of the minimum wage for employees in sectors that are closed due to the pandemic, those unable to work from childcare, or people self-isolating and quarantining. Additionally, a subsidy of 50% of the minimum wage is given for employees in sectors at risk from the lockdown.
+
+The Montenegro government is determined to ensure tourists arrive for the beginning of the summer.^[Kucheran, Kashlee. “Montenegro Has Reopened For Tourism – Everything You Need To Know.” Travel Off Path, 24 June 2020, www.traveloffpath.com/montenegro-has-reopened-for-tourism-everything-you-need-to-know/.] Indeed, the country has already announced it is reopening to nations that have less than 25 cases per 100,000 people. Therefore visitors from Italy, the UK, and others will be shut out, while nationals from neighboring Bosnia, Serbia, and Kosovo will be allowed entrance. The Secretary of Tourism appears quite optimistic, stating that although “we cannot expect this season to be like the previous one” he expects “a much better result than earlier pessimistic forecasts”. 
+
+The Montenegrin Government announced a set of economic measures aimed at addressing the negative impacts of COVID-19 on the economy. The policies would enable protection and restructure the Montenegrin economy.
+
+The COVID-19 outbreak may precipitate a recession on the economy, which is particularly reliant on the tourism sector. The tourism industry will not generate as much revenue as last year due to the pandemic situation. 
+
+The government is optimistic due to the international support the country received to cope with the economic fallout of the pandemic. The European Union announced a support package of €3 million for the health sector and €50 million in support of social and economic recovery.^[“The COVID-19 Crisis in Montenegro.” OECD, 22 June 2020, https://www.oecd.org/south-east-europe/COVID-19-Crisis-in-Montenegro.pdf.] 
+
+Nonetheless, the country is rapidly relaxing a number of its policies. For example, restaurants were allowed to reopen.^[Ralev, Radomir. “Montenegro to Reopen Hotels, Restaurants on May 18 - PM.” SeeNews, 29 Apr. 2020, seenews.com/news/montenegro-to-reopen-hotels-restaurants-on-may-18-pm-696840.] Similarly, by the beginning of June, Montenegro accepted visitors from over 131 countries, strongly indicating a desire to resume tourist activities. The outlook seems quite optimistic, as shown by the proud proclamations of the elimination of the virus.
+
+The prevention measures succeeded, resulting in a declaration of Montenegro as a coronavirus-free country. By implementing preventive measures early, such as school closures, curfews, public awareness campaigns, and travel bans, the country mitigated the spread of the virus. Moreover, with no new cases reported since May 5th, Montenegro is optimistic for the future and can begin to get the economy back on track. Nevertheless, the potential for a second wave and new infections if citizens do not comply with the measures should be examined. 
+
+Montenegro’s response to the virus, aided by its late arrival, was relatively effective, and the government is determined to get the country back to normal. However, it has highlighted concerns surrounding human and privacy rights, and whether these should be sidelined for health concerns. While Montenegro has overcome the losses of the virus, the fragile economy suggests that the socio-economic effects may last long term. 

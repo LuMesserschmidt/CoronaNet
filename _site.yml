@@ -33,6 +33,10 @@ navbar:
         href: data/reports/finished/20200629_Ghana.html 
       - text: "Research Note: MENA Region"
         href: data/reports/finished/20200620_MENA.html 
+      - text: "Research Note: USA - Midwest"
+        href: data/reports/finished/20200702_Midwest.html  
+      - text: "Research Note: USA - Region 7"
+        href: data/reports/finished/20200702_Region7.html    
       - text: "Research Note: USA - 50 States' Stay At Home Orders"
         href: data/reports/finished/20200610_StayatHome.html    
       - text: "Research Note: Women´s Rights"
@@ -59,6 +63,8 @@ navbar:
         href: data/reports/finished/20200422_Italy.html
       - text: "Country Report: Liberia"
         href: data/reports/finished/20200620_Liberia.html
+      - text: "Country Report: Montenegro"
+        href: data/reports/finished/20200702_Montenegro.html
       - text: "Country Report: Myanmar"
         href: data/reports/finished/20200610_Myanmar.html
       - text: "Country Report: Nicaragua"
