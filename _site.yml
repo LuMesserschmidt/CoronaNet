@@ -35,6 +35,8 @@ navbar:
         href: data/reports/finished/20200620_MENA.html 
       - text: "Research Note: USA - Midwest"
         href: data/reports/finished/20200702_Midwest.html  
+      - text: "Research Note: USA - Sunbelt"
+        href: data/reports/finished/20200714_Sunbelt.html  
       - text: "Research Note: USA - Region 7"
         href: data/reports/finished/20200702_Region7.html    
       - text: "Research Note: USA - 50 States' Stay At Home Orders"
@@ -77,6 +79,8 @@ navbar:
         href: data/reports/finished/20200602_Saint_Kitts.html
       - text: "Country Report: Saint Vincent and the Grenadines"
         href: data/reports/finished/20200602_Saint_Vincent.html
+      - text: "Country Report: Solomon Islands"
+        href: data/reports/finished/20200714_Solomon.html
       - text: "Country Report: Syria"
         href: data/reports/finished/20200507_Syria.html
       - text: "Country Report: Turkey"
