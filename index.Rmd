@@ -212,8 +212,10 @@ DT::datatable(contribution,
 ### Partner Universities {-}
 
 <img width="20%" src="img/TUM.jpg"/>
+<img width="20%" src="img/SOM.png"/>
 <img width="20%" src="img/TUM.png"/>
 <img width="20%" src="img/NYU.png"/>
+
 
 
 ***
