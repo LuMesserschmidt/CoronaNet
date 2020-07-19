@@ -55,6 +55,13 @@ download.file("https://raw.githubusercontent.com/saudiwin/corona_tscs/master/dat
 
 ***
 
+##  CoronaNet Learning Platform {-}
+
+We are an open data science initiative. This means that we want to invite everyone to work with our data. For people who are not familiar with statistical programs, we have designed a Learning Platform that shows you how to work with our data via RStudio. 
+
+Please follow this link to enter the [CoronaNet Learning Platform](https://lumesserschmidt.github.io/stats_CoronaNet/index.html)
+
+***
 ### `coronanet_release.csv` Dictionary {-}
 
 1.  `record_id` Unique identifier for each unique policy record

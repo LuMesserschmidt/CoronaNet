@@ -53,8 +53,10 @@ navbar:
         href: data/reports/finished/20200415_Costa_Rica.html
       - text: "Country Report: Eswatini"
         href: data/reports/finished/20200421_Eswatini.html
-      - text: "Country Report: Gambia"
+      - text: "Country Report: Gambia (April)"
         href: data/reports/finished/20200428_Gambia.html
+      - text: "Country Report: Gambia (July)"
+        href: data/reports/finished/20200718_Gambia.html
       - text: "Country Report: Grenada"
         href: data/reports/finished/20200602_Grenada.html
       - text: "Country Report: Honduras"

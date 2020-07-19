@@ -13,7 +13,7 @@
 
 <title>Download CoronaNet Dataset</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -387,10 +387,31 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="data/reports/finished/20200629_Ghana.html">Research Note: Migration in Ghana</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_MENA.html">Research Note: MENA Region</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Midwest.html">Research Note: USA - Midwest</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200714_Sunbelt.html">Research Note: USA - Sunbelt</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Region7.html">Research Note: USA - Region 7</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_StayatHome.html">Research Note: USA - 50 States' Stay At Home Orders</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
     </li>
     <li>
       <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_China.html">Country Report: China</a>
     </li>
     <li>
       <a href="data/reports/finished/20200422_Colombia.html">Country Report: Colombia</a>
@@ -408,16 +429,40 @@ div.tocify {
       <a href="data/reports/finished/20200602_Grenada.html">Country Report: Grenada</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200612_Honduras.html">Country Report: Honduras</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200416_Indonesia.html">Country Report: Indonesia</a>
     </li>
     <li>
       <a href="data/reports/finished/20200422_Italy.html">Country Report: Italy</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200620_Liberia.html">Country Report: Liberia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Montenegro.html">Country Report: Montenegro</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_Myanmar.html">Country Report: Myanmar</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Nicaragua.html">Country Report: Nicaragua</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Papua.html">Country Report: Papua New Guinea</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200612_Rwanda.html">Country Report: Rwanda</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200602_Saint_Kitts.html">Country Report: Saint Kitts and Nevis</a>
     </li>
     <li>
       <a href="data/reports/finished/20200602_Saint_Vincent.html">Country Report: Saint Vincent and the Grenadines</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200714_Solomon.html">Country Report: Solomon Islands</a>
     </li>
     <li>
       <a href="data/reports/finished/20200507_Syria.html">Country Report: Syria</a>
@@ -428,7 +473,7 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="working_papers.html">Working Papers</a>
+  <a href="working_papers.html">Publications</a>
 </li>
 <li>
   <a href="media.html">In the Media</a>
@@ -483,31 +528,48 @@ text-align: justify}
 <p><a href="http://coronanet-project.org/data/coronanet_release_allvars.csv" download="coronanet_release_allvars.csv" role="button" class="btn btn-primary">Download Extended Dataset</a></p>
 </div>
 <hr />
+<div id="coronanet-learning-platform" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">CoronaNet Learning Platform</h2>
+<p>We are an open data science initiative. This means that we want to invite everyone to work with our data. For people who are not familiar with statistical programs, we have designed a Learning Platform that shows you how to work with our data via RStudio.</p>
+<p>Please follow this link to enter the <a href="https://lumesserschmidt.github.io/stats_CoronaNet/index.html">CoronaNet Learning Platform</a></p>
+<hr />
 <div id="coronanet_release.csv-dictionary" class="section level3 unnumbered" number="">
 <h3 class="unnumbered" number=""><code>coronanet_release.csv</code> Dictionary</h3>
 <ol style="list-style-type: decimal">
-<li><code>record_id</code> Unique identifier for each policy record</li>
+<li><code>record_id</code> Unique identifier for each unique policy record</li>
+<li><code>policy_id</code> Identifier linking new policies with subsequent updates to policies</li>
+<li><code>recorded_date</code> When the record was entered into our data</li>
+<li><code>date_updated</code> When we can confirm the country - policy type was last checked/updated (we can only confirm policy type for a given country is up to date as of this date)</li>
+<li><code>date_announced</code> When the policy is announced</li>
+<li><code>date_start</code> When the policy goes into effect</li>
+<li><code>date_end</code> When the policy ends (if it has an explicit end date)</li>
 <li><code>entry_type</code> Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</li>
 <li><code>event_description</code> A short description of the policy change</li>
+<li><code>domestic_policy</code> Indicates where policy targets an area within the initiating country (i.e. is domestic in nature)</li>
 <li><code>type</code> The category of the policy</li>
+<li><code>type_sub_cat</code> The sub-category of the policy (if one exists)</li>
+<li><code>type_text</code> Any additional information about the policy type (such as the number of ventilators/days of quarantine/etc.)</li>
+<li><code>index_high_est</code> The high (95% posterior density) estimate of the country policy activity score (0-100)</li>
+<li><code>index_med_est</code> The median (most likely) estimate of the country policy activity score (0-100)</li>
+<li><code>index_low_est</code> The low (95% posterior density) estimate of the country policy activity score (0-100)</li>
+<li><code>index_country_rank</code> The relative rank by each day for each country on the policy activity score</li>
 <li><code>country</code> The country initiating the policy</li>
 <li><code>init_country_level</code> Whether the policy came from the national level or a sub-national unit</li>
-<li><code>index_prov</code> The ID of the sub-national unit</li>
+<li><code>province</code> Name of sub-national unit</li>
 <li><code>target_country</code> Which foreign country a policy is targeted at (i.e. travel policies)</li>
 <li><code>target_geog_level</code> Whether the target of the policy is a country as a whole or a sub-national unit of that country</li>
+<li><code>target_region</code> The name of a regional grouping (like ASEAN) that is a target of the policy (if any)</li>
+<li><code>target_province</code> The name of a province targeted by the policy (if any)</li>
+<li><code>target_city</code> The name of a city targeted by the policy (if any)</li>
+<li><code>target_other</code> Any geographical entity that does not fit into the targeted categories mentioned above</li>
 <li><code>target_who_what</code> Who the policy is targeted at</li>
-<li><code>recorded_date</code> When the record was entered into our data</li>
 <li><code>target_direction</code> Whether a travel-related policy affects people coming in (Inbound) or leaving (Outbound)</li>
 <li><code>travel_mechanism</code> If a travel policy, what kind of transportation it affects</li>
 <li><code>compliance</code> Whether the policy is voluntary or mandatory</li>
 <li><code>enforcer</code> What unit in the country is responsible for enforcement</li>
-<li><code>date_announced</code> When the policy goes into effect</li>
 <li><code>link</code> A link to at least one source for the policy</li>
 <li><code>ISO_A3</code> 3-digit ISO country codes</li>
 <li><code>ISO_A2</code> 2-digit ISO country codes</li>
-<li><code>severity_index_5perc</code> 5% posterior low estimate (i.e. lower bound of uncertainty interval) for severity index</li>
-<li><code>severity_index_median</code> posterior median estimate (point estimate) for severity index, which comes from a Bayesian latent variable model aggregating across policy types to measure country-level policy severity (see paper on our website)</li>
-<li><code>severity_index_5perc</code> 95% posterior high estimate (i.e. upper bound of uncertainty interval) for severity index</li>
 </ol>
 <hr />
 </div>
@@ -554,6 +616,7 @@ text-align: justify}
 <p>Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). <a href="https://www.coronanet-project.org" class="uri">https://www.coronanet-project.org</a></p>
 <p><br></p>
 <p><img src="img/header.png" /></p>
+</div>
 </div>
 
 
@@ -606,7 +669,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

@@ -13,7 +13,7 @@
 
 <title>In the Media</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -387,10 +387,25 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
+      <a href="data/reports/finished/20200629_Ghana.html">Research Note: Migration in Ghana</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_MENA.html">Research Note: MENA Region</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Midwest.html">Research Note: USA - Midwest</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200714_Sunbelt.html">Research Note: USA - Sunbelt</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Region7.html">Research Note: USA - Region 7</a>
     </li>
     <li>
       <a href="data/reports/finished/20200610_StayatHome.html">Research Note: USA - 50 States' Stay At Home Orders</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
     </li>
     <li>
       <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
@@ -426,6 +441,9 @@ div.tocify {
       <a href="data/reports/finished/20200620_Liberia.html">Country Report: Liberia</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200702_Montenegro.html">Country Report: Montenegro</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200610_Myanmar.html">Country Report: Myanmar</a>
     </li>
     <li>
@@ -444,6 +462,9 @@ div.tocify {
       <a href="data/reports/finished/20200602_Saint_Vincent.html">Country Report: Saint Vincent and the Grenadines</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200714_Solomon.html">Country Report: Solomon Islands</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200507_Syria.html">Country Report: Syria</a>
     </li>
     <li>
@@ -452,7 +473,7 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="working_papers.html">Working Papers</a>
+  <a href="working_papers.html">Publications</a>
 </li>
 <li>
   <a href="media.html">In the Media</a>
@@ -485,6 +506,7 @@ body {
 text-align: justify}
 </style>
 <hr />
+<p>July 18, 2020: <strong>Global Investigative Journalism Network</strong>, <a href="https://gijn.org/2020/07/17/what-were-reading-on-the-pandemic-frontlines-govt-responses-to-covid-19-and-the-global-autocratic-crackdown/">The Friday 5</a></p>
 <p>June 1, 2020: <strong>TEDx Vienna</strong>, <a href="https://www.tedxvienna.at/blog/history-on-the-fly-documenting-a-pandemic/">History on the fly: documenting a pandemic</a></p>
 <p>May 26, 2020: <strong>FAZ</strong>, <a href="https://www.faz.net/aktuell/wissen/medizin-ernaehrung/corona-strategien-wie-die-laender-im-kampf-gegen-die-pandemie-abschneiden-16777168.html">Corona-Strategien im Vergleich : Wie die Länder im Kampf gegen die Pandemie abschneiden</a></p>
 <p>May 12, 2020: <strong>Russia Matters (Harvard Kennedy School)</strong>, <a href="https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-may-4-11-2020">Russia Analytical Report</a></p>
@@ -563,7 +585,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
