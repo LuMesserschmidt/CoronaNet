@@ -2,7 +2,6 @@
 title: "CoronaNet Research Project Manual"
 output: 
   html_document:
-    css: style.css
     toc: TRUE
     toc_float: TRUE
 ---
@@ -40,7 +39,7 @@ Each section should be as precise as possible, mentioning what the goals we want
 ### Weekly Meetings{-}
 
 
-*   **[CoronaNet General RA Meeting](https://nyu.zoom.us/j/58230804): **In the general RA meeting that we have every Wednesday at 4:30pm CET, the PIs share updates about the progress of the project. Recordings of older meetings can be found at the end of this section. 
+*   **[CoronaNet General RA Meeting](https://nyu.zoom.us/j/99864509982): **In the general RA meeting that we have every Wednesday at 4:30pm CET, the PIs share updates about the progress of the project. Recordings of older meetings can be found at the end of this section. 
 *   **Regional/Country RA Meetings**: RAs should also have a regular weekly meeting with their regional or country manager. The relevant link for that meeting should be provided by the appropriate regional or country manager.
 
 
@@ -86,6 +85,10 @@ RAs can correct or update the main survey using either:
 
 #### Recordings of Previous CoronaNet General RA Meetings{-} 
 
+  * **[4 April 2020](https://nyu.zoom.us/rec/share/2uhcLYyg-nJOG7fI9VDNBoUwF6HcX6a8gSYZqPYImhltfNYDQ7i2QLjNim-URRN3)**
+  
+  * **[25 April 2020](https://nyu.zoom.us/rec/share/wtVKfrDcx2hIT53gy2zhRaInAcPmT6a8hiAZ-KALnUiNru4cJeM1eF83MEpPNBVT)**
+  
   * **[6 May 2020](https://nyu.zoom.us/rec/share/5PJED-3B-EFOaavQz0Pif7A8ILviT6a80CEf_aZbxE9KKnrmgEPcg4sL-1Q__qFj)**
 
   * **[20 May 2020](https://nyu.zoom.us/rec/share/4v52c-nTyDJOeqPi2R-OArQ6J4_Uaaa8hCEWq_UPmUt7Jp-ax2nMhzw7C8NS6h_E)** 
@@ -95,9 +98,15 @@ RAs can correct or update the main survey using either:
   * **[10 June 2020](https://nyu.zoom.us/rec/share/6ZV6AZPd1EFLbK_n1UTtY74fM6LqX6a8gCNK8vAIxUj-Q7kfk0GqKFQsBh98-ff6)**
 
   * **[17 June 2020](https://nyu.zoom.us/rec/share/_etbA77w7WdJXM_x8BDvBOknJaXLaaa8gCYe8_QEzBogpRx-DJ9HArk3_iRmD7ut)**
+  * **[24 June 2020](https://nyu.zoom.us/rec/share/ougvMZHLx3pLUs_o-m3dVrQuINrpaaa82nNI-PZYzhq7g0rnYO08YoTSrWRANOXl)**
 
   * **[1 July 2020](https://tum-conf.zoom.us/rec/share/18lRAKiu9XpIT6PiyWzEW6IuB6j5X6a8gSgZqKIPxU26LvKiZ4mNaTKbzMXLATsB)** (the week Luca takes over! Password: 1t@8%PjI)
 
+  * **[8 July 2020](https://nyu.zoom.us/rec/share/pul5E7Os-E9LeoXItk_eRYM6OJXgeaa80ykaqKcMn0kh8QPyRQ5eHPO2Ug1RHbMc)**
+  
+  * **[15 July 2020](https://nyu.zoom.us/rec/share/wM9IL4PP11lLTKfh0mqEc6R_RIHhT6a80CdLqaBcn0fG9TEEeWGiycXzgjp2UTeK)**
+ 
+  
 |
 |
 |
