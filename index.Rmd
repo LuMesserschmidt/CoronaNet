@@ -230,7 +230,7 @@ DT::datatable(contribution,
 
 Jataware
 
-<div style="width:100px; height:75px">
+<div style="width:150px; height:112px">
 [![Starsift](img/jataware.png)](https://www.jataware.com/)
 </div>
 
@@ -238,6 +238,12 @@ Leibniz Research Alliance „Crises in a globalised World”
 
 <div style="width:150px; height:112px">
 [![Starsift](img/LFV.png)](https://www.leibniz-krisen.de/en.html)
+</div>
+
+Overton
+
+<div style="width:150px; height:112px">
+[![Starsift](img/Overton_logo.png)](https://www.overton.io)
 </div>
 
 <br>
