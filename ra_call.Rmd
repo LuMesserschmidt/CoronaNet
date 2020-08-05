@@ -3,7 +3,7 @@ title: "Call for Research Assistants"
 output:
   pdf_document: default
   #html_document: default
-date: "July 15th, 2020"
+date: "September 30, 2020"
 urlcolor: blue
 ---
 
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-The CoronaNet project is an international effort of more than 500 researchers to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. You can read more about the project at [our website](http://www.coronanet-project.org) and our [core paper](https://www.nature.com/articles/s41562-020-0909-7) published by Nature: Human Behaviour. The dataset, which captures already more than 15,000 policies, has already been used by government policy makers, academics and journalists, and we expect to be able to offer more thorough analysis of government responses (both determinants and effects) as we collect more data. The principal investigators for this project are:
+The CoronaNet project is an international effort of more than 500 researchers to collect data on a variety of government responses to the COVID-19 pandemic for use by policy makers, academic researchers and others. You can read more about the project at [our website](http://www.coronanet-project.org) and our [core paper](https://www.nature.com/articles/s41562-020-0909-7) published by Nature: Human Behaviour. The dataset, which captures already more than 25,000 policies, has already been used by government policy makers, academics and journalists, and we expect to be able to offer more thorough analysis of government responses (both determinants and effects) as we collect more data. The principal investigators for this project are:
 
 Joan Barceló, New York University Abu Dhabi
 
