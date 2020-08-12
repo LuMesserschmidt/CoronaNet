@@ -43,6 +43,8 @@ navbar:
         href: data/reports/finished/20200610_StayatHome.html    
       - text: "Research Note: Women´s Rights"
         href: data/reports/finished/20200507_womensrights.html 
+      - text: "Country Report: Bangladesh"
+        href: data/reports/finished/20200804_Bangladesh.html
       - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
       - text: "Country Report: China"
