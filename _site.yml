@@ -20,6 +20,8 @@ navbar:
     menu:
       - text: "Download"
         href: download.html
+      - text: "Codebook"
+        href: Codebook_website.html
       - text: "Methodology"
         href: methodology.html
       - text: "Validation & Reliability Checks"

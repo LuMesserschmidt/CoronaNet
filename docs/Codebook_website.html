@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Codebook CoronaNet</title>
+
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CoronaNet Research Project</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introduction</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="download.html">Download</a>
+    </li>
+    <li>
+      <a href="methodology.html">Methodology</a>
+    </li>
+    <li>
+      <a href="validation_website.html">Validation &amp; Reliability Checks</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="visuals.html">Visualizations</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Reports
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="data/reports/finished/20200629_Ghana.html">Research Note: Migration in Ghana</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_MENA.html">Research Note: MENA Region</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Midwest.html">Research Note: USA - Midwest</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200714_Sunbelt.html">Research Note: USA - Sunbelt</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Region7.html">Research Note: USA - Region 7</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_StayatHome.html">Research Note: USA - 50 States' Stay At Home Orders</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200804_Bangladesh.html">Country Report: Bangladesh</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_China.html">Country Report: China</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200422_Colombia.html">Country Report: Colombia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200415_Costa_Rica.html">Country Report: Costa Rica</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200421_Eswatini.html">Country Report: Eswatini</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200428_Gambia.html">Country Report: Gambia (April)</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200718_Gambia.html">Country Report: Gambia (July)</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Grenada.html">Country Report: Grenada</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200612_Honduras.html">Country Report: Honduras</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200416_Indonesia.html">Country Report: Indonesia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200422_Italy.html">Country Report: Italy</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Liberia.html">Country Report: Liberia</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200702_Montenegro.html">Country Report: Montenegro</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200610_Myanmar.html">Country Report: Myanmar</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Nicaragua.html">Country Report: Nicaragua</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200620_Papua.html">Country Report: Papua New Guinea</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200612_Rwanda.html">Country Report: Rwanda</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Saint_Kitts.html">Country Report: Saint Kitts and Nevis</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200602_Saint_Vincent.html">Country Report: Saint Vincent and the Grenadines</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200714_Solomon.html">Country Report: Solomon Islands</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200507_Syria.html">Country Report: Syria</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200521_Turkey.html">Country Report: Turkey</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="working_papers.html">Publications</a>
+</li>
+<li>
+  <a href="media.html">In the Media</a>
+</li>
+<li>
+  <a href="contact.html">About CoronaNet</a>
+</li>
+<li>
+  <a href="ra_call.html">Join CoronaNet</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Codebook CoronaNet</h1>
+<h4 class="author"></h4>
+
+</div>
+
+
+<p><em>Download</em> the <a href="data/codebook/CoronaNet_Codebook.pdf">codebook here</a>.</p>
+<div id="terms-and-conditions-for-citing-coronanet" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">Terms and Conditions for Citing CoronaNet</h2>
+<p>By using this site or downloading data from CoronaNet, users agree to the following:</p>
+<ul>
+<li>To use and/or download the data only for private or personal, non-commercial purposes</li>
+<li>To cite the source of the data and</li>
+<li>To accept disclaimers and restrictions of rights and liability converning the data</li>
+</ul>
+<div class="line-block"><br />
+</div>
+</div>
+<div id="citing-coronanet" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">Citing CoronaNet</h2>
+<p>For non-academic purposes, please cite the information in CoronaNet as:</p>
+<ul>
+<li>Source: CoronaNet Research Project</li>
+</ul>
+<p>For academic purposes, please cite the information in CoronaNet and/or user’s guide using the following citation:</p>
+<ul>
+<li>APA: Cheng, C., Barcelo, J., Hartnett, A.S., Kubinec, R., &amp; Messerschmidt, L. (2020). CoronaNet—Tracking governments COVID-19 responses. <a href="https://www.coronanet-project.org" class="uri">https://www.coronanet-project.org</a></li>
+<li>Chicago: Cheng, Cindy, Joan Barcelo, Allison Spencer Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. “CoronaNet -Tracking Governments COVID-19 Responses.” <a href="https://www.coronanet-project.org" class="uri">https://www.coronanet-project.org</a></li>
+</ul>
+<p>The dataset in combination with the paper published in “Nature Human Behavior” can be cited the following way:</p>
+<ul>
+<li>Cheng, Cindy, Joan Barceló, Allison Hartnett, Robert Kubinec, and Luca Messerschmidt. 2020. COVID-19 Government Response Event Dataset (CoronaNet v1.0). Nature Human Behaviour (2020). <a href="https://doi.org/10.1038/s41562-020-0909-7" class="uri">https://doi.org/10.1038/s41562-020-0909-7</a></li>
+</ul>
+<div class="line-block"><br />
+</div>
+</div>
+<div id="coronanet-research-group" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">CoronaNet Research Group</h2>
+<p>The project is organized and led by:</p>
+<ul>
+<li><a href="https://sites.google.com/view/joanbarcelo/home?authuser=1">Joan Barcelo</a> (NYU Abu Dhabi)</li>
+<li><a href="http://cindyyawencheng.com/">Cindy Cheng</a> (Hochschule für Politik at the TU Munich)</li>
+<li><a href="http://www.allisonhartnett.io/">Allison Spencer Hartnett</a> (Yale University)</li>
+<li><a href="http://www.robertkubinec.com/#about">Robert Kubinec</a> (NYU Abu Dhabi)</li>
+<li><a href="https://lumesserschmidt.github.io/aboutme/">Luca Messerschmidt</a> (Hochschule für Politik at the TU Munich)</li>
+</ul>
+<div class="line-block"><br />
+</div>
+</div>
+<div id="what-is-the-coronanet-research-project" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">What is the CoronaNet Research Project</h2>
+<p>The CoronaNet Research Project compiles a database on government responses to the corona virus. Our main focus is to collect as much information as we can about the various fine-grained actions governments are taking to defeat the coronavirus. This includes not only gathering information about which governments are responding to the coronavirus, but who they are targeting the policies toward (e.g. other countries), how they are doing it (e.g. travel restrictions, banning exports of masks) and when they are doing it. Together with over 500 scholars and research assistants from all over the world we present an initial release of a large hand-coded dataset of more than 15,000 separate policy announcements from governments around the world visible since December 31st 2019.</p>
+<p>The data yields detailed information on</p>
+<ul>
+<li><p>The levels of government responding to the corona virus crisis (e.g. national, regional/state, local/municipal)</p></li>
+<li><p>Specific actions taken (e.g. travel bans, investments in the public health sector, etc.)</p></li>
+<li><p>Geographical areas targeted by these measures</p></li>
+<li><p>Who or what they are targeting (e.g. foreigners, ventilators)</p></li>
+<li><p>Compliance mechanisms (e.g., mandatory or voluntary)</p></li>
+<li><p>Timing of policy responses</p></li>
+</ul>
+<div class="line-block"><br />
+</div>
+</div>
+<div id="coronanet-dataset-variable-definitions" class="section level2 unnumbered" number="">
+<h2 class="unnumbered" number="">CoronaNet Dataset Variable Definitions</h2>
+<table>
+<colgroup>
+<col width="2%" />
+<col width="23%" />
+<col width="57%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>variable_name</th>
+<th>variable_description</th>
+<th>variable_categories (first_stage_division)</th>
+<th>sub_variables_description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>record_id</td>
+<td>Unique identifier for each policy record</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>policy_id</td>
+<td>Unique identifier for one policy: Updates and corrections have the same policy_id as the original record.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>recorded_date</td>
+<td>When the record was entered into our data</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>date_updated</td>
+<td>Displays the last update date of the respective policy</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>date_ announced</td>
+<td>When the policy goes into effect</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>date_start</td>
+<td>Date that the government policy takes effect.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>date_end</td>
+<td>Date that the government policy ends or is projected to end.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>entry_type</td>
+<td>Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</td>
+<td>Update New_entry NA</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>update_type</td>
+<td>In case the policy is an update, shows whether policy has changed or was ended.</td>
+<td>End of Policy Change of Policy NA</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>event_ description</td>
+<td>A short description of the policy change</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>domestic_policy</td>
+<td>Marks whether the initiator of a policy is the same as the target of the policy (1) or not (0).</td>
+<td>1 0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>type</td>
+<td>The category and sub- category of the policy</td>
+<td>Restriction and Regulation of Government Services</td>
+<td>“Public libraries”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Public museums/galleries”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“No special population targeted”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Issuing of permits/certificates and/or processing of government documents”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other public facilities”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Regulated government working hours (e.g. work from home policies for government workers)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“All non-essential government services regulated”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“All essential government services regulated”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other workers where the distinction between essential or non-essential is not explictely made”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Parks”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other public outdoor spaces”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Regulations on government meetings (including e.g. suspension of parliament)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Regulations on publicly provided waste management services”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other population not specifed above”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Public courts”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Campsites”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Beaches”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“People of a certain age”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Unspecified public facilities”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Quarantine</td>
+<td>Self-Quarantine (i.e. quarantine at home)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Quarantine outside the home or government facility (i.e. quarantine in a hotel)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>Other Quarantine</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Government Quarantine (i.e. quarantine at a government hotel or facility)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>Quarantine only applies to people of certain ages</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Health Resources</td>
+<td>Other Health Infrastructure</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Masks”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other Health Materials”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Public Testing Facilities (e.g. drive-in testing for COVID-19)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Hospitals”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Temporary Quarantine Centers”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Temporary Medical Centers”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Hand Sanitizer”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Personal Protective Equipment”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Test Kits”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other Heath Staff”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Ventilators”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Unspecified Health Staff”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Health Research Facilities”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Doctors”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Nurses”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Health Volunteers”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Unspecified Health Infrastructure”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Unspecified Health Materials”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Medicine/Drugs”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Vaccines”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Health Insurance”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>External Border Restrictions</td>
+<td>“Other External Border Restriction”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Travel History Form (e.g. documents where traveler has recently been)”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Visa restrictions (e.g. suspend issuance of visa)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Health Screenings (e.g. temperature checks)”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Health Certificates”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Visa extensions (e.g. visa validity extended)”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Lockdown</td>
+<td>“Lockdown applies to all people”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Lockdown only applies to people of certain ages”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Lockdown only applies to people with certain health conditions”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Lockdown only applies to people with a condition not specified above”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Health Testing</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Social Distancing</td>
+<td>“All public spaces / everywhere”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Inside public or commercial building (e.g. supermarkets)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other Mask Wearing Policy”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Unspecified Mask Wearing Policy”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Wearing masks”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Closure and Regulation of Schools</td>
+<td>“Preschool or childcare facilities (generally for children ages 5 and below)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Primary Schools (generally for children ages 10 and below)”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Secondary Schools (generally for children ages 10 to 18)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Health Monitoring</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Public Awareness Measures</td>
+<td>Disseminating information related to COVID-19 to the public that is reliable and factually accurate</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Both Disseminating and Gathering information related to COVID-19</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>Gathering information related to COVID-19 from the public</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Restriction and Regulation of Businesses</td>
+<td>"Retail Businesses</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Shopping Centers”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Non-Essential Commercial Businesses”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Personal Grooming Businesses (e.g. hair salons)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other Non-Essential Businesses”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“All or unspecified non- essential businesses”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“All or unspecified essential businesses”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other Essential Businesses”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Supermarkets/grocery stores”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Pharmacies”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Construction”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Telecommunications”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Information service activities”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Mining and quarrying”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Publishing activities”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Warehousing and support activities for transportation”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Restrictions of Mass Gatherings</td>
+<td>“Cancellation of an annually recurring event”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Cancellation of a recreational or commercial event”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Postponement of an annually recurring event”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Postponement of a recreational or commercial event”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Prison population reduced (e.g. early release of prisoners)”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Declaration of Emergency</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Internal Border Restrictions</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>New Task Force, Bureau or Administrative Configuration</td>
+<td>“Other Administrative Configurations”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Existing government entity given new powers”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“New Task Force or Bureau (i.e. establishment of a temporary body)”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Curfew</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Hygiene</td>
+<td>“Other Areas Hygiene Measures Applied”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Hygiene measures for commercial areas”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Hygiene measures for public areas”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Burial procedures”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“Hygiene measures for public transport”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Anti-Disinformation Measures</td>
+<td>“No special population targeted”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>“People with certain health conditions”</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>“Other population not specifed above”</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Other Policy Not Listed Above</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>index_high_est</td>
+<td>The high (95% posterior density) estimate of the country policy activity score (0-100).</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>index_med_est</td>
+<td>The median (most likely) estimate of the country policy activity score (0- 100).</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>index_low_est</td>
+<td>The low (95% posterior density) estimate of the country policy activity score (0-100)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>index_country_ rank</td>
+<td>The relative rank by each day for each country on the policy activity score.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>correct_type</td>
+<td>Indicates whether an entry was corrected by the coder.</td>
+<td>original correction</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>country</td>
+<td>The country initiating the policy</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>init_country_ level</td>
+<td>Whether the policy came from the national level or a sub-national unit</td>
+<td>National Provincial Municipal Other (e.g., county)</td>
+<td>Documents the province from which a policy is initiated, if applicable.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>City from which a policy is initiated, if applicable.</td>
+</tr>
+<tr class="even">
+<td>source_corr_ type</td>
+<td>Shows, in case of an entry correction, whether a new source was added</td>
+<td>Use the old source Add a new source</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>target_geog_ level</td>
+<td>Whether the target of the policy is a country as a whole or a sub-national unit of that country</td>
+<td>One or more countries, but not all countries All countries A geographical or administrative unit within a country One or more countries and one or more regional groupings One or more regional groupings An international</td>
+<td>Which foreign country a policy is targeted at (i.e. travel policies)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>This variable documents the region or regions that is/are the targets of a particular government policy.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>Targeted province of a policy, if applicable.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Targeted city of a policy, if applicable.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>organization (e.g. World Health Organization)</td>
+<td>This variable documents the subnational region or regions that is/are the target of a particular government policy.</td>
+</tr>
+<tr class="even">
+<td>target_who_ what</td>
+<td>Who the policy is targeted at</td>
+<td>All Travelers (Citizen Travelers + Foreign Travelers) All (Travelers + Residents) All Residents (Citizen Residents +Foreign Residents) Health-Related Supplies Foreign Travelers Citizen Travelers Health Staff All Foreign Nationals (Foreign Residents + Foreign Travelers) All Citizens (Citizen Residents + Citizen Travelers) Citizen Residents Foreign Residents (Foreign Nationals Residing in the Country) Health-Infrastructure Other</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>target_direction</td>
+<td>Whether a travel-related policy affects people coming in (Inbound) or leaving (Outbound)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>travel_ mechanism</td>
+<td>If a travel policy, what kind of transportation it affects</td>
+<td>All kinds of transport Flights Trains Land Border Flights Seaports Cruises Ferries Buses Not Applicable Other</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>compliance</td>
+<td>Whether the policy is voluntary or mandatory</td>
+<td>Mandatory With Legal Penalties Mandatory with Fines Mandatory (Unspecified/Implied) Mandatory with Exceptions Recommended/Voluntary but no penalties</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>enforcer</td>
+<td>What unit in the country is responsible for enforcement</td>
+<td>National government Ministry/Department of Health Military Provincial/state government Municipal government Police</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>link</td>
+<td>A link to at least one source for the policy</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ISO_A3</td>
+<td>3-digit ISO country codes</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ISO_A2</td>
+<td>2-digit ISO country codes</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

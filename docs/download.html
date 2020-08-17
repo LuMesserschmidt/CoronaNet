@@ -408,6 +408,9 @@ div.tocify {
       <a href="data/reports/finished/20200507_womensrights.html">Research Note: Women´s Rights</a>
     </li>
     <li>
+      <a href="data/reports/finished/20200804_Bangladesh.html">Country Report: Bangladesh</a>
+    </li>
+    <li>
       <a href="data/reports/finished/20200421_Chad.html">Country Report: Chad</a>
     </li>
     <li>
@@ -423,7 +426,10 @@ div.tocify {
       <a href="data/reports/finished/20200421_Eswatini.html">Country Report: Eswatini</a>
     </li>
     <li>
-      <a href="data/reports/finished/20200428_Gambia.html">Country Report: Gambia</a>
+      <a href="data/reports/finished/20200428_Gambia.html">Country Report: Gambia (April)</a>
+    </li>
+    <li>
+      <a href="data/reports/finished/20200718_Gambia.html">Country Report: Gambia (July)</a>
     </li>
     <li>
       <a href="data/reports/finished/20200602_Grenada.html">Country Report: Grenada</a>
@@ -532,83 +538,6 @@ text-align: justify}
 <h2 class="unnumbered" number="">CoronaNet Learning Platform</h2>
 <p>We are an open data science initiative. This means that we want to invite everyone to work with our data. For people who are not familiar with statistical programs, we have designed a Learning Platform that shows you how to work with our data via RStudio.</p>
 <p>Please follow this link to enter the <a href="https://lumesserschmidt.github.io/stats_CoronaNet/index.html">CoronaNet Learning Platform</a></p>
-<hr />
-<div id="coronanet_release.csv-dictionary" class="section level3 unnumbered" number="">
-<h3 class="unnumbered" number=""><code>coronanet_release.csv</code> Dictionary</h3>
-<ol style="list-style-type: decimal">
-<li><code>record_id</code> Unique identifier for each unique policy record</li>
-<li><code>policy_id</code> Identifier linking new policies with subsequent updates to policies</li>
-<li><code>recorded_date</code> When the record was entered into our data</li>
-<li><code>date_updated</code> When we can confirm the country - policy type was last checked/updated (we can only confirm policy type for a given country is up to date as of this date)</li>
-<li><code>date_announced</code> When the policy is announced</li>
-<li><code>date_start</code> When the policy goes into effect</li>
-<li><code>date_end</code> When the policy ends (if it has an explicit end date)</li>
-<li><code>entry_type</code> Whether the record is new, meaning no restriction had been in place before, or an update (restriction was in place but changed). Corrections are corrections to previous entries.</li>
-<li><code>event_description</code> A short description of the policy change</li>
-<li><code>domestic_policy</code> Indicates where policy targets an area within the initiating country (i.e. is domestic in nature)</li>
-<li><code>type</code> The category of the policy</li>
-<li><code>type_sub_cat</code> The sub-category of the policy (if one exists)</li>
-<li><code>type_text</code> Any additional information about the policy type (such as the number of ventilators/days of quarantine/etc.)</li>
-<li><code>index_high_est</code> The high (95% posterior density) estimate of the country policy activity score (0-100)</li>
-<li><code>index_med_est</code> The median (most likely) estimate of the country policy activity score (0-100)</li>
-<li><code>index_low_est</code> The low (95% posterior density) estimate of the country policy activity score (0-100)</li>
-<li><code>index_country_rank</code> The relative rank by each day for each country on the policy activity score</li>
-<li><code>country</code> The country initiating the policy</li>
-<li><code>init_country_level</code> Whether the policy came from the national level or a sub-national unit</li>
-<li><code>province</code> Name of sub-national unit</li>
-<li><code>target_country</code> Which foreign country a policy is targeted at (i.e. travel policies)</li>
-<li><code>target_geog_level</code> Whether the target of the policy is a country as a whole or a sub-national unit of that country</li>
-<li><code>target_region</code> The name of a regional grouping (like ASEAN) that is a target of the policy (if any)</li>
-<li><code>target_province</code> The name of a province targeted by the policy (if any)</li>
-<li><code>target_city</code> The name of a city targeted by the policy (if any)</li>
-<li><code>target_other</code> Any geographical entity that does not fit into the targeted categories mentioned above</li>
-<li><code>target_who_what</code> Who the policy is targeted at</li>
-<li><code>target_direction</code> Whether a travel-related policy affects people coming in (Inbound) or leaving (Outbound)</li>
-<li><code>travel_mechanism</code> If a travel policy, what kind of transportation it affects</li>
-<li><code>compliance</code> Whether the policy is voluntary or mandatory</li>
-<li><code>enforcer</code> What unit in the country is responsible for enforcement</li>
-<li><code>link</code> A link to at least one source for the policy</li>
-<li><code>ISO_A3</code> 3-digit ISO country codes</li>
-<li><code>ISO_A2</code> 2-digit ISO country codes</li>
-</ol>
-<hr />
-</div>
-<div id="coronanet_release_allvars.csv-dictionary" class="section level3 unnumbered" number="">
-<h3 class="unnumbered" number=""><code>coronanet_release_allvars.csv</code> Dictionary</h3>
-<ol style="list-style-type: decimal">
-<li><p>All of the fields listed above, plus</p></li>
-<li><p><code>tests_daily_or_total</code> Whether a country reports the daily count of tests a cumulative total</p></li>
-<li><p><code>tests_raw</code> The number of reported tests collected from host country websites or media reports</p></li>
-<li><p><code>deaths</code> The number of COVID-19 deaths, aggregated to the country-day level (JHU CSSE data)</p></li>
-<li><p><code>confirmed_cases</code> The number of confirmed cases of COVID-19, aggregated to the country-day level (JHU CSSE data)</p></li>
-<li><p><code>recovered</code> The number of recoveries from COVID-19, aggregated to the country-day level (JHU CSSE data)</p></li>
-<li><p><code>ccode</code> The Correlates of War country code</p></li>
-<li><p><code>ifs</code> IMF IFS country code</p></li>
-<li><p><code>Rank_FP</code> (most recent year available from Niehaus dataset) Reporters without Borders Press Freedom Annual Ranking</p></li>
-<li><p><code>Score_FP</code> (most recent year available from Niehaus dataset) Reporters with Borders Press Freedom Score</p></li>
-<li><p><code>state_IDC</code> (most recent year available from Niehaus dataset) State/Provincial Governments Locally Elected</p></li>
-<li><p><code>muni_IDC</code> (most recent year available from Niehaus dataset) Municipal Governments Locally Elected</p></li>
-<li><p><code>dispersive_IDC</code> (most recent year available from Niehaus dataset) Dispersive Powersharing</p></li>
-<li><p><code>constraining_IDC</code> (most recent year available from Niehaus dataset) Constraining Powersharing</p></li>
-<li><p><code>inclusive_IDC</code> (most recent year available from Niehaus dataset) Inclusive powersharing</p></li>
-<li><p><code>sfi_SFI</code> (most recent year available from Niehaus dataset) State fragility index</p></li>
-<li><p><code>ti_cpi_TI</code> (most recent year available from Niehaus dataset) Corruption perceptions index</p></li>
-<li><p><code>pop_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank population</p></li>
-<li><p><code>gdp_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP (total)</p></li>
-<li><p><code>gdppc_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP per capita</p></li>
-<li><p><code>growth_WDI_PW</code> (most recent year available from Niehaus dataset) World Bank GDP growth percent</p></li>
-<li><p><code>lnpop_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank population</p></li>
-<li><p><code>lngdp_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank GDP</p></li>
-<li><p><code>lngdppc_WDI_PW</code> (most recent year available from Niehaus dataset) Log of World Bank GDP per capita</p></li>
-<li><p><code>disap_FA</code> (most recent year available from Niehaus dataset) 3 category, ordered variable for disappearances index</p></li>
-<li><p><code>polpris_FA</code> (most recent year available from Niehaus dataset) 3 category, ordered variable for political imprisonment index</p></li>
-<li><p><code>latentmean_FA</code> (most recent year available from Niehaus dataset) the posterior mean of the latent variable index for human rights protection)</p></li>
-<li><p><code>transparencyindex_HR</code> (most recent year available from Niehaus dataset) Transparency Index</p></li>
-<li><p><code>EmigrantStock_EMS</code> (most recent year available from Niehaus dataset) Total emmigrant stock from</p></li>
-<li><p><code>v2x_polyarchy_VDEM</code> (most recent year available from Niehaus dataset) Electoral democracy index</p></li>
-<li><p><code>news_WB</code> (most recent year available from Niehaus dataset) Daily newspapers (per 1,000 people)</p></li>
-</ol>
-</div>
 <div id="license" class="section level3 unnumbered" number="">
 <h3 class="unnumbered" number="">License</h3>
 <p>CC-By Attribution 4.0 International</p>
