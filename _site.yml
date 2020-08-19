@@ -28,23 +28,9 @@ navbar:
         href: validation_website.html
   - text: Visualizations
     href: visuals.html
-  - text: Reports
+  - text: Country Reports
     href: ra.html
     menu:
-      - text: "Research Note: Migration in Ghana"
-        href: data/reports/finished/20200629_Ghana.html 
-      - text: "Research Note: MENA Region"
-        href: data/reports/finished/20200620_MENA.html 
-      - text: "Research Note: USA - Midwest"
-        href: data/reports/finished/20200702_Midwest.html  
-      - text: "Research Note: USA - Sunbelt"
-        href: data/reports/finished/20200714_Sunbelt.html  
-      - text: "Research Note: USA - Region 7"
-        href: data/reports/finished/20200702_Region7.html    
-      - text: "Research Note: USA - 50 States' Stay At Home Orders"
-        href: data/reports/finished/20200610_StayatHome.html    
-      - text: "Research Note: Women´s Rights"
-        href: data/reports/finished/20200507_womensrights.html 
       - text: "Country Report: Bangladesh"
         href: data/reports/finished/20200804_Bangladesh.html
       - text: "Country Report: Chad"
@@ -79,6 +65,8 @@ navbar:
         href: data/reports/finished/20200620_Nicaragua.html
       - text: "Country Report: Papua New Guinea"
         href: data/reports/finished/20200620_Papua.html
+      - text: "Country Report: Russia"
+        href: data/reports/finished/20200815_Russia.html
       - text: "Country Report: Rwanda"
         href: data/reports/finished/20200612_Rwanda.html
       - text: "Country Report: Saint Kitts and Nevis"
@@ -91,6 +79,25 @@ navbar:
         href: data/reports/finished/20200507_Syria.html
       - text: "Country Report: Turkey"
         href: data/reports/finished/20200521_Turkey.html
+  - text: Research Notes
+    href: ra.html
+    menu:
+      - text: "Research Note: Migration in Ghana"
+        href: data/reports/finished/20200629_Ghana.html 
+      - text: "Research Note: MENA Region"
+        href: data/reports/finished/20200620_MENA.html 
+      - text: "Research Note: USA - Misinformation"
+        href: data/reports/finished/20200813_US_Misinformation.html  
+      - text: "Research Note: USA - Midwest"
+        href: data/reports/finished/20200702_Midwest.html  
+      - text: "Research Note: USA - Sunbelt"
+        href: data/reports/finished/20200714_Sunbelt.html  
+      - text: "Research Note: USA - Region 7"
+        href: data/reports/finished/20200702_Region7.html    
+      - text: "Research Note: USA - 50 States' Stay At Home Orders"
+        href: data/reports/finished/20200610_StayatHome.html    
+      - text: "Research Note: Women´s Rights"
+        href: data/reports/finished/20200507_womensrights.html 
   - text: Publications
     href: working_papers.html
   - text: In the Media
