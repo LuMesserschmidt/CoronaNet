@@ -27,7 +27,23 @@ The project group is organized and led by:
 
 
 ***
+### Partner Universities {-}
+
+<img width="20%" src="img/TUM.jpg"/>
+<img width="20%" src="img/SOM.png"/>
+<img width="20%" src="img/TUM.png"/>
+<img width="20%" src="img/NYU.png"/>
+
+
+
+***
 ### Partner Institutions {-}
+
+Jataware
+
+<div style="width:150px; height:112px">
+[![Starsift](img/jataware.png)](https://www.jataware.com/)
+</div>
 
 Leibniz Research Alliance „Crises in a globalised World”
 
@@ -35,4 +51,16 @@ Leibniz Research Alliance „Crises in a globalised World”
 [![Starsift](img/LFV.png)](https://www.leibniz-krisen.de/en.html)
 </div>
 
-![](img/header.png)
+Overton
+
+<div style="width:150px; height:112px">
+[![Starsift](img/Overton_logo.png)](https://www.overton.io)
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+![](img/header_wide.png)

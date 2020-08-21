@@ -193,14 +193,14 @@ Chief Data Scientist for CoronaNet:
 We are thankful for the amazing network of 500 scholars from social, political, public health, and medical sciences, coming from all continents and speaking more than 30 different languages.
 
 
-```{r echo= FALSE, results='asis', message=FALSE}
+```{r, echo= FALSE,echo= FALSE,  message=FALSE, out.width="100%"}
 library(readr)
 library(tidyverse)
 contribution <- read_csv("~/Documents/github/CoronaNet/data/people/contribution.csv")
 library(knitr)
 library(readxl)
-contribution <- dplyr::rename(contribution, Country = End) %>%
-  dplyr::select(-c(2,4:7,11))
+contribution <- dplyr::rename(contribution, Vita=End, Country = country) %>%
+  dplyr::select(-c(2:8))
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
