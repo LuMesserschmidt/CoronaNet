@@ -200,7 +200,7 @@ contribution <- read_csv("~/Documents/github/CoronaNet/data/people/contribution.
 library(knitr)
 library(readxl)
 contribution <- dplyr::rename(contribution, Vita=End, Country = country) %>%
-  dplyr::select(-c(2:8))
+  dplyr::select(-c(2:8))%>% dplyr::select(-5)
 DT::datatable(contribution,
           caption = 'Table of contributing researchers and their responsible countries',
           class = 'cell-border stripe', 
