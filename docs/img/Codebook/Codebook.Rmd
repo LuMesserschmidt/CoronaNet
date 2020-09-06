@@ -2,7 +2,6 @@
 title: "CoronaNet Research Project Manual"
 output: 
   html_document:
-    css: style.css
     toc: TRUE
     toc_float: TRUE
 ---
