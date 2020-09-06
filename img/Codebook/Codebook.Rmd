@@ -732,7 +732,7 @@ As you will see, policy types are coarser and the country coverage is more limit
     3. Policy ENDS at the same time in our dataset as in the reliable source
     4. Policy CONTENT in our dataset adequately captures the policy information in our reliable source (e.g., target country/region, enforcement).
 8. Once you are done with one policy-country, add “Yes” in the column “Completed” of the spreadsheet. If the country is missing from your reliable source, then add “NA” in the column “Completed.”
-9.  Once you are done with an entire policy-region, contact the responsible Regional Manager and report all the incompleteness that you have detected. If you have not detected any incompleteness, please let the Regional Manager know that you have successfully checked the completeness for a policy in the region. You can identify the responsible regional manager [here](https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0). \
+
 
 |
 |
@@ -1161,6 +1161,16 @@ Moreover, there is a [Slack channel](https://join.slack.com/share/zt-f2gjfcd2-Yf
 *   **Any questions about your region, sources for entering your policy or if you need a break, please contact regional managers**
 
 
+<center>
+
+![](Primary Contacts.png)
+![](Weekly RA Monitoring Schedule.png)
+![](House Prefects.png)
+![](Regional Country Managers.png)
+![](Regional Country Managers2.png)
+</center>
+
+
 ### PI Responsibilities{-}
 
 ** **
@@ -1175,9 +1185,10 @@ Cindy takes primary charge of making changes to the main Qualtrics survey in con
 
 **Data Cleaning and Validation**
 
-[...] Cindy also provides support for the cleaning process and makes changes to the validation survey to mirror the changes made to the Qualtrics survey
-
 Joan Barcelo and Allison Hartnett
+
+Cindy also provides support for the cleaning process and makes changes to the validation survey to mirror the changes made to the Qualtrics survey
+
 
 **R Shiny App**
 
@@ -1283,17 +1294,19 @@ Current prefects are:
 
 1. Hufflepuff:
     1. Naela Elmore
-    2. Jule Scholen
+    2. Nadja Katharina Meichle
 2. Ravenclaw
     3. Julia Weissman
     4. Fadhilah F. Primandari
-    5. Cheng-Hao Shen
+    5. Dina Shallal
 3. Slytherin
     6. Tasia Wagner
     7. Konstanze Schonfeld
+    8. Elmira Ospanova
 4. Gryffindor
-    8. Ines Bohret
-    9. Kayla Schwoerer
+    9. Ines Bohret
+    10. Kayla Schwoerer
+    11. Joey Wyer
 
 Prefects are the leaders of each of these houses. They are responsible for the social onboarding to the project and the general wellbeing of their house members. They are an additional resource for RA’s to direct their questions towards and help RA’s find answers to their questions and/or help RA’s finding the right person for them to direct their questions to. As well as this, they are generally responsible for maintaining the team spirit of their houses and ensuring RA’s have access to the resources they need.
 
@@ -1316,6 +1329,52 @@ If an RA is marked in Red in the “house assigned” column, then it means they
 
 
   -   Generally ensuring the team spirit of their house is maintained
+  
+#### Hogwarts House Cup
+**RULES**
+
+  -   House cup will begin after the weekly meeting and will end at 15:00 CEST the following week (wed-wed), upon which points will be reset
+  -   Challenges will occur in the #random channel
+  -   House cup points will be allocated in the #housecup channel
+ 
+**BASE POINTS**
+
+**COUNTRY & REGIONAL MANAGERS**
+
+5pts   	Up-to-dateness form
+5pts   	Completeness form
+3pts   	Meeting attendance
+Up to 5 points are up to their discretion
+
+**RA-CHAT**
+
+2pts   	Given for helpfulness
+RA in charge of the channel for that day + PIs to give out points, to ensure fairness
+
+**VALIDATION TEAM**
+
+At their discretion
+
+**HOUSE CUP CHALLENGE**
+
+2pts   	given per submission by prefects
+
+  -   **MONDAY** - Ines/Kayla
+
+  -   **TUESDAY** - Naela
+
+  -   **WEDNESDAY** – Tasia
+
+  -   **THURSDAY** - Julia Wießmann
+
+  -   **FRIDAY** -  Fadhilah F. Primandari
+
+  -   **SATURDAY** - Dina
+
+  -   **SUNDAY** - Nadja
+
+  -   **PIs** - PIs/Saif/Jack/Henning are able to give points to their discretion
+
 
 
 ### How do I become a Hogwarts Prefect?{-}
@@ -1426,8 +1485,9 @@ Once the application has been scored by at least two of you, you can put the mai
 
 |       Dear XYZ, 
 |   
-|       We appreciate your interest to join the CoronaNet Research Group. In these exceptional times it is important to gather data for real-time 
-|       research. In order to apply and to become a member of the team, please fill out the following form: [https://form.jotform.com/201172569499062](https://form.jotform.com/201172569499062)
+|       We appreciate your interest to join the CoronaNet Research Group. In these exceptional times it is important to gather 
+|       data for real-time research. In order to apply and to become a member of the team, please fill out the following form:
+|      [https://form.jotform.com/201172569499062](https://form.jotform.com/201172569499062)
 |   
 |       More information on the research assistant position can be found here: [https://coronanet-project.org/ra_call.html](https://coronanet-project.org/ra_call.html)
 |   
@@ -1459,11 +1519,11 @@ We will then come back and look at the application scores and make a final decis
 |
 |       We are happy to announce that you have been chosen to become part of the CoronaNet Research Group. 
 |
-|
-|       Your will be involved in the data collection process. The work mainly involves sifting through news reports to identify different policies that     
-|       government have enacted to combat COVID-19. You will each be assigned one unique country if you choose to participate.  If chosen, you will 
-|       be responsible for (1) researching what government policies your country has implemented starting from the beginning of the epidemic and (2) 
-|       keeping up to date with new government policy actions on a daily basis.
+|       You will be involved in the data collection process. The work mainly involves sifting through news reports to identify 
+|       different policies that the government has enacted to combat COVID-19. You will each be assigned one unique country if 
+|       you choose to participate.  If chosen, you will be responsible for (1) researching what government policies your country has 
+|       implemented starting from the beginning of the epidemic and (2) keeping up to date with new government policy actions 
+|       on a daily basis.
 |
 |       When you become experienced, you will be asked to do validation work, visualisations or write country reports.
 |
@@ -1480,12 +1540,13 @@ We will then come back and look at the application scores and make a final decis
 *   Through the following **survey link**, you will be asked to do an** interactive training after **you watched the videos.. [https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB](https://tummgmt.eu.qualtrics.com/jfe/form/SV_0354jWNWJ4H9tKB)
 *   If you have questions on how to fill out the survey, please read the [codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing) and feel free to contact [admin@coronanet-project.org](mailto:admin@coronanet-project.org)
 
-*   After you passed the training, you will be allocated a country, receive the link to the main survey and will be added to Slack.
+*   After you have passed the training, you will be allocated a country, receive the link to the main survey and will be added to Slack within 5 working days.
+
 |       
 |       
 
-|       We hope that our project will increase the public's awareness and understanding of what policies governments around the world are taking in 
-|       response to the virus. Thank you for joining this journey!
+|       We hope that our project will increase the public's awareness and understanding of what policies governments around the 
+|       world are taking in response to the virus. Thank you for joining this journey!
 |       
 |       
 |       All the best, 
@@ -1501,8 +1562,9 @@ We will then come back and look at the application scores and make a final decis
 
 |       Dear XYZ, 
 |       
-|       We appreciate your interest and application at CoronaNet. We are sorry to tell you that we have decided not to invite you to become a research 
-|       assistant for our team. This does not mean that you won´t be able to use the data (which you can download here: [www.coronanet-project.org](http://www.coronanet-project.org)) 
+|       We appreciate your interest and application at CoronaNet. We are sorry to tell you that we have decided not 
+|       to invite you to become a research assistant for our team. This does not mean that you won't be able to use the data 
+|       (which you can download here:[www.coronanet-project.org](http://www.coronanet-project.org)) 
 |       or tell others about it (Twitter: coronanet_org). 
 |       
 |       We want you to know that your attempt to help us in this project is overwhelming and you are a real hero of this crisis. 
