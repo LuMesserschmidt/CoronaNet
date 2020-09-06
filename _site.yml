@@ -31,8 +31,10 @@ navbar:
   - text: Country Reports
     href: ra.html
     menu:
-      - text: "Country Report: Bangladesh"
+      - text: "Country Report: Bangladesh August"
         href: data/reports/finished/20200804_Bangladesh.html
+      - text: "Country Report: Bangladesh September"
+        href: data/reports/finished/20200822_Bangladesh.html
       - text: "Country Report: Chad"
         href: data/reports/finished/20200421_Chad.html
       - text: "Country Report: China"
