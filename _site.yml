@@ -55,6 +55,8 @@ navbar:
         href: data/reports/finished/20200612_Honduras.html
       - text: "Country Report: Indonesia"
         href: data/reports/finished/20200416_Indonesia.html
+      - text: "Country Report: Israel"
+        href: data/reports/finished/20200910_Israel.html
       - text: "Country Report: Italy"
         href: data/reports/finished/20200422_Italy.html
       - text: "Country Report: Liberia"
