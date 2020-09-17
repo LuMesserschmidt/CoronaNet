@@ -229,7 +229,7 @@ Row {.tabset}
 * <details>
   <summary>Assess the policies in your country</summary>
   <small>
-   + Check out the guidelines in the Country Overview Template
+   + Check out the guidelines in the [Country Overview Template](https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#)
    + Check out the resources left by the previous RAs in your relevant regional/country dashboard
   </small>
 </details>
@@ -238,7 +238,6 @@ Row {.tabset}
   <summary>Make a plan for coding</summary>
   <small>
    + Use the [Timeline Template](https://docs.google.com/spreadsheets/d/1wV_4QOjK0QFddz6j7jMczyXA9I3uzSU1kWAlIX6Zslg/edit#gid=14819459)
-   + Check out the resources left by the previous RAs in your relevant regional/country dashboard
   </small>
 </details>
 
