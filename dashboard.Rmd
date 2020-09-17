@@ -61,7 +61,7 @@ output:
               background-color: #F79488;
             }
             .nav-tabs > li.active:nth-child(4) > a {
-              background-color: #BAF300;
+              background-color: #3383FF;
             }
             
             .nav-tabs > li.focus:nth-child(1) > a {
@@ -74,7 +74,7 @@ output:
               background-color: #F79488;
             }
             .nav-tabs > li.focus:nth-child(4) > a {
-              background-color: #BAF300;
+              background-color: #3383FF;
             }
            
           .chart-wrapper,
@@ -112,7 +112,7 @@ output:
                 background-color: #e9533d;
               }
             #communication{
-                background-color: #BAF300;
+                background-color: #3383FF;
               }
             
             #coding-resources{
@@ -211,11 +211,11 @@ Completeness and Up-to-Dateness Sheet
 
 
 * <p id = "p1">
-<a href=https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#> Country Overview Template </a>
+<a href="https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#"> Country Overview Template </a>
 </p>
 
 * <p id = "p1">
-<a href=https://docs.google.com/spreadsheets/d/1wV_4QOjK0QFddz6j7jMczyXA9I3uzSU1kWAlIX6Zslg/edit#gid=14819459> Timeline Template </a>
+<a href="https://docs.google.com/spreadsheets/d/1wV_4QOjK0QFddz6j7jMczyXA9I3uzSU1kWAlIX6Zslg/edit#gid=14819459"> Timeline Template </a>
 </p>
 
 Row {.tabset}
@@ -224,36 +224,59 @@ Row {.tabset}
 
 ### Coding Resources
 
-#### General Resources
-* <p id = "p1">
-<a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Codebook</a>
-</p>
 
+#### How to ...
+* <details>
+  <summary>Assess the policies in your country</summary>
+  <small>
+   + Check out the guidelines in the Country Overview Template
+   + Check out the resources left by the previous RAs in your relevant regional/country dashboard
+  </small>
+</details>
+
+* <details>
+  <summary>Make a plan for coding</summary>
+  <small>
+   + Use the [Timeline Template](https://docs.google.com/spreadsheets/d/1wV_4QOjK0QFddz6j7jMczyXA9I3uzSU1kWAlIX6Zslg/edit#gid=14819459)
+   + Check out the resources left by the previous RAs in your relevant regional/country dashboard
+  </small>
+</details>
+
+* <details>
+  <summary>Get started with coding</summary> <small>
+  + <p id = "p1"> <a href= "https://nyu.zoom.us/rec/play/9NyJ1dYJ88tK3fLwYVH3FNXLkbWdbI9P2guAkYFYWGalDMHYYhVnNcFiCg7ZnuKAyGoOqGYPc_OJp6DM.St4xWFlsIjQL7arN?continueMode=true">General Training Video</a>
+</p>
+  +  <p id = "p1">
+<a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">Video on how to do updates <small>(Password: 7C&*60@= )</small></a>
+  + [Slides on how to do corrections and updates](https://syncandshare.lrz.de/getlink/fiBsrzSRB85njWLT94zwry5H/Training_draft_16.09.pptx)
+ </small>
+</details>
+* <details>
+  <summary>Clean policies in your country</summary> 
+  + Fill out the [Checklist](https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit?usp=sharing)
+</p> 
+</details>
+
+* <details>
+  <summary>Get help with coding! </summary>
+  <small>
+   Don't hesitate to ask questions! If you have them you can...
+   1. Refer to the [Codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing) for variable definitions
+   2. Check out the FAQ in the [Shiny App](https://kubinec.shinyapps.io/corona_validate/)! It is updated weekly with the most common questions posed on #ra-chat
+   3. Don't see your question there? Post it in the [#ra-chat](https://corona-govt-response.slack.com/archives/C010V8MKHK2) channel.
+   4.  Reach out to your regional mangager, hogwarts channel or fellow RAs for advice
+  </small>
+</details>
+<br/>
+
+
+
+
+#### General Resources
+ 
 * <p id = "p1">
 <a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Manual</a>
 </p> 
-
-#### How to ...
-* Get started with coding
-    + <p id = "p1">
-    <a href= "https://nyu.zoom.us/rec/play/9NyJ1dYJ88tK3fLwYVH3FNXLkbWdbI9P2guAkYFYWGalDMHYYhVnNcFiCg7ZnuKAyGoOqGYPc_OJp6DM.St4xWFlsIjQL7arN?continueMode=true">Training Video</a>
-</p> 
-
-* Code specific policies, or update and correct them
-  + Slides (Natalia and Sarah)
-  + <p id = "p1">
-<a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">Vidoe <small>(Password: 7C&*60@= )</small></a>
-</p> 
-
-* <details>
-  <summary>Get help with coding </summary>
-  <small>
-   Don't hesitate to ask questions! If you have them you can...
-   1. Check out the FAQ in the [Shiny App](https://kubinec.shinyapps.io/corona_validate/)! It is updated weekly with the most common questions posed on #ra-chat
-   2. Don't see your question there? Post it in the [#ra-chat](https://corona-govt-response.slack.com/archives/C010V8MKHK2) channel.
-   3.  Reach out to your regional mangager, hogwarts channel or fellow RAs for advice
-  </small>
-</details>
 
 
 
@@ -328,6 +351,9 @@ Text and Screenshots</a>
 </p> 
 * <a href= "https://twitter.com/CoronaNet_org"> CoronaNet Twitter Feed </a>
 </p>
+*  <a href= "https://www.linkedin.com/groups/8982369/"> Connect to CoronaNet on LinkedIn </a>
+</p>
+
 
 
 Northern Africa {data-navmenu="Regional Dashboards"}
