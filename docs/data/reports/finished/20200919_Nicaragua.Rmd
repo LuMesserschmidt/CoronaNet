@@ -1,0 +1,75 @@
+---
+title: "Nicaragua Country Report"
+description: Return to [CoronaNet](https://coronanet-project.org/)
+author:
+  - name: Dr Ana B. Perianes
+    url: https://www.linkedin.com/in/anabelenperianes/
+    affiliation: University Institute General Gutiérrez Mellado-UNED (Madrid)
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<style>
+body {
+text-align: justify}
+</style>
+
+
+The Nicaraguan Government is continuously ignoring and avoiding responding to the severity of the COVID-19 situation.^[Lister, Tim. July 22nd, 2020. CNN. 
+https://edition.cnn.com/2020/07/22/americas/nicaragua-covid-19-ortega-intl/index.html
+] In this context, national and international health experts, civil society and international organizations as well as the media have warned that the Nicaraguan Government is masking the extent of the pandemic. Furthermore, they have reiterated that Nicaragua is not following the COVID-19 measures recommended by the World Health Organization (WHO), the Pan American Health Organization (PAHO) and the Nicaraguan medical community, especially policies regarding physical distancing.^[United National Human Rights, Office of the High Commissioner. July 2nd, 2020.  https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=26027&LangID=E]
+
+For example, national quarantine policies and lockdowns have not been imposed since the beginning of the COVID-19 outbreak in Nicaragua. In fact, Nicaragua is the only central American country that is yet to declare a state of emergency in response to the outbreak. Moreover, public events have not been suspended and schools remain open.^[The Lancet. April 6th, 2020. https://www.thelancet.com/pdfs/journals/langlo/PIIS2214-109X(20)30131-5.pdf] ^[The World News. August 24th, 2020. https://theworldnews.net/ni-news/gobierno-continua-actividades-masivas-pese-a-advertencias-de-un-rebrote-de-covid-19]
+
+On July 21, the PAHO stated that the Nicaraguan Government lacked official information and transparency about COVID-19 infections and deaths.^[Zuniga, Alfredo. July 21st, 2020. The Associated Press. 
+https://hosted.ap.org/TPGIMAGES/article/d93aec2ce0a58932ad7020fce0d5bbe9/paho-waits-nicaragua-approve-visit-virus-experts
+] The Nicaraguan Ministry of Health (MINSA) only publishes official data regarding COVID-19 once per week and this information does not provide detailed statistics on the age, sex and location of those infected. Moreover, the PAHO is currently awaiting authorization from the Nicaraguan Government to send a team of experts to the country to evaluate the COVID-19 outbreak. On August 25, the MINSA confirmed Nicaragua’s 137rd COVID-19 death and 4,494 infection cases.^[The Nicaraguan Ministry of Health. September 8th, 2020. 
+http://www.minsa.gob.ni/index.php/110-noticias-2020/5542-25agosto
+] ^[The Johns Hopkins University & Medicine, Coronavirus Research Center. 2020. 
+https://coronavirus.jhu.edu/region/nicaragua
+]    
+
+In the absence of up-to-date and transparent information from Nicaraguan public authorities, unofficial data sources like the “Citizen Observatory COVID-19 Nicaragua” are key tools to consider. According to this organization, by August 19, there were a total number of 2,652 deaths and 9,822 suspected cases of infection.^[Observatorio Ciudadano COVID-19 Nicaragua. 2020. https://observatorioni.org/13-al-19-de-agosto-2020/]  Of these numbers, health workers accounted for 105 deaths and 786 suspected cases of infection.^[Observatorio Ciudadano COVID-19 Nicaragua. 2020. https://observatorioni.org/13-al-19-de-agosto-2020/] 
+
+Allegations have arisen of health workers being fired for expressing concerns about the Nicaraguan Government´s pandemic management, including about lack of protective equipment.^[Human Rights Watch. June 23rd, 2020. 
+https://www.hrw.org/news/2020/06/23/nicaragua-doctors-fired-covid-19-comments
+] But it should be stressed that on August 7, the Nicaraguan National Assembly (controlled by the ruling political party, Sandinista National Liberation Front) rewarded health care workers for being at the frontline of the COVID-19 fight. This event counted on the support of health workers affiliated to the Government, where deputies of the opposition left the room.^[Hernandez, Donaldo and Castillo Vado, Houston. August 7th, 2020. Voa Noticias. 
+https://www.voanoticias.com/centroamerica/nicaragua-premia-trabajadores-de-la-salud-afines-al-gobierno
+] However, independent health workers labeled this event as a propaganda maneuver.^[López, Lidi and Navas, Lucía. August 7th, 2020. La Prensa. 
+https://www.laprensa.com.ni/2020/08/07/nacionales/2705578-regimen-orteguista-a-gremio-medico-premia-a-algunos-pero-reprime-y-despide-a-otros
+] 
+
+The international community also has concerns about the human rights situation in the Nicaragua during this pandemic. On July 2, the United Nations High Commissioner for Human Rights, Michelle Bachelet, delivered a statement to the UN Human Rights Council warning about current abuses by the Ortega Government.^[United National Human Rights, Office of the High Commissioner. July 2nd, 2020. 
+https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=26027&LangID=En
+] In addition, the Human Rights Council issued a resolution on  June 19,^[United Nations. April 17th, 2020. 
+https://undocs.org/A/HRC/43/L.35
+] which provided a specific mandate to bolster its monitoring and continue reporting abuses. This resolution was supported by more than 40 governments from around the world. 
+
+By August 7, around 85 political prisoners continued to be imprisoned in Nicaragua while a large number of regular prisoners were released due to the pandemic.^[Romero, Keyling T. August 7th, 2020. El Confidencial.
+https://confidencial.com.ni/preso-politico-el-virus-ya-esta-en-la-carcel/
+] A report released by Amnesty International pointed out that political prisoners are being treated differently than regular prisoners, suffering a severe lack of health and hygienic care due to their ideological views.^[Valencia, Astrid and Salomón, Josefina. August 10th, 2020. Amnesty International.
+https://www.amnesty.org/en/latest/news/2020/08/carcel-covid19-coctel-letal-gobierno-nicaragua/
+] In this regard, the COVID-19 outbreak has worsen the human rights crisis in Nicaragua, particularly for political activists.^[Valencia, Astrid and Salomón, Josefina. August. August 4th, 2020. Al Jazeera.
+https://www.aljazeera.com/indepth/opinion/nicaragua-jailed-activists-face-coronavirus-death-sentence-200802142335403.html
+] 
+
+Moreover, it is believed that indigenous communities in Nicaragua are at a serious risk of suffering due to the COVID-19 epidemic.^[Moncada, Roy. August 8th, 2020. La Prensa.
+https://www.laprensa.com.ni/2020/08/08/nacionales/2706007-comunidades-indigenas-en-amenaza-critica-por-pandemia-advierte-onu-este-es-el-escenario-en-nicaragua
+] Not only is this because of the shortage of the medical centers, but also because health workers have returned to the cities.
+
+In June, 29 Nicaraguan medical associations signed a call on the population to initiate a voluntary national quarantine for four weeks. These associations are currently very concerned about the apparent lack of response on the streets with respect to the epidemic. In this regard, these medical associations are asking the citizens to avoid being complacent to prevent new outbreaks and avoid the false impression that the pandemic is ending.^[Mendoza Gonzalez, Yubelka. July 31st, 2020. The World News. https://theworldnews.net/cu-news/nicaraguan-medical-association-warns-of-new-covid-19-outbreaks]
+
+Regarding external border restrictions, the Nicaraguan Government has formally adopted requirements to enter the country. In mid-July, the MINSA issued a protocol for national and foreign travelers to provide proof of a negative COVID-19 test realized within the previous 72 hours. However, travelers from Asia, Africa and Oceania must provide proof of a negative test realized within 96 hours prior to entry.^[Redacción Central. July 23rd, 2020. TN8 TV. 
+https://www.tn8.tv/nacionales/512823-23-de-julio-noticias-nicaragua-debe-saber-para-iniciar-dia/
+]
+
+While airlines operating in Nicaragua had tentatively scheduled to restart operations in July, this was later postponed to August. These planned dates have been once again delayed to October.^[Torres, Rico. July 27th, 2020. Today Nicaragua. 
+https://todaynicaragua.com/airlines-push-back-resumption-of-flights-to-nicaragua/ 
+] ^[Tórrez García, Cinthya. August 6th, 2020. La Prensa. https://www.laprensa.com.ni/2020/08/06/economia/2705185-aerolineas-empiezan-a-prorrogar-hasta-octubre-el-retorno-de-sus-vuelos-a-nicaragua] These government measures are controversial and logistically difficult for airlines to comply with.^[Alvarez, Wendy and Calero, Mabel. July 31st, 2020. La Prensa. 
+https://www.laprensa.com.ni/2020/07/31/economia/2702729-las-cuatro-controversiales-exigencias-que-ortega-impuso-a-las-aerolineas-que-impiden-que-estas-regresen-a-nicaragua
+] For instance, airlines have been asked by the Nicaraguan Government to collect passengers´ negative COVID-19 test certificates 72 hours prior to the flights, send a passengers list with copy of their passports at maximum 72 hours before flying, as well as to present the crew´s negative COVID-19 tests done at maximum 72 hours before their flights.
+
+In sum, the Nicaraguan government represents an exception, not only at the regional level but also at the global level, with respect to its lack of policies (such as quarantines and lockdowns) to fight against the COVID-19 pandemic. What is more, instead of event cancellations, this government has been encouraging the organization of and attendance to mass events.
