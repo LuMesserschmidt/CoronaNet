@@ -1,0 +1,104 @@
+---
+title: "CoronaNet Coding Guide"
+output: 
+    html_document
+---
+
+<style>
+
+.tab-content{
+   margin-bottom: 75px;
+}
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+    background-color: #A3D6F3;
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+Updates and corrections can sometimes be confusing. What does qualitative mean? What can I update and what cant I update? When should I correct something? These are all questions we hope to answer in this training.
+
+* Sometimes there is no right answer for a policy and it may fit into more than one category. For example, testing students before they go to school could be under health testing or closure and regulation of schools, but we code it as closure and regulation of schools. 
+* What is important, is not being “right” but setting guidelines so that all entries are coded the same. In this case, even though testing in schools could fit under health testing we need everyone to know that it should be coded as a closure and regulation of schools. We want two independent coders to see this policy and both code it correctly. This increases our intercoder reliability and makes our data very valuable for researchers.
+
+## How do I... {.tabset}
+
+### Use the ShinyApp? 
+
+### Code an Update? {.tabset}
+
+#### What kind of updates are there?
+There are two types of updates: a 'change of policy' update and an 'end of policy' update.If a policy changes we should update it --- but which type of policy should you choose?  
+
+<div class="col2">
+
+Updates to a policy
+
+ * A change in policy duration
+
+
+End of policy
+
+* Is cancelled or annulled
+
+</div>
+
+
+#### When I update or end a policy, what should the dates look like?
+
+#### blah
+
+### Code different policy types? {.tabset}
+
+#### Closure and Regulation of Schools {.tabset}
+
+Closure and Regulation of schools category implies all policies, connected to all levels of schools and the higher education system. 
+
+Typical examples are: 
+
+* closure of schools
+* reopening of schools
+* online study. 
+* Cancellation/postponement of exams, graduation ceremonies, school competitions etc.  
+
+When reopened schools frequently have new rules of operation. Some typical examples:
+
+* Restricted number of kids in classes; 
+* Distance between school desks or between kids;
+* Body temperature checks at schools;
+* COVID-19 tests before attendance of schools;
+* New schedule for classes, etc. 
+
+
+<span style="color:red">*Only the need to wear masks at schools should be coded separately, under Social Distancing* text</span>.
+
+
+##### Good Examples
+
+##### Bad Examples
+
+#### External Border Restrictions {.tabset}
+
+External Border Restrictions policies are targeted towards banning/restricting the movement of people across borders of a country/state or region.  Some typical examples: 
+
+* Ban on traveling to a country A; 
+* Citizens of a country A are no more allowed to enter country B;
+* Medical workers can not travel abroad;
+* Ban or restrictions on issuing working/travel visas;
+* Extending visas to stop outbound travellers
+* Health checks at the border;
+* Special permits for travellers from outside a country/region
+* Being tested for COVID-19 before entering the country
+
+##### Good Examples
+
+##### Bad Examples
+
+#### blah
+test
