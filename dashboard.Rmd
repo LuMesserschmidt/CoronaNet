@@ -52,7 +52,7 @@ output:
               color: #ffffff;
             }
             .nav-tabs > li.active:nth-child(1) > a {
-              background-color: #FFC700;
+              background-color: #E8C120;
             }
             .nav-tabs > li.active:nth-child(2) > a {
               background-color: #BE9FF8;
@@ -116,7 +116,7 @@ output:
               }
             
             #coding-resources{
-                background-color: #FFC700;
+                background-color: #E8C120;
               }
             
         
@@ -172,7 +172,7 @@ output:
 <body>
 
 
-
+ 
 
 Main Dashboard 
 ===================================== 
@@ -182,6 +182,14 @@ Welcome! Pssst... take a look around!
 Row 
 -------------------------------------
 ### Tools
+
+*  <p id = "p1">
+<a href="https://docs.google.com/spreadsheets/d/1lpAsH-aJic9AbJR6YT4-tbwMDp4vCgmS_R-5djCl2f8/edit?usp=sharing">Overton Raw Sources</a>
+</p>
+
+* <p id = "p1">
+<a href="https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit?usp=sharing">Policy Checker Sheet</a>
+</p>
 
 * Qualtrics Survey
 
@@ -193,19 +201,18 @@ Row
 <a href="https://docs.google.com/spreadsheets/d/1OuFhdRryq2in6DfvP2PuKoe5zTWf-kgMo3Z-cBkJWcU/edit?usp=sharing">Delete a policy entry</a>
 </p>
 
-
+* [Slack](https://corona-govt-response.slack.com/archives/C010V8MKHK2)
 
 ### Organization
  
-Completeness and Up-to-Dateness Sheet
+CoronaNet Checklist 
 
 * <p id = "p1">
-<a href="https://docs.google.com/spreadsheets/d/1J45Gme8WoxV2CaqrhiQa2wDXazQrw99wrAzF_Ew511U/edit#gid=508634612">Countries (with subnational regions) </a>
+<a href="https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit#gid=1274916568"> Regional Checklist (one country per sheet) </a>
 </p>
 
-* <p id = "p1">
-<a href="https://docs.google.com/spreadsheets/d/1gNvxWSrAdrM2aj7JyQKlAdQNdBkl7kDMOdJWSZBjvj0/edit?pli=1#gid=0"> Regions </a>
-</p>
+* Country Checklist (one subnational region per sheet)
+
 
 #### Templates
 
@@ -231,6 +238,8 @@ Row {.tabset}
   <small>
    + Check out the guidelines in the [Country Overview Template](https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#)
    + Check out the resources left by the previous RAs in your relevant regional/country dashboard
+   + Find relevant policies in the [Overton Raw Sources Sheet](https://docs.google.com/spreadsheets/d/1lpAsH-aJic9AbJR6YT4-tbwMDp4vCgmS_R-5djCl2f8/edit?usp=sharing) 
+   + Find relevant policies in the [Policy Checker Sheet](https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=612528935)
   </small>
 </details>
 
@@ -242,22 +251,22 @@ Row {.tabset}
 </details>
 
 * <details>
-  <summary>Get started with coding</summary> <small>
-  + <p id = "p1"> <a href= "https://nyu.zoom.us/rec/play/9NyJ1dYJ88tK3fLwYVH3FNXLkbWdbI9P2guAkYFYWGalDMHYYhVnNcFiCg7ZnuKAyGoOqGYPc_OJp6DM.St4xWFlsIjQL7arN?continueMode=true">General Training Video</a>
-</p>
-  +  <p id = "p1">
-<a href="https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000">Video on how to do updates <small>(Password: 7C&*60@= )</small></a>
-  + [Slides on how to do corrections and updates](https://syncandshare.lrz.de/getlink/fiBsrzSRB85njWLT94zwry5H/Training_draft_16.09.pptx)
- </small>
-</details>
-* <details>
-  <summary>Clean policies in your country</summary> 
-  + Fill out the [Checklist](https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit?usp=sharing)
-</p> 
+  <summary>Get started with coding</summary> 
+  <small>
+    + The [CoronaNet Coding Guide](https://www.coronanet-project.org/coding_guide.html) provides helpful guidance on how to do updates, corrections and differences between different policy types
+  + The [CoronaNet Data Collection Guidelines and Codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit) provides helpful written guidance on how to enter policies into Qualtrics
+  + [The General Training Video](https://nyu.zoom.us/rec/play/9NyJ1dYJ88tK3fLwYVH3FNXLkbWdbI9P2guAkYFYWGalDMHYYhVnNcFiCg7ZnuKAyGoOqGYPc_OJp6DM.St4xWFlsIjQL7arN?continueMode=true) provides helpful verbal and visual guidance for how to enter policies into Qualtrics 
+  + [Video on how to do updates](https://tum-conf.zoom.us/rec/play/vJF5fuGop243GdyQsQSDC_QqW426KaOshHMfqaBZnhrnViIBO1PzZ-QaZbPBtptgnr6hozgzRfrwne6q?startTime=1588513802000) <small>(Password: 7C&*60@= )</small></small>
 </details>
 
 * <details>
-  <summary>Get help with coding! </summary>
+
+  <summary>Clean policies in your country</summary> 
+  +   <small>Fill out the Regional [Checklist](https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit?usp=sharing) or Country Checklist</small>
+</details>
+
+* <details>
+  <summary>Get help with assessing, planning, coding and cleaning the data for your region! </summary>
   <small>
    Don't hesitate to ask questions! If you have them you can...
    1. Refer to the [Codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing) for variable definitions
@@ -273,15 +282,61 @@ Row {.tabset}
 
 #### General Resources
  
-* <p id = "p1">
-<a href="https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing">CoronaNet Manual</a>
-</p> 
-
-
+*
+<details>
+  <summary> CoronaNet Manual </summary>
+  <small>
+   This is the 'Bible' of the CoronaNet Project
+   * You can learn about all the different parts of the project in detail from [reading the Manual](https://www.coronanet-project.org/Manual).
+  </small>
+</details>
+<br/>
 
 ### Tools Resources
 
+#### Overton Raw Sources
+* <details>
+  <summary>How to use the Overton Raw Sources</summary>
+  <small>
+
+  Overton is a company which collects government documents from around the world and which has generously allowed us to access to raw government documents related to COVID-19.
+
+  * To find relevant documents for your country, please click on the corresponding URL in the 'Country List' front page of the Overton Raw Sources sheet. 
+
+  * The documents listed in the Overton Raw Sources sheet are scraped from the Overton site. They provide a useful reference point for:
+      + Checking whether all government policies related to COVID-19 in your country are coded.
+      + Providing additional sources for where to find information about COVID-19 polcies in a particular country. If it is not already noted, feel free to note such sources in the relevant 'General Country Information' link found in your respective regional or country dashbbaord. 
+   * The Overton Raw Sources sheet will be updated weekly. 
+   * Caveats: 
+      +  Note that the list provided by Overton is not a definitive list of all COVID-19 related policies but provide a strong foundation for finding and verifying the existence of COVID-19 policies in a particular country. 
+      + Note that not all documents listed in the Overton Raw Sources sheet may be relevant to code for the CoronaNet Project. 
+      + In addition note Overton does not cover all countries. 
+
+  </small>
+</details>
+
+#### Policy Checker Sheet
+
+* <details>
+  <summary> How to Use the Policy Checker Sheet</summary>
+  <small>
+
+  The Policy Checker Sheet checks the CoronaNet data against the WHO PHSM Dataset. The sheet will be updated semi-regularly as the WHO PHSM dataset itself is updated. 
+
+  * The sheet is organized by policy type, with one sheet per policy type
+
+  * The relevant column is the 'Completed' column --- if there are 'Updates Required' this means that in the policy checking process, the policy checker either identified some inconsistencies between the WHO PHSM dataset and the CoronaNet dataset or some problems with the CoronaNet dataset. Notes about what the issue is can be found in the 'CoronaNet Notes' and 'WHO Notes' columns.
+  * Once these issues are addressed, please add a note to the existing text stating that you have resolved the issue and change the 'Updates Required' to 'Yes' in the 'Completed' column
+   * Caveats: 
+      +  Note that WHO PHSM dataset does not provide definitive list of all COVID-19 related policies but provide a strong foundation for finding and verifying the existence of COVID-19 policies in a particular country. 
+      + Note that it is possible that some policies in the Policy Checker Sheet is miscoded. For example, a policy listed in the 'Quarantine' tab, may actually be about 'Lockdown' and not quarantine. In these cases, please code the policy that makes sense for the CoronaNet database, not what is indicated in the Policy Checker Sheet. 
+
+  </small>
+</details>
+
+
 #### Qualtrics Survey
+
 * <details>
   <summary>How to access the Qualtrics Survey</summary>
   <small>
@@ -292,6 +347,14 @@ Row {.tabset}
   </small>
 </details>
 
+* <details>
+  <summary>What's in the Qualtrics Survey? </summary>
+  <small>
+   * Take a look through the questions in the [Qualtrics survey](https://www.coronanet-project.org/survey)
+   * Search through the [codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit?usp=sharing) for the variable definitions 
+   * Get an overview of all the different [policy types and sub-types](https://docs.google.com/spreadsheets/d/10XiTrBSOJkJvCW0lYt2W6MJo3CCLANjvMjIG4RuOd6Q/edit?usp=sharing)
+  </small>
+</details>
 
 
 #### Shiny App
@@ -305,7 +368,7 @@ Row {.tabset}
       </small>
 </details>
 
-* How to use the Shiny App
+* How to use the Shiny App:
 
   + <p id = "p1">
 <a href= "https://syncandshare.lrz.de/getlink/fiPF5Zf8GPfBvSYeWsoZeyww/how_to_use_shiny_app.mp4">Specific uses</a>
@@ -316,8 +379,13 @@ Row {.tabset}
 Text and Screenshots</a>
 </p> 
 
-<br/>
 
+* <details>
+  <summary>What else is on Shiny App?</summary>
+    * Check out the FAQs on the Shiny App for a summary of the questions asked on #ra-chat!
+</details>
+
+<br/>
 
 #### Delete a Policy
 
@@ -330,14 +398,21 @@ Text and Screenshots</a>
 </small>
 </details>
 
+#### Slack
+
+* <details>
+  <summary>What is Slack? </summary>
+  <small>
+   * Slack is the main tool that CoronaNet members use to communicate with each other
+   * Explore different functionalities in Slack [here!](https://www.coronanet-project.org/Manual#Slack) 
+   * Aside from your regional or country channel, the most relevant channels in slack are [#ra-chat](https://corona-govt-response.slack.com/archives/C010V8MKHK2) (where you can ask all your coding questions), [#random](https://corona-govt-response.slack.com/archives/C010PMHE2J3) (where you can participate in weekly Hogwarts contests), [#ra-suggestions](https://corona-govt-response.slack.com/archives/C011KCG2JD6) (where you can provide suggestions for how to improve the Qualtrics survey), and [#general](https://corona-govt-response.slack.com/archives/C010PHG8V3Q) (where you can get and post general information of general interst)
+</small>
+</details>
+
 
 ### Organization Resources
 
-* How to fill out Completeness and  Up-to-Dateness Forms
-  + <p id = "p1">
-<a href= "https://www.dropbox.com/s/et6swhdzqy9u66m/Up-To-Dateness%20and%20Completeness%20Tutorial.mp4?dl=0"> Video (note, need to make a new one) </a>
-</p> 
-
+* How to fill out the CoronaNet Checklist
 
 #### Templates
 
@@ -345,19 +420,30 @@ Text and Screenshots</a>
 
 ### Communication
 
-* Weekly Meetings
-* <a href= "https://tum-conf.zoom.us/j/92401524948"> Community Hangout Room <small> (Password: 12345) </small> </a>
-</p> 
-* <a href= "https://twitter.com/CoronaNet_org"> CoronaNet Twitter Feed </a>
+* [Weekly General Meeting--- Join us Wednesdays at 4:30pm CET!](https://tum-conf.zoom.us/j/94054314336)  <small>  (Password: 599952)</small>  
+* [Come hang out in the Community Hangout Room](https://tum-conf.zoom.us/j/92401524948) <small>  (Password: 12345)  </small>  
+  
+* [Follow the CoronaNet Twitter Feed](https://twitter.com/CoronaNet_org)  
+*  <p id = "p1"><a href= "https://www.linkedin.com/groups/8982369/"> Connect to CoronaNet on LinkedIn </a>
 </p>
-*  <a href= "https://www.linkedin.com/groups/8982369/"> Connect to CoronaNet on LinkedIn </a>
+*  <p id = "p1"><a href= "https://www.coronanet-project.org/ra_call.html"> Invite others to join CoronaNet! </a>
 </p>
-
+* [Check out the public CoronaNet webpage](https://www.coronanet-project.org)
+* <details>
+  <summary>Saying goodbye? Before you go...</summary>
+  <small>
+  
+    * Please make sure to contact your regional manager to let them know that you'll be leaving
+    * If you have any useful information about your country that you would like to pass on, please remember to upload them to your relevant country/sub-national region folder so that the new RA can access them under 'Previous RA Material'. 
+    * Please fill out this  [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSc-yn3BuPxSBx-wskp_0gocPYWP2BVtvf1BMtrdP_I7HblRSw/viewform) to let us know about your experience with us and how we can do better! 
+    * For regional and country managers, we have created a [regional](https://docs.google.com/document/d/1RTikALjGQ_-EYDFAWbNybnuW30xBK9259JIcICYMXZY/edit#) and [country manager](https://docs.google.com/document/d/1XLb-EhLJQ8OH_EX8ng1bA-UYDWL4IjagMncEolGkOUI/edit#) exit report template which we hope you will fill out and pass on to the next regional or country manager to fill your position!
+      </small>
+</details>
 
 
 Northern Africa {data-navmenu="Regional Dashboards"}
-===================================== 
-  
+=====================================
+
 Inputs {.sidebar}
 -------------------------------------
 **Northern Africa**
@@ -365,7 +451,7 @@ Inputs {.sidebar}
 
 Naela Elmore
 
-Row 
+Row
 -------------------------------------
 
 
@@ -381,6 +467,15 @@ Row
 -------------------------------------
 ### Previous RA Material { .prev-ra }
 
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Algeria">Algeria</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Egypt">Egypt</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Libya">Libya</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Morocco">Morocco</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Sudan">Sudan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Tunisia">Tunisia</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
 * Algeria
 * Egypt
 * Libya
@@ -388,55 +483,1038 @@ Row
 * Sudan
 * Tunisia
 
-### Primary Sources for  Old Policies {.prim-source}
 
-* Algeria
-* Egypt
-* Libya
-* Morocco
-* Sudan
-* Tunisia
+
+Eastern Africa {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Eastern Africa**
+**Regional Manager**
+
+Sanjana Jain
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Burundi
+* Comoros
+* Djibouti
+* Eritrea
+* Ethiopia
+* Kenya
+* Madagascar
+* Mauritius
+* Rwanda
+* Seychelles
+* Somalia
+* South Sudan
+* Uganda
+* Tanzania
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Burundi">Burundi</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Comoros">Comoros</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Djibouti">Djibouti</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Eritrea">Eritrea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ethiopia">Ethiopia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kenya">Kenya</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Madagascar">Madagascar</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mauritius">Mauritius</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Rwanda">Rwanda</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Seychelles">Seychelles</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Somalia">Somalia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/South%20Sudan">South Sudan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Uganda">Uganda</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Tanzania">Tanzania</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Burundi
+* Comoros
+* Djibouti
+* Eritrea
+* Ethiopia
+* Kenya
+* Madagascar
+* Mauritius
+* Rwanda
+* Seychelles
+* Somalia
+* South Sudan
+* Uganda
+* Tanzania
+
+
+
+Central Africa {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Central Africa**
+**Regional Managers**
+
+Ryan Kim
+Elif Çalışkan
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Cameroon
+* Central African Republic
+* Chad
+* Republic of the Congo
+* Democratic Republic of the Congo
+* Equatorial Guinea
+* Gabon
+* Sao Tome and Principe
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cameroon">Cameroon</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Central%20African%20Republic">Central African Republic</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Chad">Chad</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Republic%20of%20the%20Congo">Republic of the Congo</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Democratic%20Republic%20of%20the%20Congo">Democratic Republic of the Congo</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Equatorial%20Guinea">Equatorial Guinea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Gabon">Gabon</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Sao%20Tome%20and%20Principe">Sao Tome and Principe</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Cameroon
+* Central African Republic
+* Chad
+* Republic of the Congo
+* Democratic Republic of the Congo
+* Equatorial Guinea
+* Gabon
+* Sao Tome and Principe
+
+
+
+Southern Africa {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Southern Africa**
+**Regional Manager**
+
+Klea Vogli & Mia Balice
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Angola
+* Botswana
+* Eswatini
+* Lesotho
+* Namibia
+* South Africa
+* Zambia
+* Zimbabwe
+* Malawi
+* Mozambique
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Angola">Angola</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Botswana">Botswana</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Eswatini">Eswatini</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Lesotho">Lesotho</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Namibia">Namibia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/South%20Africa">South Africa</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Zambia">Zambia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Zimbabwe">Zimbabwe</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Malawi">Malawi</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mozambique">Mozambique</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Angola
+* Botswana
+* Eswatini
+* Lesotho
+* Namibia
+* South Africa
+* Zambia
+* Zimbabwe
+* Malawi
+* Mozambique
+
+
+
+Western Africa {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Western Africa**
+**Regional Manager**
+
+Christin Le
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Benin
+* Burkina Faso
+* Cabo Verde
+* Ivory Coast
+* Gambia
+* Ghana
+* Guinea
+* Guinea-Bissau
+* Liberia
+* Mali
+* Mauritania
+* Niger
+* Nigeria
+* Senegal
+* Sierra Leone
+* Togo
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Benin">Benin</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Burkina%20Faso">Burkina Faso</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cabo%20Verde">Cabo Verde</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ivory%20Coast">Ivory Coast</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Gambia">Gambia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ghana">Ghana</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Guinea">Guinea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Guinea-Bissau">Guinea-Bissau</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Liberia">Liberia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mali">Mali</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mauritania">Mauritania</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Niger">Niger</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Nigeria">Nigeria</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Senegal">Senegal</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Sierra%20Leone">Sierra Leone</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Togo">Togo</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Benin
+* Burkina Faso
+* Cabo Verde
+* Ivory Coast
+* Gambia
+* Ghana
+* Guinea
+* Guinea-Bissau
+* Liberia
+* Mali
+* Mauritania
+* Niger
+* Nigeria
+* Senegal
+* Sierra Leone
+* Togo
+
+
+
+Caribbean {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Caribbean**
+**Regional Managers**
+
+Gerardo Samuel Ixcaragua
+Gabriel Belmino Freitas
+Ewan Lewis
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Antigua and Barbuda
+* Bahamas
+* Barbados
+* Cuba
+* Dominica
+* Dominican Republic
+* Grenada
+* Haiti
+* Jamaica
+* Saint Kitts and Nevis
+* Saint Lucia
+* Saint Vincent and the Grenadines
+* Trinidad and Tobago
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Antigua%20and%20Barbuda">Antigua and Barbuda</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bahamas">Bahamas</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Barbados">Barbados</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cuba">Cuba</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Dominica">Dominica</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Dominican%20Republic">Dominican Republic</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Grenada">Grenada</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Haiti">Haiti</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Jamaica">Jamaica</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Saint%20Kitts%20and%20Nevis">Saint Kitts and Nevis</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Saint%20Lucia">Saint Lucia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Saint%20Vincent%20and%20the%20Grenadines">Saint Vincent and the Grenadines</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Trinidad%20and%20Tobago">Trinidad and Tobago</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Antigua and Barbuda
+* Bahamas
+* Barbados
+* Cuba
+* Dominica
+* Dominican Republic
+* Grenada
+* Haiti
+* Jamaica
+* Saint Kitts and Nevis
+* Saint Lucia
+* Saint Vincent and the Grenadines
+* Trinidad and Tobago
 
 
 
 Central + North America {data-navmenu="Regional Dashboards"}
-===================================== 
+=====================================
 
 Inputs {.sidebar}
 -------------------------------------
 **Central + North America**
+**Regional Managers**
+
+Vanja Grujic
+Rose Rasty
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Belize
+* Costa Rica
+* Canada
+* El Salvador
+* Guatemala
+* Honduras
+* Mexico
+* Nicaragua
+* Panama
+* USA
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Belize">Belize</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Costa%20Rica">Costa Rica</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Canada">Canada</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/El%20Salvador">El Salvador</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Guatemala">Guatemala</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Honduras">Honduras</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mexico">Mexico</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Nicaragua">Nicaragua</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Panama">Panama</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/USA">USA</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Belize
+* Costa Rica
+* Canada
+* El Salvador
+* Guatemala
+* Honduras
+* Mexico
+* Nicaragua
+* Panama
+* USA
+
+
+
+South America {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**South America**
 **Regional Manager**
 
+Marcus Torres
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Argentina
+* Bolivia
+* Brazil
+* Chile
+* Colombia
+* Ecuador
+* Guyana
+* Paraguay
+* Peru
+* Suriname
+* Uruguay
+* Venezuela
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Argentina">Argentina</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bolivia">Bolivia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Brazil">Brazil</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Chile">Chile</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Colombia">Colombia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ecuador">Ecuador</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Guyana">Guyana</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Paraguay">Paraguay</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Peru">Peru</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Suriname">Suriname</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Uruguay">Uruguay</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Venezuela">Venezuela</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Argentina
+* Bolivia
+* Brazil
+* Chile
+* Colombia
+* Ecuador
+* Guyana
+* Paraguay
+* Peru
+* Suriname
+* Uruguay
+* Venezuela
+
+
+
+Eurasia {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Eurasia**
+**Regional Manager**
+
+Caress Schenk
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Russia
+* Ukraine
+* Belarus
+* Kazakhstan
+* Kyrgyzstan
+* Tajikistan
+* Turkmenistan
+* Uzbekistan
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Russia">Russia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ukraine">Ukraine</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Belarus">Belarus</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kazakhstan">Kazakhstan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kyrgyzstan">Kyrgyzstan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Tajikistan">Tajikistan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Turkmenistan">Turkmenistan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Uzbekistan">Uzbekistan</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Russia
+* Ukraine
+* Belarus
+* Kazakhstan
+* Kyrgyzstan
+* Tajikistan
+* Turkmenistan
+* Uzbekistan
+
+
+
+East Asia {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**East Asia**
+**Regional Manager**
+
+Kelis Wong
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* China
+* Hong Kong
+* North Korea
+* South Korea
+* Japan
+* Macau
+* Mongolia
+* Taiwan
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/China">China</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Hong%20Kong">Hong Kong</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/North%20Korea">North Korea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/South%20Korea">South Korea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Japan">Japan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Macau">Macau</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Mongolia">Mongolia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Taiwan">Taiwan</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* China
+* Hong Kong
+* North Korea
+* South Korea
+* Japan
+* Macau
+* Mongolia
+* Taiwan
+
+
+
+Southeast Asia {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Southeast Asia**
+**Regional Managers**
+
+Pia Bansagi
+Fadhilah F. Primandari
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Brunei
+* Cambodia
+* Indonesia
+* Laos
+* Malaysia
+* Myanmar
+* Philippines
+* Singapore
+* Thailand
+* Timor Leste
+* Vietnam
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Brunei">Brunei</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cambodia">Cambodia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Indonesia">Indonesia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Laos">Laos</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Malaysia">Malaysia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Myanmar">Myanmar</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Philippines">Philippines</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Singapore">Singapore</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Thailand">Thailand</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Timor%20Leste">Timor Leste</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Vietnam">Vietnam</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Brunei
+* Cambodia
+* Indonesia
+* Laos
+* Malaysia
+* Myanmar
+* Philippines
+* Singapore
+* Thailand
+* Timor Leste
+* Vietnam
+
+
+
+South Asia {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**South Asia**
+**Regional Manager**
+
+Hanaan Shafi
+
+[South Asia Slack Channel](https://corona-govt-response.slack.com/archives/C014VLPRWTX)
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* [Afghanistan](https://docs.google.com/document/d/1blWpNQi8dFiWb8RqlNri6MwytKRJspz-/edit)
+* Bangladesh
+* Bhutan
+* India
+* Iran
+* Maldives
+* Nepal
+* Pakistan
+* Sri Lanka
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Afghanistan">Afghanistan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bangladesh">Bangladesh</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bhutan">Bhutan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/India">India</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Iran">Iran</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Maldives">Maldives</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Nepal">Nepal</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Pakistan">Pakistan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Sri%20Lanka">Sri Lanka</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Afghanistan
+* Bangladesh
+* Bhutan
+* India
+* Iran
+* Maldives
+* Nepal
+* Pakistan
+* Sri Lanka
+
+
+
+Middle East {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Middle East**
+**Regional Manager**
+
+Maryam Al-Hammadi
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Iraq
+* Bahrain
+* Israel
+* Jordan
+* Kuwait
+* Lebanon
+* Northern Cyprus
+* Cyprus
+* Oman
+* Qatar
+* Saudi Arabia
+* Palestine
+* Syria
+* Turkey
+* United Arab Emirates
+* Yemen
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Iraq">Iraq</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bahrain">Bahrain</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Israel">Israel</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Jordan">Jordan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kuwait">Kuwait</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Lebanon">Lebanon</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Northern%20Cyprus">Northern Cyprus</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cyprus">Cyprus</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Oman">Oman</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Qatar">Qatar</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Saudi%20Arabia">Saudi Arabia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Palestine">Palestine</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Syria">Syria</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Turkey">Turkey</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/United%20Arab%20Emirates">United Arab Emirates</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Yemen">Yemen</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Iraq
+* Bahrain
+* Israel
+* Jordan
+* Kuwait
+* Lebanon
+* Northern Cyprus
+* Cyprus
+* Oman
+* Qatar
+* Saudi Arabia
+* Palestine
+* Syria
+* Turkey
+* United Arab Emirates
+* Yemen
+
+
+
+Eastern Europe and Western Asia {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Eastern Europe and Western Asia**
+**Regional Manager**
+
+Mayisa
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Bulgaria
+* Czechia
+* Hungary
+* Slovenia
+* Poland
+* Republic of Moldova
+* Romania
+* Slovakia
+* Armenia
+* Azerbaijan
+* Georgia
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bulgaria">Bulgaria</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Czechia">Czechia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Hungary">Hungary</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Slovenia">Slovenia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Poland">Poland</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Republic%20of%20Moldova">Republic of Moldova</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Romania">Romania</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Slovakia">Slovakia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Armenia">Armenia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Azerbaijan">Azerbaijan</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Georgia">Georgia</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Bulgaria
+* Czechia
+* Hungary
+* Slovenia
+* Poland
+* Republic of Moldova
+* Romania
+* Slovakia
+* Armenia
+* Azerbaijan
+* Georgia
+
+
+
+Northern Europe {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Northern Europe**
+**Regional Manager**
+
+Klea Vogli
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Denmark
+* Estonia
+* Finland
+* Iceland
+* Latvia
+* Lithuania
+* Norway
+* Sweden
+* Netherlands
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Denmark">Denmark</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Estonia">Estonia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Finland">Finland</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Iceland">Iceland</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Latvia">Latvia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Lithuania">Lithuania</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Norway">Norway</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Sweden">Sweden</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Netherlands">Netherlands</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Denmark
+* Estonia
+* Finland
+* Iceland
+* Latvia
+* Lithuania
+* Norway
+* Sweden
+* Netherlands
+
+
+
+Southern Europe {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Southern Europe**
+**Regional Managers**
+
+Noor Altunaiji
 Vanja Grujic
 
 Row
 -------------------------------------
 
+
 ### General Country Information {.gen-country}
-* Belize
-* Costa Rica
-* Canada
-* El Salvador
-* Guatemala
-* Honduras
+* Albania
+* Andorra
+* Bosnia and Herzegovina
+* Croatia
+* Greece
+* Malta
+* Montenegro
+* North Macedonia
+* Portugal
+* San Marino
+* Serbia
+* Kosovo
+* Vatican
+* Spain
+* Italy
 
 Row
 -------------------------------------
 ### Previous RA Material { .prev-ra }
-* Belize
-* Costa Rica
-* Canada
-* El Salvador
-* Guatemala
-* Honduras
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Albania">Albania</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Andorra">Andorra</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bosnia%20and%20Herzegovina">Bosnia and Herzegovina</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Croatia">Croatia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Greece">Greece</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Malta">Malta</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Montenegro">Montenegro</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/North%20Macedonia">North Macedonia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Portugal">Portugal</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/San%20Marino">San Marino</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Serbia">Serbia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kosovo">Kosovo</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Vatican">Vatican</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Spain">Spain</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Italy">Italy</a>
 
 ### Primary Sources for Old Policies {.prim-source}
-* Belize
-* Costa Rica
-* Canada
-* El Salvador
-* Guatemala
-* Honduras
+
+* Albania
+* Andorra
+* Bosnia and Herzegovina
+* Croatia
+* Greece
+* Malta
+* Montenegro
+* North Macedonia
+* Portugal
+* San Marino
+* Serbia
+* Kosovo
+* Vatican
+* Spain
+* Italy
+
+
+
+Western Europe {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Western Europe**
+**Regional Manager**
+
+Paula Ganga
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Austria
+* Belgium
+* France
+* Germany
+* Liechtenstein
+* Luxembourg
+* Monaco
+* United Kingdom
+* Switzerland
+* Ireland
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Austria">Austria</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Belgium">Belgium</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/France">France</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Germany">Germany</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Liechtenstein">Liechtenstein</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Luxembourg">Luxembourg</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Monaco">Monaco</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/United%20Kingdom">United Kingdom</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Switzerland">Switzerland</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ireland">Ireland</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Austria
+* Belgium
+* France
+* Germany
+* Liechtenstein
+* Luxembourg
+* Monaco
+* United Kingdom
+* Switzerland
+* Ireland
+
+
+
+Oceania {data-navmenu="Regional Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Oceania**
+**Regional Manager**
+
+Sarah Edmonds
+
+Row
+-------------------------------------
+
+
+### General Country Information {.gen-country}
+* Australia
+* New Zealand
+* Fiji
+* Papua New Guinea
+* Solomon Islands
+* Vanuatu
+* Micronesia
+* Kiribati
+* Marshall Islands
+* Nauru
+* Palau
+* Samoa
+* Tonga
+* Tuvalu
+
+Row
+-------------------------------------
+### Previous RA Material { .prev-ra }
+
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Australia">Australia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/New%20Zealand">New Zealand</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Fiji">Fiji</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Papua%20New%20Guinea">Papua New Guinea</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Solomon%20Islands">Solomon Islands</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Vanuatu">Vanuatu</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Micronesia">Micronesia</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Kiribati">Kiribati</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Marshall%20Islands">Marshall Islands</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Nauru">Nauru</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Palau">Palau</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Samoa">Samoa</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Tonga">Tonga</a>
+* <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Tuvalu">Tuvalu</a>
+
+### Primary Sources for Old Policies {.prim-source}
+
+* Australia
+* New Zealand
+* Fiji
+* Papua New Guinea
+* Solomon Islands
+* Vanuatu
+* Micronesia
+* Kiribati
+* Marshall Islands
+* Nauru
+* Palau
+* Samoa
+* Tonga
+* Tuvalu
+
 
 
 United States {data-navmenu="Country Dashboards"}
