@@ -236,7 +236,7 @@ Row {.tabset}
    + Check out the guidelines in the [Country Overview Template](https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#)
    + Check out the resources left by the previous RAs in your relevant regional/country dashboard
    + Find relevant policies in the [Overton Raw Sources Sheet](https://docs.google.com/spreadsheets/d/1lpAsH-aJic9AbJR6YT4-tbwMDp4vCgmS_R-5djCl2f8/edit?usp=sharing) 
-   + Find relevant policies in the [Policy Checker Sheet](https://docs.google.com/spreadsheets/d/1X8kzeLJImEimN4TvPscx6RLhZnpo5m9bSZsyVeWRWck/edit?usp=sharing)
+   + Find relevant policies in the [Policy Checker Sheet](https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=612528935)
   </small>
 </details>
 
