@@ -84,11 +84,17 @@ There are two types of updates: a 'change of policy' update and an 'end of polic
 
 ![](img/update_types.jpg)
 
-...Still confused? 
+#### General hints for updating a policy
 
 ![](img/update_hints.jpg)
 
-#### What else should I know about 'Change of Policy' updates?
+#### What is a quantitative change update?
+It is only possible to make an update a ‘Change of Policy’ Update for the 4 policy types below. These are so-called ‘quantiative changes’ (as opposed to qualitative changes) :
+
+
+![](img/update_quantitative.jpg)
+
+#### Strengthening and Relaxing
 
 There are two kinds of 'Change of Policy' Updates: updates that are 'strengthening' or 'relaxing'. You are given the choice to select between the two in the survey, but how to choose the right one?
 
@@ -97,10 +103,7 @@ There are two kinds of 'Change of Policy' Updates: updates that are 'strengtheni
 ![](img/update_str_relax.jpg)
 
 
-It is only possible to make an update a ‘Change of Policy’ Update for the 4 policy types below. These are so-called ‘quantiative changes’ (as opposed to qualitative changes) :
 
-
-![](img/update_quantitative.jpg)
 
 
 
@@ -112,64 +115,270 @@ It is only possible to make an update a ‘Change of Policy’ Update for the 4 
 
 
 
+
 ### Code different policy types? {.tabset .tabset-fade .tabset-pills}
 
 
 #### What is a policy sub-type? 
-In our survey we have broad policy types, e.g. Restriction and Regulation of Businesses and Public Awareness Measures. 
-
-Within some of these policies it is possible to further describe the policy you want to code. 
+![](img/coding_guide/What is a policy sub-category.png)
 
 Visit [this page](https://docs.google.com/spreadsheets/d/10XiTrBSOJkJvCW0lYt2W6MJo3CCLANjvMjIG4RuOd6Q/edit?usp=sharing) to find out what all the possible policy sub types are!
 
 
+#### Restriction and Regulation of Businesses {.tabset}
 
 
+![](img/coding_guide/Restriction and Regulation of Businesses/What is it about.png)
 
+##### Qualitative Change Example 
+
+![](img/coding_guide/Restriction and Regulation of Businesses/bus1.png)
+
+![](img/coding_guide/Restriction and Regulation of Businesses/Qual2.png)
+
+
+##### Bad Examples
+
+![](img/coding_guide/Restriction and Regulation of Businesses/Bad examples.png)
 
 #### Closure and Regulation of Schools {.tabset}
 
-Closure and Regulation of schools category implies all policies, connected to all levels of schools and the higher education system. 
-
-Typical examples are: 
-
-* closure of schools
-* reopening of schools
-* online study. 
-* Cancellation/postponement of exams, graduation ceremonies, school competitions etc.  
-
-When reopened schools frequently have new rules of operation. Some typical examples:
-
-* Restricted number of kids in classes; 
-* Distance between school desks or between kids;
-* Body temperature checks at schools;
-* COVID-19 tests before attendance of schools;
-* New schedule for classes, etc. 
+![](img/coding_guide/Closure and Regulation of Schools/What is it about.png)
 
 
-<span style="color:red">*Only the need to wear masks at schools should be coded separately, under Social Distancing* text</span>.
+##### Qualitative Change Example 
 
+![](img/coding_guide/Closure and Regulation of Schools/sch1.png)
 
-##### Good Examples
+![](img/coding_guide/Closure and Regulation of Schools/sch2.png)
+
 
 ##### Bad Examples
+
+![](img/coding_guide/Closure and Regulation of Schools/Bad examples.png)
+
+
+#### Quarantine {.tabset}
+
+![](img/coding_guide/Quarantine/What is it about.png)
+
+
+##### Qualitative Change Example 
+
+![](img/coding_guide/Quarantine/qua1.png)
+![](img/coding_guide/Quarantine/qua2.png)
+
+
+##### Bad Examples
+
+![](img/coding_guide/Quarantine/Bad examples.png)
 
 #### External Border Restrictions {.tabset}
 
-External Border Restrictions policies are targeted towards banning/restricting the movement of people across borders of a country/state or region.  Some typical examples: 
+![](img/coding_guide/External Border Restrictions/What is it about.png)
 
-* Ban on traveling to a country A; 
-* Citizens of a country A are no more allowed to enter country B;
-* Medical workers can not travel abroad;
-* Ban or restrictions on issuing working/travel visas;
-* Extending visas to stop outbound travellers
-* Health checks at the border;
-* Special permits for travellers from outside a country/region
-* Being tested for COVID-19 before entering the country
+##### External or Internal?
+![](img/coding_guide/int_ext.png)
+
+
 
 ##### Good Examples
 
+![](img/coding_guide/External Border Restrictions/Good Updates.png)
+
 ##### Bad Examples
 
-#### blah
-test
+![](img/coding_guide/External Border Restrictions/Bad updates.png)
+
+#### Internal Border Restrictions {.tabset}
+
+![](img/coding_guide/Internal Border Restrictions/What is it about.png)
+
+
+##### External or Internal?
+![](img/coding_guide/int_ext.png)
+
+
+##### Good Examples
+
+![](img/coding_guide/Internal Border Restrictions/Good updates.png)
+
+##### Bad Examples
+
+![](img/coding_guide/Internal Border Restrictions/Bad updates.png)
+
+
+#### Restrictions of Mass Gathrings {.tabset}
+
+![](img/coding_guide/Restrictions of Mass Gatherings/What is it about.png)
+ 
+##### Good Examples
+
+![](img/coding_guide/Restrictions of Mass Gatherings/Good Examples.png)
+
+##### Bad Examples
+
+![](img/coding_guide/Restrictions of Mass Gatherings/Bad examples.png)
+
+#### Curfew {.tabset}
+
+![](img/coding_guide/Curfew/Entire slide_Curfew_What is it about.png)
+
+##### Good Examples
+
+![](img/coding_guide/Curfew/Good Examples.png)
+
+##### Bad Examples
+
+![](img/coding_guide/Curfew/Bad examples.png)
+
+#### Public Awareness Measures {.tabset}
+
+![](img/coding_guide/Public Awareness Measures/What is it about.png)
+ 
+##### Good Examples
+
+![](img/coding_guide/Public Awareness Measures/Good updates.png)
+
+##### Bad Examples
+
+![](img/coding_guide/Public Awareness Measures/Bad Examples.png)
+
+#### Lockdown {.tabset}
+
+![](img/coding_guide/Lockdown/What is it about.png)
+
+ 
+##### Good Examples
+
+![](img/coding_guide/Lockdown/Good examples.png)
+
+
+##### Bad Examples
+
+![](img/coding_guide/Lockdown/Bad Examples.png)
+
+#### Social Distancing {.tabset}
+
+![](img/coding_guide/Social Distancing/What is it about.png)
+
+##### Good Updates
+
+![](img/coding_guide/Social Distancing/Good updates.png)
+
+
+##### Bad Updates
+
+![](img/coding_guide/Social Distancing/Bad examples.png)
+
+
+#### Restriction and Regulation of Government Services {.tabset}
+
+![](img/coding_guide/Restriction and Regulation of Government Services/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Restriction and Regulation of Government Services/Good updates.png)
+
+
+##### Bad Updates
+
+![](img/coding_guide/Restriction and Regulation of Government Services/Bad updates.png)
+
+
+#### Health Monitoring {.tabset}
+
+![](img/coding_guide/Health Monitoring/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Health Monitoring/Good updates.png)
+
+
+##### Bad Updates
+
+![](img/coding_guide/Health Monitoring/Bad updates.png)
+
+
+#### Health Resources {.tabset}
+
+![](img/coding_guide/Health Resources/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Health Resources/Good updates.png)
+
+##### Bad Updates
+
+![](img/coding_guide/Health Resources/Bad examples.png)
+
+
+#### Health Testing {.tabset}
+
+![](img/coding_guide/Health Testing/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Health Testing/Good examples.png)
+
+
+##### Bad Updates
+
+![](img/coding_guide/Health Testing/Bad examples.png)
+
+
+#### Anti-Disinformation Measures {.tabset}
+
+![](img/coding_guide/Anti-Disinformation Measures/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Anti-Disinformation Measures/Good examples.png)
+
+##### Bad Updates
+
+![](img/coding_guide/Anti-Disinformation Measures/Bad examples.png)
+
+
+#### New Task Force, Bureau or Administrative Configuration {.tabset}
+
+![](img/coding_guide/New Task Force/What is it about.png)
+
+##### Good Updates
+
+![](img/coding_guide/New Task Force/Good update.png)
+
+##### Bad Updates
+
+![](img/coding_guide/New Task Force/Bad examples.png)
+
+#### Declaration of Emergency {.tabset}
+
+![](img/coding_guide/Declaration of Emergency/What is it about.png)
+
+
+##### Good Updates
+
+![](img/coding_guide/Declaration of Emergency/Good examples.png)
+
+##### Bad Updates
+
+![](img/coding_guide/Declaration of Emergency/Bad examples.png)
+
+
+#### Hygiene {.tabset}
+
+![](img/coding_guide/Hygiene/What is it about.png)
+
+##### Good Updates
+
+![](img/coding_guide/Hygiene/Good examples.png)
+
+##### Bad Updates
+
+![](img/coding_guide/Hygiene/Bad examples.png)

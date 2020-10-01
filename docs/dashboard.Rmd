@@ -207,11 +207,8 @@ Row
  
 CoronaNet Checklist 
 
-* <p id = "p1">
-<a href="https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit#gid=1274916568"> Regional Checklist (one country per sheet) </a>
-</p>
-
-* Country Checklist (one subnational region per sheet)
+* [Regional Data Checklist](https://docs.google.com/spreadsheets/d/1RL0Go-ULJxSHrFsJcS521Zzdo1j6E-vlWQd72VD4bUM/edit?usp=sharing)
+* Country Data Checklist (one subnational region per sheet)
 
 
 #### Templates
@@ -262,7 +259,7 @@ Row {.tabset}
 * <details>
 
   <summary>Clean policies in your country</summary> 
-  +   <small>Fill out the Regional [Checklist](https://docs.google.com/spreadsheets/d/1zYqfl522nz0PiwKT2LU63IEbo-QKPwgu_bwm5qav8FU/edit?usp=sharing) or Country Checklist</small>
+  +   <small>Fill out your respective [Regional Checklist](https://docs.google.com/spreadsheets/d/1RL0Go-ULJxSHrFsJcS521Zzdo1j6E-vlWQd72VD4bUM/edit?usp=sharing) or Country Checklists</small>
 </details>
 
 * <details>
