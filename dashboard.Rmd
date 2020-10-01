@@ -74,7 +74,7 @@ output:
               background-color: #F79488;
             }
             .nav-tabs > li.focus:nth-child(4) > a {
-              background-color: #3383FF;
+              background-color: #64B2F0;
             }
            
           .chart-wrapper,
@@ -112,7 +112,7 @@ output:
                 background-color: #e9533d;
               }
             #communication{
-                background-color: #3383FF;
+                background-color: #64B2F0;
               }
             
             #coding-resources{
@@ -188,7 +188,7 @@ Row
 </p>
 
 * <p id = "p1">
-<a href="https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit?usp=sharing">Policy Checker Sheet</a>
+<a href="https://docs.google.com/spreadsheets/d/1X8kzeLJImEimN4TvPscx6RLhZnpo5m9bSZsyVeWRWck/edit?usp=sharing">Policy Checker Sheet</a>
 </p>
 
 * Qualtrics Survey
@@ -236,7 +236,7 @@ Row {.tabset}
    + Check out the guidelines in the [Country Overview Template](https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#)
    + Check out the resources left by the previous RAs in your relevant regional/country dashboard
    + Find relevant policies in the [Overton Raw Sources Sheet](https://docs.google.com/spreadsheets/d/1lpAsH-aJic9AbJR6YT4-tbwMDp4vCgmS_R-5djCl2f8/edit?usp=sharing) 
-   + Find relevant policies in the [Policy Checker Sheet](https://docs.google.com/spreadsheets/d/1jNeDVVE_faOVRLfW884nfTcMRkHM9qhYwtcnG2VpZnk/edit#gid=612528935)
+   + Find relevant policies in the [Policy Checker Sheet](https://docs.google.com/spreadsheets/d/1X8kzeLJImEimN4TvPscx6RLhZnpo5m9bSZsyVeWRWck/edit?usp=sharing)
   </small>
 </details>
 
@@ -320,10 +320,8 @@ Row {.tabset}
 
   The Policy Checker Sheet checks the CoronaNet data against the WHO PHSM Dataset. The sheet will be updated semi-regularly as the WHO PHSM dataset itself is updated. 
 
-  * The sheet is organized by policy type, with one sheet per policy type
+  * The sheet is organized by region and policy type, with one sheet per region
 
-  * The relevant column is the 'Completed' column --- if there are 'Updates Required' this means that in the policy checking process, the policy checker either identified some inconsistencies between the WHO PHSM dataset and the CoronaNet dataset or some problems with the CoronaNet dataset. Notes about what the issue is can be found in the 'CoronaNet Notes' and 'WHO Notes' columns.
-  * Once these issues are addressed, please add a note to the existing text stating that you have resolved the issue and change the 'Updates Required' to 'Yes' in the 'Completed' column
    * Caveats: 
       +  Note that WHO PHSM dataset does not provide definitive list of all COVID-19 related policies but provide a strong foundation for finding and verifying the existence of COVID-19 policies in a particular country. 
       + Note that it is possible that some policies in the Policy Checker Sheet is miscoded. For example, a policy listed in the 'Quarantine' tab, may actually be about 'Lockdown' and not quarantine. In these cases, please code the policy that makes sense for the CoronaNet database, not what is indicated in the Policy Checker Sheet. 
@@ -437,7 +435,6 @@ Text and Screenshots</a>
       </small>
 </details>
 
-
 Northern Africa {data-navmenu="Regional Dashboards"}
 =====================================
 
@@ -447,6 +444,16 @@ Inputs {.sidebar}
 **Regional Manager**
 
 Naela Elmore
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
 
 Row
 -------------------------------------
@@ -462,7 +469,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Algeria">Algeria</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Egypt">Egypt</a>
@@ -492,6 +499,16 @@ Inputs {.sidebar}
 
 Sanjana Jain
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -514,7 +531,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Burundi">Burundi</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Comoros">Comoros</a>
@@ -561,6 +578,16 @@ Inputs {.sidebar}
 Ryan Kim
 Elif Çalışkan
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -577,7 +604,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cameroon">Cameroon</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Central%20African%20Republic">Central African Republic</a>
@@ -611,6 +638,16 @@ Inputs {.sidebar}
 
 Klea Vogli & Mia Balice
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -629,7 +666,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Angola">Angola</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Botswana">Botswana</a>
@@ -667,6 +704,16 @@ Inputs {.sidebar}
 
 Christin Le
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -691,7 +738,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Benin">Benin</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Burkina%20Faso">Burkina Faso</a>
@@ -743,6 +790,16 @@ Gerardo Samuel Ixcaragua
 Gabriel Belmino Freitas
 Ewan Lewis
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -764,7 +821,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Antigua%20and%20Barbuda">Antigua and Barbuda</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bahamas">Bahamas</a>
@@ -809,6 +866,16 @@ Inputs {.sidebar}
 Vanja Grujic
 Rose Rasty
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -827,7 +894,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Belize">Belize</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Costa%20Rica">Costa Rica</a>
@@ -865,6 +932,16 @@ Inputs {.sidebar}
 
 Marcus Torres
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -885,7 +962,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Argentina">Argentina</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bolivia">Bolivia</a>
@@ -927,6 +1004,16 @@ Inputs {.sidebar}
 
 Caress Schenk
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -943,7 +1030,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Russia">Russia</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Ukraine">Ukraine</a>
@@ -977,6 +1064,16 @@ Inputs {.sidebar}
 
 Kelis Wong
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -993,7 +1090,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/China">China</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Hong%20Kong">Hong Kong</a>
@@ -1028,6 +1125,16 @@ Inputs {.sidebar}
 Pia Bansagi
 Fadhilah F. Primandari
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1047,7 +1154,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Brunei">Brunei</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Cambodia">Cambodia</a>
@@ -1087,14 +1194,22 @@ Inputs {.sidebar}
 
 Hanaan Shafi
 
-[South Asia Slack Channel](https://corona-govt-response.slack.com/archives/C014VLPRWTX)
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
 
 Row
 -------------------------------------
 
 
 ### General Country Information {.gen-country}
-* [Afghanistan](https://docs.google.com/document/d/1blWpNQi8dFiWb8RqlNri6MwytKRJspz-/edit)
+* Afghanistan
 * Bangladesh
 * Bhutan
 * India
@@ -1106,7 +1221,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Afghanistan">Afghanistan</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bangladesh">Bangladesh</a>
@@ -1142,6 +1257,16 @@ Inputs {.sidebar}
 
 Maryam Al-Hammadi
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1166,7 +1291,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Iraq">Iraq</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bahrain">Bahrain</a>
@@ -1216,6 +1341,16 @@ Inputs {.sidebar}
 
 Mayisa
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1235,7 +1370,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Bulgaria">Bulgaria</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Czechia">Czechia</a>
@@ -1275,6 +1410,16 @@ Inputs {.sidebar}
 
 Klea Vogli
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1292,7 +1437,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Denmark">Denmark</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Estonia">Estonia</a>
@@ -1329,6 +1474,16 @@ Inputs {.sidebar}
 Noor Altunaiji
 Vanja Grujic
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1352,7 +1507,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Albania">Albania</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Andorra">Andorra</a>
@@ -1400,6 +1555,16 @@ Inputs {.sidebar}
 
 Paula Ganga
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1418,7 +1583,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Austria">Austria</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Belgium">Belgium</a>
@@ -1456,6 +1621,16 @@ Inputs {.sidebar}
 
 Sarah Edmonds
 
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 Row
 -------------------------------------
 
@@ -1478,7 +1653,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/Australia">Australia</a>
 * <a href="https://github.com/cindyyawencheng/coronanet_ra/tree/master/New%20Zealand">New Zealand</a>
@@ -1512,8 +1687,6 @@ Row
 * Tonga
 * Tuvalu
 
-
-
 United States {data-navmenu="Country Dashboards"}
 ===================================== 
 
@@ -1521,8 +1694,20 @@ Inputs {.sidebar}
 -------------------------------------
 **Country Managers**
 
-* **Derek Duba**
-* **Matthew Cottrell**
+**Derek Duba**
+**Matthew Cottrell**
+
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
 
 Row
 -------------------------------------
@@ -1535,7 +1720,7 @@ Row
 
 Row
 -------------------------------------
-### Previous RA Material { .prev-ra }
+### RA Material { .prev-ra }
 * Alabama
 * Alaska
 * Arkansas
@@ -1548,3 +1733,4 @@ Row
  
 </body>
 </html>
+
