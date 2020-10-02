@@ -293,7 +293,21 @@ Row {.tabset}
 
 
 #### General Resources
- 
+
+*
+<details>
+  <summary> October 1 Training video  </summary>
+  <small>
+   In this [Oct 1 Training Video](https://tum-conf.zoom.us/rec/share/qnbb_bzGMllKWYqEb6IqE_498K_V902RYPE5bo78v11S8Wp-3dmR5l-zT2JQHA-O.zHDV3DOhsmw0dxgv) <small>  (Passcode: f5G6^AY7)</small> we go over the rationale for assessing, planning, coding and cleaning. We also provide an overview of the new tools available on this dashboard in order to do so, including the :
+   * [Country Overview Template](https://docs.google.com/document/d/1UCy4Cr59cUlj0Uog6R9NB2DOF8i8ky8sUE48Fq6F_Yw/edit#)
+   * [Country Timeline](https://docs.google.com/spreadsheets/d/1wV_4QOjK0QFddz6j7jMczyXA9I3uzSU1kWAlIX6Zslg/edit#gid=14819459), 
+   * [Coding Guide](https://www.coronanet-project.org/coding_guide.html), the ['printed' survey questions](https://www.coronanet-project.org/survey) ;
+   *  and the data checklists, 
+  
+  </small>
+</details>
+
+
 *
 <details>
   <summary> CoronaNet Manual </summary>
@@ -378,16 +392,21 @@ Row {.tabset}
       </small>
 </details>
 
-* How to use the Shiny App:
-
+* <details>
+  <summary>How to use the Shiny App</summary>
+<small>
   + <p id = "p1">
-<a href= "https://syncandshare.lrz.de/getlink/fiPF5Zf8GPfBvSYeWsoZeyww/how_to_use_shiny_app.mp4">Specific uses</a>
+<a href= "https://syncandshare.lrz.de/getlink/fiPF5Zf8GPfBvSYeWsoZeyww/how_to_use_shiny_app.mp4">Use the Shiny App for filling out the data checklist</a>
 </p> 
 
   + <p id = "p1">
 <a href= "https://docs.google.com/document/d/1MgZ5KSll-KGRlIJEot6j-SOgLac8C5og_3K5S_nAYZA/edit?usp=sharing">
 Text and Screenshots</a>
+  + You can also use the Shiny App for making corrections. Note that it takes 24 hours for the corrections to enter into the database. 
 </p> 
+
+  </small>
+</details>
 
 
 * <details>
@@ -422,7 +441,17 @@ Text and Screenshots</a>
 
 ### Organization Resources
 
-* How to fill out the CoronaNet Checklist
+* <details>
+  <summary>How to fill out the Regional/Country Data Checklist  </summary>
+  <small>
+   * The data checklists are an important tool to raise the quality of the data and to track the progress of the data over time. Our current goal is **to have all the data complete and clean until October 1, 2020 by January 1, 2020** and the data checklist will be important for helping us get there! Please see below for: 
+      +  [Video on how to use the data checklist](https://tum-conf.zoom.us/rec/share/gyGEk0OOn0U3Q_ppE9u-_mAe_5dqcDany19OfLCdcOAs3pYOrygYYDZD0IK2PF-j.66KrNjLYx4TTn1A1) <small> Passcode: tCQ0%8wC </small>
+</small>
+</details>
+
+
+
+
 
 #### Templates
 
