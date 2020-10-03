@@ -396,7 +396,7 @@ Row {.tabset}
   <summary>How to use the Shiny App</summary>
 <small>
   + <p id = "p1">
-<a href= "https://syncandshare.lrz.de/getlink/fiPF5Zf8GPfBvSYeWsoZeyww/how_to_use_shiny_app.mp4">Use the Shiny App for filling out the data checklist</a>
+<a href= "https://youtu.be/f-ex3_4luu4">Use the Shiny App for filling out the data checklist</a>
 </p> 
 
   + <p id = "p1">
@@ -450,33 +450,49 @@ Text and Screenshots</a>
 </details>
 
 
-
-
-
 #### Templates
+* <details>
+  <summary>How to fill out the Country Overview  </summary>
+  <small>
+   * The country overview will help you assess the policies in your region before you code! See below for 
+      +  [A Video on how to make a country overview](https://www.youtube.com/watch?v=NUbNkip-Yyw) 
+</small>
+</details>
 
 * How to use the Timeline Template  
 
+
+
+
 ### Communication
 
+#### Within the Project
 * [Weekly General Meeting--- Join us Wednesdays at 4:30pm CET!](https://tum-conf.zoom.us/j/94054314336)  <small>  (Password: 599952)</small>  
 * [Come hang out in the Community Hangout Room](https://tum-conf.zoom.us/j/92401524948) <small>  (Password: 12345)  </small>  
-  
+
+ <br> 
+
+
+#### Our public profile
 * [Follow the CoronaNet Twitter Feed](https://twitter.com/CoronaNet_org)  
 *  <p id = "p1"><a href= "https://www.linkedin.com/groups/8982369/"> Connect to CoronaNet on LinkedIn </a>
 </p>
 *  <p id = "p1"><a href= "https://www.coronanet-project.org/ra_call.html"> Invite others to join CoronaNet! </a>
 </p>
 * [Check out the public CoronaNet webpage](https://www.coronanet-project.org)
-* <details>
+
+ <br> 
+ 
+<details>
   <summary>Saying goodbye? Before you go...</summary>
-  <small>
   
-    * Please make sure to contact your regional manager to let them know that you'll be leaving
-    * If you have any useful information about your country that you would like to pass on, please remember to upload them to your relevant country/sub-national region folder so that the new RA can access them under 'Previous RA Material'. 
-    * Please fill out this  [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSc-yn3BuPxSBx-wskp_0gocPYWP2BVtvf1BMtrdP_I7HblRSw/viewform) to let us know about your experience with us and how we can do better! 
-    * For regional and country managers, we have created a [regional](https://docs.google.com/document/d/1RTikALjGQ_-EYDFAWbNybnuW30xBK9259JIcICYMXZY/edit#) and [country manager](https://docs.google.com/document/d/1XLb-EhLJQ8OH_EX8ng1bA-UYDWL4IjagMncEolGkOUI/edit#) exit report template which we hope you will fill out and pass on to the next regional or country manager to fill your position!
-      </small>
+    1. Please make sure to contact your regional manager to let them know that you'll be leaving
+  2. <details><summary> Make sure you fill out an Exit Report before you go! </summary> <small>
+      +   The [exit report](https://docs.google.com/document/d/1TBlRXb3yGuFyA45JomTxqrPCkAvI9W_D4Ah75PKLgNI/edit?usp=sharing) is important to pass on information so that the next RA has a better idea of what's going on in your region and what should be done (see this [short video](https://youtu.be/i8qoqNi5iEk) for more instructions). You can **upload it to your relevant country/sub-national region folder**
+      + For regional and country managers, we have created a [regional](https://docs.google.com/document/d/1RTikALjGQ_-EYDFAWbNybnuW30xBK9259JIcICYMXZY/edit#) and [country manager](https://docs.google.com/document/d/1XLb-EhLJQ8OH_EX8ng1bA-UYDWL4IjagMncEolGkOUI/edit#) exit report template which we hope you will fill out and pass on to the next regional or country manager to fill your position!
+      +  If you have **other any useful information about your country** that you would like to pass on, please remember to **upload them to your relevant country/sub-national region folder** so that the new RA can access them under 'Previous RA Material'. </small> </details>
+  3. Lastly, please fill out this  [exit survey](https://docs.google.com/forms/d/e/1FAIpQLSc-yn3BuPxSBx-wskp_0gocPYWP2BVtvf1BMtrdP_I7HblRSw/viewform) to let us know about your experience with us and how we can do better! 
+
 </details>
 
 Northern Africa {data-navmenu="Regional Dashboards"}
