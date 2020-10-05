@@ -459,8 +459,14 @@ Text and Screenshots</a>
 </small>
 </details>
 
-* How to use the Timeline Template  
 
+* <details>
+  <summary>How to use the Timeline Template   </summary>
+  <small>
+   * The timeline template will help you plan how to code the policies in your region before you code! See below for 
+      +  [A Video on how to make a timeline template](https://youtu.be/vbZZ8WgNEKQ) 
+</small>
+</details>
 
 
 
