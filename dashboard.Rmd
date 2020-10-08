@@ -152,7 +152,10 @@ output:
         }
         
         
-        
+        body {
+          padding: 75px 100px 50px 100px;
+          background-color: white;
+          }
         
         </style>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -181,7 +184,7 @@ Welcome! Pssst... take a look around!
 
 Row 
 -------------------------------------
-### Tools
+### Tools {data-padding=10}
 
 *  <p id = "p1">
 <a href="https://docs.google.com/spreadsheets/d/1lpAsH-aJic9AbJR6YT4-tbwMDp4vCgmS_R-5djCl2f8/edit?usp=sharing">Overton Raw Sources</a>
@@ -203,7 +206,7 @@ Row
 
 * [Slack](https://corona-govt-response.slack.com/archives/C010V8MKHK2)
 
-### Organization
+### Organization {data-padding=10}
  
 CoronaNet Checklist 
 
@@ -222,7 +225,7 @@ CoronaNet Checklist
   + [Russia Data Checklist](https://docs.google.com/spreadsheets/d/1BJxOdIjGq9GaHgLV_qxbW4AgwZ3fu3-ID4j-gXPMrhA/edit?usp=sharing)
   + [Spain Data Checklist](https://docs.google.com/spreadsheets/d/1y271IKkpDG50WcbnZsrdMBXPDS75_x1dSdIUW68Ca6A/edit?usp=sharing)
   + [Switzerland Data Checklist](https://docs.google.com/spreadsheets/d/1mBzoxh4F_e-MmNN2u6FU6LhnRstxKDjyvTqAPfabRds/edit?usp=sharing)
-  + [United States Data Checlist](https://docs.google.com/spreadsheets/d/16wpRD7_gv3UseLs5fyc7PeDMbcVlYaMDR0IghVsfBIQ/edit?usp=sharing) </small>
+  + [United States Data Checklist](https://docs.google.com/spreadsheets/d/16wpRD7_gv3UseLs5fyc7PeDMbcVlYaMDR0IghVsfBIQ/edit?usp=sharing) </small>
 </details>
 
 
@@ -1753,16 +1756,14 @@ Row
 * Tonga
 * Tuvalu
 
-United States {data-navmenu="Country Dashboards"}
-===================================== 
+Brazil {data-navmenu="Country Dashboards"}
+=====================================
 
 Inputs {.sidebar}
 -------------------------------------
-**Country Managers**
+**Country Manager**
 
-**Derek Duba**
-**Matthew Cottrell**
-
+* **Danny Downes**
 
  <br> 
  <details> 
@@ -1774,6 +1775,438 @@ Inputs {.sidebar}
  2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
  </details>
 
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Acre
+* Alagoas
+* Amapa
+* Amazonas
+* Bahia
+* Ceara
+* Espirito Santo
+* Federal District
+* Goias
+* Maranhao
+* Mato Grosso
+* Mato Grosso do Sul
+* Minas Gerais
+* Para
+* Paraiba
+* Parana
+* Pernambuco
+* Piaui
+* Rio de Janeiro
+* Rio Grande do Norte
+* Rio Grande do Sul
+* Rondonia
+* Roraima
+* Santa Catarina
+* Sao Paulo
+* Sergipe
+* Tocantins
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Acre
+* Alagoas
+* Amapa
+* Amazonas
+* Bahia
+* Ceara
+* Espirito Santo
+* Federal District
+* Goias
+* Maranhao
+* Mato Grosso
+* Mato Grosso do Sul
+* Minas Gerais
+* Para
+* Paraiba
+* Parana
+* Pernambuco
+* Piaui
+* Rio de Janeiro
+* Rio Grande do Norte
+* Rio Grande do Sul
+* Rondonia
+* Roraima
+* Santa Catarina
+* Sao Paulo
+* Sergipe
+* Tocantins
+
+### Primary Sources for Old Policies {.prim-source}
+* Acre
+* Alagoas
+* Amapa
+* Amazonas
+* Bahia
+* Ceara
+* Espirito Santo
+* Federal District
+* Goias
+* Maranhao
+* Mato Grosso
+* Mato Grosso do Sul
+* Minas Gerais
+* Para
+* Paraiba
+* Parana
+* Pernambuco
+* Piaui
+* Rio de Janeiro
+* Rio Grande do Norte
+* Rio Grande do Sul
+* Rondonia
+* Roraima
+* Santa Catarina
+* Sao Paulo
+* Sergipe
+* Tocantins
+
+Italy {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Bruno Ciccarini**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Abruzzo
+* Aosta Valley
+* Apulia
+* Basilicate
+* Calabria
+* Campania
+* Emilia-Romagna
+* Friuli Venezia Giulia
+* Latium
+* Liguria
+* Lombardy
+* Molise
+* Piedmont
+* Sardinia
+* Sicily
+* The Marches
+* Trentino-Alto Adige
+* Tuscany
+* Umbria
+* Veneto
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Abruzzo
+* Aosta Valley
+* Apulia
+* Basilicate
+* Calabria
+* Campania
+* Emilia-Romagna
+* Friuli Venezia Giulia
+* Latium
+* Liguria
+* Lombardy
+* Molise
+* Piedmont
+* Sardinia
+* Sicily
+* The Marches
+* Trentino-Alto Adige
+* Tuscany
+* Umbria
+* Veneto
+
+### Primary Sources for Old Policies {.prim-source}
+* Abruzzo
+* Aosta Valley
+* Apulia
+* Basilicate
+* Calabria
+* Campania
+* Emilia-Romagna
+* Friuli Venezia Giulia
+* Latium
+* Liguria
+* Lombardy
+* Molise
+* Piedmont
+* Sardinia
+* Sicily
+* The Marches
+* Trentino-Alto Adige
+* Tuscany
+* Umbria
+* Veneto
+
+India {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Managers**
+
+* **Shubham Thosar**
+* **Jay Patel**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Andaman and Nicobar
+* Andhra Pradesh
+* Arunachal Pradesh
+* Assam
+* Bihar
+* Chandigarh
+* Chhattisgarh
+* Dadra and Nagar Haveli
+* Daman and Diu
+* Delhi
+* Goa
+* Gujarat
+* Haryana
+* Himachal Pradesh
+* Jammu and Kashmir
+* Jharkhand
+* Karnataka
+* Kerala
+* Laccadives
+* Ladakh
+* Madhya Pradesh
+* Maharashtra
+* Manipur
+* Meghalaya
+* Mizoram
+* Nagaland
+* Odisha
+* Puducherry
+* Punjab
+* Rajasthan
+* Sikkim
+* Tamil Nadu
+* Telangana
+* Tripura
+* Uttar Pradesh
+* Uttarakhand
+* West Bengal
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Andaman and Nicobar
+* Andhra Pradesh
+* Arunachal Pradesh
+* Assam
+* Bihar
+* Chandigarh
+* Chhattisgarh
+* Dadra and Nagar Haveli
+* Daman and Diu
+* Delhi
+* Goa
+* Gujarat
+* Haryana
+* Himachal Pradesh
+* Jammu and Kashmir
+* Jharkhand
+* Karnataka
+* Kerala
+* Laccadives
+* Ladakh
+* Madhya Pradesh
+* Maharashtra
+* Manipur
+* Meghalaya
+* Mizoram
+* Nagaland
+* Odisha
+* Puducherry
+* Punjab
+* Rajasthan
+* Sikkim
+* Tamil Nadu
+* Telangana
+* Tripura
+* Uttar Pradesh
+* Uttarakhand
+* West Bengal
+
+### Primary Sources for Old Policies {.prim-source}
+* Andaman and Nicobar
+* Andhra Pradesh
+* Arunachal Pradesh
+* Assam
+* Bihar
+* Chandigarh
+* Chhattisgarh
+* Dadra and Nagar Haveli
+* Daman and Diu
+* Delhi
+* Goa
+* Gujarat
+* Haryana
+* Himachal Pradesh
+* Jammu and Kashmir
+* Jharkhand
+* Karnataka
+* Kerala
+* Laccadives
+* Ladakh
+* Madhya Pradesh
+* Maharashtra
+* Manipur
+* Meghalaya
+* Mizoram
+* Nagaland
+* Odisha
+* Puducherry
+* Punjab
+* Rajasthan
+* Sikkim
+* Tamil Nadu
+* Telangana
+* Tripura
+* Uttar Pradesh
+* Uttarakhand
+* West Bengal
+
+France {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Managers**
+
+* **Audrey Firrone**
+* **Emily Westropp**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Auvergne-Rhone-Alpes
+* Bourgogne-Franche-Comte
+* Brittany
+* Centre
+* Corsica
+* Grand Est
+* Hauts-de-France
+* Ile-de-France
+* Normandy
+* Nouvelle-Aquitaine
+* Occitanie
+* Pays de la Loire
+* Provence-Alpes-Cote d'Azur
+* French Guiana
+* Guadeloupe
+* Martinique
+* Mayotte
+* Reunion
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Auvergne-Rhone-Alpes
+* Bourgogne-Franche-Comte
+* Brittany
+* Centre
+* Corsica
+* Grand Est
+* Hauts-de-France
+* Ile-de-France
+* Normandy
+* Nouvelle-Aquitaine
+* Occitanie
+* Pays de la Loire
+* Provence-Alpes-Cote d'Azur
+* French Guiana
+* Guadeloupe
+* Martinique
+* Mayotte
+* Reunion
+
+### Primary Sources for Old Policies {.prim-source}
+* Auvergne-Rhone-Alpes
+* Bourgogne-Franche-Comte
+* Brittany
+* Centre
+* Corsica
+* Grand Est
+* Hauts-de-France
+* Ile-de-France
+* Normandy
+* Nouvelle-Aquitaine
+* Occitanie
+* Pays de la Loire
+* Provence-Alpes-Cote d'Azur
+* French Guiana
+* Guadeloupe
+* Martinique
+* Mayotte
+* Reunion
+
+United States {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Managers**
+
+* **Derek Duba**
+* **Matthew Cottrell**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
 
 Row
 -------------------------------------
@@ -1782,21 +2215,1167 @@ Row
 
 * Alabama
 * Alaska
+* Arizona
 * Arkansas
+* California
+* Colorado
+* Connecticut
+* Delaware
+* Florida
+* Georgia
+* Hawaii
+* Idaho
+* Illinois
+* Indiana
+* Iowa
+* Kansas
+* Kentucky
+* Louisiana
+* Maine
+* Maryland
+* Massachusetts
+* Michigan
+* Minnesota
+* Mississippi
+* Missouri
+* Montana
+* Nebraska
+* Nevada
+* New Hampshire
+* New Jersey
+* New Mexico
+* New York
+* North Carolina
+* North Dakota
+* Ohio
+* Oklahoma
+* Oregon
+* Pennsylvania
+* Rhode Island
+* South Carolina
+* South Dakota
+* Tennessee
+* Texas
+* Utah
+* Vermont
+* Virginia
+* Washington
+* Washington, D.C.
+* West Virginia
+* Wisconsin
+* Wyoming
+* Puerto Rico
 
 Row
 -------------------------------------
-### RA Material { .prev-ra }
+### RA Materials { .prev-ra }
 * Alabama
 * Alaska
+* Arizona
 * Arkansas
-
+* California
+* Colorado
+* Connecticut
+* Delaware
+* Florida
+* Georgia
+* Hawaii
+* Idaho
+* Illinois
+* Indiana
+* Iowa
+* Kansas
+* Kentucky
+* Louisiana
+* Maine
+* Maryland
+* Massachusetts
+* Michigan
+* Minnesota
+* Mississippi
+* Missouri
+* Montana
+* Nebraska
+* Nevada
+* New Hampshire
+* New Jersey
+* New Mexico
+* New York
+* North Carolina
+* North Dakota
+* Ohio
+* Oklahoma
+* Oregon
+* Pennsylvania
+* Rhode Island
+* South Carolina
+* South Dakota
+* Tennessee
+* Texas
+* Utah
+* Vermont
+* Virginia
+* Washington
+* Washington, D.C.
+* West Virginia
+* Wisconsin
+* Wyoming
+* Puerto Rico
 
 ### Primary Sources for Old Policies {.prim-source}
 * Alabama
 * Alaska
+* Arizona
 * Arkansas
- 
-</body>
-</html>
+* California
+* Colorado
+* Connecticut
+* Delaware
+* Florida
+* Georgia
+* Hawaii
+* Idaho
+* Illinois
+* Indiana
+* Iowa
+* Kansas
+* Kentucky
+* Louisiana
+* Maine
+* Maryland
+* Massachusetts
+* Michigan
+* Minnesota
+* Mississippi
+* Missouri
+* Montana
+* Nebraska
+* Nevada
+* New Hampshire
+* New Jersey
+* New Mexico
+* New York
+* North Carolina
+* North Dakota
+* Ohio
+* Oklahoma
+* Oregon
+* Pennsylvania
+* Rhode Island
+* South Carolina
+* South Dakota
+* Tennessee
+* Texas
+* Utah
+* Vermont
+* Virginia
+* Washington
+* Washington, D.C.
+* West Virginia
+* Wisconsin
+* Wyoming
+* Puerto Rico
+
+Germany {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Katrin Hermann**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Baden-Wuerttemberg
+* Bavaria
+* Berlin
+* Brandenburg
+* Bremen
+* Hamburg
+* Hesse
+* Lower Saxony
+* Mecklenburg-Vorpommern
+* North Rhine-Westphalia
+* Rheinland-Pfalz
+* Saarland
+* Saxony
+* Saxony-Anhalt
+* Schleswig-Holstein
+* Thuringia
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Baden-Wuerttemberg
+* Bavaria
+* Berlin
+* Brandenburg
+* Bremen
+* Hamburg
+* Hesse
+* Lower Saxony
+* Mecklenburg-Vorpommern
+* North Rhine-Westphalia
+* Rheinland-Pfalz
+* Saarland
+* Saxony
+* Saxony-Anhalt
+* Schleswig-Holstein
+* Thuringia
+
+### Primary Sources for Old Policies {.prim-source}
+* Baden-Wuerttemberg
+* Bavaria
+* Berlin
+* Brandenburg
+* Bremen
+* Hamburg
+* Hesse
+* Lower Saxony
+* Mecklenburg-Vorpommern
+* North Rhine-Westphalia
+* Rheinland-Pfalz
+* Saarland
+* Saxony
+* Saxony-Anhalt
+* Schleswig-Holstein
+* Thuringia
+
+Japan {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Victoria Atanasov**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Aichi
+* Akita
+* Aomori
+* Chiba
+* Ehime
+* Fukui
+* Fukuoka
+* Fukushima
+* Gifu
+* Gunma
+* Hiroshima
+* Hokkaido
+* Hyogo
+* Ibaraki
+* Ishikawa
+* Iwate
+* Kagawa
+* Kagoshima
+* Kanagawa
+* Kochi
+* Kumamoto
+* Kyoto
+* Mie
+* Miyagi
+* Miyazaki
+* Nagano
+* Nagasaki
+* Nara
+* Niigata
+* Oita
+* Okayama
+* Okinawa
+* Osaka
+* Saga
+* Saitama
+* Shiga
+* Shimane
+* Shizuoka
+* Tochigi
+* Tokushima
+* Tokyo
+* Tottori
+* Toyama
+* Wakayama
+* Yamagata
+* Yamaguchi
+* Yamanashi
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Aichi
+* Akita
+* Aomori
+* Chiba
+* Ehime
+* Fukui
+* Fukuoka
+* Fukushima
+* Gifu
+* Gunma
+* Hiroshima
+* Hokkaido
+* Hyogo
+* Ibaraki
+* Ishikawa
+* Iwate
+* Kagawa
+* Kagoshima
+* Kanagawa
+* Kochi
+* Kumamoto
+* Kyoto
+* Mie
+* Miyagi
+* Miyazaki
+* Nagano
+* Nagasaki
+* Nara
+* Niigata
+* Oita
+* Okayama
+* Okinawa
+* Osaka
+* Saga
+* Saitama
+* Shiga
+* Shimane
+* Shizuoka
+* Tochigi
+* Tokushima
+* Tokyo
+* Tottori
+* Toyama
+* Wakayama
+* Yamagata
+* Yamaguchi
+* Yamanashi
+
+### Primary Sources for Old Policies {.prim-source}
+* Aichi
+* Akita
+* Aomori
+* Chiba
+* Ehime
+* Fukui
+* Fukuoka
+* Fukushima
+* Gifu
+* Gunma
+* Hiroshima
+* Hokkaido
+* Hyogo
+* Ibaraki
+* Ishikawa
+* Iwate
+* Kagawa
+* Kagoshima
+* Kanagawa
+* Kochi
+* Kumamoto
+* Kyoto
+* Mie
+* Miyagi
+* Miyazaki
+* Nagano
+* Nagasaki
+* Nara
+* Niigata
+* Oita
+* Okayama
+* Okinawa
+* Osaka
+* Saga
+* Saitama
+* Shiga
+* Shimane
+* Shizuoka
+* Tochigi
+* Tokushima
+* Tokyo
+* Tottori
+* Toyama
+* Wakayama
+* Yamagata
+* Yamaguchi
+* Yamanashi
+
+Switzerland {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Anke Horn**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Aargau
+* Appenzell Ausserrhoden
+* Appenzell Innerrhoden
+* Basel-City
+* Basel-Landschaft
+* Bern
+* Fribourg
+* Geneva
+* Glarus
+* Grisons
+* Jura
+* Lucerne
+* Neuchatel
+* Nidwalden
+* Obwalden
+* Saint Gallen
+* Schaffhausen
+* Schwyz
+* Solothurn
+* Thurgau
+* Ticino
+* Uri
+* Valais
+* Vaud
+* Zug
+* Zurich
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Aargau
+* Appenzell Ausserrhoden
+* Appenzell Innerrhoden
+* Basel-City
+* Basel-Landschaft
+* Bern
+* Fribourg
+* Geneva
+* Glarus
+* Grisons
+* Jura
+* Lucerne
+* Neuchatel
+* Nidwalden
+* Obwalden
+* Saint Gallen
+* Schaffhausen
+* Schwyz
+* Solothurn
+* Thurgau
+* Ticino
+* Uri
+* Valais
+* Vaud
+* Zug
+* Zurich
+
+### Primary Sources for Old Policies {.prim-source}
+* Aargau
+* Appenzell Ausserrhoden
+* Appenzell Innerrhoden
+* Basel-City
+* Basel-Landschaft
+* Bern
+* Fribourg
+* Geneva
+* Glarus
+* Grisons
+* Jura
+* Lucerne
+* Neuchatel
+* Nidwalden
+* Obwalden
+* Saint Gallen
+* Schaffhausen
+* Schwyz
+* Solothurn
+* Thurgau
+* Ticino
+* Uri
+* Valais
+* Vaud
+* Zug
+* Zurich
+
+China {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Managers**
+
+* **Linlin Chen**
+* **Shiyu Guo**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Anhui
+* Beijing
+* Chongqing
+* Fujian
+* Gansu
+* Guangdong
+* Guangxi
+* Guizhou
+* Hainan
+* Hebei
+* Heilongjiang
+* Henan
+* Hubei
+* Hunan
+* Inner Mongolia
+* Jiangsu
+* Jiangxi
+* Jilin
+* Liaoning
+* Ningxia Hui Autonomous Region
+* Qinghai
+* Shaanxi
+* Shandong
+* Shanghai
+* Shanxi
+* Sichuan
+* Tianjin
+* Tibet
+* Xinjiang
+* Yunnan
+* Zhejiang
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Anhui
+* Beijing
+* Chongqing
+* Fujian
+* Gansu
+* Guangdong
+* Guangxi
+* Guizhou
+* Hainan
+* Hebei
+* Heilongjiang
+* Henan
+* Hubei
+* Hunan
+* Inner Mongolia
+* Jiangsu
+* Jiangxi
+* Jilin
+* Liaoning
+* Ningxia Hui Autonomous Region
+* Qinghai
+* Shaanxi
+* Shandong
+* Shanghai
+* Shanxi
+* Sichuan
+* Tianjin
+* Tibet
+* Xinjiang
+* Yunnan
+* Zhejiang
+
+### Primary Sources for Old Policies {.prim-source}
+* Anhui
+* Beijing
+* Chongqing
+* Fujian
+* Gansu
+* Guangdong
+* Guangxi
+* Guizhou
+* Hainan
+* Hebei
+* Heilongjiang
+* Henan
+* Hubei
+* Hunan
+* Inner Mongolia
+* Jiangsu
+* Jiangxi
+* Jilin
+* Liaoning
+* Ningxia Hui Autonomous Region
+* Qinghai
+* Shaanxi
+* Shandong
+* Shanghai
+* Shanxi
+* Sichuan
+* Tianjin
+* Tibet
+* Xinjiang
+* Yunnan
+* Zhejiang
+
+Nigeria {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Annika Kaiser**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Abia
+* Adamawa
+* Akwa Ibom
+* Anambra
+* Bauchi
+* Bayelsa
+* Benue
+* Borno
+* Cross River
+* Delta
+* Ebonyi
+* Edo
+* Ekiti
+* Enugu
+* FCT
+* Gombe
+* Imo
+* Jigawa
+* Kaduna
+* Kano
+* Katsina
+* Kebbi
+* Kogi
+* Kwara
+* Lagos
+* Nassarawa
+* Niger
+* Ogun
+* Ondo
+* Osun
+* Oyo
+* Plateau
+* Rivers
+* Sokoto
+* Taraba
+* Yobe
+* Zamfara
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Abia
+* Adamawa
+* Akwa Ibom
+* Anambra
+* Bauchi
+* Bayelsa
+* Benue
+* Borno
+* Cross River
+* Delta
+* Ebonyi
+* Edo
+* Ekiti
+* Enugu
+* FCT
+* Gombe
+* Imo
+* Jigawa
+* Kaduna
+* Kano
+* Katsina
+* Kebbi
+* Kogi
+* Kwara
+* Lagos
+* Nassarawa
+* Niger
+* Ogun
+* Ondo
+* Osun
+* Oyo
+* Plateau
+* Rivers
+* Sokoto
+* Taraba
+* Yobe
+* Zamfara
+
+### Primary Sources for Old Policies {.prim-source}
+* Abia
+* Adamawa
+* Akwa Ibom
+* Anambra
+* Bauchi
+* Bayelsa
+* Benue
+* Borno
+* Cross River
+* Delta
+* Ebonyi
+* Edo
+* Ekiti
+* Enugu
+* FCT
+* Gombe
+* Imo
+* Jigawa
+* Kaduna
+* Kano
+* Katsina
+* Kebbi
+* Kogi
+* Kwara
+* Lagos
+* Nassarawa
+* Niger
+* Ogun
+* Ondo
+* Osun
+* Oyo
+* Plateau
+* Rivers
+* Sokoto
+* Taraba
+* Yobe
+* Zamfara
+
+Russia {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Managers**
+
+* **Natalia Filkina-Spreizer**
+* **Anelia Petrova**
+* **Natalia Baratashvili**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Adygeya Republic
+* Altai
+* Altai Krai
+* Amur Oblast
+* Arkhangelskaya
+* Astrakhan
+* Bashkortostan Republic
+* Belgorod Oblast
+* Bryansk Oblast
+* Buryatiya Republic
+* Chechnya
+* Chelyabinsk
+* Chukotka
+* Chuvashia
+* Dagestan
+* Ingushetiya Republic
+* Irkutsk Oblast
+* Ivanovo
+* Jaroslavl
+* Jewish Autonomous Oblast
+* Kabardino-Balkariya Republic
+* Kaliningrad
+* Kalmykiya Republic
+* Kaluga
+* Kamchatka
+* Karachayevo-Cherkesiya Republic
+* Karelia
+* Kemerovo Oblast
+* Khabarovsk
+* Khakasiya Republic
+* Khanty-Mansia
+* Kirov
+* Komi
+* Kostroma Oblast
+* Krasnodarskiy
+* Krasnoyarskiy
+* Kurgan Oblast
+* Kursk
+* Leningradskaya Oblast'
+* Lipetsk Oblast
+* Magadan Oblast
+* Mariy-El Republic
+* Mordoviya Republic
+* Moscow
+* Moscow Oblast
+* Murmansk
+* Nenets
+* Nizhny Novgorod Oblast
+* North Ossetia
+* Novgorod Oblast
+* Novosibirsk Oblast
+* Omsk
+* Orel Oblast
+* Orenburg Oblast
+* Penza
+* Perm
+* Primorskiy (Maritime) Kray
+* Pskov Oblast
+* Republic of Tyva
+* Rostov
+* Ryazan Oblast
+* Sakha
+* Sakhalin Oblast
+* Samara Oblast
+* Saratovskaya Oblast
+* Smolensk
+* St.-Petersburg
+* Stavropol' Kray
+* Sverdlovsk
+* Tambov
+* Tatarstan Republic
+* Tomsk Oblast
+* Transbaikal Territory
+* Tula
+* Tver' Oblast
+* Tyumen' Oblast
+* Udmurtiya Republic
+* Ulyanovsk
+* Vladimir
+* Volgograd Oblast
+* Vologda
+* Voronezj
+* Yamalo-Nenets
+* Crimea
+* Sevastopol
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Adygeya Republic
+* Altai
+* Altai Krai
+* Amur Oblast
+* Arkhangelskaya
+* Astrakhan
+* Bashkortostan Republic
+* Belgorod Oblast
+* Bryansk Oblast
+* Buryatiya Republic
+* Chechnya
+* Chelyabinsk
+* Chukotka
+* Chuvashia
+* Dagestan
+* Ingushetiya Republic
+* Irkutsk Oblast
+* Ivanovo
+* Jaroslavl
+* Jewish Autonomous Oblast
+* Kabardino-Balkariya Republic
+* Kaliningrad
+* Kalmykiya Republic
+* Kaluga
+* Kamchatka
+* Karachayevo-Cherkesiya Republic
+* Karelia
+* Kemerovo Oblast
+* Khabarovsk
+* Khakasiya Republic
+* Khanty-Mansia
+* Kirov
+* Komi
+* Kostroma Oblast
+* Krasnodarskiy
+* Krasnoyarskiy
+* Kurgan Oblast
+* Kursk
+* Leningradskaya Oblast'
+* Lipetsk Oblast
+* Magadan Oblast
+* Mariy-El Republic
+* Mordoviya Republic
+* Moscow
+* Moscow Oblast
+* Murmansk
+* Nenets
+* Nizhny Novgorod Oblast
+* North Ossetia
+* Novgorod Oblast
+* Novosibirsk Oblast
+* Omsk
+* Orel Oblast
+* Orenburg Oblast
+* Penza
+* Perm
+* Primorskiy (Maritime) Kray
+* Pskov Oblast
+* Republic of Tyva
+* Rostov
+* Ryazan Oblast
+* Sakha
+* Sakhalin Oblast
+* Samara Oblast
+* Saratovskaya Oblast
+* Smolensk
+* St.-Petersburg
+* Stavropol' Kray
+* Sverdlovsk
+* Tambov
+* Tatarstan Republic
+* Tomsk Oblast
+* Transbaikal Territory
+* Tula
+* Tver' Oblast
+* Tyumen' Oblast
+* Udmurtiya Republic
+* Ulyanovsk
+* Vladimir
+* Volgograd Oblast
+* Vologda
+* Voronezj
+* Yamalo-Nenets
+* Crimea
+* Sevastopol
+
+### Primary Sources for Old Policies {.prim-source}
+* Adygeya Republic
+* Altai
+* Altai Krai
+* Amur Oblast
+* Arkhangelskaya
+* Astrakhan
+* Bashkortostan Republic
+* Belgorod Oblast
+* Bryansk Oblast
+* Buryatiya Republic
+* Chechnya
+* Chelyabinsk
+* Chukotka
+* Chuvashia
+* Dagestan
+* Ingushetiya Republic
+* Irkutsk Oblast
+* Ivanovo
+* Jaroslavl
+* Jewish Autonomous Oblast
+* Kabardino-Balkariya Republic
+* Kaliningrad
+* Kalmykiya Republic
+* Kaluga
+* Kamchatka
+* Karachayevo-Cherkesiya Republic
+* Karelia
+* Kemerovo Oblast
+* Khabarovsk
+* Khakasiya Republic
+* Khanty-Mansia
+* Kirov
+* Komi
+* Kostroma Oblast
+* Krasnodarskiy
+* Krasnoyarskiy
+* Kurgan Oblast
+* Kursk
+* Leningradskaya Oblast'
+* Lipetsk Oblast
+* Magadan Oblast
+* Mariy-El Republic
+* Mordoviya Republic
+* Moscow
+* Moscow Oblast
+* Murmansk
+* Nenets
+* Nizhny Novgorod Oblast
+* North Ossetia
+* Novgorod Oblast
+* Novosibirsk Oblast
+* Omsk
+* Orel Oblast
+* Orenburg Oblast
+* Penza
+* Perm
+* Primorskiy (Maritime) Kray
+* Pskov Oblast
+* Republic of Tyva
+* Rostov
+* Ryazan Oblast
+* Sakha
+* Sakhalin Oblast
+* Samara Oblast
+* Saratovskaya Oblast
+* Smolensk
+* St.-Petersburg
+* Stavropol' Kray
+* Sverdlovsk
+* Tambov
+* Tatarstan Republic
+* Tomsk Oblast
+* Transbaikal Territory
+* Tula
+* Tver' Oblast
+* Tyumen' Oblast
+* Udmurtiya Republic
+* Ulyanovsk
+* Vladimir
+* Volgograd Oblast
+* Vologda
+* Voronezj
+* Yamalo-Nenets
+* Crimea
+* Sevastopol
+
+Spain {data-navmenu="Country Dashboards"}
+=====================================
+
+Inputs {.sidebar}
+-------------------------------------
+**Country Manager**
+
+* **Ana Belén Perianes**
+
+ <br> 
+ <details> 
+
+ <summary> <small> <p style="color:blue">How to access RA Materials </p></summary> </small> 
+ <small> 
+
+ 1. Create a [github](https://github.com) account and username 
+ 2. Request access to this repository [here](https://docs.google.com/spreadsheets/d/1zQvNOSFAfPmlZ0lANaskJ4z05wL1HVUIbC9ZFkeuHYs/edit?usp=sharing) </small> 
+ </details>
+
+Row
+-------------------------------------
+
+### General Country Information {.gen-country}
+
+* Andalusia
+* Aragon
+* Asturias
+* Balearic Islands
+* Basque Country
+* Canary Islands
+* Cantabria
+* Castille and Leon
+* Castille-La Mancha
+* Catalonia
+* Ceuta
+* Extremadura
+* Galicia
+* La Rioja
+* Madrid
+* Melilla
+* Murcia
+* Navarre
+* Valencia
+
+Row
+-------------------------------------
+### RA Materials { .prev-ra }
+* Andalusia
+* Aragon
+* Asturias
+* Balearic Islands
+* Basque Country
+* Canary Islands
+* Cantabria
+* Castille and Leon
+* Castille-La Mancha
+* Catalonia
+* Ceuta
+* Extremadura
+* Galicia
+* La Rioja
+* Madrid
+* Melilla
+* Murcia
+* Navarre
+* Valencia
+
+### Primary Sources for Old Policies {.prim-source}
+* Andalusia
+* Aragon
+* Asturias
+* Balearic Islands
+* Basque Country
+* Canary Islands
+* Cantabria
+* Castille and Leon
+* Castille-La Mancha
+* Catalonia
+* Ceuta
+* Extremadura
+* Galicia
+* La Rioja
+* Madrid
+* Melilla
+* Murcia
+* Navarre
+* Valencia
 
