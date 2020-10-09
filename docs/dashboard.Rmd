@@ -215,6 +215,7 @@ CoronaNet Checklist
   <summary>Country Data Checklist (one subnational region per sheet)</summary>
   <small>
   + [Brazil Data Checklist](https://docs.google.com/spreadsheets/d/1YymUcP1_h5OgMhdIca4I2L0veLGhDdgs3Y5DePH49hI/edit?usp=sharing)
+  + [Canada Data Checklist](https://docs.google.com/spreadsheets/d/1zt5atXwIfLcdG1pZQ5m7MsjKyiueAb5Kiada6gHXtbA/edit?usp=sharing)
   + [China Data Checklist](https://docs.google.com/spreadsheets/d/1KbKT7kMLUvALlqeGzw1aDZcWqrp3bIjoA5QYbVddJDM/edit?usp=sharing)
   + [France Data Checklist](https://docs.google.com/spreadsheets/d/1wVa9yES4GWthNJyCFLEENeDeZQNcW0tk3ua16uPzLY8/edit?usp=sharing)
   + [Germany Data Checklist](https://docs.google.com/spreadsheets/d/1SouqfwoZN6uueohxmDZzeWwzENHwAdRP_5KRAYssnfs/edit?usp=sharing)
